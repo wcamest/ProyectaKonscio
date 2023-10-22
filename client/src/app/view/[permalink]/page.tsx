@@ -5,13 +5,29 @@ import View from "./View";
 
 type Props = {};
 
-const contentMockData: WHTMLElement = {
-  tagName: "HTMLDiv",
-  children: [],
-};
+const elementsMockData: WHTMLElement[] = [
+  {
+    id: "root",
+    tagName: "HTMLDiv",
+    children: [],
+    treeItemExpanded: true,
+    treeItemTagLabel: "div",
+    treeItemTitle: "Contenedor principal",
+  },
+];
 
 const page = (props: Props) => {
-  return <View content={contentMockData} />;
+  const Functions = {
+    GetRoot() {
+      const rootElement = elementsMockData.find(
+        (element: WHTMLElement) => element.id === "root"
+      );
+
+      return rootElement;
+    },
+  };
+
+  return <View elements={elementsMockData} root={Functions.GetRoot()} />;
 };
 
 export default page;
