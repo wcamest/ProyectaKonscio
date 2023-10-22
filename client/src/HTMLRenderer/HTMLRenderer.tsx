@@ -198,16 +198,20 @@ const HTMLElements: any = {
 };
 
 const HTMLRenderer = {
-  Render(element: any, key?: number) {
-    if (!element.tagName) return element;
+  Render(elementId: string, elements: WHTMLElement[], key?: number) {
+    const element = elements.find(
+      (element: WHTMLElement) => element.id === elementId
+    );
+
+    if (!element) return undefined;
 
     const Component = HTMLElements[element.tagName];
 
     if (Component)
       return (
         <Component key={key}>
-          {element.children.map((child: WHTMLElement, childKey: number) => {
-            return HTMLRenderer.Render(child, childKey);
+          {element.children.map((childId: string, childKey: number) => {
+            return HTMLRenderer.Render(childId, elements, childKey);
           })}
         </Component>
       );
