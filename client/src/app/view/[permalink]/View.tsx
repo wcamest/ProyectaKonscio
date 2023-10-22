@@ -3,13 +3,18 @@ import WHTMLElement from "@/types/WHTMLElement";
 import React from "react";
 
 type Props = {
-  content: WHTMLElement;
+  elements: WHTMLElement[];
+  root: WHTMLElement | undefined;
 };
 
 const View = (props: Props) => {
+  const { elements, root } = props;
+
   const Renderer = {
     Content() {
-      return HTMLRenderer.Render(props.content);
+      if (!root) return undefined;
+
+      return HTMLRenderer.Render(root.id, elements);
     },
   };
 

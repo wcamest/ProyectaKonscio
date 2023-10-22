@@ -1,0 +1,33 @@
+import generateId from "@/utils/Utils";
+import { EditorState } from "../editorSlice";
+import WHTMLElement from "@/types/WHTMLElement";
+
+const CreateElement = (
+  state: EditorState,
+  action: { payload: any; type: string }
+) => {
+  const {tagName, treeItemTagLabel, treeItemTitle} = action.payload;
+  console.log(tagName, treeItemTagLabel, treeItemTitle)
+
+  const selectedElement = state.elements.find(
+    (element: WHTMLElement) => element.id === state.selected
+  );
+
+  if(!selectedElement) return state;
+
+  const newElementId: string = generateId();
+
+  const element: WHTMLElement = {
+    id: newElementId,
+    tagName,
+    children: [],
+    treeItemExpanded: false,
+    treeItemTagLabel,
+    treeItemTitle,
+  };
+
+  selectedElement.children.push(newElementId);
+  state.elements.push(element);
+};
+
+export default CreateElement;
