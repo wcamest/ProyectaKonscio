@@ -41,14 +41,14 @@ const HTMLElementTreeItemComponent = (props: Props) => {
               selected === elementId
                 ? "bg-blue-200"
                 : "bg-blue-50 hover:bg-blue-100"
-            } flex gap-2 px-2 py-1 border border-solid border-blue-300 text-blue-950 rounded-md shadow-md select-none cursor-pointer`}
+            } w-fit flex gap-2 px-2 py-1 border border-solid border-blue-300 text-blue-950 rounded-md shadow-md select-none cursor-pointer`}
             onClick={() => {
               dispatch(selectElement(element.id));
             }}
           >
             {Renderer.ExpandCollapseButton()}
             <div className="flex flex-col">
-              <span className="font-bold leading-4">
+              <span className="font-bold leading-4 whitespace-nowrap">
                 {element.treeItemTitle}
               </span>
               <div className="text-xs flex gap-1">
@@ -83,8 +83,6 @@ const HTMLElementTreeItemComponent = (props: Props) => {
       const element = Functions.GetElement();
       if (!element) return undefined;
       if (!element.children.length) return undefined;
-
-      console.log(element.children);
 
       return (
         <div

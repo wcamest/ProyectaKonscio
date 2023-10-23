@@ -7,7 +7,6 @@ const CreateElement = (
   action: { payload: any; type: string }
 ) => {
   const {tagName, treeItemTagLabel, treeItemTitle} = action.payload;
-  console.log(tagName, treeItemTagLabel, treeItemTitle)
 
   const selectedElement = state.elements.find(
     (element: WHTMLElement) => element.id === state.selected
