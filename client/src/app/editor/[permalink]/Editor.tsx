@@ -392,8 +392,157 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent title="Tablas"></ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent title="Formularios"></ElementShortcutGroupComponent>
+              <ElementShortcutGroupComponent title="Tablas">
+                <ElementShortcutComponent
+                  tagName="HTMLTable"
+                  title="Tabla"
+                  treeItemTagLabel="table"
+                  treeItemTitle="Tabla"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLCaption"
+                  title="Leyenda de tabla"
+                  treeItemTagLabel="caption"
+                  treeItemTitle="Leyenda de tabla"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLColgroup"
+                  title="Grupo de columnas"
+                  treeItemTagLabel="colgroup"
+                  treeItemTitle="Grupo de columnas"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLTbody"
+                  title="Cuerpo de tabla"
+                  treeItemTagLabel="tbody"
+                  treeItemTitle="Cuerpo de tabla"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLThead"
+                  title="Cabecera de tabla"
+                  treeItemTagLabel="thead"
+                  treeItemTitle="Cabecera de tabla"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLTfoot"
+                  title="Pie de tabla"
+                  treeItemTagLabel="tfoot"
+                  treeItemTitle="Pie de tabla"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLTr"
+                  title="Fila"
+                  treeItemTagLabel="tr"
+                  treeItemTitle="Fila"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLTd"
+                  title="Celda"
+                  treeItemTagLabel="td"
+                  treeItemTitle="Celda"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLTh"
+                  title="Celda de cabecera"
+                  treeItemTagLabel="th"
+                  treeItemTitle="Celda de cabecera"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLCol"
+                  title="Columna"
+                  treeItemTagLabel="col"
+                  treeItemTitle="Columna"
+                  onAddElement={Functions.AddElement}
+                />
+              </ElementShortcutGroupComponent>
+              <ElementShortcutGroupComponent title="Formularios">
+              <ElementShortcutComponent
+                  tagName="HTMLForm"
+                  title="Formulario"
+                  treeItemTagLabel="form"
+                  treeItemTitle="Formulario"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLLabel"
+                  title="Etiqueta"
+                  treeItemTagLabel="label"
+                  treeItemTitle="Etiqueta"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLInput"
+                  title="Control"
+                  treeItemTagLabel="input"
+                  treeItemTitle="Control"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLButton"
+                  title="Botón"
+                  treeItemTagLabel="button"
+                  treeItemTitle="Botón"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLSelect"
+                  title="Lista desplegable"
+                  treeItemTagLabel="select"
+                  treeItemTitle="Lista desplegable"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLOption"
+                  title="Item"
+                  treeItemTagLabel="option"
+                  treeItemTitle="Item"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLOptgroup"
+                  title="Grupo de items"
+                  treeItemTagLabel="optgroup"
+                  treeItemTitle="Grupo de items"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLTextarea"
+                  title="Texto multilinea"
+                  treeItemTagLabel="textarea"
+                  treeItemTitle="Texto multilinea"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLProgress"
+                  title="Barra de progreso"
+                  treeItemTagLabel="progress"
+                  treeItemTitle="Barra de progreso"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLFieldset"
+                  title="Grupo de controles"
+                  treeItemTagLabel="fieldset"
+                  treeItemTitle="Grupo de controles"
+                  onAddElement={Functions.AddElement}
+                />
+                <ElementShortcutComponent
+                  tagName="HTMLLegend"
+                  title="Leyenda"
+                  treeItemTagLabel="legend"
+                  treeItemTitle="Leyenda"
+                  onAddElement={Functions.AddElement}
+                />
+              </ElementShortcutGroupComponent>
             </div>
           </div>
           <div className="w-full h-1/2 overflow-hidden border-t border-t-solid border-t-blue-300">
