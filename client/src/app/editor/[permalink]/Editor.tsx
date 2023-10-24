@@ -39,7 +39,7 @@ const Editor = (props: Props) => {
         <div className="w-64 h-full flex flex-col overflow-hidden border border-solid border-blue-300">
           <div className="w-full h-1/2 overflow-hidden">
             <div className="w-full h-full p-3 overflow-auto flex flex-col gap-2">
-              <ElementShortcutGroupComponent title="Secciones">
+              <ElementShortcutGroupComponent id="sections" title="Secciones">
                 <ElementShortcutComponent
                   tagName="HTMLArticle"
                   title="Artículo"
@@ -139,7 +139,7 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent title="Bloques de contenido">
+              <ElementShortcutGroupComponent id="content_blocks" title="Bloques de contenido">
                 <ElementShortcutComponent
                   tagName="HTMLP"
                   title="Párrafo"
@@ -197,7 +197,7 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent title="Texto">
+              <ElementShortcutGroupComponent  id="text" title="Texto">
                 <ElementShortcutComponent
                   tagName="HTMLBr"
                   title="Salto de linea"
@@ -297,7 +297,7 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent title="Contenido">
+              <ElementShortcutGroupComponent  id="content" title="Contenido">
                 <ElementShortcutComponent
                   tagName="HTMLImg"
                   title="Imagen"
@@ -310,13 +310,6 @@ const Editor = (props: Props) => {
                   title="IFrame"
                   treeItemTagLabel="iframe"
                   treeItemTitle="IFrame"
-                  onAddElement={Functions.AddElement}
-                />
-                <ElementShortcutComponent
-                  tagName="HTMLEmbed"
-                  title="Plug-in"
-                  treeItemTagLabel="embed"
-                  treeItemTitle="Plug-in"
                   onAddElement={Functions.AddElement}
                 />
                 <ElementShortcutComponent
@@ -369,7 +362,7 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent title="Listas">
+              <ElementShortcutGroupComponent  id="lists" title="Listas">
                 <ElementShortcutComponent
                   tagName="HTMLOl"
                   title="Lista enumerada"
@@ -392,7 +385,7 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent title="Tablas">
+              <ElementShortcutGroupComponent  id="tables" title="Tablas">
                 <ElementShortcutComponent
                   tagName="HTMLTable"
                   title="Tabla"
@@ -464,8 +457,8 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent title="Formularios">
-              <ElementShortcutComponent
+              <ElementShortcutGroupComponent  id="forms" title="Formularios">
+                <ElementShortcutComponent
                   tagName="HTMLForm"
                   title="Formulario"
                   treeItemTagLabel="form"
