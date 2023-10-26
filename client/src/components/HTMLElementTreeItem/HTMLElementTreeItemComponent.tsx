@@ -25,7 +25,24 @@ const HTMLElementTreeItemComponent = (props: Props) => {
         (element: WHTMLElement) => element.id === elementId
       );
 
+      if (element && element.cutMode) return undefined;
+
       return element;
+    },
+    GetChildrenIds() {
+      const element = Functions.GetElement();
+      if (!element) return [];
+
+      return element.children.filter((childId: string) => {
+        const child = elements.find(
+          (childElement: WHTMLElement) => childElement.id === childId
+        );
+
+        if (!child) return false;
+        if (child.cutMode) return false;
+
+        return true;
+      });
     },
   };
 
@@ -81,8 +98,9 @@ const HTMLElementTreeItemComponent = (props: Props) => {
     },
     ExpandCollapseButton() {
       const element = Functions.GetElement();
+      const childrenIds = Functions.GetChildrenIds();
       if (!element) return undefined;
-      if (!element.children.length) return undefined;
+      if (!childrenIds.length) return undefined;
 
       return (
         <div

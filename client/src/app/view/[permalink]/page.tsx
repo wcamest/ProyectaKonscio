@@ -13,6 +13,8 @@ const elementsMockData: WHTMLElement[] = [
     treeItemExpanded: true,
     treeItemTagLabel: "div",
     treeItemTitle: "Contenedor principal",
+    cutMode: false,
+    parentId: undefined
   },
 ];
 

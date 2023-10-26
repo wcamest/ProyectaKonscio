@@ -205,6 +205,8 @@ const HTMLRenderer = {
 
     if (!element) return undefined;
 
+    if (element.cutMode) return undefined;
+
     const Component = HTMLElements[element.tagName];
 
     if (Component)
