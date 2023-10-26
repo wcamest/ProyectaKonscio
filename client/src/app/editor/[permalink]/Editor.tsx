@@ -4,7 +4,23 @@ import View from "@/app/view/[permalink]/View";
 import ElementShortcutComponent from "@/components/ElementShortcut/ElementShortcutComponent";
 import ElementShortcutGroupComponent from "@/components/ElementShortcutGroup/ElementShortcutGroupComponent";
 import HTMLElementTreeItemComponent from "@/components/HTMLElementTreeItem/HTMLElementTreeItemComponent";
-import { createElement } from "@/redux/features/editor/editorSlice";
+import CaretDownFillIcon from "@/components/Icons/CaretDownFillIcon";
+import CaretLeftFillIcon from "@/components/Icons/CaretLeftFillIcon";
+import CaretRightFillIcon from "@/components/Icons/CaretRightFillIcon";
+import CaretUpFillIcon from "@/components/Icons/CaretUpFillIcon";
+import ClipboardFillIcon from "@/components/Icons/ClipboardFillIcon";
+import CopyIcon from "@/components/Icons/CopyIcon";
+import ScissorsIcon from "@/components/Icons/ScissorsIcon";
+import TrashIcon from "@/components/Icons/TrashIcon";
+import ToolbarButtonComponent from "@/components/ToolbarButton/ToolbarButtonComponent";
+import {
+  copyElement,
+  createElement,
+  cutElement,
+  deleteElement,
+  moveElement,
+  pasteElement,
+} from "@/redux/features/editor/editorSlice";
 import { RootState } from "@/redux/store/store";
 import WHTMLElement from "@/types/WHTMLElement";
 import React from "react";
@@ -30,6 +46,9 @@ const Editor = (props: Props) => {
       treeItemTitle: string
     ) {
       dispatch(createElement({ tagName, treeItemTagLabel, treeItemTitle }));
+    },
+    DeleteElement() {
+      dispatch(deleteElement({}));
     },
   };
 
@@ -64,8 +83,8 @@ const Editor = (props: Props) => {
                 <ElementShortcutComponent
                   tagName="HTMLAside"
                   title="Bloque lateral"
-                  treeItemTagLabel="Bloque lateral"
-                  treeItemTitle="aside"
+                  treeItemTagLabel="aside"
+                  treeItemTitle="Bloque lateral"
                   onAddElement={Functions.AddElement}
                 />
                 <ElementShortcutComponent
@@ -139,7 +158,10 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent id="content_blocks" title="Bloques de contenido">
+              <ElementShortcutGroupComponent
+                id="content_blocks"
+                title="Bloques de contenido"
+              >
                 <ElementShortcutComponent
                   tagName="HTMLP"
                   title="Párrafo"
@@ -197,7 +219,7 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent  id="text" title="Texto">
+              <ElementShortcutGroupComponent id="text" title="Texto">
                 <ElementShortcutComponent
                   tagName="HTMLBr"
                   title="Salto de linea"
@@ -215,14 +237,14 @@ const Editor = (props: Props) => {
                 <ElementShortcutComponent
                   tagName="HTMLSpan"
                   title="Texto genérico"
-                  treeItemTagLabel="Span"
+                  treeItemTagLabel="span"
                   treeItemTitle="Texto genérico"
                   onAddElement={Functions.AddElement}
                 />
                 <ElementShortcutComponent
                   tagName="HTMLStrong"
                   title="Texto importante"
-                  treeItemTagLabel="Strong"
+                  treeItemTagLabel="strong"
                   treeItemTitle="Texto importante"
                   onAddElement={Functions.AddElement}
                 />
@@ -297,7 +319,7 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent  id="content" title="Contenido">
+              <ElementShortcutGroupComponent id="content" title="Contenido">
                 <ElementShortcutComponent
                   tagName="HTMLImg"
                   title="Imagen"
@@ -362,7 +384,7 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent  id="lists" title="Listas">
+              <ElementShortcutGroupComponent id="lists" title="Listas">
                 <ElementShortcutComponent
                   tagName="HTMLOl"
                   title="Lista enumerada"
@@ -385,7 +407,7 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent  id="tables" title="Tablas">
+              <ElementShortcutGroupComponent id="tables" title="Tablas">
                 <ElementShortcutComponent
                   tagName="HTMLTable"
                   title="Tabla"
@@ -457,7 +479,7 @@ const Editor = (props: Props) => {
                   onAddElement={Functions.AddElement}
                 />
               </ElementShortcutGroupComponent>
-              <ElementShortcutGroupComponent  id="forms" title="Formularios">
+              <ElementShortcutGroupComponent id="forms" title="Formularios">
                 <ElementShortcutComponent
                   tagName="HTMLForm"
                   title="Formulario"
@@ -539,11 +561,50 @@ const Editor = (props: Props) => {
             </div>
           </div>
           <div className="w-full h-1/2 overflow-hidden border-t border-t-solid border-t-blue-300">
-            <div className="w-full h-full p-3 overflow-auto">
-              <HTMLElementTreeItemComponent
-                elementId="root"
-                elements={elements}
-              />
+            <div className="w-full h-full flex flex-col overflow-hidden">
+              <div className="p-2 flex gap-1 bg-blue-500 text-blue-50">
+                <ToolbarButtonComponent onClick={() => {
+                  dispatch(copyElement({}))
+                }}>
+                  <CopyIcon />
+                </ToolbarButtonComponent>
+                <ToolbarButtonComponent onClick={() => {
+                  dispatch(cutElement({}))
+                }}>
+                  <ScissorsIcon />
+                </ToolbarButtonComponent>
+                <ToolbarButtonComponent onClick={() => {
+                  dispatch(pasteElement({}))
+                }}>
+                  <ClipboardFillIcon />
+                </ToolbarButtonComponent>
+                <span className="h-full border-l border-l-solid border-l-blue-400"></span>
+                <ToolbarButtonComponent onClick={Functions.DeleteElement}>
+                  <TrashIcon />
+                </ToolbarButtonComponent>
+                <span className="h-full border-l border-l-solid border-l-blue-400"></span>
+                <ToolbarButtonComponent>
+                  <CaretLeftFillIcon />
+                </ToolbarButtonComponent>
+                <ToolbarButtonComponent
+                  onClick={() => {
+                    dispatch(moveElement(-1));
+                  }}
+                >
+                  <CaretUpFillIcon />
+                </ToolbarButtonComponent>
+                <ToolbarButtonComponent onClick={() => {
+                    dispatch(moveElement(1));
+                  }}>
+                  <CaretDownFillIcon />
+                </ToolbarButtonComponent>
+              </div>
+              <div className="w-full h-full p-3 overflow-auto">
+                <HTMLElementTreeItemComponent
+                  elementId="root"
+                  elements={elements}
+                />
+              </div>
             </div>
           </div>
         </div>

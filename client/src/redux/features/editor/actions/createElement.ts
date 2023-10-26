@@ -18,11 +18,13 @@ const CreateElement = (
 
   const element: WHTMLElement = {
     id: newElementId,
+    parentId: selectedElement.id,
     tagName,
     children: [],
     treeItemExpanded: false,
     treeItemTagLabel,
     treeItemTitle,
+    cutMode: false
   };
 
   selectedElement.children.push(newElementId);
