@@ -1,6 +1,10 @@
 import React, { PropsWithChildren } from "react";
-type Props = {};
+type Props = {
+  className?: string;
+};
 const HTMLDivComponent = (props: PropsWithChildren<Props>) => {
-return <div>{props.children}</div>;
+  const { className } = props;
+
+  return <div className={className}>{props.children}</div>;
 };
 export default HTMLDivComponent;
