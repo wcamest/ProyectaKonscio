@@ -1,6 +1,9 @@
 "use client";
 
 import View from "@/app/view/[permalink]/View";
+import CSSFixedWidthComponent from "@/components/CSS/CSSFixedWidth/CSSFixedWidthComponent";
+import CSSScreenSelectorComponent from "@/components/CSS/CSSScreenSelector/CSSScreenSelectorComponent";
+import CSSWidthComponent from "@/components/CSS/CSSWidth/CSSWidthComponent";
 import ElementShortcutComponent from "@/components/ElementShortcut/ElementShortcutComponent";
 import ElementShortcutGroupComponent from "@/components/ElementShortcutGroup/ElementShortcutGroupComponent";
 import HTMLElementTreeItemComponent from "@/components/HTMLElementTreeItem/HTMLElementTreeItemComponent";
@@ -563,19 +566,25 @@ const Editor = (props: Props) => {
           <div className="w-full h-1/2 overflow-hidden border-t border-t-solid border-t-blue-300">
             <div className="w-full h-full flex flex-col overflow-hidden">
               <div className="p-2 flex gap-1 bg-blue-500 text-blue-50">
-                <ToolbarButtonComponent onClick={() => {
-                  dispatch(copyElement({}))
-                }}>
+                <ToolbarButtonComponent
+                  onClick={() => {
+                    dispatch(copyElement({}));
+                  }}
+                >
                   <CopyIcon />
                 </ToolbarButtonComponent>
-                <ToolbarButtonComponent onClick={() => {
-                  dispatch(cutElement({}))
-                }}>
+                <ToolbarButtonComponent
+                  onClick={() => {
+                    dispatch(cutElement({}));
+                  }}
+                >
                   <ScissorsIcon />
                 </ToolbarButtonComponent>
-                <ToolbarButtonComponent onClick={() => {
-                  dispatch(pasteElement({}))
-                }}>
+                <ToolbarButtonComponent
+                  onClick={() => {
+                    dispatch(pasteElement({}));
+                  }}
+                >
                   <ClipboardFillIcon />
                 </ToolbarButtonComponent>
                 <span className="h-full border-l border-l-solid border-l-blue-400"></span>
@@ -593,9 +602,11 @@ const Editor = (props: Props) => {
                 >
                   <CaretUpFillIcon />
                 </ToolbarButtonComponent>
-                <ToolbarButtonComponent onClick={() => {
+                <ToolbarButtonComponent
+                  onClick={() => {
                     dispatch(moveElement(1));
-                  }}>
+                  }}
+                >
                   <CaretDownFillIcon />
                 </ToolbarButtonComponent>
               </div>
@@ -615,7 +626,15 @@ const Editor = (props: Props) => {
         </div>
       </div>
       <div>
-        <div className="w-64 h-full border border-solid border-blue-300"></div>
+        <div className="w-64 h-full flex flex-col overflow-hidden border border-solid border-blue-300">
+          <div className="w-full h-1/2 overflow-hidden"></div>
+          <div className="w-full h-1/2 overflow-hidden border-t border-t-solid border-t-blue-300">
+            <div className="w-full h-full p-3 overflow-auto flex flex-col gap-2">
+              <CSSScreenSelectorComponent />
+              <CSSWidthComponent />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

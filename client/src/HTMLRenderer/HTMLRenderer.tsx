@@ -96,6 +96,9 @@ import HTMLSummaryComponent from "@/components/HTMLTags/HTMLSummary/HTMLSummaryC
 import HTMLDialogComponent from "@/components/HTMLTags/HTMLDialog/HTMLDialogComponent";
 import HTMLCanvasComponent from "@/components/HTMLTags/HTMLCanvas/HTMLCanvasComponent";
 import WHTMLElement from "@/types/WHTMLElement";
+import WCSSClasses from "@/types/WCSSClasses";
+import { WCSSWidthType } from "@/types/WCSSWidthProperty";
+import WCSSClassCollection from "@/types/WCSSClassCollection";
 
 const HTMLElements: any = {
   HTMLArticle: HTMLArticleComponent,
@@ -209,15 +212,44 @@ const HTMLRenderer = {
 
     const Component = HTMLElements[element.tagName];
 
+    const screenSizes: string[] = ["base", "sm", "md", "lg", "xl", "xl2"];
+    let classNameList: string[] = [];
+
+    screenSizes.forEach((screen: string) => {
+      const key = screen as keyof WCSSClassCollection;
+      const classNames = getClassNames(screen, element.classes[key]);
+
+      if (classNames) classNameList.push(classNames);
+    });
+
+    const classNames: string | undefined =
+      classNameList.length > 0 ? classNameList.join(" ") : undefined;
+
     if (Component)
       return (
-        <Component key={key}>
+        <Component className={classNames} key={key}>
           {element.children.map((childId: string, childKey: number) => {
             return HTMLRenderer.Render(childId, elements, childKey);
           })}
         </Component>
       );
   },
+};
+
+const getClassNames = (screen: string, classes: WCSSClasses) => {
+  const classNames: string[] = [];
+
+  if (classes.width.type !== WCSSWidthType.none) {
+    const className = `${screen}:${classes.width.className}`.replace(
+      "base:",
+      ""
+    );
+    classNames.push(className);
+  }
+
+  if (!classNames.length) return undefined;
+
+  return classNames.join(" ");
 };
 
 export default HTMLRenderer;

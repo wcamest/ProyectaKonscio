@@ -1,6 +1,7 @@
 import generateId from "@/utils/Utils";
 import { EditorState } from "../editorSlice";
 import WHTMLElement from "@/types/WHTMLElement";
+import CreateCSSClasses from "../utils/createCSSClasses";
 
 const CreateElement = (
   state: EditorState,
@@ -21,10 +22,19 @@ const CreateElement = (
     parentId: selectedElement.id,
     tagName,
     children: [],
+    properties: [],
     treeItemExpanded: false,
     treeItemTagLabel,
     treeItemTitle,
-    cutMode: false
+    cutMode: false,
+    classes: {
+      base: CreateCSSClasses(),
+      sm: CreateCSSClasses(),
+      md: CreateCSSClasses(),
+      lg: CreateCSSClasses(),
+      xl: CreateCSSClasses(),
+      xl2: CreateCSSClasses(),
+    }
   };
 
   selectedElement.children.push(newElementId);
