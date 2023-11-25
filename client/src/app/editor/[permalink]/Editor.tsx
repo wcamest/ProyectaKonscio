@@ -2,6 +2,10 @@
 
 import View from "@/app/view/[permalink]/View";
 import CSSFixedWidthComponent from "@/components/CSS/CSSFixedWidth/CSSFixedWidthComponent";
+import CSSHeightComponent from "@/components/CSS/CSSHeight/CSSHeightComponent";
+import CSSMaxWidthComponent from "@/components/CSS/CSSMaxWidth/CSSMaxWidthComponent";
+import CSSMinHeightComponent from "@/components/CSS/CSSMinHeight/CSSMinHeightComponent";
+import CSSMinWidthComponent from "@/components/CSS/CSSMinWidth/CSSMinWidthComponent";
 import CSSScreenSelectorComponent from "@/components/CSS/CSSScreenSelector/CSSScreenSelectorComponent";
 import CSSWidthComponent from "@/components/CSS/CSSWidth/CSSWidthComponent";
 import ElementShortcutComponent from "@/components/ElementShortcut/ElementShortcutComponent";
@@ -632,6 +636,10 @@ const Editor = (props: Props) => {
             <div className="w-full h-full p-3 overflow-auto flex flex-col gap-2">
               <CSSScreenSelectorComponent />
               <CSSWidthComponent />
+              <CSSHeightComponent />
+              <CSSMinWidthComponent />
+              <CSSMinHeightComponent />
+              <CSSMaxWidthComponent />
             </div>
           </div>
         </div>

@@ -239,12 +239,17 @@ const HTMLRenderer = {
 const getClassNames = (screen: string, classes: WCSSClasses) => {
   const classNames: string[] = [];
 
-  if (classes.width.type !== WCSSWidthType.none) {
-    const className = `${screen}:${classes.width.className}`.replace(
-      "base:",
-      ""
-    );
-    classNames.push(className);
+  for (const propertyName in classes) {
+    const propertyKey = propertyName as keyof WCSSClasses;
+    const property = classes[propertyKey];
+
+    if(property.className){
+      const className = `${screen}:${property.className}`.replace(
+        "base:",
+        ""
+      );
+      classNames.push(className);
+    }
   }
 
   if (!classNames.length) return undefined;
