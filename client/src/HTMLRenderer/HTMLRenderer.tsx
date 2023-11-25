@@ -97,7 +97,6 @@ import HTMLDialogComponent from "@/components/HTMLTags/HTMLDialog/HTMLDialogComp
 import HTMLCanvasComponent from "@/components/HTMLTags/HTMLCanvas/HTMLCanvasComponent";
 import WHTMLElement from "@/types/WHTMLElement";
 import WCSSClasses from "@/types/WCSSClasses";
-import { WCSSWidthType } from "@/types/WCSSWidthProperty";
 import WCSSClassCollection from "@/types/WCSSClassCollection";
 
 const HTMLElements: any = {
