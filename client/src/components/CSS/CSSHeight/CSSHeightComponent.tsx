@@ -3,25 +3,25 @@ import { RootState } from "@/redux/store/store";
 import WHTMLElement from "@/types/WHTMLElement";
 import React, { ChangeEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import CSSFixedWidthComponent from "../CSSFixedWidth/CSSFixedWidthComponent";
-import CSSPercentWidthComponent from "../CSSPercentWidth/CSSPercentWidthComponent";
 import WCSSClassCollection from "@/types/WCSSClassCollection";
 import { WCSSSizeType } from "@/types/WCSSSizeType";
+import CSSPercentHeightComponent from "../CSSPercentHeight/CSSPercentHeightComponent";
+import CSSFixedHeightComponent from "../CSSFixedHeight/CSSFixedHeightComponent";
 
 type Props = {};
 
-const widthResetValues: any = {
+const heightResetValues: any = {
   undefined: undefined,
-  fixed: "css-w-0",
-  auto: "css-w-auto",
-  percent: "css-w-full",
-  min: "css-w-min",
-  max: "css-w-max",
-  screen: "css-w-screen",
-  fit: "css-w-fit",
+  fixed: "css-h-0",
+  auto: "css-h-auto",
+  percent: "css-h-full",
+  min: "css-h-min",
+  max: "css-h-max",
+  screen: "css-h-screen",
+  fit: "css-h-fit",
 };
 
-const CSSWidthComponent = (props: Props) => {
+const CSSHeightComponent = (props: Props) => {
   const { selected, elements, currentScreen } = useSelector(
     (state: RootState) => state.editor
   );
@@ -31,16 +31,16 @@ const CSSWidthComponent = (props: Props) => {
     GetSelectedElement() {
       return elements.find((element: WHTMLElement) => element.id === selected);
     },
-    GetWidthType() {
+    GetHeightType() {
       const selectedElement = Functions.GetSelectedElement();
 
       if (!selectedElement) return WCSSSizeType.undefined;
 
       const _currentScreen = currentScreen as keyof WCSSClassCollection;
 
-      return selectedElement.classes[_currentScreen].width.type;
+      return selectedElement.classes[_currentScreen].height.type;
     },
-    UpdateWidthType(value: string) {
+    UpdateHeightType(value: string) {
       const selectedElement = Functions.GetSelectedElement();
 
       if (!selectedElement) return undefined;
@@ -53,12 +53,12 @@ const CSSWidthComponent = (props: Props) => {
           ...selectedElement.classes,
           [_currentScreen]: {
             ...selectedElement.classes[_currentScreen],
-            width: {
-              ...selectedElement.classes[_currentScreen].width,
+            height: {
+              ...selectedElement.classes[_currentScreen].height,
               type: value as WCSSSizeType,
-              className: widthResetValues[value],
-              percentDivisionsIndex: 5,
-              percentValueIndex: 12,
+              className: heightResetValues[value],
+              percentDivisionsIndex: 4,
+              percentValueIndex: 6,
             },
           },
         },
@@ -69,7 +69,7 @@ const CSSWidthComponent = (props: Props) => {
   };
 
   const Renderer = {
-    FixedWidthController() {
+    FixedHeightController() {
       const selectedElement = Functions.GetSelectedElement();
 
       if (!selectedElement) return undefined;
@@ -77,12 +77,12 @@ const CSSWidthComponent = (props: Props) => {
       const _currentScreen = currentScreen as keyof WCSSClassCollection;
 
       if (
-        selectedElement.classes[_currentScreen].width.type ===
+        selectedElement.classes[_currentScreen].height.type ===
         WCSSSizeType.fixed
       )
-        return <CSSFixedWidthComponent />;
+        return <CSSFixedHeightComponent />;
     },
-    PercentWidthController() {
+    PercentHeightController() {
       const selectedElement = Functions.GetSelectedElement();
 
       if (!selectedElement) return undefined;
@@ -90,39 +90,39 @@ const CSSWidthComponent = (props: Props) => {
       const _currentScreen = currentScreen as keyof WCSSClassCollection;
 
       if (
-        selectedElement.classes[_currentScreen].width.type ===
+        selectedElement.classes[_currentScreen].height.type ===
         WCSSSizeType.percent
       )
-        return <CSSPercentWidthComponent />;
+        return <CSSPercentHeightComponent />;
     },
   };
 
   return (
     <div className="w-full flex flex-col gap-1">
-      <span className="font-bold">Ancho</span>
+      <span className="font-bold">Alto</span>
       <div className="flex gap-1 items-center">
         <span>tipo:</span>
         <select
           className="w-full p-1 border border-solid border-blue-300 rounded-md outline-none"
-          value={Functions.GetWidthType()}
+          value={Functions.GetHeightType()}
           onChange={(e: ChangeEvent<HTMLSelectElement>) => {
-            Functions.UpdateWidthType(e.target.value);
+            Functions.UpdateHeightType(e.target.value);
           }}
         >
           <option value={"undefined"}>{"Indefinido"}</option>
-          <option value={"fixed"}>{"Ancho fijo (px)"}</option>
+          <option value={"fixed"}>{"Alto fijo (px)"}</option>
           <option value={"percent"}>{"Porcentaje"}</option>
-          <option value={"auto"}>{"Ancho automático"}</option>
-          <option value={"min"}>{"Ancho mínimo"}</option>
-          <option value={"max"}>{"Ancho máximo"}</option>
-          <option value={"fit"}>{"Ancho ajustado a contenido"}</option>
-          <option value={"screen"}>{"Ancho ajustado a pantalla"}</option>
+          <option value={"auto"}>{"Alto automático"}</option>
+          <option value={"min"}>{"Alto mínimo"}</option>
+          <option value={"max"}>{"Alto máximo"}</option>
+          <option value={"fit"}>{"Alto ajustado a contenido"}</option>
+          <option value={"screen"}>{"Alto ajustado a pantalla"}</option>
         </select>
       </div>
-      {Renderer.FixedWidthController()}
-      {Renderer.PercentWidthController()}
+      {Renderer.FixedHeightController()}
+      {Renderer.PercentHeightController()}
     </div>
   );
 };
 
-export default CSSWidthComponent;
+export default CSSHeightComponent;

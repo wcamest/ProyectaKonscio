@@ -10,7 +10,6 @@ import MoveElement from "./actions/moveElement";
 import CopyElement from "./actions/copyElement";
 import PasteElement from "./actions/pasteElement";
 import CutElement from "./actions/cutElement";
-import { WCSSWidthType } from "@/types/WCSSWidthProperty";
 import CreateCSSClasses from "./utils/createCSSClasses";
 import SetScreen from "./actions/setScreen";
 

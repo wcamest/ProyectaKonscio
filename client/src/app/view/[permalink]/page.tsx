@@ -2,7 +2,6 @@ import HTMLRenderer from "@/HTMLRenderer/HTMLRenderer";
 import WHTMLElement from "@/types/WHTMLElement";
 import React from "react";
 import View from "./View";
-import { WCSSWidthType } from "@/types/WCSSWidthProperty";
 import CreateCSSClasses from "@/redux/features/editor/utils/createCSSClasses";
 
 type Props = {};
