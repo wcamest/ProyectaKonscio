@@ -12,8 +12,10 @@ const layout = (props: PropsWithChildren<Props>) => {
   return (
     <html lang="en">
       <body>
-        <ReduxProvider>{children}</ReduxProvider>
-        <CSSWrapperComponent />
+        <ReduxProvider>
+          {children}
+          <CSSWrapperComponent />
+        </ReduxProvider>
       </body>
     </html>
   );

@@ -10,6 +10,8 @@ import MoveElement from "./actions/moveElement";
 import CopyElement from "./actions/copyElement";
 import PasteElement from "./actions/pasteElement";
 import CutElement from "./actions/cutElement";
+import CreateCSSClasses from "./utils/createCSSClasses";
+import SetScreen from "./actions/setScreen";
 
 export interface EditorState {
   selected: string;
@@ -17,6 +19,16 @@ export interface EditorState {
   elementToCopy: string | undefined;
   elementToCut: string | undefined;
   expandedElementShortcutGroup: string | undefined;
+  currentScreen: Screen;
+}
+
+export enum Screen {
+  base = "base",
+  sm = "sm",
+  md = "md",
+  lg = "lg",
+  xl = "xl",
+  xl2 = "2xl",
 }
 
 const initialState: EditorState = {
@@ -32,10 +44,20 @@ const initialState: EditorState = {
       treeItemExpanded: true,
       treeItemTagLabel: "div",
       treeItemTitle: "Contenedor principal",
-      cutMode: false
+      cutMode: false,
+      properties: [],
+      classes: {
+        base: CreateCSSClasses(),
+        sm: CreateCSSClasses(),
+        md: CreateCSSClasses(),
+        lg: CreateCSSClasses(),
+        xl: CreateCSSClasses(),
+        xl2: CreateCSSClasses(),
+      },
     },
   ],
   expandedElementShortcutGroup: "sections",
+  currentScreen: Screen.base,
 };
 
 export const editorSlice = createSlice({
@@ -51,6 +73,7 @@ export const editorSlice = createSlice({
     cutElement: CutElement,
     pasteElement: PasteElement,
     setExpandedElementShortcutGroup: SetExpandedElementShortcutGroup,
+    setScreen: SetScreen,
   },
 });
 
@@ -65,6 +88,7 @@ export const {
   cutElement,
   pasteElement,
   setExpandedElementShortcutGroup,
+  setScreen,
 } = editorSlice.actions;
 
 export default editorSlice.reducer;
