@@ -1,7 +1,7 @@
 import PageDocument from "@/types/page-document/PageDocument";
-import PageDocumentSection from "@/types/page-document/PageDocumentSection";
+import PageDocumentRow from "@/types/page-document/PageDocumentRow";
 import React from "react";
-import VisualEditorPageDocumentSectionComponent from "../visual-editor-page-document-section/VisualEditorPageDocumentSectionComponent";
+import VisualEditorPageDocumentRowComponent from "../visual-editor-page-document-row/VisualEditorPageDocumentRowComponent";
 
 type Props = {
   data: PageDocument;
@@ -11,12 +11,12 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
   const { data } = props;
 
   const Renderer = {
-    Sections() {
-      return data.sections.map((section: PageDocumentSection, key: number) => {
+    Rows() {
+      return data.rows.map((Row: PageDocumentRow, key: number) => {
         return (
-          <VisualEditorPageDocumentSectionComponent
+          <VisualEditorPageDocumentRowComponent
             key={key}
-            data={section}
+            data={Row}
             document={data}
           />
         );
@@ -27,7 +27,7 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
   return (
     <div className="relative w-full h-fit p-10">
       <div className="border border-dashed border-blue-200 flex flex-col">
-        {Renderer.Sections()}
+        {Renderer.Rows()}
       </div>
     </div>
   );

@@ -11,11 +11,11 @@ const pageDocumentMockData: PageDocument = {
     description:
       "estos datos están simulados, directamente en el código, no están en una base de datos todavía",
   },
-  sections: [
+  rows: [
     {
       id: "O25CDTGYSAIHRZR",
       columns: ["OFIUSK75A1LT434"],
-      type: "PageDocumentSection",
+      type: "PageDocumentRow",
     },
   ],
   columns: [
