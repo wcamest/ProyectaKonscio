@@ -1,6 +1,6 @@
 import PageDocument from "@/types/page-document/PageDocument";
 import PageDocumentColumn from "@/types/page-document/PageDocumentColumn";
-import PageDocumentSection from "@/types/page-document/PageDocumentSection";
+import PageDocumentRow from "@/types/page-document/PageDocumentRow";
 import React, { useState } from "react";
 import VisualEditorPageDocumentColumnComponent from "../visual-editor-page-document-column/VisualEditorPageDocumentColumnComponent";
 import SideButtonComponent from "../side-button/SideButtonComponent";
@@ -9,20 +9,20 @@ import CaretDownFillIcon from "@/components/Icons/CaretDownFillIcon";
 import CaretUpFillIcon from "@/components/Icons/CaretUpFillIcon";
 import { useDispatch } from "react-redux";
 import {
-  deleteSection,
-  insertSectionAfter,
-  insertSectionBefore,
-  moveSectionDown,
-  moveSectionUp,
+  deleteRow,
+  insertRowAfter,
+  insertRowBefore,
+  moveRowDown,
+  moveRowUp,
 } from "@/redux/features/visual-editor/visualEditorSlice";
 import TrashIcon from "@/components/Icons/TrashIcon";
 
 type Props = {
-  data: PageDocumentSection;
+  data: PageDocumentRow;
   document: PageDocument;
 };
 
-const VisualEditorPageDocumentSectionComponent = (props: Props) => {
+const VisualEditorPageDocumentRowComponent = (props: Props) => {
   const { data, document } = props;
   const [state, setState] = useState({
     mouseOver: false,
@@ -36,23 +36,23 @@ const VisualEditorPageDocumentSectionComponent = (props: Props) => {
         mouseOver: value,
       });
     },
-    InsertSectionBefore() {
-      dispatch(insertSectionBefore(data.id));
+    InsertRowBefore() {
+      dispatch(insertRowBefore(data.id));
     },
-    InsertSectionAfter() {
-      dispatch(insertSectionAfter(data.id));
+    InsertRowAfter() {
+      dispatch(insertRowAfter(data.id));
     },
-    MoveSectionUp() {
-      dispatch(moveSectionUp(data.id));
+    MoveRowUp() {
+      dispatch(moveRowUp(data.id));
     },
-    MoveSectionDown() {
-      dispatch(moveSectionDown(data.id));
+    MoveRowDown() {
+      dispatch(moveRowDown(data.id));
     },
-    DeleteSection() {
-      dispatch(deleteSection(data.id));
+    DeleteRow() {
+      dispatch(deleteRow(data.id));
     },
-    ItsTheOnlySection() {
-      return document.sections.length === 1;
+    ItsTheOnlyRow() {
+      return document.rows.length === 1;
     },
   };
 
@@ -70,6 +70,7 @@ const VisualEditorPageDocumentSectionComponent = (props: Props) => {
           <VisualEditorPageDocumentColumnComponent
             key={key}
             data={columnData}
+            row={data}
             document={document}
           />
         );
@@ -79,7 +80,7 @@ const VisualEditorPageDocumentSectionComponent = (props: Props) => {
 
   return (
     <div
-      id={`section-${data.id}`}
+      id={`row-${data.id}`}
       className={`${
         state.mouseOver ? `outline outline-blue-400 ` : ""
       }relative w-full flex`}
@@ -96,22 +97,22 @@ const VisualEditorPageDocumentSectionComponent = (props: Props) => {
           <div className="absolute flex w-fit h-fit bottom-0 z-50">
             <SideButtonComponent
               onClick={() => {
-                Functions.InsertSectionBefore();
+                Functions.InsertRowBefore();
               }}
             >
               <PlusCircleFillIcon />
             </SideButtonComponent>
             <SideButtonComponent
               onClick={() => {
-                Functions.MoveSectionUp();
+                Functions.MoveRowUp();
               }}
             >
               <CaretUpFillIcon />
             </SideButtonComponent>
-            {!Functions.ItsTheOnlySection() && (
+            {!Functions.ItsTheOnlyRow() && (
               <SideButtonComponent
                 onClick={() => {
-                  Functions.DeleteSection();
+                  Functions.DeleteRow();
                 }}
               >
                 <TrashIcon />
@@ -125,14 +126,14 @@ const VisualEditorPageDocumentSectionComponent = (props: Props) => {
           <div className="absolute flex w-fit h-fit top-0 z-50">
             <SideButtonComponent
               onClick={() => {
-                Functions.InsertSectionAfter();
+                Functions.InsertRowAfter();
               }}
             >
               <PlusCircleFillIcon />
             </SideButtonComponent>
             <SideButtonComponent
               onClick={() => {
-                Functions.MoveSectionDown();
+                Functions.MoveRowDown();
               }}
             >
               <CaretDownFillIcon />
@@ -144,4 +145,4 @@ const VisualEditorPageDocumentSectionComponent = (props: Props) => {
   );
 };
 
-export default VisualEditorPageDocumentSectionComponent;
+export default VisualEditorPageDocumentRowComponent;

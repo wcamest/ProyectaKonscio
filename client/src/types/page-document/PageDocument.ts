@@ -1,9 +1,9 @@
 import PageDocumentColumn from "./PageDocumentColumn";
 import PageDocumentConfiguration from "./PageDocumentConfiguration";
-import PageDocumentSection from "./PageDocumentSection";
+import PageDocumentRow from "./PageDocumentRow";
 
 export default interface PageDocument {
     configuration: PageDocumentConfiguration,
-    sections: PageDocumentSection[],
+    rows: PageDocumentRow[],
     columns: PageDocumentColumn[],
 }

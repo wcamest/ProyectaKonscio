@@ -1,22 +1,22 @@
 import generateId from "@/utils/Utils";
 import { VisualEditorState } from "../visualEditorSlice";
-import PageDocumentSection from "@/types/page-document/PageDocumentSection";
+import PageDocumentRow from "@/types/page-document/PageDocumentRow";
 import PageDocumentColumn from "@/types/page-document/PageDocumentColumn";
 
-export default function InsertSectionBefore(
+export default function InsertRowBefore(
   state: VisualEditorState,
   action: { payload: any; type: string }
 ) {
   if (!state.currentDocument) return state;
 
   const beforeId: string = action.payload;
-  const newSectionId: string = generateId();
+  const newRowId: string = generateId();
   const newEmptyColumnId: string = generateId();
-  const updatedSectionList: PageDocumentSection[] = [];
+  const updatedRowList: PageDocumentRow[] = [];
 
-  const newSection: PageDocumentSection = {
-    id: newSectionId,
-    type: "PageDocumentSection",
+  const newRow: PageDocumentRow = {
+    id: newRowId,
+    type: "PageDocumentRow",
     columns: [newEmptyColumnId],
   };
 
@@ -25,17 +25,17 @@ export default function InsertSectionBefore(
     type: "PageDocumentColumn",
   };
 
-  for (let it = 0; it < state.currentDocument.sections.length; it++) {
-    const section = state.currentDocument.sections[it];
+  for (let it = 0; it < state.currentDocument.rows.length; it++) {
+    const row = state.currentDocument.rows[it];
 
-    if (section.id === beforeId) {
-      updatedSectionList.push(newSection);
+    if (row.id === beforeId) {
+      updatedRowList.push(newRow);
     }
 
-    updatedSectionList.push(section);
+    updatedRowList.push(row);
   }
 
-  state.currentDocument.sections = updatedSectionList;
+  state.currentDocument.rows = updatedRowList;
   state.currentDocument.columns = [
     ...state.currentDocument.columns,
     newEmptyColumn,

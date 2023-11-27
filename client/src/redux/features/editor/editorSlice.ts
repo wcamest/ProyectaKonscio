@@ -56,7 +56,7 @@ const initialState: EditorState = {
       },
     },
   ],
-  expandedElementShortcutGroup: "sections",
+  expandedElementShortcutGroup: "rows",
   currentScreen: Screen.base,
 };
 
