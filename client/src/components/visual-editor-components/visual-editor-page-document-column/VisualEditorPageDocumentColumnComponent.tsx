@@ -14,11 +14,13 @@ import {
   insertColumnBefore,
   moveColumnLeft,
   moveColumnRight,
+  setSelectedToAddNode,
 } from "@/redux/features/visual-editor/visualEditorSlice";
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import ModalComponent from "@/components/Modal/ModalComponent";
 import ColumnButtonComponent from "../column-button/ColumnButtonComponent";
 import TrashIcon from "@/components/Icons/TrashIcon";
+import { showModal } from "@/redux/features/modals/modalsSlice";
 
 type Props = {
   data: PageDocumentColumn;
@@ -71,9 +73,11 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
         });
       }
 
-      console.log(nodes);
-
       return nodes.length === 1;
+    },
+    BeginAddNode() {
+      dispatch(setSelectedToAddNode(data.id));
+      dispatch(showModal("add-element-modal"));
     },
   };
 
@@ -105,16 +109,22 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
       {Renderer.EmptyColumnDefaultContent()}
       {state.mouseOver && (
         <div className="absolute w-full h-full bg-black bg-opacity-30 flex justify-center items-center flex-wrap gap-2">
-          <ColumnButtonComponent>
-            <PlusCircleFillIcon />
-          </ColumnButtonComponent>
-          {!Functions.ItsTheOnlyColumn() && <ColumnButtonComponent
+          <ColumnButtonComponent
             onClick={() => {
-              Functions.DeleteNode();
+              Functions.BeginAddNode();
             }}
           >
-            <TrashIcon />
-          </ColumnButtonComponent>}
+            <PlusCircleFillIcon />
+          </ColumnButtonComponent>
+          {!Functions.ItsTheOnlyColumn() && (
+            <ColumnButtonComponent
+              onClick={() => {
+                Functions.DeleteNode();
+              }}
+            >
+              <TrashIcon />
+            </ColumnButtonComponent>
+          )}
         </div>
       )}
       {state.mouseOver && (
