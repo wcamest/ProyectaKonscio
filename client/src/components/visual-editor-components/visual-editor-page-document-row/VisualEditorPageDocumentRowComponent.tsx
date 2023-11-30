@@ -9,13 +9,14 @@ import CaretDownFillIcon from "@/components/Icons/CaretDownFillIcon";
 import CaretUpFillIcon from "@/components/Icons/CaretUpFillIcon";
 import { useDispatch } from "react-redux";
 import {
-  deleteRow,
+  deleteNode,
   insertRowAfter,
   insertRowBefore,
   moveRowDown,
   moveRowUp,
 } from "@/redux/features/visual-editor/visualEditorSlice";
 import TrashIcon from "@/components/Icons/TrashIcon";
+import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 
 type Props = {
   data: PageDocumentRow;
@@ -48,21 +49,35 @@ const VisualEditorPageDocumentRowComponent = (props: Props) => {
     MoveRowDown() {
       dispatch(moveRowDown(data.id));
     },
-    DeleteRow() {
-      dispatch(deleteRow(data.id));
+    DeleteNode() {
+      dispatch(deleteNode(data.id));
     },
     ItsTheOnlyRow() {
-      return document.rows.length === 1;
+      let nodes: PageDocumentNode[] = [];
+      const parentNode: PageDocumentNode | undefined = document.nodes.find(
+        (node: PageDocumentNode) => node.id === data.parent
+      );
+
+      if (parentNode) {
+        nodes = document.nodes.filter((node: PageDocumentNode) => {
+          return parentNode.nodes.includes(node.id);
+        });
+      } else {
+        nodes = document.nodes.filter((node: PageDocumentNode) => {
+          return node.type === "PageDocumentRow";
+        });
+      }
+
+      return nodes.length === 1;
     },
   };
 
   const Renderer = {
     Columns() {
-      return data.columns.map((columnId: string, key: number) => {
-        const columnData: PageDocumentColumn | undefined =
-          document.columns.find(
-            (column: PageDocumentColumn) => column.id === columnId
-          );
+      return data.nodes.map((columnId: string, key: number) => {
+        const columnData: PageDocumentColumn | undefined = document.nodes.find(
+          (column: PageDocumentColumn) => column.id === columnId
+        );
 
         if (!columnData) return undefined;
 
@@ -112,7 +127,7 @@ const VisualEditorPageDocumentRowComponent = (props: Props) => {
             {!Functions.ItsTheOnlyRow() && (
               <SideButtonComponent
                 onClick={() => {
-                  Functions.DeleteRow();
+                  Functions.DeleteNode();
                 }}
               >
                 <TrashIcon />

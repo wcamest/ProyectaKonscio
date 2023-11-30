@@ -15,7 +15,7 @@ export default function InsertColumnAfter(
 
   const updatedColumnList: string[] = [];
 
-  const row: PageDocumentRow | undefined = state.currentDocument.rows.find(
+  const row: PageDocumentRow | undefined = state.currentDocument.nodes.find(
     (row: PageDocumentRow) => row.id === rowId
   );
 
@@ -24,10 +24,12 @@ export default function InsertColumnAfter(
   const newEmptyColumn: PageDocumentColumn = {
     id: newEmptyColumnId,
     type: "PageDocumentColumn",
+    nodes: [],
+    parent: rowId
   };
 
-  for (let it = 0; it < row.columns.length; it++) {
-    const columnId = row.columns[it];
+  for (let it = 0; it < row.nodes.length; it++) {
+    const columnId = row.nodes[it];
 
     updatedColumnList.push(columnId);
 
@@ -36,19 +38,19 @@ export default function InsertColumnAfter(
     }
   }
 
-  state.currentDocument.rows = state.currentDocument.rows.map(
+  state.currentDocument.nodes = state.currentDocument.nodes.map(
     (_row: PageDocumentRow) => {
       if (_row.id === rowId) {
         return {
           ..._row,
-          columns: updatedColumnList,
+          nodes: updatedColumnList,
         };
       }
       return _row;
     }
   );
-  state.currentDocument.columns = [
-    ...state.currentDocument.columns,
+  state.currentDocument.nodes = [
+    ...state.currentDocument.nodes,
     newEmptyColumn,
   ];
 }

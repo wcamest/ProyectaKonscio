@@ -10,26 +10,26 @@ export default function MoveColumnLeft(
   const rowId: string = action.payload.rowId;
   const columnToMove: string = action.payload.columnId;
 
-  const row: PageDocumentRow | undefined = state.currentDocument.rows.find(
+  const row: PageDocumentRow | undefined = state.currentDocument.nodes.find(
     (row: PageDocumentRow) => row.id === rowId
   );
 
   if (!row) return state;
 
-  const columnIndex = row.columns.indexOf(columnToMove);
+  const columnIndex = row.nodes.indexOf(columnToMove);
 
   if (columnIndex === 0) return state;
 
-  const updatedColumnList: string[] = [...row.columns];
+  const updatedColumnList: string[] = [...row.nodes];
   updatedColumnList.splice(columnIndex, 1)[0];
   updatedColumnList.splice(columnIndex - 1, 0, columnToMove);
 
-  state.currentDocument.rows = state.currentDocument.rows.map(
+  state.currentDocument.nodes = state.currentDocument.nodes.map(
     (_row: PageDocumentRow) => {
       if (_row.id === rowId) {
         return {
           ..._row,
-          columns: updatedColumnList,
+          nodes: updatedColumnList,
         };
       }
       return _row;

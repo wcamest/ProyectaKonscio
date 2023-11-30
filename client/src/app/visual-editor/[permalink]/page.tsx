@@ -11,17 +11,17 @@ const pageDocumentMockData: PageDocument = {
     description:
       "estos datos están simulados, directamente en el código, no están en una base de datos todavía",
   },
-  rows: [
+  nodes: [
     {
       id: "O25CDTGYSAIHRZR",
-      columns: ["OFIUSK75A1LT434"],
+      nodes: ["OFIUSK75A1LT434"],
       type: "PageDocumentRow",
     },
-  ],
-  columns: [
     {
       id: "OFIUSK75A1LT434",
+      nodes: [],
       type: "PageDocumentColumn",
+      parent: "O25CDTGYSAIHRZR"
     },
   ],
 };
