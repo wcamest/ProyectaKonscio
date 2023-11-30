@@ -21,11 +21,16 @@ import ModalComponent from "@/components/Modal/ModalComponent";
 import ColumnButtonComponent from "../column-button/ColumnButtonComponent";
 import TrashIcon from "@/components/Icons/TrashIcon";
 import { showModal } from "@/redux/features/modals/modalsSlice";
+import RichTextElementComponent from "../rich-text-element/RichTextElementComponent";
 
 type Props = {
   data: PageDocumentColumn;
   row: PageDocumentRow;
   document: PageDocument;
+};
+
+const components: any = {
+  PageDocumentRichTextElement: RichTextElementComponent,
 };
 
 const VisualEditorPageDocumentColumnComponent = (props: Props) => {
@@ -91,6 +96,24 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
         </div>
       );
     },
+    Content() {
+      if (!data.nodes.length) return undefined;
+
+      return data.nodes.map((nodeId: string, key: number) => {
+        const node = document.nodes.find(
+          (node: PageDocumentNode) => node.id === nodeId
+        );
+
+        if (!node) return undefined;
+
+        if (components[node.type]) {
+          const Component = components[node.type];
+          return <Component data={node} document={document} key={key} />;
+        }
+
+        return undefined;
+      });
+    },
   };
 
   return (
@@ -107,6 +130,7 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
       }}
     >
       {Renderer.EmptyColumnDefaultContent()}
+      {Renderer.Content()}
       {state.mouseOver && (
         <div className="absolute w-full h-full bg-black bg-opacity-30 flex justify-center items-center flex-wrap gap-2">
           <ColumnButtonComponent

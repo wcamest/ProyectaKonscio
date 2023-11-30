@@ -11,10 +11,14 @@ import InsertColumnAfter from "./actions/insertColumnAfter";
 import MoveColumnLeft from "./actions/moveColumnLeft";
 import MoveColumnRight from "./actions/moveColumnRight";
 import SetSelectedToAddNode from "./actions/setSelectedToAddNode";
+import AddNode from "./actions/addNode";
+import SetCurrentEditNode from "./actions/setCurrentEditNode";
+import UpdateNode from "./actions/updateNode";
 
 export interface VisualEditorState {
   currentDocument?: PageDocument;
-  selectedToAddNode?: string
+  selectedToAddNode?: string;
+  currentEditNode?: string;
 }
 
 const initialState: VisualEditorState = {};
@@ -33,7 +37,10 @@ export const visualEditorSlice = createSlice({
     moveColumnLeft: MoveColumnLeft,
     moveColumnRight: MoveColumnRight,
     deleteNode: DeleteNode,
-    setSelectedToAddNode: SetSelectedToAddNode
+    setSelectedToAddNode: SetSelectedToAddNode,
+    addNode: AddNode,
+    setCurrentEditNode: SetCurrentEditNode,
+    updateNode: UpdateNode
   },
 });
 
@@ -49,7 +56,10 @@ export const {
   moveColumnLeft,
   moveColumnRight,
   deleteNode,
-  setSelectedToAddNode
+  setSelectedToAddNode,
+  addNode,
+  setCurrentEditNode,
+  updateNode
 } = visualEditorSlice.actions;
 
 export default visualEditorSlice.reducer;

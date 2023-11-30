@@ -1,0 +1,14 @@
+.ql-container{
+    overflow: hidden !important;
+}
+
+.ql-editor{
+    overflow: auto !important;
+}
+
+.ql-tooltip{
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    margin-top: 0px !important;
+}

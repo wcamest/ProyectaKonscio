@@ -9,7 +9,9 @@ import ModalComponent from "@/components/Modal/ModalComponent";
 import ElementSelectorSectionComponent from "../element-selector-section/ElementSelectorSectionComponent";
 import ElementSelectorComponent from "../element-selector/ElementSelectorComponent";
 import { useDispatch } from "react-redux";
-import { setSelectedToAddNode } from "@/redux/features/visual-editor/visualEditorSlice";
+import { setCurrentEditNode, setSelectedToAddNode } from "@/redux/features/visual-editor/visualEditorSlice";
+import RichTextEditorComponent from "@/components/RichTextEditor/RichTextEditorComponent";
+import RichTextElementEditorComponent from "../rich-text-element-editor/RichTextElementEditorComponent";
 
 type Props = {
   data: PageDocument;
@@ -51,6 +53,17 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
         }}
       >
         <ElementSelectorComponent />
+      </ModalComponent>
+      <ModalComponent
+        id="rich-text-element-editor-modal"
+        buttons={[]}
+        title="Texto enriquecido"
+        onHideModal={() => {
+          dispatch(setSelectedToAddNode(undefined));
+          dispatch(setCurrentEditNode(undefined));
+        }}
+      >
+        <RichTextElementEditorComponent />
       </ModalComponent>
     </div>
   );
