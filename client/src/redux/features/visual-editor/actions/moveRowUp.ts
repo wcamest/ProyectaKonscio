@@ -8,17 +8,17 @@ export default function MoveRowUp(
   if (!state.currentDocument) return state;
 
   const rowIdToMove: string = action.payload;
-  const rowIndex = state.currentDocument.rows.findIndex(
+  const rowIndex = state.currentDocument.nodes.findIndex(
     (row: PageDocumentRow) => row.id === rowIdToMove
   );
 
   if (rowIndex === 0) return state;
 
   const updatedRowList: PageDocumentRow[] = [
-    ...state.currentDocument.rows,
+    ...state.currentDocument.nodes,
   ];
   const row = updatedRowList.splice(rowIndex, 1)[0];
   updatedRowList.splice(rowIndex - 1, 0, row);
 
-  state.currentDocument.rows = updatedRowList;
+  state.currentDocument.nodes = updatedRowList;
 }

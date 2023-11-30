@@ -9,12 +9,16 @@ import CaretUpFillIcon from "@/components/Icons/CaretUpFillIcon";
 import CaretLeftFillIcon from "@/components/Icons/CaretLeftFillIcon";
 import CaretRightFillIcon from "@/components/Icons/CaretRightFillIcon";
 import {
-  deleteColumn,
+  deleteNode,
   insertColumnAfter,
   insertColumnBefore,
   moveColumnLeft,
   moveColumnRight,
 } from "@/redux/features/visual-editor/visualEditorSlice";
+import PageDocumentNode from "@/types/page-document/PageDocumentNode";
+import ModalComponent from "@/components/Modal/ModalComponent";
+import ColumnButtonComponent from "../column-button/ColumnButtonComponent";
+import TrashIcon from "@/components/Icons/TrashIcon";
 
 type Props = {
   data: PageDocumentColumn;
@@ -48,17 +52,34 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
     MoveColumnRight() {
       dispatch(moveColumnRight({ rowId: row.id, columnId: data.id }));
     },
-    DeleteColumn() {
-      dispatch(deleteColumn({ rowId: row.id, columnId: data.id }));
+    DeleteNode() {
+      dispatch(deleteNode(data.id));
     },
     ItsTheOnlyColumn() {
-      return row.columns.length === 1;
+      let nodes: PageDocumentNode[] = [];
+      const parentNode: PageDocumentNode | undefined = document.nodes.find(
+        (node: PageDocumentNode) => node.id === data.parent
+      );
+
+      if (parentNode) {
+        nodes = document.nodes.filter((node: PageDocumentNode) => {
+          return parentNode.nodes.includes(node.id);
+        });
+      } else {
+        nodes = document.nodes.filter((node: PageDocumentNode) => {
+          return node.type === "PageDocumentRow";
+        });
+      }
+
+      console.log(nodes);
+
+      return nodes.length === 1;
     },
   };
 
   const Renderer = {
     EmptyColumnDefaultContent() {
-      if (data.node) return undefined;
+      if (data.nodes.length) return undefined;
 
       return (
         <div className="relative w-full h-28 flex justify-center items-center">
@@ -82,6 +103,20 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
       }}
     >
       {Renderer.EmptyColumnDefaultContent()}
+      {state.mouseOver && (
+        <div className="absolute w-full h-full bg-black bg-opacity-30 flex justify-center items-center flex-wrap gap-2">
+          <ColumnButtonComponent>
+            <PlusCircleFillIcon />
+          </ColumnButtonComponent>
+          {!Functions.ItsTheOnlyColumn() && <ColumnButtonComponent
+            onClick={() => {
+              Functions.DeleteNode();
+            }}
+          >
+            <TrashIcon />
+          </ColumnButtonComponent>}
+        </div>
+      )}
       {state.mouseOver && (
         <div className="absolute w-0 h-full left-0 top-0 flex items-center">
           <div className="absolute flex flex-col w-fit h-fit right-0 z-50">

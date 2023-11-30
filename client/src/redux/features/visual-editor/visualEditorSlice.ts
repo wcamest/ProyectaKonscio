@@ -5,12 +5,11 @@ import InsertRowBefore from "./actions/insertRowBefore";
 import InsertRowAfter from "./actions/insertRowAfter";
 import MoveRowUp from "./actions/moveRowUp";
 import MoveRowDown from "./actions/moveRowDown";
-import DeleteRow from "./actions/deleteRow";
+import DeleteNode from "./actions/deleteNode";
 import InsertColumnBefore from "./actions/insertColumnBefore";
 import InsertColumnAfter from "./actions/insertColumnAfter";
 import MoveColumnLeft from "./actions/moveColumnLeft";
 import MoveColumnRight from "./actions/moveColumnRight";
-import DeleteColumn from "./actions/deleteColumn";
 
 export interface VisualEditorState {
   currentDocument?: PageDocument;
@@ -27,12 +26,11 @@ export const visualEditorSlice = createSlice({
     insertRowAfter: InsertRowAfter,
     moveRowUp: MoveRowUp,
     moveRowDown: MoveRowDown,
-    deleteRow: DeleteRow,
     insertColumnBefore: InsertColumnBefore,
     insertColumnAfter: InsertColumnAfter,
     moveColumnLeft: MoveColumnLeft,
     moveColumnRight: MoveColumnRight,
-    deleteColumn: DeleteColumn
+    deleteNode: DeleteNode
   },
 });
 
@@ -43,12 +41,11 @@ export const {
   insertRowAfter,
   moveRowUp,
   moveRowDown,
-  deleteRow,
   insertColumnBefore,
   insertColumnAfter,
   moveColumnLeft,
   moveColumnRight,
-  deleteColumn
+  deleteNode
 } = visualEditorSlice.actions;
 
 export default visualEditorSlice.reducer;

@@ -17,16 +17,17 @@ export default function InsertRowBefore(
   const newRow: PageDocumentRow = {
     id: newRowId,
     type: "PageDocumentRow",
-    columns: [newEmptyColumnId],
+    nodes: [newEmptyColumnId],
   };
 
   const newEmptyColumn: PageDocumentColumn = {
     id: newEmptyColumnId,
     type: "PageDocumentColumn",
+    nodes: []
   };
 
-  for (let it = 0; it < state.currentDocument.rows.length; it++) {
-    const row = state.currentDocument.rows[it];
+  for (let it = 0; it < state.currentDocument.nodes.length; it++) {
+    const row = state.currentDocument.nodes[it];
 
     if (row.id === beforeId) {
       updatedRowList.push(newRow);
@@ -35,9 +36,9 @@ export default function InsertRowBefore(
     updatedRowList.push(row);
   }
 
-  state.currentDocument.rows = updatedRowList;
-  state.currentDocument.columns = [
-    ...state.currentDocument.columns,
+  state.currentDocument.nodes = updatedRowList;
+  state.currentDocument.nodes = [
+    ...state.currentDocument.nodes,
     newEmptyColumn,
   ];
 }
