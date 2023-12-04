@@ -5,5 +5,6 @@ import PageDocumentRow from "./PageDocumentRow";
 
 export default interface PageDocument {
     configuration: PageDocumentConfiguration,
+    rows: string[],
     nodes: PageDocumentNode[],
 }

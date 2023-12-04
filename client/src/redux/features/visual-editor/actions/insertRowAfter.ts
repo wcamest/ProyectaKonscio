@@ -2,6 +2,8 @@ import generateId from "@/utils/Utils";
 import { VisualEditorState } from "../visualEditorSlice";
 import PageDocumentRow from "@/types/page-document/PageDocumentRow";
 import PageDocumentColumn from "@/types/page-document/PageDocumentColumn";
+import Styles from "@/components/visual-editor-components/styles/styles";
+import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 
 export default function InsertRowAfter(
   state: VisualEditorState,
@@ -12,34 +14,61 @@ export default function InsertRowAfter(
   const afterId: string = action.payload;
   const newRowId: string = generateId();
   const newEmptyColumnId: string = generateId();
-  const updatedRowList: PageDocumentRow[] = [];
 
   const newRow: PageDocumentRow = {
     id: newRowId,
     type: "PageDocumentRow",
     nodes: [newEmptyColumnId],
+    parent: state.currentSectionLevel,
+    styles: Styles.CreateClassListCollection(),
   };
 
   const newEmptyColumn: PageDocumentColumn = {
     id: newEmptyColumnId,
     type: "PageDocumentColumn",
     nodes: [],
-    parent: newRowId
+    parent: newRowId,
+    styles: Styles.CreateClassListCollection(),
   };
 
-  for (let it = 0; it < state.currentDocument.nodes.length; it++) {
-    const row = state.currentDocument.nodes[it];
+  const currentSectionLevelElement = state.currentDocument.nodes.find(
+    (node: PageDocumentNode) => node.id === state.currentSectionLevel
+  );
 
-    updatedRowList.push(row);
+  const updateNodeIdList: string[] = [];
+  const previousNodeIdList = currentSectionLevelElement
+    ? currentSectionLevelElement.nodes
+    : state.currentDocument.rows;
 
-    if (row.id === afterId) {
-      updatedRowList.push(newRow);
+  for (let it = 0; it < previousNodeIdList.length; it++) {
+    const rowId = previousNodeIdList[it];
+
+    updateNodeIdList.push(rowId);
+
+    if (rowId === afterId) {
+      updateNodeIdList.push(newRow.id);
     }
   }
 
-  state.currentDocument.nodes = updatedRowList;
   state.currentDocument.nodes = [
     ...state.currentDocument.nodes,
+    newRow,
     newEmptyColumn,
   ];
+
+  if (!currentSectionLevelElement) {
+    state.currentDocument.rows = updateNodeIdList;
+  } else {
+    state.currentDocument.nodes = state.currentDocument.nodes.map(
+      (node: PageDocumentNode) => {
+        if (node.id === currentSectionLevelElement.id)
+          return {
+            ...node,
+            nodes: updateNodeIdList,
+          };
+
+        return node;
+      }
+    );
+  }
 }

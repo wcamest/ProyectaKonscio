@@ -14,14 +14,29 @@ import SetSelectedToAddNode from "./actions/setSelectedToAddNode";
 import AddNode from "./actions/addNode";
 import SetCurrentEditNode from "./actions/setCurrentEditNode";
 import UpdateNode from "./actions/updateNode";
+import SetScreen from "./actions/setScreen";
+import SetCurrentSectionLevel from "./actions/setCurrentSectionLevel";
+
+export enum Screen {
+  base = "base",
+  sm = "sm",
+  md = "md",
+  lg = "lg",
+  xl = "xl",
+  xl2 = "2xl",
+}
 
 export interface VisualEditorState {
   currentDocument?: PageDocument;
   selectedToAddNode?: string;
   currentEditNode?: string;
+  currentSectionLevel?: string;
+  currentScreen: Screen;
 }
 
-const initialState: VisualEditorState = {};
+const initialState: VisualEditorState = {
+  currentScreen: Screen.base,
+};
 
 export const visualEditorSlice = createSlice({
   name: "visualEditor",
@@ -40,7 +55,9 @@ export const visualEditorSlice = createSlice({
     setSelectedToAddNode: SetSelectedToAddNode,
     addNode: AddNode,
     setCurrentEditNode: SetCurrentEditNode,
-    updateNode: UpdateNode
+    updateNode: UpdateNode,
+    setScreen: SetScreen,
+    setCurrentSectionLevel: SetCurrentSectionLevel
   },
 });
 
@@ -59,7 +76,9 @@ export const {
   setSelectedToAddNode,
   addNode,
   setCurrentEditNode,
-  updateNode
+  updateNode,
+  setScreen,
+  setCurrentSectionLevel
 } = visualEditorSlice.actions;
 
 export default visualEditorSlice.reducer;

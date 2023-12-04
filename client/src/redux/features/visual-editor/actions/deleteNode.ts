@@ -30,6 +30,12 @@ export default function DeleteNode(
     }
   );
 
+  state.currentDocument.rows = state.currentDocument.rows.filter(
+    (rowId: string) => {
+      return !_descendantsIds.includes(rowId);
+    }
+  );
+
   if (!parentOfNodeToDelete) return state;
 
   const updatedParentOfNodeToDelete: PageDocumentNode = {
