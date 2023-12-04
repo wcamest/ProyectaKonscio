@@ -2,6 +2,7 @@ import PageDocumentRow from "@/types/page-document/PageDocumentRow";
 import { VisualEditorState } from "../visualEditorSlice";
 import PageDocumentColumn from "@/types/page-document/PageDocumentColumn";
 import generateId from "@/utils/Utils";
+import Styles from "@/components/visual-editor-components/styles/styles";
 
 export default function InsertColumnBefore(
   state: VisualEditorState,
@@ -25,7 +26,8 @@ export default function InsertColumnBefore(
     id: newEmptyColumnId,
     type: "PageDocumentColumn",
     nodes: [],
-    parent: rowId
+    parent: rowId,
+    styles: Styles.CreateClassListCollection()
   };
 
   for (let it = 0; it < row.nodes.length; it++) {
