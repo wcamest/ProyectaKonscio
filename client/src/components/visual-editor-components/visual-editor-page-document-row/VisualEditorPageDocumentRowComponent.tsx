@@ -7,7 +7,7 @@ import SideButtonComponent from "../side-button/SideButtonComponent";
 import PlusCircleFillIcon from "@/components/Icons/PlusCircleFillIcon";
 import CaretDownFillIcon from "@/components/Icons/CaretDownFillIcon";
 import CaretUpFillIcon from "@/components/Icons/CaretUpFillIcon";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   deleteNode,
   insertRowAfter,
@@ -17,6 +17,7 @@ import {
 } from "@/redux/features/visual-editor/visualEditorSlice";
 import TrashIcon from "@/components/Icons/TrashIcon";
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
+import { RootState } from "@/redux/store/store";
 
 type Props = {
   data: PageDocumentRow;
@@ -28,6 +29,9 @@ const VisualEditorPageDocumentRowComponent = (props: Props) => {
   const [state, setState] = useState({
     mouseOver: false,
   });
+  const { currentSectionLevel } = useSelector(
+    (state: RootState) => state.visualEditor
+  );
   const dispatch = useDispatch();
 
   const Functions = {
@@ -70,6 +74,9 @@ const VisualEditorPageDocumentRowComponent = (props: Props) => {
 
       return nodes.length === 1;
     },
+    SectionLevelHandlersVisible() {
+      return data.parent === currentSectionLevel;
+    },
   };
 
   const Renderer = {
@@ -97,7 +104,9 @@ const VisualEditorPageDocumentRowComponent = (props: Props) => {
     <div
       id={`row-${data.id}`}
       className={`${
-        state.mouseOver ? `outline outline-blue-400 ` : ""
+        state.mouseOver && Functions.SectionLevelHandlersVisible()
+          ? `outline outline-blue-400 `
+          : ""
       }relative w-full flex`}
       onMouseEnter={() => {
         Functions.SetMouseOver(true);
@@ -107,7 +116,7 @@ const VisualEditorPageDocumentRowComponent = (props: Props) => {
       }}
     >
       <div className="relative w-full h-fit flex">{Renderer.Columns()}</div>
-      {state.mouseOver && (
+      {state.mouseOver && Functions.SectionLevelHandlersVisible() && (
         <div className="absolute w-full h-0 left-0 top-0 flex justify-center">
           <div className="absolute flex w-fit h-fit bottom-0 z-50">
             <SideButtonComponent
@@ -136,7 +145,7 @@ const VisualEditorPageDocumentRowComponent = (props: Props) => {
           </div>
         </div>
       )}
-      {state.mouseOver && (
+      {state.mouseOver && Functions.SectionLevelHandlersVisible() && (
         <div className="absolute w-full h-0 left-0 bottom-0 flex justify-center">
           <div className="absolute flex w-fit h-fit top-0 z-50">
             <SideButtonComponent
