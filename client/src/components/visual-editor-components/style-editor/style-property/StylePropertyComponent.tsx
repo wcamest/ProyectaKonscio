@@ -100,13 +100,13 @@ const StylePropertyComponent = (props: PropsWithChildren<Props>) => {
       <form className="flex items-center gap-2 text-blue-800">
         <input
           type="checkbox"
-          id={`${nodeId}-checkbox`}
+          id={`${nodeId}-${propertyName}-checkbox`}
           checked={Functions.GetEnabled()}
           onChange={(e: ChangeEvent<HTMLInputElement>) => {
             Functions.UpdateEnabled(e.target.checked);
           }}
         />
-        <label htmlFor={`${nodeId}-checkbox`}>{title}</label>
+        <label htmlFor={`${nodeId}-${propertyName}-checkbox`}>{title}</label>
       </form>
       {Functions.GetEnabled() && (
         <div className="flex flex-col gap-2">
