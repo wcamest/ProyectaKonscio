@@ -22,7 +22,7 @@ const ScreenSelectorItemComponent = (props: PropsWithChildren<Props>) => {
 
   if (screen === currentScreen)
     return (
-      <div className="p-1 border bg-blue-500 border-solid border-blue-500 rounded-full text-blue-100">
+      <div className="p-1 border bg-blue-800 border-solid border-blue-800 rounded-full text-blue-100">
         {props.children}
       </div>
     );

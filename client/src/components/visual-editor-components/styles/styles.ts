@@ -1,15 +1,32 @@
 import StylesClassList from "@/types/page-document/styles/StylesClassList";
 import StylesClassListCollection from "@/types/page-document/styles/StylesClassListCollection";
-import { StylesSizeType } from "@/types/page-document/styles/StylesSizeType";
 
 const Styles = {
   CreateClassList(): StylesClassList {
     return {
       width: {
-        type: StylesSizeType.undefined,
-        className: undefined,
-        percentDivisionsIndex: 5,
-        percentValueIndex: 12,
+        enabled: false,
+        className: "css-w-auto"
+      },
+      height: {
+        enabled: false,
+        className: "css-h-auto"
+      },
+      minWidth: {
+        enabled: false,
+        className: "css-min-w-0"
+      },
+      minHeight: {
+        enabled: false,
+        className: "css-min-h-0"
+      },
+      maxWidth: {
+        enabled: false,
+        className: "css-max-w-none"
+      },
+      maxHeight: {
+        enabled: false,
+        className: "css-max-h-none"
       },
     };
   },

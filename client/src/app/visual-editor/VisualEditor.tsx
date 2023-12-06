@@ -1,6 +1,7 @@
 "use client";
 
 import ScreenSelectorComponent from "@/components/visual-editor-components/screen-selector/ScreenSelectorComponent";
+import StyleEditor from "@/components/visual-editor-components/style-editor/StyleEditor";
 import VisualEditorPageDocumentComponent from "@/components/visual-editor-components/visual-editor-page-document/VisualEditorPageDocumentComponent";
 import { setCurrentPageDocument } from "@/redux/features/visual-editor/visualEditorSlice";
 import { RootState } from "@/redux/store/store";
@@ -14,7 +15,7 @@ type Props = {
 
 const VisualEditor = (props: Props) => {
   const { data } = props;
-  const { currentDocument } = useSelector(
+  const { currentDocument, currentStyleEditNode } = useSelector(
     (state: RootState) => state.visualEditor
   );
   const dispatch = useDispatch();
@@ -28,13 +29,20 @@ const VisualEditor = (props: Props) => {
   return (
     <div className="w-screen h-screen flex flex-col overflow-hidden">
       <div className="p-4 w-full flex justify-between border-b border-b-solid border-b-blue-200">
-        <div>
-
-        </div>
+        <div></div>
         <ScreenSelectorComponent />
       </div>
-      <div className="w-full h-full overflow-auto">
-        <VisualEditorPageDocumentComponent data={currentDocument} />
+      <div className="w-full h-full flex overflow-hidden">
+        <div className="w-full h-full overflow-auto">
+          <VisualEditorPageDocumentComponent data={currentDocument} />
+        </div>
+        {currentStyleEditNode && (
+          <div className="h-full">
+            <div className="w-96 h-full overflow-hidden">
+              <StyleEditor styleEditNodeId={currentStyleEditNode} document={currentDocument} />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

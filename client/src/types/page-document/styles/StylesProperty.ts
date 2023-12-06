@@ -1,3 +1,4 @@
 export default interface StylesProperty {
-    className: string | undefined
+  enabled: boolean;
+  className: string | undefined;
 }
