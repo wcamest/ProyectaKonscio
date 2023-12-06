@@ -15,87 +15,19 @@ type Props = {
   propertyName: string;
   isActive: Function;
   updateClassName: Function;
+  divisions: string[];
 };
 
-const values: string[] = [
-  "0",
-  "px",
-  "0.5",
-  "1",
-  "1.5",
-  "2",
-  "2.5",
-  "3",
-  "3.5",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10",
-  "11",
-  "12",
-  "14",
-  "16",
-  "20",
-  "24",
-  "28",
-  "32",
-  "36",
-  "40",
-  "44",
-  "48",
-  "52",
-  "56",
-  "60",
-  "64",
-  "72",
-  "80",
-  "96",
-];
-
-const pixels: any = {
-  "0": "0px",
-  px: "1px",
-  "0.5": "2px",
-  "1": "4px",
-  "1.5": "6px",
-  "2": "8px",
-  "2.5": "10px",
-  "3": "12px",
-  "3.5": "14px",
-  "4": "16px",
-  "5": "20px",
-  "6": "24px",
-  "7": "28px",
-  "8": "32px",
-  "9": "36px",
-  "10": "40px",
-  "11": "44px",
-  "12": "48px",
-  "14": "56px",
-  "16": "64px",
-  "20": "80px",
-  "24": "96px",
-  "28": "112px",
-  "32": "128px",
-  "36": "144px",
-  "40": "160px",
-  "44": "176px",
-  "48": "192px",
-  "52": "208px",
-  "56": "224px",
-  "60": "240px",
-  "64": "256px",
-  "72": "288px",
-  "80": "320px",
-  "96": "384px",
-};
-
-const PixelValueControlComponent = (props: Props) => {
-  const { screen, document, nodeId, propertyName, isActive, updateClassName } =
-    props;
+const PercentValueControlComponent = (props: Props) => {
+  const {
+    screen,
+    document,
+    nodeId,
+    propertyName,
+    divisions,
+    isActive,
+    updateClassName,
+  } = props;
   const dispatch = useDispatch();
 
   const Functions = {
@@ -171,41 +103,90 @@ const PixelValueControlComponent = (props: Props) => {
         dispatch(updateNode(updatedNode));
       }
     },
-    GetPXValue() {
+    GetPercentValue(matchIndex: number) {
       const className = Functions.GetClassName();
 
-      if (!className) return 0;
+      if (!className) return undefined;
 
-      const regex = /^.*\-(\d+(\.\d+)?|px)$/;
+      const regex = /^.*\-(\d+)\/(\d+)$/;
       const matches = className.match(regex);
 
-      if (!matches) return 0;
+      if (!matches) return undefined;
 
-      const value = matches[1];
+      const value = matches[matchIndex];
 
-      return values.indexOf(value);
+      return value;
+    },
+    GetTotalDivision() {
+      const value = Functions.GetPercentValue(2);
+
+      if (!value) return 0;
+
+      return divisions.indexOf(value);
+    },
+    GetSelectedDivisions(totalDivisions?: string) {
+      let current: string | number | undefined = Functions.GetPercentValue(1);
+      let total: string | number | undefined = totalDivisions
+        ? totalDivisions
+        : Functions.GetPercentValue(2);
+
+      if (!current || !total) return 0;
+
+      current = parseInt(current);
+      total = parseInt(total);
+
+      if (current >= total) return total - 1;
+
+      return current;
     },
   };
 
   if (!isActive(Functions.GetClassName())) return undefined;
 
   return (
-    <div className="flex gap-2">
-      <input
-        className="w-full"
-        type="range"
-        min={0}
-        max={values.length - 1}
-        value={Functions.GetPXValue()}
-        onChange={(e: ChangeEvent<HTMLInputElement>) => {
-          Functions.UpdateClassName(
-            updateClassName(values[parseInt(e.target.value)])
-          );
-        }}
-      />
-      <span className="text-blue-800">{pixels[values[Functions.GetPXValue()]]}</span>
+    <div className="flex flex-col gap-2">
+      <div className="flex gap-2">
+        <input
+          className="w-full"
+          type="range"
+          min={0}
+          max={divisions.length - 1}
+          value={Functions.GetTotalDivision()}
+          onChange={(e: ChangeEvent<HTMLInputElement>) => {
+            Functions.UpdateClassName(
+              updateClassName(
+                Functions.GetSelectedDivisions(divisions[parseInt(e.target.value)]),
+                divisions[parseInt(e.target.value)]
+              )
+            );
+          }}
+        />
+        <span className="text-blue-800">
+          {divisions[Functions.GetTotalDivision()]}
+        </span>
+      </div>
+      <div className="flex gap-2">
+        <input
+          className="w-full"
+          type="range"
+          min={1}
+          max={parseInt(divisions[Functions.GetTotalDivision()]) - 1}
+          value={Functions.GetSelectedDivisions()}
+          onChange={(e: ChangeEvent<HTMLInputElement>) => {
+            Functions.UpdateClassName(
+              updateClassName(
+                e.target.value,
+                divisions[Functions.GetTotalDivision()]
+              )
+            );
+          }}
+        />
+        <span className="text-blue-800">
+          {Functions.GetSelectedDivisions()}
+        </span>
+      </div>
     </div>
   );
 };
 
-export default PixelValueControlComponent;
+export default PercentValueControlComponent;
