@@ -5,6 +5,7 @@ import StyleSectionComponent from "../../style-section/StyleSectionComponent";
 import StylePropertyComponent from "../../style-property/StylePropertyComponent";
 import PropertyButtonComponent from "../../property-button/PropertyButtonComponent";
 import PixelValueControlComponent from "../../pixel-value-control/PixelValueControlComponent";
+import PercentValueControlComponent from "../../percent-value-control/PercentValueControlComponent";
 
 type Props = {
   currentStylesSectionTab: string;
@@ -149,6 +150,20 @@ const StyleSizingSectionComponent = (props: Props) => {
           }}
           updateClassName={(value: string) => {
             return `css-w-${value}`;
+          }}
+        />
+        <PercentValueControlComponent
+          document={document}
+          nodeId={currentStyleEditNodeTab}
+          screen={currentScreen}
+          propertyName="width"
+          divisions={["2", "3", "4", "5", "6", "12"]}
+          isActive={(className: string | undefined) => {
+            if (className) return /^css-w-\d+\/\d+$/.test(className);
+          }}
+          updateClassName={(divisionCount: string, totalDivision: string) => {
+            console.log(divisionCount, totalDivision);
+            return `css-w-${divisionCount}/${totalDivision}`;
           }}
         />
       </StylePropertyComponent>
