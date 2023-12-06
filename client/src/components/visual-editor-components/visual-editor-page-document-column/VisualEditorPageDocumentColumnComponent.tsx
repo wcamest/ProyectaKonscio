@@ -16,6 +16,8 @@ import {
   moveColumnRight,
   setCurrentEditNode,
   setCurrentSectionLevel,
+  setCurrentStyleEditNode,
+  setCurrentStyleEditNodeTab,
   setSelectedToAddNode,
 } from "@/redux/features/visual-editor/visualEditorSlice";
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
@@ -43,7 +45,7 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
   const [state, setState] = useState({
     mouseOver: false,
   });
-  const { currentSectionLevel } = useSelector(
+  const { currentSectionLevel, currentStyleEditNode } = useSelector(
     (state: RootState) => state.visualEditor
   );
   const dispatch = useDispatch();
@@ -119,6 +121,26 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
       dispatch(setCurrentEditNode(nodeToEditId));
       dispatch(showModal(modals[nodeToEdit.type]));
     },
+    GetAboveSectionId() {
+      const currentSectionColumn = document.nodes.find(
+        (node: PageDocumentNode) => node.id === currentSectionLevel
+      );
+
+      if (!currentSectionColumn) return;
+
+      let currentId: string | undefined = currentSectionColumn.parent;
+
+      while (currentId) {
+        const node = document.nodes.find(
+          (node: PageDocumentNode) => node.id === currentId
+        );
+
+        if (!node) return;
+        if (node.type === "PageDocumentColumn") return node.id;
+
+        currentId = node.parent;
+      }
+    },
     ItHasARowInside() {
       const someRow = data.nodes.some((nodeId: string) => {
         const node = document.nodes.find(
@@ -127,7 +149,12 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
 
         if (!node) return false;
 
-        return node.type === "PageDocumentRow";
+        const nodeTypes: string[] = [
+          "PageDocumentRow",
+          "PageDocumentFormElement",
+        ];
+
+        return nodeTypes.includes(node.type);
       });
 
       return someRow;
@@ -140,9 +167,11 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
     },
     GoToTheInsideSection() {
       dispatch(setCurrentSectionLevel(data.id));
+      dispatch(setCurrentStyleEditNode(undefined));
+      dispatch(setCurrentStyleEditNodeTab(undefined));
     },
     GoToTheAboveSection() {
-      const currentSectionColumn = document.nodes.find(
+      /*const currentSectionColumn = document.nodes.find(
         (node: PageDocumentNode) => node.id === currentSectionLevel
       );
 
@@ -152,9 +181,21 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
         (node: PageDocumentNode) => node.id === currentSectionColumn.parent
       );
 
-      if (!currentSectionRow) return;
+      if (!currentSectionRow) return;*/
 
-      dispatch(setCurrentSectionLevel(currentSectionRow.parent));
+      const aboveSectionId = Functions.GetAboveSectionId();
+      dispatch(setCurrentSectionLevel(aboveSectionId));
+      dispatch(setCurrentStyleEditNode(undefined));
+      dispatch(setCurrentStyleEditNodeTab(undefined));
+    },
+    ShowOrHideStylePanel() {
+      if (currentStyleEditNode === data.id) {
+        dispatch(setCurrentStyleEditNode(undefined));
+        dispatch(setCurrentStyleEditNodeTab(undefined));
+      } else {
+        dispatch(setCurrentStyleEditNode(data.id));
+        dispatch(setCurrentStyleEditNodeTab(data.id));
+      }
     },
   };
 
@@ -225,7 +266,11 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
               <PencilFillIcon />
             </ColumnButtonComponent>
           )}
-          <ColumnButtonComponent>
+          <ColumnButtonComponent
+            onClick={() => {
+              Functions.ShowOrHideStylePanel();
+            }}
+          >
             <PaletteFillIcon />
           </ColumnButtonComponent>
           {Functions.ItHasARowInside() && (
@@ -238,9 +283,11 @@ const VisualEditorPageDocumentColumnComponent = (props: Props) => {
             </ColumnButtonComponent>
           )}
           {Functions.IsHasARowAbove() && (
-            <ColumnButtonComponent onClick={() => {
-              Functions.GoToTheAboveSection()
-            }}>
+            <ColumnButtonComponent
+              onClick={() => {
+                Functions.GoToTheAboveSection();
+              }}
+            >
               <BoxArrowUpLeftIcon />
             </ColumnButtonComponent>
           )}

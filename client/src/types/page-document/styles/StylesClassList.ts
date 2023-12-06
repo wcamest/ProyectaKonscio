@@ -1,5 +1,10 @@
-import StylesWidthProperty from "./StylesWidthProperty";
+import StylesProperty from "./StylesProperty";
 
 export default interface StylesClassList {
-    width: StylesWidthProperty
+    width: StylesProperty,
+    height: StylesProperty,
+    minWidth: StylesProperty,
+    minHeight: StylesProperty,
+    maxWidth: StylesProperty,
+    maxHeight: StylesProperty
 }
