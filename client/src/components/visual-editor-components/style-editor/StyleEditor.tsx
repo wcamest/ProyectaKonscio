@@ -22,6 +22,8 @@ import {
 import StyleSectionComponent from "./style-section/StyleSectionComponent";
 import StylePropertyComponent from "./style-property/StylePropertyComponent";
 import StyleSizingSectionComponent from "./sections/sizing-section/StyleSizingSectionComponent";
+import StyleTextAndFontsSectionComponent from "./sections/text-and-fonts-section/StyleTextAndFontsSectionComponent";
+import StyleBackgroundSectionComponent from "./sections/background-section/StyleBackgroundSectionComponent";
 
 type Props = {
   styleEditNodeId: string;
@@ -197,16 +199,22 @@ const StyleEditor = (props: Props) => {
               currentId={currentStylesSectionTab}
               title="Espaciados"
             ></StyleSectionComponent>
-            <StyleSectionComponent
-              id="text"
-              currentId={currentStylesSectionTab}
-              title="Textos y fuentes"
-            ></StyleSectionComponent>
-            <StyleSectionComponent
-              id="background"
-              currentId={currentStylesSectionTab}
-              title="Fondo"
-            ></StyleSectionComponent>
+            {currentStyleEditNodeTab && (
+              <StyleTextAndFontsSectionComponent
+                currentScreen={currentScreen}
+                currentStyleEditNodeTab={currentStyleEditNodeTab}
+                currentStylesSectionTab={currentStylesSectionTab}
+                document={document}
+              />
+            )}
+            {currentStyleEditNodeTab && (
+              <StyleBackgroundSectionComponent
+                currentScreen={currentScreen}
+                currentStyleEditNodeTab={currentStyleEditNodeTab}
+                currentStylesSectionTab={currentStylesSectionTab}
+                document={document}
+              />
+            )}
             <StyleSectionComponent
               id="flexbox"
               currentId={currentStylesSectionTab}

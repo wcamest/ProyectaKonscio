@@ -33,7 +33,7 @@ const StyleSizingSectionComponent = (props: Props) => {
         nodeId={currentStyleEditNodeTab}
         screen={currentScreen}
         title="Ancho"
-        propertyName="width"
+        properties={["width"]}
       >
         <div className="flex gap-2 flex-wrap">
           <PropertyButtonComponent
@@ -173,7 +173,7 @@ const StyleSizingSectionComponent = (props: Props) => {
         nodeId={currentStyleEditNodeTab}
         screen={currentScreen}
         title="Alto"
-        propertyName="height"
+        properties={["height"]}
       >
         <div className="flex gap-2 flex-wrap">
           <PropertyButtonComponent
@@ -313,7 +313,7 @@ const StyleSizingSectionComponent = (props: Props) => {
         nodeId={currentStyleEditNodeTab}
         screen={currentScreen}
         title="Ancho Mínimo"
-        propertyName="minWidth"
+        properties={["minWidth"]}
       >
         <div className="flex gap-2 flex-wrap">
           <PropertyButtonComponent
@@ -384,7 +384,7 @@ const StyleSizingSectionComponent = (props: Props) => {
         nodeId={currentStyleEditNodeTab}
         screen={currentScreen}
         title="Alto Mínimo"
-        propertyName="minHeight"
+        properties={["minHeight"]}
       >
         <div className="flex gap-2 flex-wrap">
           <PropertyButtonComponent
@@ -467,7 +467,7 @@ const StyleSizingSectionComponent = (props: Props) => {
         nodeId={currentStyleEditNodeTab}
         screen={currentScreen}
         title="Ancho Máximo"
-        propertyName="maxWidth"
+        properties={["maxWidth"]}
       >
         <div className="flex gap-2 flex-wrap">
           <PropertyButtonComponent
@@ -685,7 +685,7 @@ const StyleSizingSectionComponent = (props: Props) => {
         nodeId={currentStyleEditNodeTab}
         screen={currentScreen}
         title="Alto Máximo"
-        propertyName="maxHeight"
+        properties={["maxHeight"]}
       >
         <div className="flex gap-2 flex-wrap">
           <PropertyButtonComponent
