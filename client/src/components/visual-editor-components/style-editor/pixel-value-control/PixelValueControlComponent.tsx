@@ -7,6 +7,7 @@ import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import StylesProperty from "@/types/page-document/styles/StylesProperty";
 import React, { ChangeEvent } from "react";
 import { useDispatch } from "react-redux";
+import SliderControlComponent from "../slider-control/SliderControlComponent";
 
 type Props = {
   screen: Screen;
@@ -55,48 +56,47 @@ const values: string[] = [
   "96",
 ];
 
-const pixels: any = {
-  "0": "0px",
-  px: "1px",
-  "0.5": "2px",
-  "1": "4px",
-  "1.5": "6px",
-  "2": "8px",
-  "2.5": "10px",
-  "3": "12px",
-  "3.5": "14px",
-  "4": "16px",
-  "5": "20px",
-  "6": "24px",
-  "7": "28px",
-  "8": "32px",
-  "9": "36px",
-  "10": "40px",
-  "11": "44px",
-  "12": "48px",
-  "14": "56px",
-  "16": "64px",
-  "20": "80px",
-  "24": "96px",
-  "28": "112px",
-  "32": "128px",
-  "36": "144px",
-  "40": "160px",
-  "44": "176px",
-  "48": "192px",
-  "52": "208px",
-  "56": "224px",
-  "60": "240px",
-  "64": "256px",
-  "72": "288px",
-  "80": "320px",
-  "96": "384px",
-};
+const labels: string[] = [
+  "0px",
+  "1px",
+  "2px",
+  "4px",
+  "6px",
+  "8px",
+  "10px",
+  "12px",
+  "14px",
+  "16px",
+  "20px",
+  "24px",
+  "28px",
+  "32px",
+  "36px",
+  "40px",
+  "44px",
+  "48px",
+  "56px",
+  "64px",
+  "80px",
+  "96px",
+  "112px",
+  "128px",
+  "144px",
+  "160px",
+  "176px",
+  "192px",
+  "208px",
+  "224px",
+  "240px",
+  "256px",
+  "288px",
+  "320px",
+  "384px",
+];
 
 const PixelValueControlComponent = (props: Props) => {
   const { screen, document, nodeId, propertyName, isActive, updateClassName } =
     props;
-  const dispatch = useDispatch();
 
   const Functions = {
     GetClassName(): string | undefined {
@@ -126,86 +126,25 @@ const PixelValueControlComponent = (props: Props) => {
 
       return "";
     },
-    UpdateClassName(value: string) {
-      const node = document.nodes.find(
-        (node: PageDocumentNode) => node.id === nodeId
-      );
-
-      if (!node) return false;
-
-      const screenProperties: any = {
-        base: "base",
-        sm: "sm",
-        md: "md",
-        lg: "lg",
-        xl: "xl",
-        "2xl": "xl2",
-      };
-
-      const screenName = screenProperties[screen];
-      const styles: any = node.styles;
-      const currentScreenStyle = styles[screenName];
-      const property = currentScreenStyle[propertyName];
-
-      if (property) {
-        const updatedProperty: any = {
-          ...property,
-          className: value,
-        };
-
-        const updatedScreenStyle: any = {
-          ...currentScreenStyle,
-          [propertyName]: updatedProperty,
-        };
-
-        const updatedStyles: any = {
-          ...styles,
-          [screenName]: updatedScreenStyle,
-        };
-
-        const updatedNode: PageDocumentNode = {
-          ...node,
-          styles: updatedStyles,
-        };
-
-        dispatch(updateNode(updatedNode));
-      }
-    },
-    GetPXValue() {
-      const className = Functions.GetClassName();
-
-      if (!className) return 0;
-
-      const regex = /^.*\-(\d+(\.\d+)?|px)$/;
-      const matches = className.match(regex);
-
-      if (!matches) return 0;
-
-      const value = matches[1];
-
-      return values.indexOf(value);
-    },
   };
 
   if (!isActive(Functions.GetClassName())) return undefined;
 
-  return (
-    <div className="flex gap-2">
-      <input
-        className="w-full"
-        type="range"
-        min={0}
-        max={values.length - 1}
-        value={Functions.GetPXValue()}
-        onChange={(e: ChangeEvent<HTMLInputElement>) => {
-          Functions.UpdateClassName(
-            updateClassName(values[parseInt(e.target.value)])
-          );
-        }}
+  const classNameValue = Functions.GetClassName();
+
+  if (classNameValue)
+    return (
+      <SliderControlComponent
+        document={document}
+        nodeId={nodeId}
+        propertyName={propertyName}
+        screen={screen}
+        updateValue={updateClassName}
+        values={values}
+        labels={labels}
+        regExp={/^.*\-(\d+(\.\d+)?|px)$/}
       />
-      <span className="text-blue-800">{pixels[values[Functions.GetPXValue()]]}</span>
-    </div>
-  );
+    );
 };
 
 export default PixelValueControlComponent;
