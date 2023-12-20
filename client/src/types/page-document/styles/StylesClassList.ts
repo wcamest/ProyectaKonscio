@@ -1,6 +1,16 @@
 import StylesProperty from "./StylesProperty";
 
 export default interface StylesClassList {
+  //layout
+  position: StylesProperty;
+  display: StylesProperty;
+  objectFit: StylesProperty;
+  objectPosition:StylesProperty;
+  overflow: StylesProperty;
+  visibility: StylesProperty;
+  zIndex:StylesProperty;
+
+
   //sizing
   width: StylesProperty;
   height: StylesProperty;
@@ -33,4 +43,43 @@ export default interface StylesClassList {
 
   //background
   backgroundColor: StylesProperty;
+  backgroundImage: StylesProperty;
+  backgroundAttachment: StylesProperty;
+  backgroundClip: StylesProperty;
+  backgroundOrigin: StylesProperty;
+  backgroundPosition: StylesProperty;
+  backgroundRepeat: StylesProperty;
+  backgroundSize: StylesProperty;
+
+  //flex and grid
+  gap: StylesProperty;
+
+  //flex
+  flexBasis: StylesProperty;
+  flexDirection: StylesProperty;
+  flexWrap: StylesProperty;
+  flex: StylesProperty;
+  flexGrow: StylesProperty;
+  flexShrink: StylesProperty;
+  order: StylesProperty;
+  justifyContent: StylesProperty;
+  alignItems: StylesProperty;
+
+  //grid
+  gapX: StylesProperty;
+  gapY: StylesProperty;
+  gridCols: StylesProperty;
+  gridCollSpan: StylesProperty;
+  gridCollStart: StylesProperty;
+  gridCollEnd: StylesProperty;
+  gridRows: StylesProperty;
+  gridRowSpan: StylesProperty;
+  gridRowStart: StylesProperty;
+  gridRowEnd: StylesProperty;
+  justifyItems: StylesProperty;
+  justifySelf: StylesProperty;
+  alignSelf: StylesProperty;
+  placeContent: StylesProperty;
+  placeItem: StylesProperty;
+  placeSelf: StylesProperty;
 }

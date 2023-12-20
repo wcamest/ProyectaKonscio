@@ -24,6 +24,7 @@ import StylePropertyComponent from "./style-property/StylePropertyComponent";
 import StyleSizingSectionComponent from "./sections/sizing-section/StyleSizingSectionComponent";
 import StyleTextAndFontsSectionComponent from "./sections/text-and-fonts-section/StyleTextAndFontsSectionComponent";
 import StyleBackgroundSectionComponent from "./sections/background-section/StyleBackgroundSectionComponent";
+import StyleLayoutSectionComponent from "./sections/layout-section/StyleLayoutSectionComponent";
 
 type Props = {
   styleEditNodeId: string;
@@ -181,11 +182,14 @@ const StyleEditor = (props: Props) => {
         </div>
         <div className="w-full h-full overflow-hidden">
           <div className="p-2 w-full h-full overflow-auto">
-            <StyleSectionComponent
-              id="layout"
-              currentId={currentStylesSectionTab}
-              title="Layout"
-            ></StyleSectionComponent>
+            {currentStyleEditNodeTab && (
+              <StyleLayoutSectionComponent
+                currentScreen={currentScreen}
+                currentStyleEditNodeTab={currentStyleEditNodeTab}
+                currentStylesSectionTab={currentStylesSectionTab}
+                document={document}
+              />
+            )}
             {currentStyleEditNodeTab && (
               <StyleSizingSectionComponent
                 currentScreen={currentScreen}
