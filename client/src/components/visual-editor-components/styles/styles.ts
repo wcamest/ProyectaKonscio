@@ -4,6 +4,34 @@ import StylesClassListCollection from "@/types/page-document/styles/StylesClassL
 const Styles = {
   CreateClassList(): StylesClassList {
     return {
+      position: {
+        enabled: false,
+        className: "css-static",
+      },
+      display: {
+        enabled: false,
+        className: "css-block",
+      },
+      objectFit: {
+        enabled: false,
+        className: "css-object-none"
+      },
+      objectPosition: {
+        enabled: false,
+        className: "css-object-left-top"
+      },
+      overflow: {
+        enabled: false,
+        className: "css-overflow-auto"
+      },
+      visibility: {
+        enabled: false,
+        className: "css-visible"
+      },
+      zIndex: {
+        enabled: false,
+        className: "css-z-0"
+      },
       width: {
         enabled: false,
         className: "css-w-auto",
@@ -102,7 +130,119 @@ const Styles = {
       },
       backgroundColor: {
         enabled: false,
-        className: "css-background-white"
+        className: "css-background-white",
+      },
+      backgroundImage: {
+        enabled: false,
+        className: undefined,
+      },
+      backgroundAttachment: {
+        enabled: false,
+        className: "css-bg-local",
+      },
+      backgroundClip: {
+        enabled: false,
+        className: "css-bg-clip-border",
+      },
+      backgroundOrigin: {
+        enabled: false,
+        className: "css-bg-origin-border",
+      },
+      backgroundPosition: {
+        enabled: false,
+        className: "css-bg-left-top",
+      },
+      backgroundRepeat: {
+        enabled: false,
+        className: "css-bg-no-repeat",
+      },
+      backgroundSize: {
+        enabled: false,
+        className: "css-bg-auto",
+      },
+      gap: {
+        enabled: false,
+        className: "css-gap-0"
+      },
+      flexBasis: {
+        enabled: false,
+        className: "css-basis-0"
+      },
+      flexDirection: {
+        enabled: false,
+        className: "css-flex-row"
+      },
+      flexWrap: {
+        enabled: false,
+        className: "css-flex-nowrap"
+      },
+      flex: {
+        enabled: false,
+        className: "css-flex-none"
+      },
+      flexGrow: {
+        enabled: false,
+        className: "css-grow-0"
+      },
+      flexShrink: {
+        enabled: false,
+        className: "css-shrink-0"
+      },
+      order: {
+        enabled: false,
+        className: "css-order-none"
+      },
+      flexJustifyContent:{
+        enabled: false,
+        className: "css-justify-start"
+      },
+      gapX: {
+        enabled: false,
+        className: "css-gap-x-0"
+      },
+      gapY: {
+        enabled: false,
+        className: "css-gap-y-0"
+      },
+      gridCols: {
+        enabled: false,
+        className: "css-grid-cols-none"
+      },
+      gridCollSpan: {
+        enabled: false,
+        className: "css-col-auto"
+      },
+      gridCollStart: {
+        enabled: false,
+        className: "css-col-start-auto"
+      },
+      gridCollEnd: {
+        enabled: false,
+        className: "css-col-end-auto"
+      },
+      gridRows: {
+        enabled: false,
+        className: "css-grid-rows-none"
+      },
+      gridRowSpan: {
+        enabled: false,
+        className: "css-row-auto"
+      },
+      gridRowStart: {
+        enabled: false,
+        className: "css-row-start-auto"
+      },
+      gridRowEnd: {
+        enabled: false,
+        className: "css-row-end-auto"
+      },
+      justifyItems: {
+        enabled: false,
+        className: "css-justify-items-start"
+      },
+      justifySelf: {
+        enabled: false,
+        className: "css-justify-self-auto"
       }
     };
   },
