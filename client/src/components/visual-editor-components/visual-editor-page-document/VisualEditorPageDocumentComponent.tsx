@@ -18,6 +18,7 @@ import RichTextEditorComponent from "@/components/RichTextEditor/RichTextEditorC
 import RichTextElementEditorComponent from "../rich-text-element-editor/RichTextElementEditorComponent";
 import ImageElementEditor from "../image-element-editor/ImageElementEditor";
 import { RootState } from "@/redux/store/store";
+import ElementRenderer from "../elements/renderer/renderer";
 
 type Props = {
   data: PageDocument;
@@ -53,26 +54,14 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
   };
 
   const Renderer = {
-    Rows() {
-      const rows = data.rows.map((rowId: string, key: number) => {
-        const row = data.nodes.find(
-          (node: PageDocumentNode) => node.id === rowId
-        );
+    Root() {
+      const rootNode = data.nodes.find(
+        (node: PageDocumentNode) => node.id === data.root
+      );
 
-        return row;
-      });
+      if (!rootNode) return undefined;
 
-      return rows.map((Row: PageDocumentRow | undefined, key: number) => {
-        if (!Row) return undefined;
-
-        return (
-          <VisualEditorPageDocumentRowComponent
-            key={key}
-            data={Row}
-            document={data}
-          />
-        );
-      });
+      return ElementRenderer.Render(rootNode, data);
     },
   };
 
@@ -82,7 +71,7 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
         style={Functions.GetStyles()}
         className="w-full border border-dashed border-blue-200 flex flex-col"
       >
-        {Renderer.Rows()}
+        {Renderer.Root()}
       </div>
       <ModalComponent
         id="add-element-modal"

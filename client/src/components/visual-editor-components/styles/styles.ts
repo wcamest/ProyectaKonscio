@@ -14,23 +14,23 @@ const Styles = {
       },
       objectFit: {
         enabled: false,
-        className: "css-object-none"
+        className: "css-object-none",
       },
       objectPosition: {
         enabled: false,
-        className: "css-object-left-top"
+        className: "css-object-left-top",
       },
       overflow: {
         enabled: false,
-        className: "css-overflow-auto"
+        className: "css-overflow-auto",
       },
       visibility: {
         enabled: false,
-        className: "css-visible"
+        className: "css-visible",
       },
       zIndex: {
         enabled: false,
-        className: "css-z-0"
+        className: "css-z-0",
       },
       width: {
         enabled: false,
@@ -130,7 +130,7 @@ const Styles = {
       },
       backgroundColor: {
         enabled: false,
-        className: "css-background-white",
+        className: "css-bg-white",
       },
       backgroundImage: {
         enabled: false,
@@ -162,88 +162,120 @@ const Styles = {
       },
       gap: {
         enabled: false,
-        className: "css-gap-0"
+        className: "css-gap-0",
       },
       flexBasis: {
         enabled: false,
-        className: "css-basis-0"
+        className: "css-basis-0",
       },
       flexDirection: {
         enabled: false,
-        className: "css-flex-row"
+        className: "css-flex-row",
       },
       flexWrap: {
         enabled: false,
-        className: "css-flex-nowrap"
+        className: "css-flex-nowrap",
       },
       flex: {
         enabled: false,
-        className: "css-flex-none"
+        className: "css-flex-none",
       },
       flexGrow: {
         enabled: false,
-        className: "css-grow-0"
+        className: "css-grow-0",
       },
       flexShrink: {
         enabled: false,
-        className: "css-shrink-0"
+        className: "css-shrink-0",
       },
       order: {
         enabled: false,
-        className: "css-order-none"
+        className: "css-order-none",
       },
-      flexJustifyContent:{
+      justifyContent: {
         enabled: false,
-        className: "css-justify-start"
+        className: "css-justify-start",
+      },
+      alignItems: {
+        enabled: false,
+        className: "css-items-start",
       },
       gapX: {
         enabled: false,
-        className: "css-gap-x-0"
+        className: "css-gap-x-0",
       },
       gapY: {
         enabled: false,
-        className: "css-gap-y-0"
+        className: "css-gap-y-0",
       },
       gridCols: {
         enabled: false,
-        className: "css-grid-cols-none"
+        className: "css-grid-cols-none",
       },
       gridCollSpan: {
         enabled: false,
-        className: "css-col-auto"
+        className: "css-col-auto",
       },
       gridCollStart: {
         enabled: false,
-        className: "css-col-start-auto"
+        className: "css-col-start-auto",
       },
       gridCollEnd: {
         enabled: false,
-        className: "css-col-end-auto"
+        className: "css-col-end-auto",
       },
       gridRows: {
         enabled: false,
-        className: "css-grid-rows-none"
+        className: "css-grid-rows-none",
       },
       gridRowSpan: {
         enabled: false,
-        className: "css-row-auto"
+        className: "css-row-auto",
       },
       gridRowStart: {
         enabled: false,
-        className: "css-row-start-auto"
+        className: "css-row-start-auto",
       },
       gridRowEnd: {
         enabled: false,
-        className: "css-row-end-auto"
+        className: "css-row-end-auto",
       },
       justifyItems: {
         enabled: false,
-        className: "css-justify-items-start"
+        className: "css-justify-items-start",
       },
       justifySelf: {
         enabled: false,
-        className: "css-justify-self-auto"
-      }
+        className: "css-justify-self-auto",
+      },
+      alignContent: {
+        enabled: false,
+        className: "css-content-start",
+      },
+      alignSelf: {
+        enabled: false,
+        className: "css-self-start",
+      },
+      placeContent: {
+        enabled: false,
+        className: "css-place-content-start",
+      },
+      placeItems: {
+        enabled: false,
+        className: "css-place-items-start",
+      },
+      placeSelf: {
+        enabled: false,
+        className: "css-place-self-start",
+      },
+      borderRadius: {
+        enabled: false,
+        className: "css-rounded-none",
+      },
+      border: {
+        enabled: false,
+        className: "",
+      },
     };
   },
   CreateClassListCollection(): StylesClassListCollection {

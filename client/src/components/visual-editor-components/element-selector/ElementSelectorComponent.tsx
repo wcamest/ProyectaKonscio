@@ -13,6 +13,7 @@ import PageDocumentImageElement from "@/types/page-document/PageDocumentImageEle
 import Styles from "../styles/styles";
 import PageDocumentRow from "@/types/page-document/PageDocumentRow";
 import PageDocumentColumn from "@/types/page-document/PageDocumentColumn";
+import PageDocumentContainerElement from "@/types/page-document/PageDocumentContainerElement";
 
 type Props = {};
 
@@ -29,6 +30,10 @@ const ElementSelectorComponent = (props: Props) => {
         nodes: [],
         type: "PageDocumentRichTextElement",
         rawHTML: "",
+        name: "Texto enriquecido",
+        canEdit: true,
+        canAddChild: false,
+        canDelete: true,
         styles: Styles.CreateClassListCollection(),
       };
 
@@ -43,6 +48,10 @@ const ElementSelectorComponent = (props: Props) => {
         id: generateId(),
         nodes: [],
         type: "PageDocumentImageElement",
+        name: "Imagen",
+        canEdit: true,
+        canAddChild: false,
+        canDelete: true,
         styles: Styles.CreateClassListCollection(),
       };
 
@@ -52,26 +61,21 @@ const ElementSelectorComponent = (props: Props) => {
       dispatch(setCurrentEditNode(imageElement.id));
       dispatch(showModal("image-element-editor-modal"));
     },
-    AddRow() {
-      const rowId = generateId();
-      const columnId = generateId();
+    AddContainer() {
+      const containerId = generateId();
 
-      const columnElement: PageDocumentColumn = {
-        id: columnId,
+      const containerElement: PageDocumentContainerElement = {
+        id: containerId,
         nodes: [],
-        type: "PageDocumentColumn",
-        styles: Styles.CreateClassListCollection(),
-        parent: rowId,
-      };
-
-      const rowElement: PageDocumentRow = {
-        id: rowId,
-        nodes: [columnId],
-        type: "PageDocumentRow",
+        type: "PageDocumentContainerElement",
+        name: "Contenedor",
+        canEdit: true,
+        canAddChild: true,
+        canDelete: true,
         styles: Styles.CreateClassListCollection(),
       };
 
-      dispatch(addNode([rowElement, columnElement]));
+      dispatch(addNode([containerElement]));
 
       Functions.HideAddElementModal();
     },
@@ -82,9 +86,9 @@ const ElementSelectorComponent = (props: Props) => {
       <ElementSelectorSectionComponent title="Contenedores">
         <ElementSelectorItemComponent
           icon="/icons/layers-half.svg"
-          text="Sección"
+          text="Contenedor"
           onClick={() => {
-            Functions.AddRow();
+            Functions.AddContainer();
           }}
         />
       </ElementSelectorSectionComponent>

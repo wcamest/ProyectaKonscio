@@ -6,20 +6,20 @@ export default function AddNode(
   action: { payload: any; type: string }
 ) {
   if (!state.currentDocument) return state;
-  if (!state.selectedToAddNode) return state;
+  const currentDocument = state.currentDocument;
 
   for (let _it_ = 0; _it_ < action.payload.length; _it_++) {
     const newNode: PageDocumentNode = action.payload[_it_];
     if (newNode.parent) {
-      state.currentDocument.nodes.push(newNode);
+      currentDocument.nodes.push(newNode);
     } else {
       const updatedNode: PageDocumentNode = {
         ...newNode,
-        parent: state.selectedToAddNode,
+        parent: currentDocument.selectedNode,
       };
 
-      const parentNode = state.currentDocument.nodes.find(
-        (node: PageDocumentNode) => node.id === state.selectedToAddNode
+      const parentNode = currentDocument.nodes.find(
+        (node: PageDocumentNode) => node.id === currentDocument.selectedNode
       );
 
       if (!parentNode) return state;
@@ -29,14 +29,14 @@ export default function AddNode(
         nodes: [...parentNode.nodes, updatedNode.id],
       };
 
-      state.currentDocument.nodes = state.currentDocument.nodes.map(
+      currentDocument.nodes = currentDocument.nodes.map(
         (node: PageDocumentNode) => {
           if (node.id === parentNode.id) return updatedParentNode;
 
           return node;
         }
       );
-      state.currentDocument.nodes.push(updatedNode);
+      currentDocument.nodes.push(updatedNode);
     }
   }
 }

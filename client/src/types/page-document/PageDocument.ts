@@ -4,7 +4,9 @@ import PageDocumentNode from "./PageDocumentNode";
 import PageDocumentRow from "./PageDocumentRow";
 
 export default interface PageDocument {
-    configuration: PageDocumentConfiguration,
-    rows: string[],
-    nodes: PageDocumentNode[],
+  configuration: PageDocumentConfiguration;
+  rows: string[];
+  root: string;
+  selectedNode: string;
+  nodes: PageDocumentNode[];
 }
