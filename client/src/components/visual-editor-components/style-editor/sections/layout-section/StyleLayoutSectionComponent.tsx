@@ -63,7 +63,7 @@ const displayPropertyButtons: StylePropertyButtonObject[] = [
   {
     contentType: StylePropertyButtonContentType.text,
     content: "Inline Flex",
-    defaultClassName: "css-inline flex",
+    defaultClassName: "css-inline-flex",
   },
   {
     contentType: StylePropertyButtonContentType.text,

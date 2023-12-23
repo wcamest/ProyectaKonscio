@@ -78,8 +78,13 @@ export default interface StylesClassList {
   gridRowEnd: StylesProperty;
   justifyItems: StylesProperty;
   justifySelf: StylesProperty;
+  alignContent: StylesProperty;
   alignSelf: StylesProperty;
   placeContent: StylesProperty;
-  placeItem: StylesProperty;
+  placeItems: StylesProperty;
   placeSelf: StylesProperty;
+
+  //border
+  borderRadius: StylesProperty;
+  border: StylesProperty;
 }

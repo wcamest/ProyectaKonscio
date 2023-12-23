@@ -12,19 +12,17 @@ const pageDocumentMockData: PageDocument = {
     description:
       "estos datos están simulados, directamente en el código, no están en una base de datos todavía",
   },
-  rows: ["O25CDTGYSAIHRZR"],
+  rows: [],
+  selectedNode: "0XD5E5555555555",
+  root: "0XD5E5555555555",
   nodes: [
     {
-      id: "O25CDTGYSAIHRZR",
-      nodes: ["OFIUSK75A1LT434"],
-      type: "PageDocumentRow",
-      styles: Styles.CreateClassListCollection(),
-    },
-    {
-      id: "OFIUSK75A1LT434",
+      id: "0XD5E5555555555",
       nodes: [],
-      type: "PageDocumentColumn",
-      parent: "O25CDTGYSAIHRZR",
+      type: "PageDocumentContainerElement",
+      name: "Contenedor Principal",
+      root: true,
+      canAddChild: true,
       styles: Styles.CreateClassListCollection(),
     },
   ],

@@ -16,6 +16,7 @@ type Props = {
   updateValue: Function;
   values: string[];
   labels: string[];
+  isActive?: Function;
   regExp: RegExp;
 };
 
@@ -29,6 +30,7 @@ const SliderControlComponent = (props: Props) => {
     values,
     labels,
     regExp,
+    isActive,
   } = props;
   const dispatch = useDispatch();
 
@@ -126,6 +128,8 @@ const SliderControlComponent = (props: Props) => {
       }
     },
   };
+
+  if (isActive && !isActive(Functions.GetClassName())) return undefined;
 
   return (
     <div className="flex gap-2">

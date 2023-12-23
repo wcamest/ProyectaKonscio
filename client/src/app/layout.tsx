@@ -1,5 +1,5 @@
+import VisualEditorCSSClassWrapper from "@/components/visual-editor-components/visual-editor-css-class-wrapper/VisualEditorCSSClassWrapper";
 import "./globals.css";
-import CSSWrapperComponent from "@/components/CSS/CSSWrapper/CSSWrapperComponent";
 import ReduxProvider from "@/redux/provider/ReduxProvider";
 import Head from "next/head";
 import React, { PropsWithChildren } from "react";
@@ -14,7 +14,7 @@ const layout = (props: PropsWithChildren<Props>) => {
       <body>
         <ReduxProvider>
           {children}
-          <CSSWrapperComponent />
+          <VisualEditorCSSClassWrapper />
         </ReduxProvider>
       </body>
     </html>

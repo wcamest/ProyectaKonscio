@@ -25,6 +25,7 @@ import StyleSizingSectionComponent from "./sections/sizing-section/StyleSizingSe
 import StyleTextAndFontsSectionComponent from "./sections/text-and-fonts-section/StyleTextAndFontsSectionComponent";
 import StyleBackgroundSectionComponent from "./sections/background-section/StyleBackgroundSectionComponent";
 import StyleLayoutSectionComponent from "./sections/layout-section/StyleLayoutSectionComponent";
+import StyleFlexboxSectionComponent from "./sections/flexbox-section/StyleFlexboxSectionComponent";
 
 type Props = {
   styleEditNodeId: string;
@@ -33,101 +34,18 @@ type Props = {
 
 const StyleEditor = (props: Props) => {
   const { styleEditNodeId, document } = props;
-  const {
-    currentSectionLevel,
-    currentStyleEditNodeTab,
-    currentStylesSectionTab,
-    currentScreen,
-  } = useSelector((state: RootState) => state.visualEditor);
+  const { currentStyleEditNodeTab, currentStylesSectionTab, currentScreen } =
+    useSelector((state: RootState) => state.visualEditor);
   const dispatch = useDispatch();
 
-  const icons: any = {
-    PageDocumentRow: LayersHalfIcon,
-    PageDocumentColumn: LayoutSidebarNestedIcon,
-    PageDocumentRichTextElement: BodyTextIcon,
-    PageDocumentImageElement: CardImageIcon,
-  };
-
   const Functions = {
-    GetNodesFromAbove() {
-      const nodesIds: string[] = [];
-
-      const styleEditNode = document.nodes.find(
-        (node: PageDocumentNode) => node.id === styleEditNodeId
-      );
-
-      if (styleEditNode && styleEditNode.nodes.length === 1) {
-        const childNode = document.nodes.find(
-          (node: PageDocumentNode) => node.id === styleEditNode.nodes[0]
-        );
-
-        const nodeTypes: string[] = [
-          "PageDocumentRow",
-          "PageDocumentFormElement",
-        ];
-
-        if (childNode && !nodeTypes.includes(childNode.type)) {
-          nodesIds.push(childNode.id);
-        }
-      }
-
-      let currentNodeId: string | undefined = styleEditNodeId;
-      while (currentNodeId && currentNodeId !== currentSectionLevel) {
-        const node = document.nodes.find(
-          (node: PageDocumentNode) => node.id === currentNodeId
-        );
-
-        if (!node) break;
-
-        nodesIds.push(node.id);
-
-        currentNodeId = node.parent;
-      }
-
-      return nodesIds;
-    },
-    SelectCurrentElement(id: string) {
-      dispatch(setCurrentStyleEditNodeTab(id));
-    },
     SelectCurrentSection(id: string) {
       dispatch(setCurrentStyleSectionTab(id));
     },
   };
 
-  const Renderer = {
-    ElementsTab() {
-      if (!currentStyleEditNodeTab) return;
-
-      const nodesFromAbove = Functions.GetNodesFromAbove();
-
-      return nodesFromAbove.map((nodeId: string, key: number) => {
-        const node = document.nodes.find(
-          (node: PageDocumentNode) => node.id === nodeId
-        );
-
-        if (node && icons[node.type]) {
-          const IconComponent = icons[node.type];
-
-          return (
-            <TabButtonComponent
-              key={key}
-              id={node.id}
-              selectedId={currentStyleEditNodeTab}
-              onClick={Functions.SelectCurrentElement}
-            >
-              <IconComponent />
-            </TabButtonComponent>
-          );
-        }
-      });
-    },
-  };
-
   return (
     <div className="w-full h-full flex flex-col overflow-hidden border-l border-l-solid border-l-blue-300">
-      <div className="p-1 flex border-b border-b-solid border-b-blue-300">
-        {Renderer.ElementsTab()}
-      </div>
       <div className="w-full h-full overflow-hidden flex">
         <div className="p-1 w-fit h-full flex flex-col border-r border-r-solid border-r-blue-300">
           <TabButtonComponent
@@ -182,48 +100,41 @@ const StyleEditor = (props: Props) => {
         </div>
         <div className="w-full h-full overflow-hidden">
           <div className="p-2 w-full h-full overflow-auto">
-            {currentStyleEditNodeTab && (
-              <StyleLayoutSectionComponent
-                currentScreen={currentScreen}
-                currentStyleEditNodeTab={currentStyleEditNodeTab}
-                currentStylesSectionTab={currentStylesSectionTab}
-                document={document}
-              />
-            )}
-            {currentStyleEditNodeTab && (
-              <StyleSizingSectionComponent
-                currentScreen={currentScreen}
-                currentStyleEditNodeTab={currentStyleEditNodeTab}
-                currentStylesSectionTab={currentStylesSectionTab}
-                document={document}
-              />
-            )}
+            <StyleLayoutSectionComponent
+              currentScreen={currentScreen}
+              currentStyleEditNodeTab={styleEditNodeId}
+              currentStylesSectionTab={currentStylesSectionTab}
+              document={document}
+            />
+            <StyleSizingSectionComponent
+              currentScreen={currentScreen}
+              currentStyleEditNodeTab={styleEditNodeId}
+              currentStylesSectionTab={currentStylesSectionTab}
+              document={document}
+            />
             <StyleSectionComponent
               id="spacing"
               currentId={currentStylesSectionTab}
               title="Espaciados"
             ></StyleSectionComponent>
-            {currentStyleEditNodeTab && (
-              <StyleTextAndFontsSectionComponent
-                currentScreen={currentScreen}
-                currentStyleEditNodeTab={currentStyleEditNodeTab}
-                currentStylesSectionTab={currentStylesSectionTab}
-                document={document}
-              />
-            )}
-            {currentStyleEditNodeTab && (
-              <StyleBackgroundSectionComponent
-                currentScreen={currentScreen}
-                currentStyleEditNodeTab={currentStyleEditNodeTab}
-                currentStylesSectionTab={currentStylesSectionTab}
-                document={document}
-              />
-            )}
-            <StyleSectionComponent
-              id="flexbox"
-              currentId={currentStylesSectionTab}
-              title="CSS FlexBox"
-            ></StyleSectionComponent>
+            <StyleTextAndFontsSectionComponent
+              currentScreen={currentScreen}
+              currentStyleEditNodeTab={styleEditNodeId}
+              currentStylesSectionTab={currentStylesSectionTab}
+              document={document}
+            />
+            <StyleBackgroundSectionComponent
+              currentScreen={currentScreen}
+              currentStyleEditNodeTab={styleEditNodeId}
+              currentStylesSectionTab={currentStylesSectionTab}
+              document={document}
+            />
+            <StyleFlexboxSectionComponent
+              currentScreen={currentScreen}
+              currentStyleEditNodeTab={styleEditNodeId}
+              currentStylesSectionTab={currentStylesSectionTab}
+              document={document}
+            />
             <StyleSectionComponent
               id="grid"
               currentId={currentStylesSectionTab}

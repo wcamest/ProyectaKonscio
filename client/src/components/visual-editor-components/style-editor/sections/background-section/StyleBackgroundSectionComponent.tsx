@@ -50,7 +50,6 @@ const StyleBackgroundSectionComponent = (props: Props) => {
       const styles: any = node.styles;
       const currentScreenStyle = styles[screenName];
 
-      console.log(currentScreenStyle);
       return currentScreenStyle.backgroundImage.className;
     },
     UpdateClassName(propertyName: string, value: string) {

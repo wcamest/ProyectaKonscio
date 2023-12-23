@@ -1,5 +1,6 @@
 "use client";
 
+import NodeTreeEditor from "@/components/visual-editor-components/node-tree-editor/NodeTreeEditor";
 import ScreenSelectorComponent from "@/components/visual-editor-components/screen-selector/ScreenSelectorComponent";
 import StyleEditor from "@/components/visual-editor-components/style-editor/StyleEditor";
 import VisualEditorPageDocumentComponent from "@/components/visual-editor-components/visual-editor-page-document/VisualEditorPageDocumentComponent";
@@ -33,13 +34,21 @@ const VisualEditor = (props: Props) => {
         <ScreenSelectorComponent />
       </div>
       <div className="w-full h-full flex overflow-hidden">
+        <div className="h-full">
+          <div className="w-96 h-full overflow-hidden">
+            <NodeTreeEditor document={currentDocument} />
+          </div>
+        </div>
         <div className="w-full h-full overflow-auto">
           <VisualEditorPageDocumentComponent data={currentDocument} />
         </div>
         {currentStyleEditNode && (
           <div className="h-full">
             <div className="w-96 h-full overflow-hidden">
-              <StyleEditor styleEditNodeId={currentStyleEditNode} document={currentDocument} />
+              <StyleEditor
+                styleEditNodeId={currentStyleEditNode}
+                document={currentDocument}
+              />
             </div>
           </div>
         )}
