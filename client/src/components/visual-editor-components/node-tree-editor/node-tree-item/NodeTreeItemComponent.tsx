@@ -36,14 +36,14 @@ const NodeTreeItemComponent = (props: Props) => {
 
       return (
         <div className="pl-4 flex flex-col gap-1">
-          {node.nodes.map((nodeId: string) => {
+          {node.nodes.map((nodeId: string, key:number) => {
             const node = document.nodes.find(
               (node: PageDocumentNode) => node.id === nodeId
             );
 
             if (!node) return undefined;
 
-            return <NodeTreeItemComponent document={document} node={node} />;
+            return <NodeTreeItemComponent key={key} document={document} node={node} />;
           })}
         </div>
       );
