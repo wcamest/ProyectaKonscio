@@ -6,6 +6,7 @@ import StylePropertyComponent from "../../style-property/StylePropertyComponent"
 import PropertyButtonComponent from "../../property-button/PropertyButtonComponent";
 import PixelValueControlComponent from "../../pixel-value-control/PixelValueControlComponent";
 import PercentValueControlComponent from "../../percent-value-control/PercentValueControlComponent";
+import SliderControlComponent from "../../slider-control/SliderControlComponent";
 
 type Props = {
   currentStylesSectionTab: string;
@@ -13,6 +14,34 @@ type Props = {
   currentScreen: Screen;
   document: PageDocument;
 };
+
+const maxWidthScreenSizeClasses: string[] = [
+  "css-max-w-xs",
+  "css-max-w-sm",
+  "css-max-w-md",
+  "css-max-w-lg",
+  "css-max-w-xl",
+  "css-max-w-2xl",
+  "css-max-w-3xl",
+  "css-max-w-4xl",
+  "css-max-w-5xl",
+  "css-max-w-6xl",
+  "css-max-w-7xl",
+];
+
+const maxWidthScreenSize: string[] = [
+  "xs",
+  "sm",
+  "md",
+  "lg",
+  "xl",
+  "2xl",
+  "3xl",
+  "4xl",
+  "5xl",
+  "6xl",
+  "7xl",
+];
 
 const StyleSizingSectionComponent = (props: Props) => {
   const {
@@ -475,12 +504,16 @@ const StyleSizingSectionComponent = (props: Props) => {
             nodeId={currentStyleEditNodeTab}
             screen={currentScreen}
             propertyName="maxWidth"
-            isActive={(className: string | undefined) =>
-              className === "css-max-w-0"
-            }
+            isActive={(className: string | undefined) => {
+              if (className)
+                return (
+                  className === "css-max-w-px" ||
+                  /^css-max-w-\d+\.?\d?$/.test(className)
+                );
+            }}
             updateClassName={() => "css-max-w-0"}
           >
-            zero
+            PX
           </PropertyButtonComponent>
           <PropertyButtonComponent
             document={document}
@@ -493,6 +526,18 @@ const StyleSizingSectionComponent = (props: Props) => {
             updateClassName={() => "css-max-w-none"}
           >
             None
+          </PropertyButtonComponent>
+          <PropertyButtonComponent
+            document={document}
+            nodeId={currentStyleEditNodeTab}
+            screen={currentScreen}
+            propertyName="maxWidth"
+            isActive={(className: string | undefined) => {
+              if (className) return maxWidthScreenSizeClasses.includes(className);
+            }}
+            updateClassName={() => "css-max-w-xs"}
+          >
+            Screen
           </PropertyButtonComponent>
           <PropertyButtonComponent
             document={document}
@@ -543,141 +588,37 @@ const StyleSizingSectionComponent = (props: Props) => {
             Fit
           </PropertyButtonComponent>
         </div>
-        <div className="w-full border-t border-t-solid border-t-blue-300"></div>
-        <div className="flex gap-2 flex-wrap">
-          <PropertyButtonComponent
-            document={document}
-            nodeId={currentStyleEditNodeTab}
-            screen={currentScreen}
-            propertyName="maxWidth"
-            isActive={(className: string | undefined) =>
-              className === "css-max-w-xs"
-            }
-            updateClassName={() => "css-max-w-xs"}
-          >
-            xs
-          </PropertyButtonComponent>
-          <PropertyButtonComponent
-            document={document}
-            nodeId={currentStyleEditNodeTab}
-            screen={currentScreen}
-            propertyName="maxWidth"
-            isActive={(className: string | undefined) =>
-              className === "css-max-w-sm"
-            }
-            updateClassName={() => "css-max-w-sm"}
-          >
-            sm
-          </PropertyButtonComponent>
-          <PropertyButtonComponent
-            document={document}
-            nodeId={currentStyleEditNodeTab}
-            screen={currentScreen}
-            propertyName="maxWidth"
-            isActive={(className: string | undefined) => {
-              return className === "css-max-w-md";
-            }}
-            updateClassName={() => "css-max-w-md"}
-          >
-            md
-          </PropertyButtonComponent>
-          <PropertyButtonComponent
-            document={document}
-            nodeId={currentStyleEditNodeTab}
-            screen={currentScreen}
-            propertyName="maxWidth"
-            isActive={(className: string | undefined) => {
-              return className === "css-max-w-lg";
-            }}
-            updateClassName={() => "css-max-w-lg"}
-          >
-            lg
-          </PropertyButtonComponent>
-          <PropertyButtonComponent
-            document={document}
-            nodeId={currentStyleEditNodeTab}
-            screen={currentScreen}
-            propertyName="maxWidth"
-            isActive={(className: string | undefined) => {
-              return className === "css-max-w-xl";
-            }}
-            updateClassName={() => "css-max-w-xl"}
-          >
-            xl
-          </PropertyButtonComponent>
-          <PropertyButtonComponent
-            document={document}
-            nodeId={currentStyleEditNodeTab}
-            screen={currentScreen}
-            propertyName="maxWidth"
-            isActive={(className: string | undefined) => {
-              return className === "css-max-w-2xl";
-            }}
-            updateClassName={() => "css-max-w-2xl"}
-          >
-            2xl
-          </PropertyButtonComponent>
-          <PropertyButtonComponent
-            document={document}
-            nodeId={currentStyleEditNodeTab}
-            screen={currentScreen}
-            propertyName="maxWidth"
-            isActive={(className: string | undefined) => {
-              return className === "css-max-w-3xl";
-            }}
-            updateClassName={() => "css-max-w-3xl"}
-          >
-            3xl
-          </PropertyButtonComponent>
-          <PropertyButtonComponent
-            document={document}
-            nodeId={currentStyleEditNodeTab}
-            screen={currentScreen}
-            propertyName="maxWidth"
-            isActive={(className: string | undefined) => {
-              return className === "css-max-w-4xl";
-            }}
-            updateClassName={() => "css-max-w-4xl"}
-          >
-            4xl
-          </PropertyButtonComponent>
-          <PropertyButtonComponent
-            document={document}
-            nodeId={currentStyleEditNodeTab}
-            screen={currentScreen}
-            propertyName="maxWidth"
-            isActive={(className: string | undefined) => {
-              return className === "css-max-w-5xl";
-            }}
-            updateClassName={() => "css-max-w-5xl"}
-          >
-            5xl
-          </PropertyButtonComponent>
-          <PropertyButtonComponent
-            document={document}
-            nodeId={currentStyleEditNodeTab}
-            screen={currentScreen}
-            propertyName="maxWidth"
-            isActive={(className: string | undefined) => {
-              return className === "css-max-w-6xl";
-            }}
-            updateClassName={() => "css-max-w-6xl"}
-          >
-            6xl
-          </PropertyButtonComponent>
-          <PropertyButtonComponent
-            document={document}
-            nodeId={currentStyleEditNodeTab}
-            screen={currentScreen}
-            propertyName="maxWidth"
-            isActive={(className: string | undefined) => {
-              return className === "css-max-w-7xl";
-            }}
-            updateClassName={() => "css-max-w-7xl"}
-          >
-            7xl
-          </PropertyButtonComponent>
-        </div>
+        <PixelValueControlComponent
+          document={document}
+          nodeId={currentStyleEditNodeTab}
+          screen={currentScreen}
+          propertyName="maxWidth"
+          isActive={(className: string | undefined) => {
+            if (className)
+              return (
+                className === "css-max-w-px" ||
+                /^css-max-w-\d+\.?\d?$/.test(className)
+              );
+          }}
+          updateClassName={(value: string) => {
+            return `css-max-w-${value}`;
+          }}
+        />
+        <SliderControlComponent
+          document={document}
+          nodeId={currentStyleEditNodeTab}
+          screen={currentScreen}
+          propertyName={"maxWidth"}
+          values={maxWidthScreenSize}
+          labels={maxWidthScreenSize}
+          regExp={/^css-max-w-(\w+)$/}
+          isActive={(className: string | undefined) => {
+            if (className) return maxWidthScreenSizeClasses.includes(className);
+          }}
+          updateValue={(value: string) => {
+            return `css-max-w-${value}`;
+          }}
+        />
       </StylePropertyComponent>
 
       <StylePropertyComponent

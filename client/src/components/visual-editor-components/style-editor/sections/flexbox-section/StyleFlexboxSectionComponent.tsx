@@ -35,6 +35,30 @@ const StyleFlexboxSectionComponent = (props: Props) => {
         document={document}
         nodeId={currentStyleEditNodeTab}
         screen={currentScreen}
+        title="Espaciado"
+        properties={["gap"]}
+      >
+        <PixelValueControlComponent
+          document={document}
+          nodeId={currentStyleEditNodeTab}
+          screen={currentScreen}
+          propertyName="gap"
+          isActive={(className: string | undefined) => {
+            if (className)
+              return (
+                className === "css-gap-px" ||
+                /^css-gap-\d+\.?\d?$/.test(className)
+              );
+          }}
+          updateClassName={(value: string) => {
+            return `css-gap-${value}`;
+          }}
+        />
+      </StylePropertyComponent>
+      <StylePropertyComponent
+        document={document}
+        nodeId={currentStyleEditNodeTab}
+        screen={currentScreen}
         title="Tamaño inicial"
         properties={["flexBasis"]}
       >

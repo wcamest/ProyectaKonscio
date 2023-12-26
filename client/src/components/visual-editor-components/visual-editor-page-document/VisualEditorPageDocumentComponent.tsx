@@ -19,6 +19,7 @@ import RichTextElementEditorComponent from "../rich-text-element-editor/RichText
 import ImageElementEditor from "../image-element-editor/ImageElementEditor";
 import { RootState } from "@/redux/store/store";
 import ElementRenderer from "../elements/renderer/renderer";
+import SimpleTextEditorComponent from "../simple-text-editor/SimpleTextEditorComponent";
 
 type Props = {
   data: PageDocument;
@@ -90,6 +91,14 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
         onHideModal={Functions.HideElementEditor}
       >
         <RichTextElementEditorComponent />
+      </ModalComponent>
+      <ModalComponent
+        id="simple-text-element-editor-modal"
+        buttons={[]}
+        title="Texto simple"
+        onHideModal={Functions.HideElementEditor}
+      >
+        <SimpleTextEditorComponent />
       </ModalComponent>
       <ModalComponent
         id="image-element-editor-modal"

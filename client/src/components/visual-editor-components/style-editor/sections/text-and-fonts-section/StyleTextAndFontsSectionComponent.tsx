@@ -91,7 +91,6 @@ const StyleTextAndFontsSectionComponent = (props: Props) => {
             screen={currentScreen}
             propertyName="fontSize"
             updateValue={(value: string) => {
-              console.log(value);
               return `css-text-${value}`;
             }}
             values={[
@@ -162,7 +161,6 @@ const StyleTextAndFontsSectionComponent = (props: Props) => {
             screen={currentScreen}
             propertyName="fontWeight"
             updateValue={(value: string) => {
-              console.log(value);
               return `css-font-${value}`;
             }}
             values={[
@@ -269,7 +267,6 @@ const StyleTextAndFontsSectionComponent = (props: Props) => {
             screen={currentScreen}
             propertyName="textColor"
             updateClassName={(value: string) => {
-              console.log(value);
               return `css-text-${value}`;
             }}
           />

@@ -1,9 +1,11 @@
 import PageDocument from "@/types/page-document/PageDocument";
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import ContainerElementComponent from "../container-element/ContainerElementComponent";
+import SimpleTextElementComponent from "../simple-text-element/SimpleTextElementComponent";
 
 const Components:any = {
-    PageDocumentContainerElement: ContainerElementComponent
+    PageDocumentContainerElement: ContainerElementComponent,
+    PageDocumentSimpleTextElement: SimpleTextElementComponent
 }
 
 const ElementRenderer = {
