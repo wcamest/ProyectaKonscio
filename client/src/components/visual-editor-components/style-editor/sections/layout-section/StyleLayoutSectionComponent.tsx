@@ -220,9 +220,9 @@ const StyleLayoutSectionComponent = (props: Props) => {
           propertyName="zIndex"
           labels={["0", "10", "20", "30", "50", "auto"]}
           values={["0", "10", "20", "30", "50", "auto"]}
-          regExp={/^z-(\w+)$/}
+          regExp={/^css-z-(\w+)$/}
           updateValue={(value: string) => {
-            return `z-${value}`;
+            return `css-z-${value}`;
           }}
         />
       </StylePropertyComponent>

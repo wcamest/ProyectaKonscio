@@ -70,7 +70,7 @@ const ImageElementEditor = (props: Props) => {
   return (
     <div className="px-4 py-2 flex flex-col gap-5">
       <div className="flex flex-col gap-2">
-        <span className="text-gray-500">1. Seleccione una imagen:</span>
+        <span className="text-xs text-gray-500">1. Seleccione una imagen:</span>
         <ImageFileInputComponent
           fileName={Functions.GetFileNameValue()}
           imageUrl={Functions.GetUrlValue()}
@@ -78,7 +78,7 @@ const ImageElementEditor = (props: Props) => {
         />
       </div>
       <div className="flex flex-col gap-2">
-        <span className="text-gray-500">
+        <span className="text-xs text-gray-500">
           2. Incluya una descripción de la imagen:
         </span>
         <p className="p-2 bg-yellow-100 text-yellow-800 border border-dashed border-yellow-800 text-xs rounded-md">

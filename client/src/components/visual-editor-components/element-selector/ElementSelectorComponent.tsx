@@ -14,6 +14,7 @@ import Styles from "../styles/styles";
 import PageDocumentRow from "@/types/page-document/PageDocumentRow";
 import PageDocumentColumn from "@/types/page-document/PageDocumentColumn";
 import PageDocumentContainerElement from "@/types/page-document/PageDocumentContainerElement";
+import PageDocumentSimpleTextElement from "@/types/page-document/PageDocumentSimpleTextElement";
 
 type Props = {};
 
@@ -42,6 +43,26 @@ const ElementSelectorComponent = (props: Props) => {
       Functions.HideAddElementModal();
       dispatch(setCurrentEditNode(richTextElement.id));
       dispatch(showModal("rich-text-element-editor-modal"));
+    },
+    AddSimpleText() {
+      const richTextElement: PageDocumentSimpleTextElement = {
+        id: generateId(),
+        nodes: [],
+        type: "PageDocumentSimpleTextElement",
+        name: "Texto simple",
+        text: "",
+        elementType: "span",
+        canEdit: true,
+        canAddChild: false,
+        canDelete: true,
+        styles: Styles.CreateClassListCollection(),
+      };
+
+      dispatch(addNode([richTextElement]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(richTextElement.id));
+      dispatch(showModal("simple-text-element-editor-modal"));
     },
     AddImage() {
       const imageElement: PageDocumentImageElement = {
@@ -103,6 +124,9 @@ const ElementSelectorComponent = (props: Props) => {
         <ElementSelectorItemComponent
           icon="/icons/type.svg"
           text="Texto simple"
+          onClick={() => {
+            Functions.AddSimpleText()
+          }}
         />
       </ElementSelectorSectionComponent>
       <ElementSelectorSectionComponent title="Media">

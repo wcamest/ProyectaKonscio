@@ -1,8 +1,12 @@
-import { setCurrentPageDocument } from "@/redux/features/visual-editor/visualEditorSlice";
+import {
+  setCurrentPageDocument,
+  setCurrentStyleEditNode,
+} from "@/redux/features/visual-editor/visualEditorSlice";
+import { RootState } from "@/redux/store/store";
 import PageDocument from "@/types/page-document/PageDocument";
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 type Props = {
   node: PageDocumentNode;
@@ -12,11 +16,15 @@ type Props = {
 const nodeTypeLabels: any = {
   PageDocumentContainerElement: "Contenedor",
   PageDocumentRichTextElement: "Texto Enriquecido",
-  PageDocumentImageElement: "Imagen"
+  PageDocumentImageElement: "Imagen",
+  PageDocumentSimpleTextElement: "Texto Simple"
 };
 
 const NodeTreeItemComponent = (props: Props) => {
   const { node, document } = props;
+  const { currentStyleEditNode } = useSelector(
+    (state: RootState) => state.visualEditor
+  );
   const dispatch = useDispatch();
 
   const Functions = {
@@ -27,6 +35,8 @@ const NodeTreeItemComponent = (props: Props) => {
           selectedNode: node.id,
         })
       );
+
+      if (currentStyleEditNode) dispatch(setCurrentStyleEditNode(node.id));
     },
   };
 
@@ -36,14 +46,20 @@ const NodeTreeItemComponent = (props: Props) => {
 
       return (
         <div className="pl-4 flex flex-col gap-1">
-          {node.nodes.map((nodeId: string, key:number) => {
+          {node.nodes.map((nodeId: string, key: number) => {
             const node = document.nodes.find(
               (node: PageDocumentNode) => node.id === nodeId
             );
 
             if (!node) return undefined;
 
-            return <NodeTreeItemComponent key={key} document={document} node={node} />;
+            return (
+              <NodeTreeItemComponent
+                key={key}
+                document={document}
+                node={node}
+              />
+            );
           })}
         </div>
       );
@@ -62,9 +78,12 @@ const NodeTreeItemComponent = (props: Props) => {
         );
 
       return (
-        <div className="px-2 py-1 w-fit hover:bg-blue-300 text-blue-900 rounded-md border border-solid border-blue-300 select-none cursor-pointer shadow-md" onClick={() => {
-          Functions.SelectThis();
-        }}>
+        <div
+          className="px-2 py-1 w-fit hover:bg-blue-300 text-blue-900 rounded-md border border-solid border-blue-300 select-none cursor-pointer shadow-md"
+          onClick={() => {
+            Functions.SelectThis();
+          }}
+        >
           <div className="flex flex-col">
             <span>{node.name}</span>
             <span className="text-xs opacity-50">

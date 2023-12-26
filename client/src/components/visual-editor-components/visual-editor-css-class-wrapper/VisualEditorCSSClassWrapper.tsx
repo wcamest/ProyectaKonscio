@@ -9,6 +9,14 @@ import ClassGenerator from "../elements/class-generator/ClassGenerator";
 type Props = {};
 
 const classRules: any = {
+  //position
+  "css-static": "position: static;",
+  "css-fixed": "position: fixed;",
+  "css-absolute": "position: absolute;",
+  "css-relative": "position: relative;",
+  "css-sticky": "position: sticky;",
+
+  //display
   "css-block": "display: block;",
   "css-inline-block": "display: inline-block;",
   "css-inline": "display: block;",
@@ -17,22 +25,180 @@ const classRules: any = {
   "css-grid": "display: grid;",
   "css-hidden": "display: none;",
 
+  //object contain
+  "css-object-contain": "object-fit: contain",
+  "css-object-cover": "object-fit: cover",
+  "css-object-fill": "object-fit: fill",
+  "css-object-none": "object-fit: none",
+  "css-object-scale-down": "object-fit: scale-down",
+
+  //visibility
+  "css-visible": "visibility: visible",
+  "css-invisible": "visibility: hidden",
+  "css-collapse": "visibility: collapse",
+
+  //z-index
+  "css-z-0": "z-index: 0",
+  "css-z-10": "z-index: 10",
+  "css-z-20": "z-index: 20",
+  "css-z-30": "z-index: 30",
+  "css-z-40": "z-index: 40",
+  "css-z-50": "z-index: 50",
+  "css-z-auto": "z-index: auto",
+
   //SIZING
   //width
-  "css-w-screen": "width: 100vw",
-  "css-w-full": "width: 100%",
-  "css-w-min": "width: min-content",
-  "css-w-max": "width: max-content",
-  "css-w-fit": "width: fit-content",
-  "css-w-auto": "width: auto",
+  "css-w-screen": "width: 100vw;",
+  "css-w-full": "width: 100%;",
+  "css-w-min": "width: min-content;",
+  "css-w-max": "width: max-content;",
+  "css-w-fit": "width: fit-content;",
+  "css-w-auto": "width: auto;",
+
+  //height
+  "css-h-screen": "height: 100vh;",
+  "css-h-full": "height: 100%;",
+  "css-h-min": "height: min-content;",
+  "css-h-max": "height: max-content;",
+  "css-h-fit": "height: fit-content;",
+  "css-h-auto": "height: auto;",
+
+  //min-width
+  "css-min-w-full": "min-width: 100%;",
+  "css-min-w-min": "min-width: min-content;",
+  "css-min-w-max": "min-width: max-content;",
+  "css-min-w-fit": "min-width: fit-content;",
+
+  //min-height
+  "css-min-h-full": "min-height: 100%;",
+  "css-min-h-screen": "min-height: 100vh",
+  "css-min-h-min": "min-height: min-content;",
+  "css-min-h-max": "min-height: max-content;",
+  "css-min-h-fit": "min-height: fit-content;",
+
+  //max-width
+  "css-max-w-xs": "max-width: 20rem;",
+  "css-max-w-sm": "max-width: 24rem;",
+  "css-max-w-md": "max-width: 28rem;",
+  "css-max-w-lg": "max-width: 32rem;",
+  "css-max-w-xl": "max-width: 36rem;",
+  "css-max-w-2xl": "max-width: 42rem;",
+  "css-max-w-3xl": "max-width: 48rem;",
+  "css-max-w-4xl": "max-width: 56rem;",
+  "css-max-w-5xl": "max-width: 64rem;",
+  "css-max-w-6xl": "max-width: 72rem;",
+  "css-max-w-7xl": "max-width: 80rem;",
+  "css-max-w-none": "max-width: none;",
+  "css-max-w-full": "max-width: 100%;",
+  "css-max-w-min": "max-width: min-content;",
+  "css-max-w-max": "max-width: max-content;",
+  "css-max-w-fit": "max-width: fit-content;",
 
   //max-height
-  "css-max-h-none": "max-height: none",
-  "css-max-h-full": "max-height: 100%",
-  "css-max-h-screen": "max-height: 10vh",
-  "css-max-h-min": "max-height: min-content",
-  "css-max-h-max": "max-height: max-content",
-  "css-max-h-fit": "max-height: fit-content",
+  "css-max-h-none": "max-height: none;",
+  "css-max-h-full": "max-height: 100%;",
+  "css-max-h-screen": "max-height: 10vh;",
+  "css-max-h-min": "max-height: min-content;",
+  "css-max-h-max": "max-height: max-content;",
+  "css-max-h-fit": "max-height: fit-content;",
+
+  //font and text
+  "css-font-sans":
+    'font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";',
+  "css-font-serif":
+    'font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;',
+  "css-font-mono":
+    'font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;',
+
+  //font size
+  "css-text-xs": "font-size: 0.75rem; line-height: 1rem;",
+  "css-text-sm": "font-size: 0.875rem; line-height:  1.25rem;",
+  "css-text-base": "font-size: 1rem; line-height: 1.5rem;",
+  "css-text-lg": "font-size: 1.125rem; line-height: 1.75rem;",
+  "css-text-xl": "font-size: 1.25rem; line-height: 1.75rem;",
+  "css-text-2xl": "font-size: 1.5rem; line-height: 2rem;",
+  "css-text-3xl": "font-size: 1.875rem; line-height: 2.25rem;",
+  "css-text-4xl": "font-size: 2.25rem; line-height: 2.5rem;",
+  "css-text-5xl": "font-size: 3rem; line-height: 1;",
+  "css-text-6xl": "font-size: 3.75rem; line-height: 1;",
+  "css-text-7xl": "font-size: 4.5rem; line-height: 1;",
+  "css-text-8xl": "font-size: 6rem; line-height: 1;",
+  "css-text-9xl": "font-size: 8rem; line-height: 1;",
+
+  //font style
+  "css-italic": "font-style: italic;",
+  "css-not-italic": "font-style: normal",
+
+  //font weight
+  "css-font-thin": "font-weight: 100;",
+  "css-font-extralight": "font-weight: 200;",
+  "css-font-light": "font-weight: 300;",
+  "css-font-normal": "font-weight: 400;",
+  "css-font-medium": "font-weight: 500;",
+  "css-font-semibold": "font-weight: 600;",
+  "css-font-bold": "font-weight: 700;",
+  "css-font-extrabold": "font-weight: 800;",
+  "css-font-black": "font-weight: 900;",
+
+  //text align
+  "css-text-left": "text-align: left;",
+  "css-text-center": "text-align: center;",
+  "css-text-right": "text-align: right;",
+  "css-text-justify": "text-align: justify;",
+
+  //text decoration
+  "css-underline": "text-decoration-line: underline;",
+  "css-overline": "text-decoration-line: overline;",
+  "css-line-through": "text-decoration-line: line-through;",
+  "css-no-underline": "text-decoration-line: none;",
+
+  //text transform
+  "css-uppercase": "text-transform: uppercase;",
+  "css-lowercase": "text-transform: lowercase;",
+  "css-capitalize": "text-transform: capitalize;",
+  "css-normal-case": "text-transform: none;",
+
+  //flex direction
+  "css-flex-row": "flex-direction: row;",
+  "css-flex-row-reverse": "flex-direction: row-reverse;",
+  "css-flex-col": "flex-direction: column;",
+  "css-flex-col-reverse": "flex-direction: column-reverse;",
+
+  //flex wrap
+  "css-flex-wrap": "flex-wrap: wrap;",
+  "css-flex-wrap-reverse": "flex-wrap: wrap-reverse;",
+  "css-flex-nowrap": "flex-wrap: nowrap;",
+
+  //flex order
+  "css-order-1": "order: 1;",
+  "css-order-2": "order: 2;",
+  "css-order-3": "order: 3;",
+  "css-order-4": "order: 4;",
+  "css-order-5": "order: 5;",
+  "css-order-6": "order: 6;",
+  "css-order-7": "order: 7;",
+  "css-order-8": "order: 8;",
+  "css-order-9": "order: 9;",
+  "css-order-10": "order: 10;",
+  "css-order-11": "order: 11;",
+  "css-order-12": "order: 12;",
+  "css-order-first": "order: -9999;",
+  "css-order-last": "order: 9999;",
+  "css-order-none": "order: 0;",
+
+  //justify content
+  "css-justify-start": "justify-content: flex-start;",
+  "css-justify-end": "justify-content: flex-end;",
+  "css-justify-center": "justify-content: center;",
+  "css-justify-between": "justify-content: space-between;",
+  "css-justify-around": "justify-content: space-around;",
+  "css-justify-evenly": "justify-content: space-evenly;",
+
+  //align items
+  "css-items-start": "align-items: flex-start;",
+  "css-items-end": "align-items: flex-end;",
+  "css-items-center": "align-items: center;",
+  "css-items-stretch": "align-items: stretch;",
 };
 
 const colors: any = {
@@ -327,10 +493,29 @@ const colors: any = {
 const cssProperties: any = {
   width: "width",
   height: "height",
+  maxWidth: "max-width",
   maxHeight: "max-height",
+  textColor: "color",
+  textDecorationColor: "text-decoration-color",
+  backgroundColor: "background-color",
+  flexBasis: "flex-basis",
+  gap: "gap"
 };
-const pixelValueProperties = ["width", "height", "maxHeight"];
-const percentValueProperties = ["width", "height"];
+
+const pixelValueProperties = [
+  "width",
+  "height",
+  "maxWidth",
+  "maxHeight",
+  "flexBasis",
+  "gap"
+];
+const percentValueProperties = ["width", "height", "flexBasis"];
+const colorValueProperties = [
+  "textColor",
+  "textDecorationColor",
+  "backgroundColor",
+];
 
 const VisualEditorCSSClassWrapper = (props: Props) => {
   const { currentDocument, currentScreen } = useSelector(
@@ -370,6 +555,34 @@ const VisualEditorCSSClassWrapper = (props: Props) => {
         (floatTotalDivisionsValue / floatSelectedDivisionsValue) * 100
       }%`;
     },
+    GetColorClassRule(className: string, cssProperty: string) {
+      const fixedColors: string[] = ["black", "white"];
+
+      const fixedColor = fixedColors.find((color: string) => {
+        return className.includes(color);
+      });
+
+      if (fixedColor) return `${cssProperty}: ${fixedColor};`;
+
+      const colorValueRegExp = /^.+-(\w+)-(\d+)$/;
+
+      const matches = className.match(colorValueRegExp);
+
+      if (!matches) return undefined;
+
+      const colorName = matches[1];
+      const colorLightLevel = matches[2];
+
+      const colorObject = colors[colorName];
+
+      if (!colorObject) return undefined;
+
+      const hexColor = colorObject[colorLightLevel];
+
+      if (!hexColor) return undefined;
+
+      return `${cssProperty}: ${hexColor};`;
+    },
     GetClasses() {
       if (!currentDocument) return undefined;
 
@@ -395,6 +608,10 @@ const VisualEditorCSSClassWrapper = (props: Props) => {
               classResult.className,
               cssProperties[classResult.property]
             );
+            const colorClassRule = Functions.GetColorClassRule(
+              classResult.className,
+              cssProperties[classResult.property]
+            );
 
             if (classRules[classResult.className])
               classRule = classRules[classResult.className];
@@ -408,6 +625,11 @@ const VisualEditorCSSClassWrapper = (props: Props) => {
               percentClassRule
             )
               classRule = percentClassRule;
+            else if (
+              colorValueProperties.includes(classResult.property) &&
+              colorClassRule
+            )
+              classRule = colorClassRule;
 
             classDefinitions.push(
               `.${classResult.className
