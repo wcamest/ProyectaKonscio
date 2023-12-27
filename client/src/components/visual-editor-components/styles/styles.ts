@@ -56,13 +56,37 @@ const Styles = {
         enabled: false,
         className: "css-max-h-none",
       },
-      padding: {
+      paddingTop: {
         enabled: false,
-        className: "css-p-0",
+        className: "css-pt-0",
       },
-      margin: {
+      paddingRight: {
         enabled: false,
-        className: "css-m-0",
+        className: "css-pr-0",
+      },
+      paddingBottom: {
+        enabled: false,
+        className: "css-pb-0",
+      },
+      paddingLeft: {
+        enabled: false,
+        className: "css-pl-0",
+      },
+      marginTop: {
+        enabled: false,
+        className: "css-mt-0",
+      },
+      marginRight: {
+        enabled: false,
+        className: "css-mr-0",
+      },
+      marginBottom: {
+        enabled: false,
+        className: "css-mb-0",
+      },
+      marginLeft: {
+        enabled: false,
+        className: "css-ml-0",
       },
       fontFamily: {
         enabled: false,

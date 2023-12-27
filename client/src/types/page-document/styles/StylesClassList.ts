@@ -5,11 +5,10 @@ export default interface StylesClassList {
   position: StylesProperty;
   display: StylesProperty;
   objectFit: StylesProperty;
-  objectPosition:StylesProperty;
+  objectPosition: StylesProperty;
   overflow: StylesProperty;
   visibility: StylesProperty;
-  zIndex:StylesProperty;
-
+  zIndex: StylesProperty;
 
   //sizing
   width: StylesProperty;
@@ -20,8 +19,14 @@ export default interface StylesClassList {
   maxHeight: StylesProperty;
 
   //spacing
-  padding: StylesProperty;
-  margin: StylesProperty;
+  paddingTop: StylesProperty;
+  paddingRight: StylesProperty;
+  paddingBottom: StylesProperty;
+  paddingLeft: StylesProperty;
+  marginTop: StylesProperty;
+  marginRight: StylesProperty;
+  marginBottom: StylesProperty;
+  marginLeft: StylesProperty;
 
   //font and text
   fontFamily: StylesProperty;

@@ -26,6 +26,7 @@ import StyleTextAndFontsSectionComponent from "./sections/text-and-fonts-section
 import StyleBackgroundSectionComponent from "./sections/background-section/StyleBackgroundSectionComponent";
 import StyleLayoutSectionComponent from "./sections/layout-section/StyleLayoutSectionComponent";
 import StyleFlexboxSectionComponent from "./sections/flexbox-section/StyleFlexboxSectionComponent";
+import StyleSpacingSectionComponent from "./sections/spacing-section/StyleSpacingSectionComponent";
 
 type Props = {
   styleEditNodeId: string;
@@ -112,11 +113,12 @@ const StyleEditor = (props: Props) => {
               currentStylesSectionTab={currentStylesSectionTab}
               document={document}
             />
-            <StyleSectionComponent
-              id="spacing"
-              currentId={currentStylesSectionTab}
-              title="Espaciados"
-            ></StyleSectionComponent>
+            <StyleSpacingSectionComponent
+              currentScreen={currentScreen}
+              currentStyleEditNodeTab={styleEditNodeId}
+              currentStylesSectionTab={currentStylesSectionTab}
+              document={document}
+            />
             <StyleTextAndFontsSectionComponent
               currentScreen={currentScreen}
               currentStyleEditNodeTab={styleEditNodeId}
