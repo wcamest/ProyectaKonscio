@@ -499,7 +499,15 @@ const cssProperties: any = {
   textDecorationColor: "text-decoration-color",
   backgroundColor: "background-color",
   flexBasis: "flex-basis",
-  gap: "gap"
+  gap: "gap",
+  paddingTop: "padding-top",
+  paddingRight: "padding-right",
+  paddingBottom: "padding-bottom",
+  paddingLeft: "padding-left",
+  marginTop: "margin-top",
+  marginRight: "margin-right",
+  marginBottom: "margin-bottom",
+  marginLeft: "margin-left",
 };
 
 const pixelValueProperties = [
@@ -508,7 +516,15 @@ const pixelValueProperties = [
   "maxWidth",
   "maxHeight",
   "flexBasis",
-  "gap"
+  "gap",
+  "paddingTop",
+  "paddingRight",
+  "paddingBottom",
+  "paddingLeft",
+  "marginTop",
+  "marginRight",
+  "marginBottom",
+  "marginLeft",
 ];
 const percentValueProperties = ["width", "height", "flexBasis"];
 const colorValueProperties = [
