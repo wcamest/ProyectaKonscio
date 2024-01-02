@@ -16,6 +16,8 @@ import MoveNodeUp from "./actions/moveNodeUp";
 import DuplicateNode from "./actions/duplicateNode";
 import SetDataToCopy from "./actions/setDataToCopy";
 import PasteNode from "./actions/pasteNode";
+import Rectangle from "@/types/Rectangle";
+import SetSelectionRectangle from "./actions/setSelectionRectangle";
 
 export enum Screen {
   base = "base",
@@ -36,6 +38,7 @@ export interface VisualEditorState {
   currentSectionLevel?: string;
   currentScreen: Screen;
   dataToCopy?: string;
+  selectionRectangle?: Rectangle;
 }
 
 const initialState: VisualEditorState = {
@@ -62,7 +65,8 @@ export const visualEditorSlice = createSlice({
     moveNodeUp: MoveNodeUp,
     duplicateNode: DuplicateNode,
     setDataToCopy: SetDataToCopy,
-    pasteNode: PasteNode
+    pasteNode: PasteNode,
+    setSelectionRectangle: SetSelectionRectangle
   },
 });
 
@@ -83,7 +87,8 @@ export const {
   moveNodeUp,
   duplicateNode,
   setDataToCopy,
-  pasteNode
+  pasteNode,
+  setSelectionRectangle
 } = visualEditorSlice.actions;
 
 export default visualEditorSlice.reducer;

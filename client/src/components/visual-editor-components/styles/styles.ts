@@ -4,6 +4,10 @@ import StylesClassListCollection from "@/types/page-document/styles/StylesClassL
 const Styles = {
   CreateClassList(): StylesClassList {
     return {
+      aspectRatio: {
+        enabled: false,
+        className: "css-aspect-auto",
+      },
       position: {
         enabled: false,
         className: "css-static",

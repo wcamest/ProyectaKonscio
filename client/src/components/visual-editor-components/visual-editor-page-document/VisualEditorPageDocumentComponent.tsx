@@ -2,7 +2,7 @@
 
 import PageDocument from "@/types/page-document/PageDocument";
 import PageDocumentRow from "@/types/page-document/PageDocumentRow";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import ModalComponent from "@/components/Modal/ModalComponent";
 import ElementSelectorSectionComponent from "../element-selector-section/ElementSelectorSectionComponent";
@@ -19,6 +19,7 @@ import ImageElementEditor from "../image-element-editor/ImageElementEditor";
 import { RootState } from "@/redux/store/store";
 import ElementRenderer from "../elements/renderer/renderer";
 import SimpleTextEditorComponent from "../simple-text-editor/SimpleTextEditorComponent";
+import Rectangle from "@/types/Rectangle";
 
 type Props = {
   data: PageDocument;
@@ -32,12 +33,25 @@ const screenMinSizes: any = {
   "2xl": 1536,
 };
 
+type PageDocumentState = {
+  SelectionRectangle: Rectangle;
+};
+
 const VisualEditorPageDocumentComponent = (props: Props) => {
   const { data } = props;
-  const { currentScreen } = useSelector(
+  const { currentScreen, selectionRectangle, currentStyleEditNode } = useSelector(
     (state: RootState) => state.visualEditor
   );
   const dispatch = useDispatch();
+  const ref = useRef<HTMLDivElement>(null);
+  const [state, setState] = useState<PageDocumentState>({
+    SelectionRectangle: {
+      x: 0,
+      y: 0,
+      width: 0,
+      height: 0,
+    },
+  });
 
   const Functions = {
     HideElementEditor() {
@@ -50,6 +64,26 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
       return {
         maxWidth: `${screenMinSizes[currentScreen]}px`,
       };
+    },
+    ShowSelection() {
+      if (!ref.current) return;
+      if (!selectionRectangle) return;
+
+      const domRect = ref.current.getBoundingClientRect();
+
+      const x = selectionRectangle.x - domRect.x;
+      const y = selectionRectangle.y - domRect.y;
+      const width = selectionRectangle.width;
+      const height = selectionRectangle.height;
+
+      setState({
+        SelectionRectangle: {
+          x,
+          y,
+          width,
+          height,
+        },
+      });
     },
   };
 
@@ -65,13 +99,65 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
     },
   };
 
+  useEffect(() => {
+    Functions.ShowSelection();
+  }, [selectionRectangle, currentStyleEditNode]);
+
   return (
     <div className="relative w-full h-fit p-10 flex justify-center">
       <div
+        ref={ref}
         style={Functions.GetStyles()}
-        className="w-full border border-dashed border-blue-200 flex flex-col"
+        className="relative w-full border border-dashed border-blue-200 flex flex-col"
       >
         {Renderer.Root()}
+        <div className="absolute w-full h-full top-0 left-0 z-50">
+          <div
+            style={{
+              top: `0px`,
+              left: `0px`,
+              width: `${state.SelectionRectangle.x}px`,
+              height: `100%`,
+            }}
+            className="absolute bg-black bg-opacity-50"
+          ></div>
+          <div
+            style={{
+              top: `0px`,
+              left: `${state.SelectionRectangle.x}px`,
+              width: `${state.SelectionRectangle.width}px`,
+              height: `${state.SelectionRectangle.y}px`,
+            }}
+            className="absolute bg-black bg-opacity-50"
+          ></div>
+          <div
+            style={{
+              top: `0px`,
+              left: `${state.SelectionRectangle.width + state.SelectionRectangle.x}px`,
+              width: `calc(100% - ${state.SelectionRectangle.width + state.SelectionRectangle.x}px)`,
+              height: `100%`,
+            }}
+            className="absolute bg-black bg-opacity-50"
+          ></div>
+          <div
+            style={{
+              top: `${state.SelectionRectangle.height + state.SelectionRectangle.y}px`,
+              left: `${state.SelectionRectangle.x}px`,
+              width: `${state.SelectionRectangle.width}px`,
+              height: `calc(100% - ${state.SelectionRectangle.height + state.SelectionRectangle.y}px)`,
+            }}
+            className="absolute bg-black bg-opacity-50"
+          ></div>
+          <div
+            style={{
+              top: `${state.SelectionRectangle.y}px`,
+              left: `${state.SelectionRectangle.x}px`,
+              width: `${state.SelectionRectangle.width}px`,
+              height: `${state.SelectionRectangle.height}px`,
+            }}
+            className="absolute outline-8 outline-dashed outline-yellow-600"
+          ></div>
+        </div>
       </div>
       <ModalComponent
         id="add-element-modal"

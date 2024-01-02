@@ -16,10 +16,28 @@ type Props = {
   document: PageDocument;
 };
 
-const positionPropertyButtons: StylePropertyButtonObject[] = [
+const aspectRatioPropertyButtons: StylePropertyButtonObject[] = [
   {
     contentType: StylePropertyButtonContentType.text,
     content: "Static",
+    defaultClassName: "css-aspect-auto",
+  },
+  {
+    contentType: StylePropertyButtonContentType.text,
+    content: "Square",
+    defaultClassName: "css-aspect-square",
+  },
+  {
+    contentType: StylePropertyButtonContentType.text,
+    content: "Video",
+    defaultClassName: "css-aspect-video",
+  },
+]
+
+const positionPropertyButtons: StylePropertyButtonObject[] = [
+  {
+    contentType: StylePropertyButtonContentType.text,
+    content: "Auto",
     defaultClassName: "css-static",
   },
   {
@@ -170,6 +188,15 @@ const StyleLayoutSectionComponent = (props: Props) => {
       currentId={currentStylesSectionTab}
       title="Layout"
     >
+      <StylePropertyComponent
+        document={document}
+        nodeId={currentStyleEditNodeTab}
+        screen={currentScreen}
+        title="Relación-Aspecto"
+        properties={["aspectRatio"]}
+      >
+        {Renderer.PropertyButtons("aspectRatio", aspectRatioPropertyButtons)}
+      </StylePropertyComponent>
       <StylePropertyComponent
         document={document}
         nodeId={currentStyleEditNodeTab}

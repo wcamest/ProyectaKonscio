@@ -158,11 +158,15 @@ const NodeTreeEditor = (props: Props) => {
         >
           <CopyIcon />
         </ColumnButtonComponent>
-        {Functions.SelectedNodeCanDelete() && <ColumnButtonComponent onClick={() => {
-          Functions.CutNode();
-        }}>
-          <ScissorsIcon />
-        </ColumnButtonComponent>}
+        {Functions.SelectedNodeCanDelete() && (
+          <ColumnButtonComponent
+            onClick={() => {
+              Functions.CutNode();
+            }}
+          >
+            <ScissorsIcon />
+          </ColumnButtonComponent>
+        )}
         {dataToCopy && (
           <ColumnButtonComponent
             onClick={() => {
@@ -174,7 +178,9 @@ const NodeTreeEditor = (props: Props) => {
         )}
       </div>
       <div className="w-full h-full overflow-hidden">
-        <div className="p-1 w-full h-full overflow-auto">{Renderer.Root()}</div>
+        <div className="w-full h-full overflow-auto">
+          <div className="p-2 w-fit h-fit">{Renderer.Root()}</div>
+        </div>
       </div>
     </div>
   );
