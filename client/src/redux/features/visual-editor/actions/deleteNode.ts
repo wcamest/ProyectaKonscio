@@ -38,12 +38,25 @@ export default function DeleteNode(
 
   if (!parentOfNodeToDelete) return state;
 
+  const elementIndex = parentOfNodeToDelete.nodes.indexOf(toDeleteId);
+  const previousElementIndex = elementIndex - 1;
+
   const updatedParentOfNodeToDelete: PageDocumentNode = {
     ...parentOfNodeToDelete,
     nodes: parentOfNodeToDelete.nodes.filter(
       (nodeId: string) => nodeId !== toDeleteId
     ),
   };
+
+  let newSelectedElementId: string = "";
+
+  const previousElement =
+    updatedParentOfNodeToDelete.nodes[previousElementIndex];
+  const nextElement = updatedParentOfNodeToDelete.nodes[elementIndex];
+
+  if (nextElement) newSelectedElementId = nextElement;
+  else if (previousElement) newSelectedElementId = previousElement;
+  else newSelectedElementId = updatedParentOfNodeToDelete.id;
 
   state.currentDocument.nodes = state.currentDocument.nodes.map(
     (node: PageDocumentNode) => {
@@ -53,4 +66,6 @@ export default function DeleteNode(
       return node;
     }
   );
+
+  state.currentDocument.selectedNode = newSelectedElementId;
 }

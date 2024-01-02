@@ -46,6 +46,21 @@ export default interface StylesClassList {
   textOverflow: StylesProperty;
   whiteSpace: StylesProperty;
 
+  //border
+  borderStyle: StylesProperty;
+  borderTopWidth: StylesProperty;
+  borderLeftWidth: StylesProperty;
+  borderRightWidth: StylesProperty;
+  borderBottomWidth: StylesProperty;
+  borderTopColor: StylesProperty;
+  borderLeftColor: StylesProperty;
+  borderRightColor: StylesProperty;
+  borderBottomColor: StylesProperty;
+  borderTopLeftRadius: StylesProperty;
+  borderTopRightRadius: StylesProperty;
+  borderBottomLeftRadius: StylesProperty;
+  borderBottomRightRadius: StylesProperty;
+
   //background
   backgroundColor: StylesProperty;
   backgroundImage: StylesProperty;

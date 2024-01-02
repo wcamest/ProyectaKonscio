@@ -1,4 +1,10 @@
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
+import generateId from "@/utils/Utils";
+
+type NewIdKVP = {
+  old: string;
+  new: string;
+};
 
 export const _getDescendants = (id: string, nodes: PageDocumentNode[]) => {
   let _descendants: PageDocumentNode[] = [];
@@ -22,4 +28,29 @@ export const _getDescendants = (id: string, nodes: PageDocumentNode[]) => {
   }
 
   return _descendants;
+};
+
+export const _duplicateNodeData = (id: string, nodes: PageDocumentNode[]) => {
+  const descendants = _getDescendants(
+    id,
+    nodes
+  );
+
+  const newDescendantsIds: NewIdKVP[] = descendants.map(
+    (node: PageDocumentNode) => {
+      return {
+        old: node.id,
+        new: generateId(),
+      };
+    }
+  );
+
+  let dataToString: string = JSON.stringify(descendants);
+
+  for (let it = 0; it < newDescendantsIds.length; it++) {
+    const kvp = newDescendantsIds[it];
+    dataToString = dataToString.replaceAll(kvp.old, kvp.new);
+  }
+
+  return dataToString;
 };

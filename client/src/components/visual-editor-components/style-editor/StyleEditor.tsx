@@ -27,6 +27,8 @@ import StyleBackgroundSectionComponent from "./sections/background-section/Style
 import StyleLayoutSectionComponent from "./sections/layout-section/StyleLayoutSectionComponent";
 import StyleFlexboxSectionComponent from "./sections/flexbox-section/StyleFlexboxSectionComponent";
 import StyleSpacingSectionComponent from "./sections/spacing-section/StyleSpacingSectionComponent";
+import CSSSectionBorderIcon from "@/components/Icons/CSSSectionBorderIcon";
+import StyleBorderSectionComponent from "./sections/border-section/StyleBorderSectionComponent";
 
 type Props = {
   styleEditNodeId: string;
@@ -78,6 +80,13 @@ const StyleEditor = (props: Props) => {
             <CSSSectionTextIcon />
           </TabButtonComponent>
           <TabButtonComponent
+            id="border"
+            selectedId={currentStylesSectionTab}
+            onClick={Functions.SelectCurrentSection}
+          >
+            <CSSSectionBorderIcon />
+          </TabButtonComponent>
+          <TabButtonComponent
             id="background"
             selectedId={currentStylesSectionTab}
             onClick={Functions.SelectCurrentSection}
@@ -120,6 +129,12 @@ const StyleEditor = (props: Props) => {
               document={document}
             />
             <StyleTextAndFontsSectionComponent
+              currentScreen={currentScreen}
+              currentStyleEditNodeTab={styleEditNodeId}
+              currentStylesSectionTab={currentStylesSectionTab}
+              document={document}
+            />
+            <StyleBorderSectionComponent
               currentScreen={currentScreen}
               currentStyleEditNodeTab={styleEditNodeId}
               currentStylesSectionTab={currentStylesSectionTab}

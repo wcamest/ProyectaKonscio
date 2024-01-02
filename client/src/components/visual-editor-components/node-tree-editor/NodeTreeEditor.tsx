@@ -4,11 +4,28 @@ import React from "react";
 import NodeTreeItemComponent from "./node-tree-item/NodeTreeItemComponent";
 import ColumnButtonComponent from "../column-button/ColumnButtonComponent";
 import PlusCircleFillIcon from "@/components/Icons/PlusCircleFillIcon";
-import { setCurrentStyleEditNode, setCurrentStyleEditNodeTab, setSelectedToAddNode } from "@/redux/features/visual-editor/visualEditorSlice";
+import {
+  deleteNode,
+  duplicateNode,
+  moveNodeDown,
+  moveNodeUp,
+  pasteNode,
+  setCurrentStyleEditNode,
+  setCurrentStyleEditNodeTab,
+  setDataToCopy,
+  setSelectedToAddNode,
+} from "@/redux/features/visual-editor/visualEditorSlice";
 import { showModal } from "@/redux/features/modals/modalsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import PaletteFillIcon from "@/components/Icons/PaletteFillIcon";
 import { RootState } from "@/redux/store/store";
+import TrashIcon from "@/components/Icons/TrashIcon";
+import CaretDownFillIcon from "@/components/Icons/CaretDownFillIcon";
+import CaretUpFillIcon from "@/components/Icons/CaretUpFillIcon";
+import CopyIcon from "@/components/Icons/CopyIcon";
+import Diagram2Icon from "@/components/Icons/Diagram2Icon";
+import ScissorsIcon from "@/components/Icons/ScissorsIcon";
+import ClipboardFillIcon from "@/components/Icons/ClipboardFillIcon";
 
 type Props = {
   document: PageDocument;
@@ -17,7 +34,7 @@ type Props = {
 const NodeTreeEditor = (props: Props) => {
   const { document } = props;
   const dispatch = useDispatch();
-  const { currentStyleEditNode } = useSelector(
+  const { currentStyleEditNode, dataToCopy } = useSelector(
     (state: RootState) => state.visualEditor
   );
 
@@ -39,6 +56,39 @@ const NodeTreeEditor = (props: Props) => {
       } else {
         dispatch(setCurrentStyleEditNode(document.selectedNode));
       }
+    },
+    DeleteNode() {
+      dispatch(deleteNode(document.selectedNode));
+    },
+    MoveUp() {
+      dispatch(moveNodeUp(document.selectedNode));
+    },
+    MoveDown() {
+      dispatch(moveNodeDown(document.selectedNode));
+    },
+    SelectedNodeCanDelete() {
+      const node = document.nodes.find(
+        (node: PageDocumentNode) => node.id === document.selectedNode
+      );
+      if (!node) return false;
+
+      if (!node.canDelete) return false;
+
+      return true;
+    },
+    DuplicateNode() {
+      dispatch(duplicateNode(document.selectedNode));
+    },
+    CopyNode() {
+      dispatch(setDataToCopy(document.selectedNode));
+    },
+    CutNode() {
+      dispatch(setDataToCopy(document.selectedNode));
+      dispatch(deleteNode(document.selectedNode));
+    },
+    PasteNode() {
+      dispatch(pasteNode({}));
+      dispatch(setDataToCopy(undefined));
     },
   };
 
@@ -62,11 +112,66 @@ const NodeTreeEditor = (props: Props) => {
         >
           <PlusCircleFillIcon />
         </ColumnButtonComponent>
-        <ColumnButtonComponent onClick={() => {
-          Functions.ShowOrHideStylePanel();
-        }}>
+        <ColumnButtonComponent
+          onClick={() => {
+            Functions.ShowOrHideStylePanel();
+          }}
+        >
           <PaletteFillIcon />
         </ColumnButtonComponent>
+        {Functions.SelectedNodeCanDelete() && (
+          <ColumnButtonComponent
+            onClick={() => {
+              Functions.DeleteNode();
+            }}
+          >
+            <TrashIcon />
+          </ColumnButtonComponent>
+        )}
+        <div className="w-0 h-full border-l border-l-blue-500"></div>
+        <ColumnButtonComponent
+          onClick={() => {
+            Functions.MoveUp();
+          }}
+        >
+          <CaretUpFillIcon />
+        </ColumnButtonComponent>
+        <ColumnButtonComponent
+          onClick={() => {
+            Functions.MoveDown();
+          }}
+        >
+          <CaretDownFillIcon />
+        </ColumnButtonComponent>
+        <div className="w-0 h-full border-l border-l-blue-500"></div>
+        <ColumnButtonComponent
+          onClick={() => {
+            Functions.DuplicateNode();
+          }}
+        >
+          <Diagram2Icon />
+        </ColumnButtonComponent>
+        <ColumnButtonComponent
+          onClick={() => {
+            Functions.CopyNode();
+          }}
+        >
+          <CopyIcon />
+        </ColumnButtonComponent>
+        {Functions.SelectedNodeCanDelete() && <ColumnButtonComponent onClick={() => {
+          Functions.CutNode();
+        }}>
+          <ScissorsIcon />
+        </ColumnButtonComponent>}
+        {dataToCopy && (
+          <ColumnButtonComponent
+            onClick={() => {
+              Functions.PasteNode();
+            }}
+          >
+            <ClipboardFillIcon />
+          </ColumnButtonComponent>
+        )}
       </div>
       <div className="w-full h-full overflow-hidden">
         <div className="p-1 w-full h-full overflow-auto">{Renderer.Root()}</div>
