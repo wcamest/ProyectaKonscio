@@ -9,6 +9,11 @@ import ClassGenerator from "../elements/class-generator/ClassGenerator";
 type Props = {};
 
 const classRules: any = {
+  //aspect ratio
+  "css-aspect-auto": "aspect-ratio: auto;",
+  "css-aspect-square": "aspect-ratio: 1 / 1;",
+  "css-aspect-video": "aspect-ratio: 16 / 9;",
+
   //position
   "css-static": "position: static;",
   "css-fixed": "position: fixed;",
@@ -171,7 +176,7 @@ const classRules: any = {
   "css-rounded-bl-2xl": "border-bottom-left-radius: 1rem;",
   "css-rounded-bl-3xl": "border-bottom-left-radius: 1.5rem;",
   "css-rounded-bl-full": "border-bottom-left-radius: 9999px;",
-  
+
   "css-rounded-br-none": "border-bottom-right-radius: 0px;",
   "css-rounded-br-sm": "border-bottom-right-radius: 0.125rem;",
   "css-rounded-br-base": "border-bottom-right-radius: 0.25rem;",

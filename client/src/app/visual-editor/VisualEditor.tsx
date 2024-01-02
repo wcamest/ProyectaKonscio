@@ -29,8 +29,12 @@ const VisualEditor = (props: Props) => {
 
   return (
     <div className="w-screen h-screen flex flex-col overflow-hidden">
-      <div className="p-4 w-full flex justify-between border-b border-b-solid border-b-blue-200">
-        <div></div>
+      <div className="p-4 w-full flex justify-between items-center border-b border-b-solid border-b-blue-200">
+        <div>
+          <button className="bg-gray-200 hover:bg-gray-300 active:bg-gray-400" onClick={() => {
+            console.log(JSON.stringify(currentDocument));
+          }}>Export document to JSON</button>
+        </div>
         <ScreenSelectorComponent />
       </div>
       <div className="w-full h-full flex overflow-hidden">

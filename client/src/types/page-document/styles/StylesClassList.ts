@@ -2,6 +2,7 @@ import StylesProperty from "./StylesProperty";
 
 export default interface StylesClassList {
   //layout
+  aspectRatio: StylesProperty;
   position: StylesProperty;
   display: StylesProperty;
   objectFit: StylesProperty;
