@@ -64,7 +64,7 @@ const ContainerElementComponent = (props: Props) => {
 
   useEffect(() => {
     Functions.ShowSelection();
-  }, [document.selectedNode, currentStyleEditNode]);
+  }, [document.selectedNode, currentStyleEditNode, document]);
 
   return (
     <div

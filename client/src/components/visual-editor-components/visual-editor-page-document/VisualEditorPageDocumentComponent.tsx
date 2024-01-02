@@ -101,7 +101,7 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
 
   useEffect(() => {
     Functions.ShowSelection();
-  }, [selectionRectangle, currentStyleEditNode]);
+  }, [selectionRectangle, currentStyleEditNode, document]);
 
   return (
     <div className="relative w-full h-fit p-10 flex justify-center">

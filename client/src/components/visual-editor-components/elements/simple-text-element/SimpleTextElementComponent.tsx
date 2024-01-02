@@ -48,7 +48,7 @@ const SimpleTextElementComponent = (props: Props) => {
 
   useEffect(() => {
     Functions.ShowSelection();
-  }, [document.selectedNode, currentStyleEditNode]);
+  }, [document.selectedNode, currentStyleEditNode, document]);
 
   if (data.elementType === "span")
     return (
