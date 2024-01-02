@@ -152,6 +152,58 @@ const Styles = {
         enabled: false,
         className: "css-whitespace-normal",
       },
+      borderStyle: {
+        enabled: false,
+        className: "css-border-none",
+      },
+      borderTopWidth: {
+        enabled: false,
+        className: "css-border-t-0",
+      },
+      borderRightWidth: {
+        enabled: false,
+        className: "css-border-r-0",
+      },
+      borderBottomWidth: {
+        enabled: false,
+        className: "css-border-b-0",
+      },
+      borderLeftWidth: {
+        enabled: false,
+        className: "css-border-l-0",
+      },
+      borderTopColor: {
+        enabled: false,
+        className: "css-border-t-black",
+      },
+      borderRightColor: {
+        enabled: false,
+        className: "css-border-r-black",
+      },
+      borderBottomColor: {
+        enabled: false,
+        className: "css-border-b-black",
+      },
+      borderLeftColor: {
+        enabled: false,
+        className: "css-border-l-black",
+      },
+      borderTopLeftRadius: {
+        enabled: false,
+        className: "css-border-tl-none",
+      },
+      borderTopRightRadius: {
+        enabled: false,
+        className: "css-border-tr-none",
+      },
+      borderBottomLeftRadius: {
+        enabled: false,
+        className: "css-border-bl-none",
+      },
+      borderBottomRightRadius: {
+        enabled: false,
+        className: "css-border-br-none",
+      },
       backgroundColor: {
         enabled: false,
         className: "css-bg-white",

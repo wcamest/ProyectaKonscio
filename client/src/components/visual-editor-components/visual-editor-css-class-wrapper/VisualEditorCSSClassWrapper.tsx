@@ -110,6 +110,78 @@ const classRules: any = {
   "css-font-mono":
     'font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;',
 
+  // border style
+  "css-border-solid": "border-style: solid;",
+  "css-border-dashed": "border-style: dashed;",
+  "css-border-dotted": "border-style: dotted;",
+  "css-border-double": "border-style: double;",
+  "css-border-hidden": "border-style: hidden;",
+  "css-border-none": "border-style: none;",
+
+  //border width
+  "css-border-t-0": "border-top-width: 0px;",
+  "css-border-t-1": "border-top-width: 1px;",
+  "css-border-t-2": "border-top-width: 2px;",
+  "css-border-t-4": "border-top-width: 4px;",
+  "css-border-t-8": "border-top-width: 8px;",
+  "css-border-r-0": "border-right-width: 0px;",
+  "css-border-r-1": "border-right-width: 1px;",
+  "css-border-r-2": "border-right-width: 2px;",
+  "css-border-r-4": "border-right-width: 4px;",
+  "css-border-r-8": "border-right-width: 8px;",
+  "css-border-b-0": "border-bottom-width: 0px;",
+  "css-border-b-1": "border-bottom-width: 1px;",
+  "css-border-b-2": "border-bottom-width: 2px;",
+  "css-border-b-4": "border-bottom-width: 4px;",
+  "css-border-b-8": "border-bottom-width: 8px;",
+  "css-border-l-0": "border-left-width: 0px;",
+  "css-border-l-1": "border-left-width: 1px;",
+  "css-border-l-2": "border-left-width: 2px;",
+  "css-border-l-4": "border-left-width: 4px;",
+  "css-border-l-8": "border-left-width: 8px;",
+
+  //border radius
+
+  "css-rounded-tl-none": "border-top-left-radius: 0px;",
+  "css-rounded-tl-sm": "border-top-left-radius: 0.125rem;",
+  "css-rounded-tl-base": "border-top-left-radius: 0.25rem;",
+  "css-rounded-tl-md": "border-top-left-radius: 0.375rem;",
+  "css-rounded-tl-lg": "border-top-left-radius: 0.5rem;",
+  "css-rounded-tl-xl": "border-top-left-radius: 0.75rem;",
+  "css-rounded-tl-2xl": "border-top-left-radius: 1rem;",
+  "css-rounded-tl-3xl": "border-top-left-radius: 1.5rem;",
+  "css-rounded-tl-full": "border-top-left-radius: 9999px;",
+
+  "css-rounded-tr-none": "border-top-right-radius: 0px;",
+  "css-rounded-tr-sm": "border-top-right-radius: 0.125rem;",
+  "css-rounded-tr-base": "border-top-right-radius: 0.25rem;",
+  "css-rounded-tr-md": "border-top-right-radius: 0.375rem;",
+  "css-rounded-tr-lg": "border-top-right-radius: 0.5rem;",
+  "css-rounded-tr-xl": "border-top-right-radius: 0.75rem;",
+  "css-rounded-tr-2xl": "border-top-right-radius: 1rem;",
+  "css-rounded-tr-3xl": "border-top-right-radius: 1.5rem;",
+  "css-rounded-tr-full": "border-top-right-radius: 9999px;",
+
+  "css-rounded-bl-none": "border-bottom-left-radius: 0px;",
+  "css-rounded-bl-sm": "border-bottom-left-radius: 0.125rem;",
+  "css-rounded-bl-base": "border-bottom-left-radius: 0.25rem;",
+  "css-rounded-bl-md": "border-bottom-left-radius: 0.375rem;",
+  "css-rounded-bl-lg": "border-bottom-left-radius: 0.5rem;",
+  "css-rounded-bl-xl": "border-bottom-left-radius: 0.75rem;",
+  "css-rounded-bl-2xl": "border-bottom-left-radius: 1rem;",
+  "css-rounded-bl-3xl": "border-bottom-left-radius: 1.5rem;",
+  "css-rounded-bl-full": "border-bottom-left-radius: 9999px;",
+  
+  "css-rounded-br-none": "border-bottom-right-radius: 0px;",
+  "css-rounded-br-sm": "border-bottom-right-radius: 0.125rem;",
+  "css-rounded-br-base": "border-bottom-right-radius: 0.25rem;",
+  "css-rounded-br-md": "border-bottom-right-radius: 0.375rem;",
+  "css-rounded-br-lg": "border-bottom-right-radius: 0.5rem;",
+  "css-rounded-br-xl": "border-bottom-right-radius: 0.75rem;",
+  "css-rounded-br-2xl": "border-bottom-right-radius: 1rem;",
+  "css-rounded-br-3xl": "border-bottom-right-radius: 1.5rem;",
+  "css-rounded-br-full": "border-bottom-right-radius: 9999px;",
+
   //font size
   "css-text-xs": "font-size: 0.75rem; line-height: 1rem;",
   "css-text-sm": "font-size: 0.875rem; line-height:  1.25rem;",
@@ -508,6 +580,10 @@ const cssProperties: any = {
   marginRight: "margin-right",
   marginBottom: "margin-bottom",
   marginLeft: "margin-left",
+  borderTopColor: "border-top-color",
+  borderRightColor: "border-right-color",
+  borderBottomColor: "border-bottom-color",
+  borderLeftColor: "border-left-color",
 };
 
 const pixelValueProperties = [
@@ -531,6 +607,10 @@ const colorValueProperties = [
   "textColor",
   "textDecorationColor",
   "backgroundColor",
+  "borderTopColor",
+  "borderRightColor",
+  "borderBottomColor",
+  "borderLeftColor",
 ];
 
 const VisualEditorCSSClassWrapper = (props: Props) => {

@@ -1,15 +1,7 @@
 import PageDocument from "@/types/page-document/PageDocument";
 import { createSlice } from "@reduxjs/toolkit";
 import SetCurrentPageDocument from "./actions/setCurrentPageDocument";
-import InsertRowBefore from "./actions/insertRowBefore";
-import InsertRowAfter from "./actions/insertRowAfter";
-import MoveRowUp from "./actions/moveRowUp";
-import MoveRowDown from "./actions/moveRowDown";
 import DeleteNode from "./actions/deleteNode";
-import InsertColumnBefore from "./actions/insertColumnBefore";
-import InsertColumnAfter from "./actions/insertColumnAfter";
-import MoveColumnLeft from "./actions/moveColumnLeft";
-import MoveColumnRight from "./actions/moveColumnRight";
 import SetSelectedToAddNode from "./actions/setSelectedToAddNode";
 import AddNode from "./actions/addNode";
 import SetCurrentEditNode from "./actions/setCurrentEditNode";
@@ -19,6 +11,11 @@ import SetCurrentSectionLevel from "./actions/setCurrentSectionLevel";
 import SetCurrentStyleEditNode from "./actions/setCurrentStyleEditNode";
 import SetCurrentStyleEditNodeTab from "./actions/setCurrentStyleEditNodeTab";
 import SetCurrentStyleSectionTab from "./actions/setCurrentStyleSectionTab";
+import MoveNodeDown from "./actions/moveNodeDown";
+import MoveNodeUp from "./actions/moveNodeUp";
+import DuplicateNode from "./actions/duplicateNode";
+import SetDataToCopy from "./actions/setDataToCopy";
+import PasteNode from "./actions/pasteNode";
 
 export enum Screen {
   base = "base",
@@ -38,11 +35,12 @@ export interface VisualEditorState {
   currentStylesSectionTab: string;
   currentSectionLevel?: string;
   currentScreen: Screen;
+  dataToCopy?: string;
 }
 
 const initialState: VisualEditorState = {
   currentScreen: Screen.base,
-  currentStylesSectionTab: "layout"
+  currentStylesSectionTab: "layout",
 };
 
 export const visualEditorSlice = createSlice({
@@ -50,14 +48,6 @@ export const visualEditorSlice = createSlice({
   initialState,
   reducers: {
     setCurrentPageDocument: SetCurrentPageDocument,
-    insertRowBefore: InsertRowBefore,
-    insertRowAfter: InsertRowAfter,
-    moveRowUp: MoveRowUp,
-    moveRowDown: MoveRowDown,
-    insertColumnBefore: InsertColumnBefore,
-    insertColumnAfter: InsertColumnAfter,
-    moveColumnLeft: MoveColumnLeft,
-    moveColumnRight: MoveColumnRight,
     deleteNode: DeleteNode,
     setSelectedToAddNode: SetSelectedToAddNode,
     addNode: AddNode,
@@ -67,21 +57,18 @@ export const visualEditorSlice = createSlice({
     setCurrentSectionLevel: SetCurrentSectionLevel,
     setCurrentStyleEditNode: SetCurrentStyleEditNode,
     setCurrentStyleEditNodeTab: SetCurrentStyleEditNodeTab,
-    setCurrentStyleSectionTab: SetCurrentStyleSectionTab
+    setCurrentStyleSectionTab: SetCurrentStyleSectionTab,
+    moveNodeDown: MoveNodeDown,
+    moveNodeUp: MoveNodeUp,
+    duplicateNode: DuplicateNode,
+    setDataToCopy: SetDataToCopy,
+    pasteNode: PasteNode
   },
 });
 
 // Action creators are generated for each case reducer function
 export const {
   setCurrentPageDocument,
-  insertRowBefore,
-  insertRowAfter,
-  moveRowUp,
-  moveRowDown,
-  insertColumnBefore,
-  insertColumnAfter,
-  moveColumnLeft,
-  moveColumnRight,
   deleteNode,
   setSelectedToAddNode,
   addNode,
@@ -91,7 +78,12 @@ export const {
   setCurrentSectionLevel,
   setCurrentStyleEditNode,
   setCurrentStyleEditNodeTab,
-  setCurrentStyleSectionTab
+  setCurrentStyleSectionTab,
+  moveNodeDown,
+  moveNodeUp,
+  duplicateNode,
+  setDataToCopy,
+  pasteNode
 } = visualEditorSlice.actions;
 
 export default visualEditorSlice.reducer;

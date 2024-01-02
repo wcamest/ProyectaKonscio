@@ -3,7 +3,6 @@
 import PageDocument from "@/types/page-document/PageDocument";
 import PageDocumentRow from "@/types/page-document/PageDocumentRow";
 import React from "react";
-import VisualEditorPageDocumentRowComponent from "../visual-editor-page-document-row/VisualEditorPageDocumentRowComponent";
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import ModalComponent from "@/components/Modal/ModalComponent";
 import ElementSelectorSectionComponent from "../element-selector-section/ElementSelectorSectionComponent";
