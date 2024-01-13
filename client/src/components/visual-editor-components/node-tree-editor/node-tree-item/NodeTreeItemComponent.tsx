@@ -1,13 +1,16 @@
+import CaretDownFillIcon from "@/components/Icons/CaretDownFillIcon";
+import CaretRightFillIcon from "@/components/Icons/CaretRightFillIcon";
 import {
   setCurrentPageDocument,
   setCurrentStyleEditNode,
+  updateNode,
 } from "@/redux/features/visual-editor/visualEditorSlice";
 import { RootState } from "@/redux/store/store";
 import PageDocument from "@/types/page-document/PageDocument";
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import PageDocumentSimpleTextElement from "@/types/page-document/PageDocumentSimpleTextElement";
 import Image from "next/image";
-import React from "react";
+import React, { MouseEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 type Props = {
@@ -20,11 +23,17 @@ const nodeTypeLabels: any = {
   PageDocumentRichTextElement: "Texto Enriquecido",
   PageDocumentImageElement: "Imagen",
   PageDocumentSimpleTextElement: "Texto Simple",
+  PageDocumentCarouselComponent: "Carrusel",
+  PageDocumentCarouselPageComponent: "Pagina de Carrusel",
 };
 
 const icons: any = {
   PageDocumentContainerElement: "/icons/layers-half.svg",
   PageDocumentSimpleTextElement: "/icons/type.svg",
+  PageDocumentImageElement: "/icons/card-image.svg",
+  PageDocumentRichTextElement: "/icons/body-text.svg",
+  PageDocumentCarouselComponent: "/icons/carousel.svg",
+  PageDocumentCarouselPageComponent: "/icons/carousel-page.svg",
 };
 
 const NodeTreeItemComponent = (props: Props) => {
@@ -44,6 +53,14 @@ const NodeTreeItemComponent = (props: Props) => {
       );
 
       if (currentStyleEditNode) dispatch(setCurrentStyleEditNode(node.id));
+    },
+    ExpandCollapse() {
+      const updatedNode: PageDocumentNode = {
+        ...node,
+        expanded: node.expanded ? false : true,
+      };
+
+      dispatch(updateNode(updatedNode));
     },
   };
 
@@ -88,14 +105,21 @@ const NodeTreeItemComponent = (props: Props) => {
       if (icon)
         return (
           <div className="p-2 bg-white rounded-full">
-            <Image src={icon} width={30} height={30} alt="icon" className="min-w-5 min-h-5 max-w-5 max-h-5" />
+            <Image
+              src={icon}
+              width={30}
+              height={30}
+              alt="icon"
+              className="min-w-5 min-h-5 max-w-5 max-h-5"
+            />
           </div>
         );
     },
     Header() {
       if (document.selectedNode === node.id)
         return (
-          <div className="px-2 py-1 w-fit flex gap-2 bg-blue-800 text-blue-50 rounded-md border border-solid border-blue-800 select-none cursor-pointer shadow-md">
+          <div className="px-2 py-1 w-fit flex items-center gap-2 bg-blue-800 text-blue-50 rounded-md border border-solid border-blue-800 select-none cursor-pointer shadow-md">
+            {Renderer.ExpandCollapseControl()}
             <div>{Renderer.Icon()}</div>
             <div className="flex flex-col">
               <span className="font-bold">{node.name}</span>
@@ -109,11 +133,12 @@ const NodeTreeItemComponent = (props: Props) => {
 
       return (
         <div
-          className="px-2 py-1 w-fit flex gap-2 hover:bg-blue-300 text-blue-900 rounded-md border border-solid border-blue-300 select-none cursor-pointer shadow-md"
+          className="px-2 py-1 w-fit flex items-center gap-2 hover:bg-blue-300 text-blue-900 rounded-md border border-solid border-blue-300 select-none cursor-pointer shadow-md"
           onClick={() => {
             Functions.SelectThis();
           }}
         >
+          {Renderer.ExpandCollapseControl()}
           <div>{Renderer.Icon()}</div>
           <div className="flex flex-col">
             <span className="font-bold">{node.name}</span>
@@ -125,12 +150,40 @@ const NodeTreeItemComponent = (props: Props) => {
         </div>
       );
     },
+    ExpandCollapseControl() {
+      if (!node.nodes.length) return undefined;
+
+      if (node.expanded)
+        return (
+          <div
+            className="p-1 hover:bg-white/30 rounded-full"
+            onClick={(e: MouseEvent<HTMLDivElement>) => {
+              e.stopPropagation();
+              Functions.ExpandCollapse();
+            }}
+          >
+            <CaretDownFillIcon />
+          </div>
+        );
+
+      return (
+        <div
+          className="p-1 hover:bg-white/30 rounded-full"
+          onClick={(e: MouseEvent<HTMLDivElement>) => {
+            e.stopPropagation();
+            Functions.ExpandCollapse();
+          }}
+        >
+          <CaretRightFillIcon />
+        </div>
+      );
+    },
   };
 
   return (
     <div className="w-fit flex flex-col gap-1">
       {Renderer.Header()}
-      {Renderer.Children()}
+      {node.expanded && Renderer.Children()}
     </div>
   );
 };

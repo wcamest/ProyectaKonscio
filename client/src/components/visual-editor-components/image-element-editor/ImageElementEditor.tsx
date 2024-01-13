@@ -55,6 +55,26 @@ const ImageElementEditor = (props: Props) => {
 
       return imageElement.description;
     },
+    GetImageFill() {
+      const imageElement = Functions.GetImage();
+      if (!imageElement) return false;
+
+      return imageElement.fill;
+    },
+    GetWidth() {
+      const imageElement = Functions.GetImage();
+      if (!imageElement) return 0;
+      if (!imageElement.width) return 0;
+
+      return imageElement.width;
+    },
+    GetHeight() {
+      const imageElement = Functions.GetImage();
+      if (!imageElement) return 0;
+      if (!imageElement.height) return 0;
+
+      return imageElement.height;
+    },
     UpdateNode(data: any) {
       const imageElement = Functions.GetImage();
       if (!imageElement) return undefined;
@@ -63,6 +83,7 @@ const ImageElementEditor = (props: Props) => {
         ...imageElement,
         ...data,
       };
+
       dispatch(updateNode(updatedImageElement));
     },
   };
@@ -95,6 +116,54 @@ const ImageElementEditor = (props: Props) => {
             });
           }}
         />
+      </div>
+      <div className="flex flex-col gap-2">
+        <span className="text-xs text-gray-500">
+          3. Seleccione el tamaño de la imagen:
+        </span>
+        <div className="flex gap-4">
+          <div className="flex gap-1 items-center">
+            <span className="text-xs text-gray-400">Ancho:</span>
+            <input
+              type="number"
+              min={0}
+              value={Functions.GetWidth()}
+              className="max-w-20 p-2 border border-solid border-blue-400 resize-y rounded-md outline-none"
+              onChange={(e: ChangeEvent<HTMLInputElement>) => {
+                let width = parseInt(e.target.value);
+                let height =
+                  (width / Functions.GetWidth()) * Functions.GetHeight();
+
+                console.log(width, height , Math.round(height));
+
+                Functions.UpdateNode({
+                  width,
+                  height,
+                });
+              }}
+            />
+          </div>
+          <div className="flex gap-1 items-center">
+            <span className="text-xs text-gray-400">Alto:</span>
+            <input
+              type="number"
+              min={0}
+              value={Functions.GetHeight()}
+              className="max-w-20 p-2 border border-solid border-blue-400 resize-y rounded-md outline-none"
+              onChange={(e: ChangeEvent<HTMLInputElement>) => {
+                let height = parseInt(e.target.value);
+                let width = Math.round(
+                  (height / Functions.GetHeight()) * Functions.GetWidth()
+                );
+
+                Functions.UpdateNode({
+                  width,
+                  height,
+                });
+              }}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

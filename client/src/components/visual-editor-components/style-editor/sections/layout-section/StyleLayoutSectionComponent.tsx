@@ -141,6 +141,33 @@ const visibilityPropertyButtons: StylePropertyButtonObject[] = [
   },
 ];
 
+const overflowPropertyButtons: StylePropertyButtonObject[] = [
+  {
+    contentType: StylePropertyButtonContentType.text,
+    content: "Auto",
+    defaultClassName: "css-overflow-auto",
+  },
+  {
+    contentType: StylePropertyButtonContentType.text,
+    content: "Ocultar",
+    defaultClassName: "css-overflow-hidden",
+  },
+  {
+    contentType: StylePropertyButtonContentType.text,
+    content: "Clip",
+    defaultClassName: "css-overflow-clip",
+  },{
+    contentType: StylePropertyButtonContentType.text,
+    content: "Visible",
+    defaultClassName: "css-overflow-visible",
+  },
+  {
+    contentType: StylePropertyButtonContentType.text,
+    content: "Scroll",
+    defaultClassName: "css-overflow-scroll",
+  },
+]
+
 const StyleLayoutSectionComponent = (props: Props) => {
   const {
     currentScreen,
@@ -252,6 +279,15 @@ const StyleLayoutSectionComponent = (props: Props) => {
             return `css-z-${value}`;
           }}
         />
+      </StylePropertyComponent>
+      <StylePropertyComponent
+        document={document}
+        nodeId={currentStyleEditNodeTab}
+        screen={currentScreen}
+        title="Overflow"
+        properties={["overflow"]}
+      >
+        {Renderer.PropertyButtons("overflow", overflowPropertyButtons)}
       </StylePropertyComponent>
     </StyleSectionComponent>
   );
