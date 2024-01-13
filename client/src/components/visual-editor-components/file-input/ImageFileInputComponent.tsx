@@ -29,8 +29,8 @@ const ImageFileInputComponent = (props: Props) => {
           if (onChange)
             onChange({
               fileName: file.name,
-              width,
-              height,
+              width: width === 0 ? 300: width,
+              height: height == 0 ? 300 : height,
               url: reader.result,
             });
         };

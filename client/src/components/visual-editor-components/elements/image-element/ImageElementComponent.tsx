@@ -1,28 +1,27 @@
 import PageDocument from "@/types/page-document/PageDocument";
-import PageDocumentContainerElement from "@/types/page-document/PageDocumentContainerElement";
-import PageDocumentNode from "@/types/page-document/PageDocumentNode";
-import ElementRenderer from "../renderer/renderer";
+import PageDocumentImageElement from "@/types/page-document/PageDocumentImageElement";
+import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "@/redux/store/store";
 import ClassGenerator, {
   ClassGeneratorResult,
 } from "../class-generator/ClassGenerator";
-import { useEffect, useRef } from "react";
 import Rectangle from "@/types/Rectangle";
 import { setSelectionRectangle } from "@/redux/features/visual-editor/visualEditorSlice";
+import { RootState } from "@/redux/store/store";
+import Image from "next/image";
 
 type Props = {
-  data: PageDocumentContainerElement;
+  data: PageDocumentImageElement;
   document: PageDocument;
 };
 
-const ContainerElementComponent = (props: Props) => {
+const ImageElementComponent = (props: Props) => {
   const { data, document } = props;
   const { currentScreen, currentStyleEditNode } = useSelector(
     (state: RootState) => state.visualEditor
   );
   const dispatch = useDispatch();
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<any>(null);
 
   const Functions = {
     GetClasses() {
@@ -49,32 +48,45 @@ const ContainerElementComponent = (props: Props) => {
   };
 
   const Renderer = {
-    Nodes() {
-      return data.nodes.map((nodeId: string, key: number) => {
-        const node = document.nodes.find(
-          (node: PageDocumentNode) => node.id === nodeId
+    Main() {
+      if (!data.url || !data.description) return undefined;
+
+      if (!data.fill && data.width && data.height)
+        return (
+          <Image
+            ref={ref}
+            className={Functions.GetClasses()}
+            src={data.url}
+            width={Math.round(data.width)}
+            height={Math.round(data.height)}
+            alt={data.description}
+          />
         );
 
-        if (!node) return undefined;
-
-        return ElementRenderer.Render(node, document, key);
-      });
+      return (
+        <div ref={ref} className={Functions.GetClasses()}>
+          <Image
+            src={data.url}
+            fill={true}
+            alt={data.description}
+            className="object-contain"
+          />
+        </div>
+      );
     },
   };
 
   useEffect(() => {
     Functions.ShowSelection();
-  }, [document.selectedNode, currentStyleEditNode, document, currentScreen]);
+  }, [
+    document.selectedNode,
+    data,
+    currentStyleEditNode,
+    document,
+    currentScreen,
+  ]);
 
-  return (
-    <div
-      ref={ref}
-      id={`container-${data.id}`}
-      className={Functions.GetClasses()}
-    >
-      {Renderer.Nodes()}
-    </div>
-  );
+  return Renderer.Main();
 };
 
-export default ContainerElementComponent;
+export default ImageElementComponent;

@@ -1,22 +1,19 @@
-import PageDocument from "@/types/page-document/PageDocument";
-import PageDocumentContainerElement from "@/types/page-document/PageDocumentContainerElement";
-import PageDocumentNode from "@/types/page-document/PageDocumentNode";
-import ElementRenderer from "../renderer/renderer";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "@/redux/store/store";
-import ClassGenerator, {
-  ClassGeneratorResult,
-} from "../class-generator/ClassGenerator";
-import { useEffect, useRef } from "react";
-import Rectangle from "@/types/Rectangle";
 import { setSelectionRectangle } from "@/redux/features/visual-editor/visualEditorSlice";
+import { RootState } from "@/redux/store/store";
+import Rectangle from "@/types/Rectangle";
+import PageDocument from "@/types/page-document/PageDocument";
+import PageDocumentCarouselPageComponent from "@/types/page-document/PageDocumentCarouselPageComponent";
+import PageDocumentNode from "@/types/page-document/PageDocumentNode";
+import React, { useEffect, useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import ElementRenderer from "../renderer/renderer";
 
 type Props = {
-  data: PageDocumentContainerElement;
+  data: PageDocumentCarouselPageComponent;
   document: PageDocument;
 };
 
-const ContainerElementComponent = (props: Props) => {
+const CarouselPageComponent = (props: Props) => {
   const { data, document } = props;
   const { currentScreen, currentStyleEditNode } = useSelector(
     (state: RootState) => state.visualEditor
@@ -25,13 +22,6 @@ const ContainerElementComponent = (props: Props) => {
   const ref = useRef<HTMLDivElement>(null);
 
   const Functions = {
-    GetClasses() {
-      const classes = ClassGenerator.Generate(data, currentScreen);
-
-      return classes
-        .map((classResult: ClassGeneratorResult) => classResult.className)
-        .join(" ");
-    },
     ShowSelection() {
       if (!ref.current) return;
       if (data.id !== document.selectedNode) return;
@@ -66,15 +56,7 @@ const ContainerElementComponent = (props: Props) => {
     Functions.ShowSelection();
   }, [document.selectedNode, currentStyleEditNode, document, currentScreen]);
 
-  return (
-    <div
-      ref={ref}
-      id={`container-${data.id}`}
-      className={Functions.GetClasses()}
-    >
-      {Renderer.Nodes()}
-    </div>
-  );
+  return <div ref={ref}>{Renderer.Nodes()}</div>;
 };
 
-export default ContainerElementComponent;
+export default CarouselPageComponent;

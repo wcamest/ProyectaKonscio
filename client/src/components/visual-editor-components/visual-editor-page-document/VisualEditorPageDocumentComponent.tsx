@@ -20,6 +20,8 @@ import { RootState } from "@/redux/store/store";
 import ElementRenderer from "../elements/renderer/renderer";
 import SimpleTextEditorComponent from "../simple-text-editor/SimpleTextEditorComponent";
 import Rectangle from "@/types/Rectangle";
+import ButtonComponent from "@/components/controls/button/ButtonComponent";
+import { hideModal } from "@/redux/features/modals/modalsSlice";
 
 type Props = {
   data: PageDocument;
@@ -39,9 +41,8 @@ type PageDocumentState = {
 
 const VisualEditorPageDocumentComponent = (props: Props) => {
   const { data } = props;
-  const { currentScreen, selectionRectangle, currentStyleEditNode } = useSelector(
-    (state: RootState) => state.visualEditor
-  );
+  const { currentScreen, selectionRectangle, currentStyleEditNode } =
+    useSelector((state: RootState) => state.visualEditor);
   const dispatch = useDispatch();
   const ref = useRef<HTMLDivElement>(null);
   const [state, setState] = useState<PageDocumentState>({
@@ -101,7 +102,7 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
 
   useEffect(() => {
     Functions.ShowSelection();
-  }, [selectionRectangle, currentStyleEditNode, document]);
+  }, [selectionRectangle, currentStyleEditNode, document, currentScreen]);
 
   return (
     <div className="relative w-full h-fit p-10 flex justify-center">
@@ -133,18 +134,26 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
           <div
             style={{
               top: `0px`,
-              left: `${state.SelectionRectangle.width + state.SelectionRectangle.x}px`,
-              width: `calc(100% - ${state.SelectionRectangle.width + state.SelectionRectangle.x}px)`,
+              left: `${
+                state.SelectionRectangle.width + state.SelectionRectangle.x
+              }px`,
+              width: `calc(100% - ${
+                state.SelectionRectangle.width + state.SelectionRectangle.x
+              }px)`,
               height: `100%`,
             }}
             className="absolute bg-black bg-opacity-50"
           ></div>
           <div
             style={{
-              top: `${state.SelectionRectangle.height + state.SelectionRectangle.y}px`,
+              top: `${
+                state.SelectionRectangle.height + state.SelectionRectangle.y
+              }px`,
               left: `${state.SelectionRectangle.x}px`,
               width: `${state.SelectionRectangle.width}px`,
-              height: `calc(100% - ${state.SelectionRectangle.height + state.SelectionRectangle.y}px)`,
+              height: `calc(100% - ${
+                state.SelectionRectangle.height + state.SelectionRectangle.y
+              }px)`,
             }}
             className="absolute bg-black bg-opacity-50"
           ></div>
@@ -161,7 +170,7 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
       </div>
       <ModalComponent
         id="add-element-modal"
-        buttons={[<button key={0}>Hola</button>]}
+        buttons={[]}
         title="Añadir Elemento"
         onHideModal={() => {
           dispatch(setSelectedToAddNode(undefined));
@@ -171,7 +180,16 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
       </ModalComponent>
       <ModalComponent
         id="rich-text-element-editor-modal"
-        buttons={[]}
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("rich-text-element-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
         title="Texto enriquecido"
         onHideModal={Functions.HideElementEditor}
       >
@@ -179,7 +197,16 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
       </ModalComponent>
       <ModalComponent
         id="simple-text-element-editor-modal"
-        buttons={[]}
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("simple-text-element-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
         title="Texto simple"
         onHideModal={Functions.HideElementEditor}
       >
@@ -187,7 +214,16 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
       </ModalComponent>
       <ModalComponent
         id="image-element-editor-modal"
-        buttons={[]}
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("image-element-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
         title="Imagen"
         onHideModal={Functions.HideElementEditor}
       >

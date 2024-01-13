@@ -10,6 +10,7 @@ import {
   moveNodeDown,
   moveNodeUp,
   pasteNode,
+  setCurrentEditNode,
   setCurrentStyleEditNode,
   setCurrentStyleEditNodeTab,
   setDataToCopy,
@@ -26,9 +27,16 @@ import CopyIcon from "@/components/Icons/CopyIcon";
 import Diagram2Icon from "@/components/Icons/Diagram2Icon";
 import ScissorsIcon from "@/components/Icons/ScissorsIcon";
 import ClipboardFillIcon from "@/components/Icons/ClipboardFillIcon";
+import PencilFillIcon from "@/components/Icons/PencilFillIcon";
 
 type Props = {
   document: PageDocument;
+};
+
+const elementEditorModalIds: any = {
+  PageDocumentImageElement: "image-element-editor-modal",
+  PageDocumentRichTextElement: "rich-text-element-editor-modal",
+  PageDocumentSimpleTextElement: "simple-text-element-editor-modal",
 };
 
 const NodeTreeEditor = (props: Props) => {
@@ -66,6 +74,16 @@ const NodeTreeEditor = (props: Props) => {
     MoveDown() {
       dispatch(moveNodeDown(document.selectedNode));
     },
+    SelectedNodeCanAddChild() {
+      const node = document.nodes.find(
+        (node: PageDocumentNode) => node.id === document.selectedNode
+      );
+      if (!node) return false;
+
+      if (!node.canAddChild) return false;
+
+      return true;
+    },
     SelectedNodeCanDelete() {
       const node = document.nodes.find(
         (node: PageDocumentNode) => node.id === document.selectedNode
@@ -75,6 +93,20 @@ const NodeTreeEditor = (props: Props) => {
       if (!node.canDelete) return false;
 
       return true;
+    },
+    SelectedNodeHasEditableProperties() {
+      const node = document.nodes.find(
+        (node: PageDocumentNode) => node.id === document.selectedNode
+      );
+      if (!node) return false;
+
+      const nodeTypesWithEditableProperties: string[] = [
+        "PageDocumentImageElement",
+        "PageDocumentRichTextElement",
+        "PageDocumentSimpleTextElement",
+      ];
+
+      return nodeTypesWithEditableProperties.includes(node.type);
     },
     DuplicateNode() {
       dispatch(duplicateNode(document.selectedNode));
@@ -89,6 +121,15 @@ const NodeTreeEditor = (props: Props) => {
     PasteNode() {
       dispatch(pasteNode({}));
       dispatch(setDataToCopy(undefined));
+    },
+    ShowElementEditorModal() {
+      const node = document.nodes.find(
+        (node: PageDocumentNode) => node.id === document.selectedNode
+      );
+      if (!node) return;
+
+      dispatch(setCurrentEditNode(node.id));
+      dispatch(showModal(elementEditorModalIds[node.type]));
     },
   };
 
@@ -105,13 +146,15 @@ const NodeTreeEditor = (props: Props) => {
   return (
     <div className="w-full h-full flex flex-col overflow-hidden border-r border-r-solid border-r-blue-300">
       <div className="p-1 w-full flex gap-1 bg-blue-200">
-        <ColumnButtonComponent
-          onClick={() => {
-            Functions.BeginAddNode();
-          }}
-        >
-          <PlusCircleFillIcon />
-        </ColumnButtonComponent>
+        {Functions.SelectedNodeCanAddChild() && (
+          <ColumnButtonComponent
+            onClick={() => {
+              Functions.BeginAddNode();
+            }}
+          >
+            <PlusCircleFillIcon />
+          </ColumnButtonComponent>
+        )}
         <ColumnButtonComponent
           onClick={() => {
             Functions.ShowOrHideStylePanel();
@@ -119,6 +162,15 @@ const NodeTreeEditor = (props: Props) => {
         >
           <PaletteFillIcon />
         </ColumnButtonComponent>
+        {Functions.SelectedNodeHasEditableProperties() && (
+          <ColumnButtonComponent
+            onClick={() => {
+              Functions.ShowElementEditorModal();
+            }}
+          >
+            <PencilFillIcon />
+          </ColumnButtonComponent>
+        )}
         {Functions.SelectedNodeCanDelete() && (
           <ColumnButtonComponent
             onClick={() => {

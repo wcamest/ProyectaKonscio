@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import ElementSelectorSectionComponent from "../element-selector-section/ElementSelectorSectionComponent";
 import ElementSelectorItemComponent from "../element-selector-item/ElementSelectorItemComponent";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { hideModal, showModal } from "@/redux/features/modals/modalsSlice";
 import PageDocumentRichTextElement from "@/types/page-document/PageDocumentRichTextElement";
 import generateId from "@/utils/Utils";
@@ -15,13 +15,31 @@ import PageDocumentRow from "@/types/page-document/PageDocumentRow";
 import PageDocumentColumn from "@/types/page-document/PageDocumentColumn";
 import PageDocumentContainerElement from "@/types/page-document/PageDocumentContainerElement";
 import PageDocumentSimpleTextElement from "@/types/page-document/PageDocumentSimpleTextElement";
+import { RootState } from "@/redux/store/store";
+import PageDocumentNode from "@/types/page-document/PageDocumentNode";
+import PageDocumentCarouselComponent from "@/types/page-document/PageDocumentCarouselComponent";
+import PageDocumentCarouselPageComponent from "@/types/page-document/PageDocumentCarouselPageComponent";
 
 type Props = {};
 
 const ElementSelectorComponent = (props: Props) => {
+  const { currentDocument } = useSelector(
+    (state: RootState) => state.visualEditor
+  );
   const dispatch = useDispatch();
 
   const Functions = {
+    GetSelectedNodeType() {
+      if (!currentDocument) return "";
+
+      const node = currentDocument.nodes.find(
+        (node: PageDocumentNode) => node.id === currentDocument.selectedNode
+      );
+
+      if (!node) return "";
+
+      return node.type;
+    },
     HideAddElementModal() {
       dispatch(hideModal("add-element-modal"));
     },
@@ -66,6 +84,7 @@ const ElementSelectorComponent = (props: Props) => {
     },
     AddImage() {
       const imageElement: PageDocumentImageElement = {
+        fill: false,
         id: generateId(),
         nodes: [],
         type: "PageDocumentImageElement",
@@ -100,11 +119,52 @@ const ElementSelectorComponent = (props: Props) => {
 
       Functions.HideAddElementModal();
     },
+    AddCarousel() {
+      const carouselComponent: PageDocumentCarouselComponent = {
+        id: generateId(),
+        nodes: [],
+        type: "PageDocumentCarouselComponent",
+        name: "Carousel",
+        canEdit: true,
+        canAddChild: true,
+        canDelete: true,
+        styles: Styles.CreateClassListCollection(),
+      };
+
+      dispatch(addNode([carouselComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(carouselComponent.id));
+    },
+    AddCarouselPage() {
+      const carouselComponent: PageDocumentCarouselPageComponent = {
+        id: generateId(),
+        nodes: [],
+        type: "PageDocumentCarouselPageComponent",
+        name: "Pagina de Carrusel",
+        canEdit: true,
+        canAddChild: true,
+        canDelete: true,
+        styles: Styles.CreateClassListCollection(),
+      };
+
+      dispatch(addNode([carouselComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(carouselComponent.id));
+    },
   };
 
   return (
     <div className="p-4 flex flex-col gap-4">
-      <ElementSelectorSectionComponent title="Contenedores">
+      <ElementSelectorSectionComponent
+        title="Contenedores"
+        containers={[
+          "PageDocumentContainerElement",
+          "PageDocumentCarouselPageComponent",
+        ]}
+        selectedNodeType={Functions.GetSelectedNodeType()}
+      >
         <ElementSelectorItemComponent
           icon="/icons/layers-half.svg"
           text="Contenedor"
@@ -113,7 +173,14 @@ const ElementSelectorComponent = (props: Props) => {
           }}
         />
       </ElementSelectorSectionComponent>
-      <ElementSelectorSectionComponent title="Textos">
+      <ElementSelectorSectionComponent
+        title="Textos"
+        containers={[
+          "PageDocumentContainerElement",
+          "PageDocumentCarouselPageComponent",
+        ]}
+        selectedNodeType={Functions.GetSelectedNodeType()}
+      >
         <ElementSelectorItemComponent
           icon="/icons/body-text.svg"
           text="Texto enriquecido"
@@ -125,11 +192,18 @@ const ElementSelectorComponent = (props: Props) => {
           icon="/icons/type.svg"
           text="Texto simple"
           onClick={() => {
-            Functions.AddSimpleText()
+            Functions.AddSimpleText();
           }}
         />
       </ElementSelectorSectionComponent>
-      <ElementSelectorSectionComponent title="Media">
+      <ElementSelectorSectionComponent
+        title="Media"
+        containers={[
+          "PageDocumentContainerElement",
+          "PageDocumentCarouselPageComponent",
+        ]}
+        selectedNodeType={Functions.GetSelectedNodeType()}
+      >
         <ElementSelectorItemComponent
           icon="/icons/card-image.svg"
           text="Imagen"
@@ -139,9 +213,49 @@ const ElementSelectorComponent = (props: Props) => {
         />
         <ElementSelectorItemComponent icon="/icons/film.svg" text="Video" />
       </ElementSelectorSectionComponent>
-      <ElementSelectorSectionComponent title="Tablas"></ElementSelectorSectionComponent>
-      <ElementSelectorSectionComponent title="Formularios"></ElementSelectorSectionComponent>
-      <ElementSelectorSectionComponent title="Componentes"></ElementSelectorSectionComponent>
+      <ElementSelectorSectionComponent
+        title="Tablas"
+        containers={[
+          "PageDocumentContainerElement",
+          "PageDocumentCarouselPageComponent",
+        ]}
+        selectedNodeType={Functions.GetSelectedNodeType()}
+      ></ElementSelectorSectionComponent>
+      <ElementSelectorSectionComponent
+        title="Formularios"
+        containers={[
+          "PageDocumentContainerElement",
+          "PageDocumentCarouselPageComponent",
+        ]}
+        selectedNodeType={Functions.GetSelectedNodeType()}
+      ></ElementSelectorSectionComponent>
+      <ElementSelectorSectionComponent
+        title="Componentes"
+        containers={[
+          "PageDocumentContainerElement",
+          "PageDocumentCarouselComponent",
+        ]}
+        selectedNodeType={Functions.GetSelectedNodeType()}
+      >
+        <ElementSelectorItemComponent
+          icon="/icons/carousel.svg"
+          text="Carrusel"
+          containers={["PageDocumentContainerElement"]}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddCarousel();
+          }}
+        />
+        <ElementSelectorItemComponent
+          icon="/icons/carousel-page.svg"
+          text="Pagina de Carrusel"
+          containers={["PageDocumentCarouselComponent"]}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddCarouselPage();
+          }}
+        />
+      </ElementSelectorSectionComponent>
     </div>
   );
 };
