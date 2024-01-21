@@ -25,6 +25,9 @@ const nodeTypeLabels: any = {
   PageDocumentSimpleTextElement: "Texto Simple",
   PageDocumentCarouselComponent: "Carrusel",
   PageDocumentCarouselPageComponent: "Pagina de Carrusel",
+  PageDocumentFlipBoxComponent: "Tarjeta Giratoria",
+  PageDocumentFlipBoxFrontSideComponent: "Lado Anterior",
+  PageDocumentFlipBoxBackSideComponent: "Lado Posterior",
 };
 
 const icons: any = {

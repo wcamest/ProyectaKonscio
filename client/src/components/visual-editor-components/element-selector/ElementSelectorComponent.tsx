@@ -19,6 +19,9 @@ import { RootState } from "@/redux/store/store";
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import PageDocumentCarouselComponent from "@/types/page-document/PageDocumentCarouselComponent";
 import PageDocumentCarouselPageComponent from "@/types/page-document/PageDocumentCarouselPageComponent";
+import PageDocumentFlipBoxComponent from "@/types/page-document/PageDocumentFlipBoxComponent";
+import PageDocumentFlipBoxFrontSideComponent from "@/types/page-document/PageDocumentFlipBoxFrontSIdeComponent";
+import PageDocumentFlipBoxBackSideComponent from "@/types/page-document/PageDocumentFlipBoxBackSIdeComponent";
 
 type Props = {};
 
@@ -153,6 +156,97 @@ const ElementSelectorComponent = (props: Props) => {
       Functions.HideAddElementModal();
       dispatch(setCurrentEditNode(carouselComponent.id));
     },
+    AddFlipBox() {
+      const flipBoxComponent: PageDocumentFlipBoxComponent = {
+        id: generateId(),
+        nodes: [],
+        type: "PageDocumentFlipBoxComponent",
+        name: "Tarjeta Giratoria",
+        canEdit: true,
+        canAddChild: true,
+        canDelete: true,
+        styles: Styles.CreateClassListCollection(),
+      };
+
+      flipBoxComponent.styles.base.width.enabled = true;
+      flipBoxComponent.styles.base.width.className = "css-w-1/3";
+      flipBoxComponent.styles.base.aspectRatio.enabled = true;
+      flipBoxComponent.styles.base.aspectRatio.className = "css-aspect-square";
+
+      dispatch(addNode([flipBoxComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(flipBoxComponent.id));
+    },
+    AddFlipBoxFrontSide() {
+      const flipBoxFrontSideComponent: PageDocumentFlipBoxFrontSideComponent = {
+        id: generateId(),
+        nodes: [],
+        type: "PageDocumentFlipBoxFrontSideComponent",
+        name: "Lado Anterior",
+        canEdit: true,
+        canAddChild: true,
+        canDelete: true,
+        styles: Styles.CreateClassListCollection(),
+      };
+
+      flipBoxFrontSideComponent.styles.base.width.enabled = true;
+      flipBoxFrontSideComponent.styles.base.width.className = "css-w-full";
+      flipBoxFrontSideComponent.styles.base.height.enabled = true;
+      flipBoxFrontSideComponent.styles.base.height.className = "css-h-full";
+
+      dispatch(addNode([flipBoxFrontSideComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(flipBoxFrontSideComponent.id));
+    },
+    AddFlipBoxBackSide() {
+      const flipBoxBackSideComponent: PageDocumentFlipBoxBackSideComponent = {
+        id: generateId(),
+        nodes: [],
+        type: "PageDocumentFlipBoxBackSideComponent",
+        name: "Lado Posterior",
+        canEdit: true,
+        canAddChild: true,
+        canDelete: true,
+        styles: Styles.CreateClassListCollection(),
+      };
+
+      flipBoxBackSideComponent.styles.base.width.enabled = true;
+      flipBoxBackSideComponent.styles.base.width.className = "css-w-full";
+      flipBoxBackSideComponent.styles.base.height.enabled = true;
+      flipBoxBackSideComponent.styles.base.height.className = "css-h-full";
+
+      dispatch(addNode([flipBoxBackSideComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(flipBoxBackSideComponent.id));
+    },
+    GetFlipBoxSideContainer(type: string) {
+      if (!currentDocument) return [];
+
+      const node = currentDocument.nodes.find(
+        (node: PageDocumentNode) => node.id === currentDocument.selectedNode
+      );
+
+      if (!node) return [];
+
+      if (node.type !== "PageDocumentFlipBoxComponent") return [];
+
+      const alreadyHasSide = node.nodes.some((nodeId: string) => {
+        const flipBoxSubNode = currentDocument.nodes.find(
+          (_node: PageDocumentNode) => _node.id === nodeId
+        );
+
+        if (!flipBoxSubNode) return false;
+
+        return flipBoxSubNode.type === type;
+      });
+
+      if (!alreadyHasSide) return ["PageDocumentFlipBoxComponent"];
+
+      return [];
+    },
   };
 
   return (
@@ -162,6 +256,8 @@ const ElementSelectorComponent = (props: Props) => {
         containers={[
           "PageDocumentContainerElement",
           "PageDocumentCarouselPageComponent",
+          "PageDocumentFlipBoxFrontSideComponent",
+          "PageDocumentFlipBoxBackSideComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       >
@@ -178,6 +274,8 @@ const ElementSelectorComponent = (props: Props) => {
         containers={[
           "PageDocumentContainerElement",
           "PageDocumentCarouselPageComponent",
+          "PageDocumentFlipBoxFrontSideComponent",
+          "PageDocumentFlipBoxBackSideComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       >
@@ -201,6 +299,8 @@ const ElementSelectorComponent = (props: Props) => {
         containers={[
           "PageDocumentContainerElement",
           "PageDocumentCarouselPageComponent",
+          "PageDocumentFlipBoxFrontSideComponent",
+          "PageDocumentFlipBoxBackSideComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       >
@@ -218,6 +318,8 @@ const ElementSelectorComponent = (props: Props) => {
         containers={[
           "PageDocumentContainerElement",
           "PageDocumentCarouselPageComponent",
+          "PageDocumentFlipBoxFrontSideComponent",
+          "PageDocumentFlipBoxBackSideComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       ></ElementSelectorSectionComponent>
@@ -226,6 +328,8 @@ const ElementSelectorComponent = (props: Props) => {
         containers={[
           "PageDocumentContainerElement",
           "PageDocumentCarouselPageComponent",
+          "PageDocumentFlipBoxFrontSideComponent",
+          "PageDocumentFlipBoxBackSideComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       ></ElementSelectorSectionComponent>
@@ -234,6 +338,9 @@ const ElementSelectorComponent = (props: Props) => {
         containers={[
           "PageDocumentContainerElement",
           "PageDocumentCarouselComponent",
+          "PageDocumentFlipBoxComponent",
+          "PageDocumentFlipBoxFrontSideComponent",
+          "PageDocumentFlipBoxBackSideComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       >
@@ -253,6 +360,40 @@ const ElementSelectorComponent = (props: Props) => {
           selectedNodeType={Functions.GetSelectedNodeType()}
           onClick={() => {
             Functions.AddCarouselPage();
+          }}
+        />
+        <ElementSelectorItemComponent
+          icon="/icons/carousel.svg"
+          text="Tarjeta Giratoria"
+          containers={[
+            "PageDocumentContainerElement",
+            "PageDocumentCarouselComponent",
+          ]}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddFlipBox();
+          }}
+        />
+        <ElementSelectorItemComponent
+          icon="/icons/carousel.svg"
+          text="Tarjeta Giratoria - Lado Anterior"
+          containers={Functions.GetFlipBoxSideContainer(
+            "PageDocumentFlipBoxFrontSideComponent"
+          )}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddFlipBoxFrontSide();
+          }}
+        />
+        <ElementSelectorItemComponent
+          icon="/icons/carousel.svg"
+          text="Tarjeta Giratoria - Lado Posterior"
+          containers={Functions.GetFlipBoxSideContainer(
+            "PageDocumentFlipBoxBackSideComponent"
+          )}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddFlipBoxBackSide();
           }}
         />
       </ElementSelectorSectionComponent>

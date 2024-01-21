@@ -6,6 +6,8 @@ import ImageElementComponent from "../image-element/ImageElementComponent";
 import RichTextElementComponent from "../rich-text-element/RichTextElementComponent";
 import CarouselComponent from "../carousel-component/CarouselComponent";
 import CarouselPageComponent from "../carousel-page-component/CarouselPageComponent";
+import FlipBoxComponent from "../flip-box-component/FlipBoxComponent";
+import FlipBoxSideComponent from "../flip-box-side-component/FlipBoxSideComponent";
 
 const Components: any = {
   PageDocumentContainerElement: ContainerElementComponent,
@@ -14,6 +16,9 @@ const Components: any = {
   PageDocumentRichTextElement: RichTextElementComponent,
   PageDocumentCarouselComponent: CarouselComponent,
   PageDocumentCarouselPageComponent: CarouselPageComponent,
+  PageDocumentFlipBoxComponent: FlipBoxComponent,
+  PageDocumentFlipBoxFrontSideComponent: FlipBoxSideComponent,
+  PageDocumentFlipBoxBackSideComponent: FlipBoxSideComponent,
 };
 
 const ElementRenderer = {
