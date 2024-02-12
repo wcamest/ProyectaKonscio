@@ -2,7 +2,10 @@ import React from "react";
 import VisualEditor from "../VisualEditor";
 import PageDocument from "@/types/page-document/PageDocument";
 import Styles from "@/components/visual-editor-components/styles/styles";
-import fs from "fs";
+import _empty from "./mock/_empty.json";
+import home from "./mock/home.json";
+import ecomonia_real_colaborativa from "./mock/economia-real-colaborativa.json";
+import educacion_alternativa from "./mock/educacion-alternativa.json";
 
 type Props = {
   params: {
@@ -10,24 +13,17 @@ type Props = {
   };
 };
 
+const mock: any = {
+  _empty: _empty,
+  home: home,
+  "ecomonia-real-colaborativa": ecomonia_real_colaborativa,
+  "educacion-alternativa": educacion_alternativa,
+};
+
 const getData = async (permalink: string) => {
-  try {
-    const response = await fetch(
-      `${process.env.host}/mock/${permalink}.json`, {cache: "no-store"}
-    ).then((response) => {
-      return response.json();
-    });
-    const data = response;
-    return data;
-  } catch (error) {
-    const response = await fetch(`${process.env.host}/mock/_empty.json`, {
-      cache: "no-store",
-    }).then((response) => {
-      return response.json();
-    });
-    const data = response;
-    return data;
-  }
+  if (!mock[permalink]) return mock["empty"];
+
+  return mock[permalink];
 };
 
 const page = async (props: Props) => {
