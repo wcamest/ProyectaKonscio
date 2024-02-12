@@ -13,14 +13,14 @@ type Props = {
 const getData = async (permalink: string) => {
   try {
     const response = await fetch(
-      `http://localhost:3000/mock/${permalink}.json`, {cache: "no-store"}
+      `${process.env.host}/mock/${permalink}.json`, {cache: "no-store"}
     ).then((response) => {
       return response.json();
     });
     const data = response;
     return data;
   } catch (error) {
-    const response = await fetch(`http://localhost:3000/mock/_empty.json`, {
+    const response = await fetch(`${process.env.host}/mock/_empty.json`, {
       cache: "no-store",
     }).then((response) => {
       return response.json();
