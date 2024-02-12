@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import visualEditorReducer from "../features/visual-editor/visualEditorSlice";
 import modalsReducer from "../features/modals/modalsSlice";
+import sitesReducer from "../features/sites/sitesSlice";
 
 export const store = configureStore({
   reducer: {
     visualEditor: visualEditorReducer,
-    modals: modalsReducer
+    modals: modalsReducer,
+    sites: sitesReducer
   },
 });
 

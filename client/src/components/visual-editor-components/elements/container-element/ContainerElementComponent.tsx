@@ -57,6 +57,8 @@ const ContainerElementComponent = (props: Props) => {
 
         if (!node) return undefined;
 
+        if (node.type === "PageDocumentUserModalComponent") return undefined;
+
         return ElementRenderer.Render(node, document, key);
       });
     },

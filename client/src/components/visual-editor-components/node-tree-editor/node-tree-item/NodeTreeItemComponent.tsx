@@ -28,6 +28,7 @@ const nodeTypeLabels: any = {
   PageDocumentFlipBoxComponent: "Tarjeta Giratoria",
   PageDocumentFlipBoxFrontSideComponent: "Lado Anterior",
   PageDocumentFlipBoxBackSideComponent: "Lado Posterior",
+  PageDocumentUserModalComponent: "Ventana Flotante",
 };
 
 const icons: any = {
@@ -37,6 +38,7 @@ const icons: any = {
   PageDocumentRichTextElement: "/icons/body-text.svg",
   PageDocumentCarouselComponent: "/icons/carousel.svg",
   PageDocumentCarouselPageComponent: "/icons/carousel-page.svg",
+  PageDocumentUserModalComponent: "/icons/window-stack.svg",
 };
 
 const NodeTreeItemComponent = (props: Props) => {
