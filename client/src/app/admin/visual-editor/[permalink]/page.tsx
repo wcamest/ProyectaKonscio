@@ -16,12 +16,12 @@ type Props = {
 const mock: any = {
   _empty: _empty,
   home: home,
-  "ecomonia-real-colaborativa": ecomonia_real_colaborativa,
+  "economia-real-colaborativa": ecomonia_real_colaborativa,
   "educacion-alternativa": educacion_alternativa,
 };
 
 const getData = async (permalink: string) => {
-  if (!mock[permalink]) return mock["empty"];
+  if (!mock[permalink]) return mock["_empty"];
 
   return mock[permalink];
 };
