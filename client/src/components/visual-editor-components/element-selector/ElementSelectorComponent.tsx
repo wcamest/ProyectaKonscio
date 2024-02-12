@@ -22,6 +22,7 @@ import PageDocumentCarouselPageComponent from "@/types/page-document/PageDocumen
 import PageDocumentFlipBoxComponent from "@/types/page-document/PageDocumentFlipBoxComponent";
 import PageDocumentFlipBoxFrontSideComponent from "@/types/page-document/PageDocumentFlipBoxFrontSIdeComponent";
 import PageDocumentFlipBoxBackSideComponent from "@/types/page-document/PageDocumentFlipBoxBackSIdeComponent";
+import PageDocumentUserModalComponent from "@/types/page-document/PageDocumentUserModalComponent";
 
 type Props = {};
 
@@ -222,6 +223,25 @@ const ElementSelectorComponent = (props: Props) => {
       Functions.HideAddElementModal();
       dispatch(setCurrentEditNode(flipBoxBackSideComponent.id));
     },
+    AddUserModal() {
+      if (!currentDocument) return undefined;
+
+      const userModalComponent: PageDocumentUserModalComponent = {
+        id: generateId(),
+        nodes: [],
+        type: "PageDocumentUserModalComponent",
+        name: "Ventana Flotante",
+        canEdit: true,
+        canAddChild: true,
+        canDelete: true,
+        styles: Styles.CreateClassListCollection(),
+      };
+
+      dispatch(addNode([userModalComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(userModalComponent.id));
+    },
     GetFlipBoxSideContainer(type: string) {
       if (!currentDocument) return [];
 
@@ -244,6 +264,20 @@ const ElementSelectorComponent = (props: Props) => {
       });
 
       if (!alreadyHasSide) return ["PageDocumentFlipBoxComponent"];
+
+      return [];
+    },
+    GetUserModalContainer() {
+      if (!currentDocument) return [];
+
+      const node = currentDocument.nodes.find(
+        (node: PageDocumentNode) => node.id === currentDocument.selectedNode
+      );
+
+      if (!node) return [];
+
+      if (node.id === currentDocument.root)
+        return ["PageDocumentContainerElement"];
 
       return [];
     },
@@ -396,6 +430,15 @@ const ElementSelectorComponent = (props: Props) => {
             Functions.AddFlipBoxBackSide();
           }}
         />
+        <ElementSelectorItemComponent
+          icon="/icons/window-stack.svg"
+          text="Ventana Flotante"
+          containers={Functions.GetUserModalContainer()}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddUserModal();
+          }}
+        ></ElementSelectorItemComponent>
       </ElementSelectorSectionComponent>
     </div>
   );

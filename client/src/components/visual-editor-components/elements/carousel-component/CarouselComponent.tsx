@@ -95,7 +95,7 @@ const CarouselComponent = (props: Props) => {
         <div className="relative w-full h-fit min-h-52 border border-solid border-gray-300 shadow-md">
           {Renderer.SelectedPage()}
         </div>
-        <div className="p-3 w-fit h-full flex justify-center items-center scale-x-150">
+        <div className="p-3 w-fit flex justify-center items-center">
           <div className="scale-x-150">
             <CaretRightFillIcon />
           </div>

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "488EF5JMOAV7RB2",
+    "sectionId": "pages",
+    "name": "Pagina Principal",
+    "permalink": "home",
+    "blogId": "",
+    "isBlogSite": false
+  },
+  {
+    "id": "MR48X5EZ6D0IE8X",
+    "sectionId": "pages",
+    "name": "Comercio Justo",
+    "permalink": "Economia Real Colaborariva",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false
+  },
+  {
+    "id": "HHB3A8MCIB9LWWZ",
+    "sectionId": "pages",
+    "name": "Educación Alternativa",
+    "permalink": "Educacion Alternativa",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false
+  }
+]

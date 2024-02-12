@@ -41,8 +41,12 @@ type PageDocumentState = {
 
 const VisualEditorPageDocumentComponent = (props: Props) => {
   const { data } = props;
-  const { currentScreen, selectionRectangle, currentStyleEditNode } =
-    useSelector((state: RootState) => state.visualEditor);
+  const {
+    currentScreen,
+    selectionRectangle,
+    currentStyleEditNode,
+    currentDocument,
+  } = useSelector((state: RootState) => state.visualEditor);
   const dispatch = useDispatch();
   const ref = useRef<HTMLDivElement>(null);
   const [state, setState] = useState<PageDocumentState>({
@@ -90,6 +94,19 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
 
   const Renderer = {
     Root() {
+      if (!currentDocument) return undefined;
+
+      const selectedNode = currentDocument.nodes.find(
+        (node: PageDocumentNode) => {
+          return node.id === currentDocument.selectedNode;
+        }
+      );
+
+      if (!selectedNode) return undefined;
+
+      if (selectedNode.type === "PageDocumentUserModalComponent")
+        return ElementRenderer.Render(selectedNode, data);
+
       const rootNode = data.nodes.find(
         (node: PageDocumentNode) => node.id === data.root
       );
