@@ -24,5 +24,68 @@
     "description": "",
     "blogId": "",
     "isBlogSite": false
+  },
+  {
+    "id": "NW1ZAEM8A9W12F3",
+    "sectionId": "pages",
+    "name": "Cultura Inclusiva",
+    "permalink": "Cultura Inclusiva",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false
+  },
+  {
+    "id": "NW1ZAEM8A7W12F5",
+    "sectionId": "pages",
+    "name": "Conciencia Ambiental",
+    "permalink": "Ecologia conciencia Ambiental",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false
+  },
+  {
+    "id": "NW3ZAEM3A7W24F6",
+    "sectionId": "pages",
+    "name": "Innovaciones Tecnológicas",
+    "permalink": "Innovaciones Tecnologicas",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false
+  },
+  {
+    "id": "NW5ZAEM6A7W64F5",
+    "sectionId": "pages",
+    "name": "Periodismo Digno",
+    "permalink": "Periodismo Digno",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false
+  },
+  {
+    "id": "NW7ZAEM6A7W63F4",
+    "sectionId": "pages",
+    "name": "Politica de Conciencia",
+    "permalink": "Politica de Conciencia",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false
+  },
+  {
+    "id": "NW8ZAEM6A7W63F4",
+    "sectionId": "pages",
+    "name": "Historia no Manipulada",
+    "permalink": "Historia No Manipulada",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false
+  },
+  {
+    "id": "NW8ZAEM6A7W13F1",
+    "sectionId": "pages",
+    "name": "Salud Y Bienestar",
+    "permalink": "Salud Y Bienestar",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false
   }
 ]
