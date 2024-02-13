@@ -31,7 +31,17 @@ const SiteItemComponent = (props: Props) => {
         <div className="flex flex-col">
           <div className="flex gap-2 items-center">
             <span>{Functions.GetName()}</span>
-            {data.permalink.length > 0 && <Link className="text-xs underline opacity-70 hover:opacity-90" href={`visual-editor/${data.permalink.replaceAll(" ", "-").toLowerCase()}`} target="_blank">Editar</Link>}
+            {data.permalink.length > 0 && (
+              <Link
+                className="text-xs underline opacity-70 hover:opacity-90"
+                href={`visual-editor/${data.permalink
+                  .replaceAll(" ", "-")
+                  .toLowerCase()}`}
+                target="_blank"
+              >
+                Editar
+              </Link>
+            )}
           </div>
           <span className="text-xs text-blue-50 text-opacity-60">
             {siteDescription}
@@ -48,7 +58,20 @@ const SiteItemComponent = (props: Props) => {
       }}
     >
       <div className="flex flex-col">
-        <span>{Functions.GetName()}</span>
+        <div className="flex gap-2 items-center">
+          <span>{Functions.GetName()}</span>
+          {data.permalink.length > 0 && (
+            <Link
+              className="text-xs underline opacity-70 hover:opacity-90"
+              href={`visual-editor/${data.permalink
+                .replaceAll(" ", "-")
+                .toLowerCase()}`}
+              target="_blank"
+            >
+              Editar
+            </Link>
+          )}
+        </div>
         <span className="text-xs text-blue-800 text-opacity-30">
           {siteDescription}
         </span>
