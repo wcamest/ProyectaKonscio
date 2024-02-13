@@ -87,5 +87,41 @@
     "description": "",
     "blogId": "",
     "isBlogSite": false
+  },
+  {
+    "id": "XSS1PG1ASV0GKRQ",
+    "sectionId": "pages",
+    "name": "Colabora",
+    "permalink": "Colabora",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false
+  },
+  {
+    "id": "KC5XHKFREE51RDW",
+    "sectionId": "blogs",
+    "name": "NotiKonscio",
+    "permalink": "notikonscio",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false
+  },
+  {
+    "id": "EPE6LVB1NE4G8RZ",
+    "sectionId": "blogs",
+    "name": "Proyectos",
+    "permalink": "Proyectos",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false
+  },
+  {
+    "id": "MJTZIOPODKWKOJK",
+    "sectionId": "Proyectos",
+    "name": "Plataforma Digital KonscioHousing",
+    "permalink": "Plataforma Digital KonscioHousing",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": true
   }
 ]

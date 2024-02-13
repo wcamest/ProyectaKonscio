@@ -23,6 +23,11 @@ const SiteItemComponent = (props: Props) => {
     SelectSite() {
       dispatch(selectSite(data.id));
     },
+    GetBlogPostFlag() {
+      if (data.isBlogSite) return "?isBlogPost=true";
+
+      return "";
+    },
   };
 
   if (selectedItemId === data.id)
@@ -36,7 +41,7 @@ const SiteItemComponent = (props: Props) => {
                 className="text-xs underline opacity-70 hover:opacity-90"
                 href={`visual-editor/${data.permalink
                   .replaceAll(" ", "-")
-                  .toLowerCase()}`}
+                  .toLowerCase()}${Functions.GetBlogPostFlag()}`}
                 target="_blank"
               >
                 Editar
@@ -65,7 +70,7 @@ const SiteItemComponent = (props: Props) => {
               className="text-xs underline opacity-70 hover:opacity-90"
               href={`visual-editor/${data.permalink
                 .replaceAll(" ", "-")
-                .toLowerCase()}`}
+                .toLowerCase()}${Functions.GetBlogPostFlag()}`}
               target="_blank"
             >
               Editar

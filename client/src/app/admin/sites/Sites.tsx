@@ -46,6 +46,26 @@ const Sites = (props: Props) => {
     },
   };
 
+  const Renderer = {
+    BlogPostSections() {
+      const blogs = sites.filter((site: Site) => {
+        return site.sectionId === "blogs";
+      });
+
+      return blogs.map((site: Site, key: number) => {
+        return (
+          <SitesSectionComponent
+            key={key}
+            id={site.name}
+            title={`${site.name} - Artículos`}
+            siteDescription="Post"
+            isBlogSite={true}
+          />
+        );
+      });
+    },
+  };
+
   useEffect(() => {
     Functions.SetSites();
   }, []);
@@ -67,6 +87,7 @@ const Sites = (props: Props) => {
               title="Blogs"
               siteDescription="Blog"
             />
+            {Renderer.BlogPostSections()}
           </div>
         </div>
       </div>
