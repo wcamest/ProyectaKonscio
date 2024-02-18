@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="form" x="0" y="0" width="16" height="16" style="fill:none;"/>
+    <g id="form1" serif:id="form">
+        <path d="M15,2.68l0,10.64c0,0.927 -0.753,1.68 -1.68,1.68l-10.64,0c-0.927,0 -1.68,-0.753 -1.68,-1.68l0,-10.64c0,-0.927 0.753,-1.68 1.68,-1.68l10.64,0c0.927,0 1.68,0.753 1.68,1.68Zm-1,-0c0,-0.375 -0.305,-0.68 -0.68,-0.68l-10.64,0c-0.375,0 -0.68,0.305 -0.68,0.68l0,10.64c0,0.375 0.305,0.68 0.68,0.68l10.64,0c0.375,0 0.68,-0.305 0.68,-0.68l0,-10.64Z"/>
+        <path d="M13,3l0,3l-10,0l0,-3l10,0Zm-1,1l-8,0l-0,1l8,-0l0,-1Z"/>
+        <path d="M6,8.5c0,0.828 -0.672,1.5 -1.5,1.5c-0.828,0 -1.5,-0.672 -1.5,-1.5c0,-0.828 0.672,-1.5 1.5,-1.5c0.828,0 1.5,0.672 1.5,1.5Zm-1,0c0,-0.276 -0.224,-0.5 -0.5,-0.5c-0.276,0 -0.5,0.224 -0.5,0.5c0,0.276 0.224,0.5 0.5,0.5c0.276,0 0.5,-0.224 0.5,-0.5Z"/>
+        <path d="M13,7l0,3l-6,0l0,-3l6,0Zm-1,1l-4,0l0,1l4,-0l-0,-1Z"/>
+        <path d="M13,12c0,0.552 -0.448,1 -1,1l-8,0c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1l8,0c0.552,0 1,0.448 1,1Z"/>
+    </g>
+</svg>

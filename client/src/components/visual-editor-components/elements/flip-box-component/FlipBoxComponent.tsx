@@ -7,7 +7,9 @@ import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ElementRenderer from "../renderer/renderer";
-import ClassGenerator, { ClassGeneratorResult } from "../class-generator/ClassGenerator";
+import ClassGenerator, {
+  ClassGeneratorResult,
+} from "../class-generator/ClassGenerator";
 
 type Props = {
   data: PageDocumentFlipBoxComponent;
@@ -33,6 +35,11 @@ const FlipBoxComponent = (props: Props) => {
     ShowSelection() {
       if (!ref.current) return;
       if (data.id !== document.selectedNode) return;
+
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
 
       const domRect = ref.current.getBoundingClientRect();
       const rectangle: Rectangle = {
@@ -86,7 +93,11 @@ const FlipBoxComponent = (props: Props) => {
   }, [document.selectedNode, currentStyleEditNode, document, currentScreen]);
 
   return (
-    <div ref={ref} id={`flip-box-${data.id}`} className={Functions.GetClasses()}>
+    <div
+      ref={ref}
+      id={`flip-box-${data.id}`}
+      className={Functions.GetClasses()}
+    >
       {Renderer.SelectedPage()}
     </div>
   );

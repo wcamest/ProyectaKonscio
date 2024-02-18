@@ -10,6 +10,7 @@ import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ElementRenderer from "../renderer/renderer";
+import BlueButtonComponent from "../blue-button-component/BlueButtonComponent";
 
 type Props = {
   data: PageDocumentCarouselComponent;
@@ -28,6 +29,11 @@ const CarouselComponent = (props: Props) => {
     ShowSelection() {
       if (!ref.current) return;
       if (data.id !== document.selectedNode) return;
+
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
 
       const domRect = ref.current.getBoundingClientRect();
       const rectangle: Rectangle = {
@@ -101,7 +107,7 @@ const CarouselComponent = (props: Props) => {
           </div>
         </div>
       </div>
-      <ButtonComponent>Reproducir</ButtonComponent>
+      <BlueButtonComponent>Reproducir</BlueButtonComponent>
     </div>
   );
 };

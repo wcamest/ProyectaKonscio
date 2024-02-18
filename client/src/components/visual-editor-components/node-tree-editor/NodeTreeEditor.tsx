@@ -37,6 +37,12 @@ const elementEditorModalIds: any = {
   PageDocumentImageElement: "image-element-editor-modal",
   PageDocumentRichTextElement: "rich-text-element-editor-modal",
   PageDocumentSimpleTextElement: "simple-text-element-editor-modal",
+  PageDocumentInputElement: "input-element-editor-modal",
+  PageDocumentTextAreaElement: "textarea-element-editor-modal",
+  PageDocumentSelectElement: "select-element-editor-modal",
+  PageDocumentButtonElement: "button-element-editor-modal",
+  PageDocumentFormElement: "form-element-editor-modal",
+  PageDocumentFieldsetElement: "fieldset-element-editor-modal"
 };
 
 const NodeTreeEditor = (props: Props) => {
@@ -104,6 +110,12 @@ const NodeTreeEditor = (props: Props) => {
         "PageDocumentImageElement",
         "PageDocumentRichTextElement",
         "PageDocumentSimpleTextElement",
+        "PageDocumentFormElement",
+        "PageDocumentFieldsetElement",
+        "PageDocumentSelectElement",
+        "PageDocumentInputElement",
+        "PageDocumentTextAreaElement",
+        "PageDocumentButtonElement"
       ];
 
       return nodeTypesWithEditableProperties.includes(node.type);

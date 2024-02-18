@@ -22,6 +22,10 @@ import SimpleTextEditorComponent from "../simple-text-editor/SimpleTextEditorCom
 import Rectangle from "@/types/Rectangle";
 import ButtonComponent from "@/components/controls/button/ButtonComponent";
 import { hideModal } from "@/redux/features/modals/modalsSlice";
+import InputElementEditor from "../input-element-editor/InputElementEditor";
+import TextAreaElementEditor from "../textarea-element-editor/TextAreaElementEditor";
+import SelectElementEditor from "../select-element-editor/SelectElementEditor";
+import FieldsetElementEditor from "../fieldset-element-editor/FieldsetElementEditor";
 
 type Props = {
   data: PageDocument;
@@ -214,6 +218,8 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
       </ModalComponent>
       <ModalComponent
         id="simple-text-element-editor-modal"
+        fitHeight={true}
+        maxWidth="max-w-96"
         buttons={[
           <ButtonComponent
             key={0}
@@ -231,6 +237,8 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
       </ModalComponent>
       <ModalComponent
         id="image-element-editor-modal"
+        fitHeight={true}
+        maxWidth="max-w-96"
         buttons={[
           <ButtonComponent
             key={0}
@@ -246,6 +254,116 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
       >
         <ImageElementEditor />
       </ModalComponent>
+      <ModalComponent
+        id="input-element-editor-modal"
+        fitHeight={true}
+        maxWidth="max-w-96"
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("input-element-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
+        title="Entrada de datos"
+        onHideModal={Functions.HideElementEditor}
+      >
+        <InputElementEditor />
+      </ModalComponent>
+      <ModalComponent
+        id="textarea-element-editor-modal"
+        fitHeight={true}
+        maxWidth="max-w-96"
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("textarea-element-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
+        title="Entrada de texto multilinea"
+        onHideModal={Functions.HideElementEditor}
+      >
+        <TextAreaElementEditor />
+      </ModalComponent>
+      <ModalComponent
+        id="select-element-editor-modal"
+        fitHeight={true}
+        maxWidth="max-w-96"
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("select-element-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
+        title="Lista de opciones"
+        onHideModal={Functions.HideElementEditor}
+      >
+        <SelectElementEditor />
+      </ModalComponent>
+      <ModalComponent
+        id="button-element-editor-modal"
+        fitHeight={true}
+        maxWidth="max-w-96"
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("button-element-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
+        title="Botón"
+        onHideModal={Functions.HideElementEditor}
+      ></ModalComponent>
+      <ModalComponent
+        id="fieldset-element-editor-modal"
+        fitHeight={true}
+        maxWidth="max-w-96"
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("fieldset-element-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
+        title="Grupo de campos"
+        onHideModal={Functions.HideElementEditor}
+      >
+        <FieldsetElementEditor />
+      </ModalComponent>
+      <ModalComponent
+        id="form-element-editor-modal"
+        fitHeight={true}
+        maxWidth="max-w-96"
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("form-element-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
+        title="Formulario"
+        onHideModal={Functions.HideElementEditor}
+      ></ModalComponent>
     </div>
   );
 };

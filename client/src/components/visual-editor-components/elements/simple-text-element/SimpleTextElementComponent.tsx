@@ -34,6 +34,11 @@ const SimpleTextElementComponent = (props: Props) => {
       if (!ref.current) return;
       if (data.id !== document.selectedNode) return;
 
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
       const domRect = ref.current.getBoundingClientRect();
       const rectangle: Rectangle = {
         x: domRect.x,

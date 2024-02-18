@@ -1,27 +1,28 @@
-import { RootState } from "@/redux/store/store";
-import PageDocument from "@/types/page-document/PageDocument";
-import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import React, { useEffect, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import ElementRenderer from "../renderer/renderer";
+import PageDocumentNode from "@/types/page-document/PageDocumentNode";
+import { setSelectionRectangle } from "@/redux/features/visual-editor/visualEditorSlice";
+import Rectangle from "@/types/Rectangle";
 import ClassGenerator, {
   ClassGeneratorResult,
 } from "../class-generator/ClassGenerator";
-import Rectangle from "@/types/Rectangle";
-import { setSelectionRectangle } from "@/redux/features/visual-editor/visualEditorSlice";
-import ElementRenderer from "../renderer/renderer";
+import { RootState } from "@/redux/store/store";
+import { useDispatch, useSelector } from "react-redux";
+import PageDocument from "@/types/page-document/PageDocument";
+import PageDocumentFieldsetElement from "@/types/page-document/PageDocumentFieldsetElement";
 
 type Props = {
-  data: PageDocumentNode;
+  data: PageDocumentFieldsetElement;
   document: PageDocument;
 };
 
-const FlipBoxSideComponent = (props: Props) => {
+const FieldsetElementComponent = (props: Props) => {
   const { data, document } = props;
   const { currentScreen, currentStyleEditNode } = useSelector(
     (state: RootState) => state.visualEditor
   );
   const dispatch = useDispatch();
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLFieldSetElement>(null);
 
   const Functions = {
     GetClasses() {
@@ -71,14 +72,15 @@ const FlipBoxSideComponent = (props: Props) => {
   }, [document.selectedNode, currentStyleEditNode, document, currentScreen]);
 
   return (
-    <div
+    <fieldset
       ref={ref}
-      id={`flip-box-side-${data.id}`}
+      id={`fieldset-${data.id}`}
       className={Functions.GetClasses()}
     >
+      <legend>{data.label}</legend>
       {Renderer.Nodes()}
-    </div>
+    </fieldset>
   );
 };
 
-export default FlipBoxSideComponent;
+export default FieldsetElementComponent;
