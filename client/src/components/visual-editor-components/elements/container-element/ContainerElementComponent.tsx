@@ -36,6 +36,11 @@ const ContainerElementComponent = (props: Props) => {
       if (!ref.current) return;
       if (data.id !== document.selectedNode) return;
 
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
       const domRect = ref.current.getBoundingClientRect();
       const rectangle: Rectangle = {
         x: domRect.x,
@@ -59,7 +64,8 @@ const ContainerElementComponent = (props: Props) => {
 
         if (node.type === "PageDocumentUserModalComponent") return undefined;
 
-        return ElementRenderer.Render(node, document, key);
+        const element = ElementRenderer.Render(node, document, key);
+        return element;
       });
     },
   };

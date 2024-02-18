@@ -6,7 +6,9 @@ import PageDocumentRichTextElement from "@/types/page-document/PageDocumentRichT
 import React, { useEffect, useRef } from "react";
 import "react-quill/dist/quill.snow.css";
 import { useDispatch, useSelector } from "react-redux";
-import ClassGenerator, { ClassGeneratorResult } from "../class-generator/ClassGenerator";
+import ClassGenerator, {
+  ClassGeneratorResult,
+} from "../class-generator/ClassGenerator";
 
 type Props = {
   data: PageDocumentRichTextElement;
@@ -32,6 +34,11 @@ const RichTextElementComponent = (props: Props) => {
     ShowSelection() {
       if (!ref.current) return;
       if (data.id !== document.selectedNode) return;
+
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
 
       const domRect = ref.current.getBoundingClientRect();
       const rectangle: Rectangle = {

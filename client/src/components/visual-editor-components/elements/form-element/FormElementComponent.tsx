@@ -1,27 +1,28 @@
-import { RootState } from "@/redux/store/store";
-import PageDocument from "@/types/page-document/PageDocument";
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import React, { useEffect, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import ElementRenderer from "../renderer/renderer";
+import { setSelectionRectangle } from "@/redux/features/visual-editor/visualEditorSlice";
+import Rectangle from "@/types/Rectangle";
 import ClassGenerator, {
   ClassGeneratorResult,
 } from "../class-generator/ClassGenerator";
-import Rectangle from "@/types/Rectangle";
-import { setSelectionRectangle } from "@/redux/features/visual-editor/visualEditorSlice";
-import ElementRenderer from "../renderer/renderer";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "@/redux/store/store";
+import PageDocumentFormElement from "@/types/page-document/PageDocumentFormElement";
+import PageDocument from "@/types/page-document/PageDocument";
 
 type Props = {
-  data: PageDocumentNode;
+  data: PageDocumentFormElement;
   document: PageDocument;
 };
 
-const FlipBoxSideComponent = (props: Props) => {
+const FormElementComponent = (props: Props) => {
   const { data, document } = props;
   const { currentScreen, currentStyleEditNode } = useSelector(
     (state: RootState) => state.visualEditor
   );
   const dispatch = useDispatch();
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLFormElement>(null);
 
   const Functions = {
     GetClasses() {
@@ -71,14 +72,10 @@ const FlipBoxSideComponent = (props: Props) => {
   }, [document.selectedNode, currentStyleEditNode, document, currentScreen]);
 
   return (
-    <div
-      ref={ref}
-      id={`flip-box-side-${data.id}`}
-      className={Functions.GetClasses()}
-    >
+    <form ref={ref} id={`form-${data.id}`} className={Functions.GetClasses()}>
       {Renderer.Nodes()}
-    </div>
+    </form>
   );
 };
 
-export default FlipBoxSideComponent;
+export default FormElementComponent;

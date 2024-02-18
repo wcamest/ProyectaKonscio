@@ -29,6 +29,12 @@ const nodeTypeLabels: any = {
   PageDocumentFlipBoxFrontSideComponent: "Lado Anterior",
   PageDocumentFlipBoxBackSideComponent: "Lado Posterior",
   PageDocumentUserModalComponent: "Ventana Flotante",
+  PageDocumentFormElement: "Formulario",
+  PageDocumentButtonElement: "Botón",
+  PageDocumentFieldsetElement: "Grupo de campos",
+  PageDocumentSelectElement: "Lista de opciones",
+  PageDocumentInputElement: "Entrada de datos",
+  PageDocumentTextAreaElement: "Entrada de texto multilinea"
 };
 
 const icons: any = {
@@ -39,6 +45,11 @@ const icons: any = {
   PageDocumentCarouselComponent: "/icons/carousel.svg",
   PageDocumentCarouselPageComponent: "/icons/carousel-page.svg",
   PageDocumentUserModalComponent: "/icons/window-stack.svg",
+  PageDocumentFormElement: "/icons/form.svg",
+  PageDocumentFieldsetElement: "/icons/fieldset.svg",
+  PageDocumentSelectElement: "/icons/select.svg",
+  PageDocumentInputElement: "/icons/inputs.svg",
+  PageDocumentTextAreaElement: "/icons/textarea.svg",
 };
 
 const NodeTreeItemComponent = (props: Props) => {
