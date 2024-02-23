@@ -5,6 +5,6 @@ export default interface PageDocumentFormElement extends PageDocumentNode {
 }
 
 export enum PageDocumentFormElementAction {
-  None,
-  SendToEmail,
+  None = "none",
+  SendToEmail = "send_to_email",
 }
