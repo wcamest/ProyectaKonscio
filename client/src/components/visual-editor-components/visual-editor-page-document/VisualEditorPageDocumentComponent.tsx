@@ -26,6 +26,8 @@ import InputElementEditor from "../input-element-editor/InputElementEditor";
 import TextAreaElementEditor from "../textarea-element-editor/TextAreaElementEditor";
 import SelectElementEditor from "../select-element-editor/SelectElementEditor";
 import FieldsetElementEditor from "../fieldset-element-editor/FieldsetElementEditor";
+import FormElementEditor from "../form-element-editor/FormElementEditor";
+import ButtonElementEditor from "../button-element-editor/ButtonElementEditor";
 
 type Props = {
   data: PageDocument;
@@ -327,7 +329,9 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
         ]}
         title="Botón"
         onHideModal={Functions.HideElementEditor}
-      ></ModalComponent>
+      >
+        <ButtonElementEditor />
+      </ModalComponent>
       <ModalComponent
         id="fieldset-element-editor-modal"
         fitHeight={true}
@@ -363,7 +367,9 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
         ]}
         title="Formulario"
         onHideModal={Functions.HideElementEditor}
-      ></ModalComponent>
+      >
+        <FormElementEditor />
+      </ModalComponent>
     </div>
   );
 };
