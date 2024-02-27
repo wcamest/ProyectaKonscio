@@ -35,6 +35,10 @@ import PageDocumentInputElement, {
   PageDocumentInputElementType,
 } from "@/types/page-document/PageDocumentInputElement";
 import PageDocumentTextAreaElement from "@/types/page-document/PageDocumentTextAreaElement";
+import PageDocumentVideoPlaylistComponent from "@/types/page-document/PageDocumentVideoPlaylistComponent";
+import PageDocumentVideoPlaylistGroupComponent from "@/types/page-document/PageDocumentVideoPlaylistGroupComponent";
+import PageDocumentVideoPlaylistItemComponent from "@/types/page-document/PageDocumentVideoPlaylistItemComponent";
+import PageDocumentEnneagramComponent from "@/types/page-document/PageDocumentEnneagramComponent";
 
 type Props = {};
 
@@ -247,6 +251,10 @@ const ElementSelectorComponent = (props: Props) => {
         canAddChild: true,
         canDelete: true,
         styles: Styles.CreateClassListCollection(),
+        title: "",
+        userModalId: "",
+        fitHeightToContent: true,
+        fitWidthToContent: true,
       };
 
       dispatch(addNode([userModalComponent]));
@@ -404,7 +412,7 @@ const ElementSelectorComponent = (props: Props) => {
         },
         paddingRight: {
           enabled: true,
-          className: "css-pt-5",
+          className: "css-pr-5",
         },
         paddingBottom: {
           enabled: true,
@@ -496,6 +504,89 @@ const ElementSelectorComponent = (props: Props) => {
 
       Functions.HideAddElementModal();
       dispatch(setCurrentEditNode(buttonElement.id));
+    },
+    AddVideoPlaylist() {
+      if (!currentDocument) return undefined;
+
+      const videoPlaylistComponent: PageDocumentVideoPlaylistComponent = {
+        id: generateId(),
+        nodes: [],
+        type: "PageDocumentVideoPlaylistComponent",
+        name: "Lista de reproducción",
+        canEdit: true,
+        canAddChild: true,
+        canDelete: true,
+        styles: Styles.CreateClassListCollection(),
+      };
+
+      dispatch(addNode([videoPlaylistComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(videoPlaylistComponent.id));
+    },
+    AddVideoPlaylistGroup() {
+      if (!currentDocument) return undefined;
+
+      const videoPlaylistGroupComponent: PageDocumentVideoPlaylistGroupComponent =
+        {
+          id: generateId(),
+          nodes: [],
+          type: "PageDocumentVideoPlaylistGroupComponent",
+          name: "Grupo de videos",
+          canEdit: true,
+          canAddChild: true,
+          canDelete: true,
+          styles: Styles.CreateClassListCollection(),
+          title: "Group title",
+          subtitle: "Group description",
+        };
+
+      dispatch(addNode([videoPlaylistGroupComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(videoPlaylistGroupComponent.id));
+    },
+    AddVideoPlaylistItem() {
+      if (!currentDocument) return undefined;
+
+      const videoPlaylistItemComponent: PageDocumentVideoPlaylistItemComponent =
+        {
+          id: generateId(),
+          nodes: [],
+          type: "PageDocumentVideoPlaylistItemComponent",
+          name: "Video Item",
+          canEdit: true,
+          canAddChild: true,
+          canDelete: true,
+          styles: Styles.CreateClassListCollection(),
+          title: "Item title",
+          subtitle: "Subtitle",
+          description: "Item description",
+        };
+
+      dispatch(addNode([videoPlaylistItemComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(videoPlaylistItemComponent.id));
+    },
+    AddEnneagram() {
+      if (!currentDocument) return undefined;
+
+      const enneagramComponent: PageDocumentEnneagramComponent = {
+        id: generateId(),
+        nodes: [],
+        type: "PageDocumentEnneagramComponent",
+        name: "Eneagrama",
+        canEdit: false,
+        canAddChild: false,
+        canDelete: true,
+        styles: Styles.CreateClassListCollection(),
+      };
+
+      dispatch(addNode([enneagramComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(enneagramComponent.id));
     },
     GetFlipBoxSideContainer(type: string) {
       if (!currentDocument) return [];
@@ -601,6 +692,7 @@ const ElementSelectorComponent = (props: Props) => {
           "PageDocumentCarouselPageComponent",
           "PageDocumentFlipBoxFrontSideComponent",
           "PageDocumentFlipBoxBackSideComponent",
+          "PageDocumentUserModalComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       >
@@ -622,6 +714,7 @@ const ElementSelectorComponent = (props: Props) => {
           "PageDocumentCarouselPageComponent",
           "PageDocumentFlipBoxFrontSideComponent",
           "PageDocumentFlipBoxBackSideComponent",
+          "PageDocumentUserModalComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       >
@@ -634,6 +727,7 @@ const ElementSelectorComponent = (props: Props) => {
             "PageDocumentCarouselPageComponent",
             "PageDocumentFlipBoxFrontSideComponent",
             "PageDocumentFlipBoxBackSideComponent",
+            "PageDocumentUserModalComponent",
           ]}
           selectedNodeType={Functions.GetSelectedNodeType()}
           onClick={() => {
@@ -657,6 +751,7 @@ const ElementSelectorComponent = (props: Props) => {
           "PageDocumentCarouselPageComponent",
           "PageDocumentFlipBoxFrontSideComponent",
           "PageDocumentFlipBoxBackSideComponent",
+          "PageDocumentUserModalComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       >
@@ -678,6 +773,7 @@ const ElementSelectorComponent = (props: Props) => {
           "PageDocumentCarouselPageComponent",
           "PageDocumentFlipBoxFrontSideComponent",
           "PageDocumentFlipBoxBackSideComponent",
+          "PageDocumentUserModalComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       ></ElementSelectorSectionComponent>
@@ -690,6 +786,7 @@ const ElementSelectorComponent = (props: Props) => {
           "PageDocumentCarouselPageComponent",
           "PageDocumentFlipBoxFrontSideComponent",
           "PageDocumentFlipBoxBackSideComponent",
+          "PageDocumentUserModalComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       >
@@ -740,16 +837,23 @@ const ElementSelectorComponent = (props: Props) => {
         containers={[
           "PageDocumentContainerElement",
           "PageDocumentCarouselComponent",
+          "PageDocumentCarouselPageComponent",
           "PageDocumentFlipBoxComponent",
           "PageDocumentFlipBoxFrontSideComponent",
           "PageDocumentFlipBoxBackSideComponent",
+          "PageDocumentUserModalComponent",
+          "PageDocumentVideoPlaylistComponent",
+          "PageDocumentVideoPlaylistGroupComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       >
         <ElementSelectorItemComponent
           icon="/icons/carousel.svg"
           text="Carrusel"
-          containers={["PageDocumentContainerElement"]}
+          containers={[
+            "PageDocumentContainerElement",
+            "PageDocumentUserModalComponent",
+          ]}
           selectedNodeType={Functions.GetSelectedNodeType()}
           onClick={() => {
             Functions.AddCarousel();
@@ -769,7 +873,8 @@ const ElementSelectorComponent = (props: Props) => {
           text="Tarjeta Giratoria"
           containers={[
             "PageDocumentContainerElement",
-            "PageDocumentCarouselComponent",
+            "PageDocumentCarouselPageComponent",
+            "PageDocumentUserModalComponent",
           ]}
           selectedNodeType={Functions.GetSelectedNodeType()}
           onClick={() => {
@@ -806,7 +911,52 @@ const ElementSelectorComponent = (props: Props) => {
           onClick={() => {
             Functions.AddUserModal();
           }}
-        ></ElementSelectorItemComponent>
+        />
+        <ElementSelectorItemComponent
+          text="Lista de reproducción"
+          containers={[
+            "PageDocumentContainerElement",
+            "PageDocumentUserModalComponent",
+          ]}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddVideoPlaylist();
+          }}
+        />
+        <ElementSelectorItemComponent
+          text="Grupo de videos"
+          containers={[
+            "PageDocumentVideoPlaylistComponent",
+            "PageDocumentVideoPlaylistGroupComponent",
+          ]}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddVideoPlaylistGroup();
+          }}
+        />
+        <ElementSelectorItemComponent
+          text="Video Item"
+          containers={[
+            "PageDocumentVideoPlaylistComponent",
+            "PageDocumentVideoPlaylistGroupComponent",
+          ]}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddVideoPlaylistItem();
+          }}
+        />
+        <ElementSelectorItemComponent
+          text="Eneagrama"
+          containers={[
+            "PageDocumentContainerElement",
+            "PageDocumentCarouselPageComponent",
+            "PageDocumentUserModalComponent",
+          ]}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddEnneagram();
+          }}
+        />
       </ElementSelectorSectionComponent>
     </div>
   );

@@ -2,13 +2,13 @@ import PageDocumentNode from "./PageDocumentNode";
 
 export default interface PageDocumentButtonElement extends PageDocumentNode {
   action: PageDocumentButtonElementAction;
-  url?: string;
+  urlToOpen?: string;
   userModalId?: string;
 }
 
 export enum PageDocumentButtonElementAction {
-  None,
-  OpenUrl,
-  ShowUserModal,
-  SendForm,
+  None = "none",
+  OpenUrl = "open_url",
+  ShowUserModal = "show_user_modal",
+  SendForm = "send_form",
 }

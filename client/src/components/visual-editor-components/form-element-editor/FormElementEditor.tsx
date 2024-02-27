@@ -1,6 +1,9 @@
+import TextInputComponent from "@/components/controls/text-input/TextInputComponent";
 import { updateNode } from "@/redux/features/visual-editor/visualEditorSlice";
 import { RootState } from "@/redux/store/store";
-import PageDocumentFormElement from "@/types/page-document/PageDocumentFormElement";
+import PageDocumentFormElement, {
+  PageDocumentFormElementAction,
+} from "@/types/page-document/PageDocumentFormElement";
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import React, { ChangeEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -35,11 +38,18 @@ const FormElementEditor = (props: Props) => {
 
       return formElement;
     },
-    GetInputType() {
+    GetFormAction() {
       const formElement = Functions.GetForm();
       if (!formElement) return undefined;
 
       return formElement.action;
+    },
+    GetEmailToSend() {
+      const formElement = Functions.GetForm();
+      if (!formElement) return "";
+      if (!formElement.emailToSend) return "";
+
+      return formElement.emailToSend;
     },
     UpdateNode(data: any) {
       const inputElement = Functions.GetForm();
@@ -54,12 +64,15 @@ const FormElementEditor = (props: Props) => {
     },
   };
 
+  const action = Functions.GetFormAction();
+  console.log(action);
+
   return (
     <div className="p-4 flex flex-col gap-4">
       <div className="flex flex-col gap-2">
         <span className="text-xs text-gray-500">Acción:</span>
         <select
-          value={Functions.GetInputType()}
+          value={Functions.GetFormAction()}
           className="p-1 bg-white border border-solid border-blue-400 rounded-md"
           onChange={(e: ChangeEvent<HTMLSelectElement>) => {
             Functions.UpdateNode({
@@ -71,6 +84,20 @@ const FormElementEditor = (props: Props) => {
           <option value="send_to_email">Enviar a correo electrónico</option>
         </select>
       </div>
+      {Functions.GetFormAction() ===
+        PageDocumentFormElementAction.SendToEmail && (
+        <div className="flex flex-col gap-2">
+          <span className="text-xs text-gray-500">Correo electrónico:</span>
+          <TextInputComponent
+            value={Functions.GetEmailToSend()}
+            onChange={(e: ChangeEvent<HTMLInputElement>) => {
+              Functions.UpdateNode({
+                emailToSend: e.target.value,
+              });
+            }}
+          />
+        </div>
+      )}
     </div>
   );
 };

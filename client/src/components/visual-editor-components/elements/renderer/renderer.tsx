@@ -15,6 +15,8 @@ import FieldsetElementComponent from "../fieldset-element/FieldsetElementCompone
 import SelectElementComponent from "../select-element/SelectElementComponent";
 import InputElementComponent from "../input-element/InputElementComponent";
 import TextAreaElementComponent from "../textarea-element/TextAreaElementComponent";
+import VideoPlaylistComponent from "../video-playlist-component/VideoPlaylistComponent";
+import EnneagramComponent from "../enneagram-component/EnneagramComponent";
 
 const Components: any = {
   PageDocumentContainerElement: ContainerElementComponent,
@@ -32,7 +34,9 @@ const Components: any = {
   PageDocumentUserModalComponent: UserModalComponent,
   PageDocumentSelectElement: SelectElementComponent,
   PageDocumentInputElement: InputElementComponent,
-  PageDocumentTextAreaElement: TextAreaElementComponent
+  PageDocumentTextAreaElement: TextAreaElementComponent,
+  PageDocumentVideoPlaylistComponent: VideoPlaylistComponent,
+  PageDocumentEnneagramComponent: EnneagramComponent
 };
 
 const ElementRenderer = {
