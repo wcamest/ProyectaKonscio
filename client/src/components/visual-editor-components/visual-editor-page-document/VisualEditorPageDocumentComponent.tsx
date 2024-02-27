@@ -28,6 +28,9 @@ import SelectElementEditor from "../select-element-editor/SelectElementEditor";
 import FieldsetElementEditor from "../fieldset-element-editor/FieldsetElementEditor";
 import FormElementEditor from "../form-element-editor/FormElementEditor";
 import ButtonElementEditor from "../button-element-editor/ButtonElementEditor";
+import UserModalComponentEditor from "../user-modal-component-editor/UserModalComponentEditor";
+import VideoPlaylistGroupEditor from "../video-playlist-group-editor/VideoPlaylistGroupEditor";
+import VideoPlaylistItemEditor from "../video-playlist-item-editor/VideoPlaylistItemEditor";
 
 type Props = {
   data: PageDocument;
@@ -76,6 +79,30 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
         maxWidth: `${screenMinSizes[currentScreen]}px`,
       };
     },
+    GetSelectedUserModal() {
+      if (!currentDocument) return undefined;
+
+      const selectedNode = currentDocument.nodes.find(
+        (node: PageDocumentNode) => {
+          return node.id === currentDocument.selectedNode;
+        }
+      );
+
+      if (!selectedNode) return undefined;
+
+      let currentNode: PageDocumentNode | undefined = selectedNode;
+
+      while (currentNode !== undefined) {
+        let _currentNode: PageDocumentNode = currentNode;
+
+        if (_currentNode.type === "PageDocumentUserModalComponent")
+          return _currentNode;
+
+        currentNode = currentDocument.nodes.find(
+          (node: PageDocumentNode) => node.id === _currentNode.parent
+        );
+      }
+    },
     ShowSelection() {
       if (!ref.current) return;
       if (!selectionRectangle) return;
@@ -110,8 +137,10 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
 
       if (!selectedNode) return undefined;
 
-      if (selectedNode.type === "PageDocumentUserModalComponent")
-        return ElementRenderer.Render(selectedNode, data);
+      const selectedUserModal = Functions.GetSelectedUserModal();
+
+      if (selectedUserModal)
+        return ElementRenderer.Render(selectedUserModal, data);
 
       const rootNode = data.nodes.find(
         (node: PageDocumentNode) => node.id === data.root
@@ -369,6 +398,63 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
         onHideModal={Functions.HideElementEditor}
       >
         <FormElementEditor />
+      </ModalComponent>
+      <ModalComponent
+        id="user-modal-editor-modal"
+        fitHeight={true}
+        maxWidth="max-w-96"
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("user-modal-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
+        title="Ventana Flotante"
+        onHideModal={Functions.HideElementEditor}
+      >
+        <UserModalComponentEditor />
+      </ModalComponent>
+      <ModalComponent
+        id="video-playlist-group-editor-modal"
+        fitHeight={true}
+        maxWidth="max-w-96"
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("video-playlist-group-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
+        title="Lista de Reproducción - Item"
+        onHideModal={Functions.HideElementEditor}
+      >
+        <VideoPlaylistGroupEditor />
+      </ModalComponent>
+      <ModalComponent
+        id="video-playlist-item-editor-modal"
+        fitHeight={true}
+        maxWidth="max-w-96"
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("video-playlist-item-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
+        title="Lista de Reproducción - Item"
+        onHideModal={Functions.HideElementEditor}
+      >
+        <VideoPlaylistItemEditor />
       </ModalComponent>
     </div>
   );

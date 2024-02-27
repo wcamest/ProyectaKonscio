@@ -42,7 +42,10 @@ const elementEditorModalIds: any = {
   PageDocumentSelectElement: "select-element-editor-modal",
   PageDocumentButtonElement: "button-element-editor-modal",
   PageDocumentFormElement: "form-element-editor-modal",
-  PageDocumentFieldsetElement: "fieldset-element-editor-modal"
+  PageDocumentFieldsetElement: "fieldset-element-editor-modal",
+  PageDocumentUserModalComponent: "user-modal-editor-modal",
+  PageDocumentVideoPlaylistGroupComponent: "video-playlist-group-editor-modal",
+  PageDocumentVideoPlaylistItemComponent: "video-playlist-item-editor-modal"
 };
 
 const NodeTreeEditor = (props: Props) => {
@@ -115,7 +118,10 @@ const NodeTreeEditor = (props: Props) => {
         "PageDocumentSelectElement",
         "PageDocumentInputElement",
         "PageDocumentTextAreaElement",
-        "PageDocumentButtonElement"
+        "PageDocumentButtonElement",
+        "PageDocumentUserModalComponent",
+        "PageDocumentVideoPlaylistGroupComponent",
+        "PageDocumentVideoPlaylistItemComponent"
       ];
 
       return nodeTypesWithEditableProperties.includes(node.type);

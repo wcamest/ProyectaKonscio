@@ -9,6 +9,9 @@ import { RootState } from "@/redux/store/store";
 import PageDocument from "@/types/page-document/PageDocument";
 import PageDocumentNode from "@/types/page-document/PageDocumentNode";
 import PageDocumentSimpleTextElement from "@/types/page-document/PageDocumentSimpleTextElement";
+import PageDocumentUserModalComponent from "@/types/page-document/PageDocumentUserModalComponent";
+import PageDocumentVideoPlaylistGroupComponent from "@/types/page-document/PageDocumentVideoPlaylistGroupComponent";
+import PageDocumentVideoPlaylistItemComponent from "@/types/page-document/PageDocumentVideoPlaylistItemComponent";
 import Image from "next/image";
 import React, { MouseEvent } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -34,7 +37,10 @@ const nodeTypeLabels: any = {
   PageDocumentFieldsetElement: "Grupo de campos",
   PageDocumentSelectElement: "Lista de opciones",
   PageDocumentInputElement: "Entrada de datos",
-  PageDocumentTextAreaElement: "Entrada de texto multilinea"
+  PageDocumentTextAreaElement: "Entrada de texto multilinea",
+  PageDocumentVideoPlaylistComponent: "Lista de reproducción",
+  PageDocumentVideoPlaylistGroupComponent: "Grupo de videos",
+  PageDocumentVideoPlaylistItemComponent: "Video item",
 };
 
 const icons: any = {
@@ -77,6 +83,32 @@ const NodeTreeItemComponent = (props: Props) => {
       };
 
       dispatch(updateNode(updatedNode));
+    },
+    GetTitle() {
+      if (node.type === "PageDocumentUserModalComponent") {
+        const userModalComponent = node as PageDocumentUserModalComponent;
+
+        if (userModalComponent.title.length)
+          return `${userModalComponent.title}`;
+      }
+
+      if (node.type === "PageDocumentVideoPlaylistGroupComponent") {
+        const playlistGroupComponent =
+          node as PageDocumentVideoPlaylistGroupComponent;
+
+        if (playlistGroupComponent.title.length)
+          return `${playlistGroupComponent.title}`;
+      }
+
+      if (node.type === "PageDocumentVideoPlaylistItemComponent") {
+        const playlistItemComponent =
+          node as PageDocumentVideoPlaylistItemComponent;
+
+        if (playlistItemComponent.title.length)
+          return `${playlistItemComponent.title}`;
+      }
+
+      return node.name;
     },
   };
 
@@ -138,7 +170,9 @@ const NodeTreeItemComponent = (props: Props) => {
             {Renderer.ExpandCollapseControl()}
             <div>{Renderer.Icon()}</div>
             <div className="flex flex-col">
-              <span className="font-bold">{node.name}</span>
+              <span className="font-bold whitespace-nowrap">
+                {Functions.GetTitle()}
+              </span>
               <span className="text-xs opacity-50">
                 {nodeTypeLabels[node.type]}
               </span>
@@ -157,7 +191,9 @@ const NodeTreeItemComponent = (props: Props) => {
           {Renderer.ExpandCollapseControl()}
           <div>{Renderer.Icon()}</div>
           <div className="flex flex-col">
-            <span className="font-bold">{node.name}</span>
+            <span className="font-bold whitespace-nowrap">
+              {Functions.GetTitle()}
+            </span>
             <span className="text-xs opacity-50">
               {nodeTypeLabels[node.type]}
             </span>
