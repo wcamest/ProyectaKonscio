@@ -41,6 +41,8 @@ const nodeTypeLabels: any = {
   PageDocumentVideoPlaylistComponent: "Lista de reproducción",
   PageDocumentVideoPlaylistGroupComponent: "Grupo de videos",
   PageDocumentVideoPlaylistItemComponent: "Video item",
+  PageDocumentEnneagramComponent: "Eneagrama",
+  PageDocumentCalendarComponent: "Calendario"
 };
 
 const icons: any = {
