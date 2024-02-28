@@ -39,6 +39,7 @@ import PageDocumentVideoPlaylistComponent from "@/types/page-document/PageDocume
 import PageDocumentVideoPlaylistGroupComponent from "@/types/page-document/PageDocumentVideoPlaylistGroupComponent";
 import PageDocumentVideoPlaylistItemComponent from "@/types/page-document/PageDocumentVideoPlaylistItemComponent";
 import PageDocumentEnneagramComponent from "@/types/page-document/PageDocumentEnneagramComponent";
+import PageDocumentCalendarComponent from "@/types/page-document/PageDocumentCalendarComponent";
 
 type Props = {};
 
@@ -588,6 +589,25 @@ const ElementSelectorComponent = (props: Props) => {
       Functions.HideAddElementModal();
       dispatch(setCurrentEditNode(enneagramComponent.id));
     },
+    AddCalendar(){
+      if (!currentDocument) return undefined;
+
+      const calendarComponent: PageDocumentCalendarComponent = {
+        id: generateId(),
+        nodes: [],
+        type: "PageDocumentCalendarComponent",
+        name: "Calendario",
+        canEdit: false,
+        canAddChild: false,
+        canDelete: true,
+        styles: Styles.CreateClassListCollection(),
+      };
+
+      dispatch(addNode([calendarComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(calendarComponent.id));
+    },
     GetFlipBoxSideContainer(type: string) {
       if (!currentDocument) return [];
 
@@ -955,6 +975,18 @@ const ElementSelectorComponent = (props: Props) => {
           selectedNodeType={Functions.GetSelectedNodeType()}
           onClick={() => {
             Functions.AddEnneagram();
+          }}
+        />
+        <ElementSelectorItemComponent
+          text="Calendario"
+          containers={[
+            "PageDocumentContainerElement",
+            "PageDocumentCarouselPageComponent",
+            "PageDocumentUserModalComponent",
+          ]}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddCalendar();
           }}
         />
       </ElementSelectorSectionComponent>

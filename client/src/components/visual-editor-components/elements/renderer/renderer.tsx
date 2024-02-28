@@ -17,6 +17,7 @@ import InputElementComponent from "../input-element/InputElementComponent";
 import TextAreaElementComponent from "../textarea-element/TextAreaElementComponent";
 import VideoPlaylistComponent from "../video-playlist-component/VideoPlaylistComponent";
 import EnneagramComponent from "../enneagram-component/EnneagramComponent";
+import CalendarComponent from "../calendar-component/CalendarComponent";
 
 const Components: any = {
   PageDocumentContainerElement: ContainerElementComponent,
@@ -36,7 +37,8 @@ const Components: any = {
   PageDocumentInputElement: InputElementComponent,
   PageDocumentTextAreaElement: TextAreaElementComponent,
   PageDocumentVideoPlaylistComponent: VideoPlaylistComponent,
-  PageDocumentEnneagramComponent: EnneagramComponent
+  PageDocumentEnneagramComponent: EnneagramComponent,
+  PageDocumentCalendarComponent: CalendarComponent
 };
 
 const ElementRenderer = {
