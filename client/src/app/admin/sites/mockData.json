@@ -5,7 +5,8 @@
     "name": "Pagina Principal",
     "permalink": "home",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": false,
+    "isBlogPost": false
   },
   {
     "id": "MR48X5EZ6D0IE8X",
@@ -14,7 +15,8 @@
     "permalink": "Economia Real Colaborativa",
     "description": "",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": false,
+    "isBlogPost": false
   },
   {
     "id": "HHB3A8MCIB9LWWZ",
@@ -23,7 +25,8 @@
     "permalink": "Educacion Alternativa",
     "description": "",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": false,
+    "isBlogPost": false
   },
   {
     "id": "NW1ZAEM8A9W12F3",
@@ -32,7 +35,8 @@
     "permalink": "Cultura Inclusiva",
     "description": "",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": false,
+    "isBlogPost": false
   },
   {
     "id": "NW1ZAEM8A7W12F5",
@@ -41,7 +45,8 @@
     "permalink": "Ecologia conciencia Ambiental",
     "description": "",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": false,
+    "isBlogPost": false
   },
   {
     "id": "NW3ZAEM3A7W24F6",
@@ -50,7 +55,8 @@
     "permalink": "Innovaciones Tecnologicas",
     "description": "",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": false,
+    "isBlogPost": false
   },
   {
     "id": "NW5ZAEM6A7W64F5",
@@ -59,7 +65,8 @@
     "permalink": "Periodismo Digno",
     "description": "",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": false,
+    "isBlogPost": false
   },
   {
     "id": "NW7ZAEM6A7W63F4",
@@ -68,7 +75,8 @@
     "permalink": "Politica de Conciencia",
     "description": "",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": false,
+    "isBlogPost": false
   },
   {
     "id": "NW8ZAEM6A7W63F4",
@@ -77,7 +85,8 @@
     "permalink": "Historia No Manipulada",
     "description": "",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": false,
+    "isBlogPost": false
   },
   {
     "id": "NW8ZAEM6A7W13F1",
@@ -86,7 +95,8 @@
     "permalink": "Salud Y Bienestar",
     "description": "",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": false,
+    "isBlogPost": false
   },
   {
     "id": "XSS1PG1ASV0GKRQ",
@@ -95,7 +105,8 @@
     "permalink": "Colabora",
     "description": "",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": false,
+    "isBlogPost": false
   },
   {
     "id": "KC5XHKFREE51RDW",
@@ -104,7 +115,8 @@
     "permalink": "notikonscio",
     "description": "",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": true,
+    "isBlogPost": false
   },
   {
     "id": "EPE6LVB1NE4G8RZ",
@@ -113,7 +125,8 @@
     "permalink": "Proyectos",
     "description": "",
     "blogId": "",
-    "isBlogSite": false
+    "isBlogSite": true,
+    "isBlogPost": false
   },
   {
     "id": "MJTZIOPODKWKOJK",
@@ -122,6 +135,17 @@
     "permalink": "Plataforma Digital KonscioHousing",
     "description": "",
     "blogId": "",
-    "isBlogSite": true
+    "isBlogSite": false,
+    "isBlogPost": true
+  },
+  {
+    "id": "2A1JA1YCR42MTKK",
+    "sectionId": "pages",
+    "name": "WebRTC y Espacios 3D",
+    "permalink": "webrtc-y-espacios-3d",
+    "description": "",
+    "blogId": "",
+    "isBlogSite": false,
+    "isBlogPost": false
   }
 ]

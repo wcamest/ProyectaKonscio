@@ -42,7 +42,12 @@ const nodeTypeLabels: any = {
   PageDocumentVideoPlaylistGroupComponent: "Grupo de videos",
   PageDocumentVideoPlaylistItemComponent: "Video item",
   PageDocumentEnneagramComponent: "Eneagrama",
-  PageDocumentCalendarComponent: "Calendario"
+  PageDocumentCalendarComponent: "Calendario",
+  PageDocumentBlogPostGridViewerComponent: "Artículos de blog",
+  PageDocumentInteractive3DSceneComponent: "Escena 3D interactiva",
+  PageDocument3DCameraComponent: "Cámara 3D",
+  PageDocument3DContainerComponent: "Contenedor 3D",
+  PageDocument3DModelComponent: "Modelo 3D"
 };
 
 const icons: any = {
