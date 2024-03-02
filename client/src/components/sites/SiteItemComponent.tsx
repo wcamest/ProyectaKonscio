@@ -24,8 +24,8 @@ const SiteItemComponent = (props: Props) => {
       dispatch(selectSite(data.id));
     },
     GetBlogPostFlag() {
-      if (data.isBlogSite) return "?isBlogPost=true";
-
+      if (data.isBlogSite) return "?isBlogSite=true";
+      if (data.isBlogPost) return "?isBlogPost=true";
       return "";
     },
   };

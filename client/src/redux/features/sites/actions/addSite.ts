@@ -6,7 +6,7 @@ export default function AddSite(
   state: SitesState,
   action: { payload: any; type: string }
 ) {
-  const { sectionId, blogId, isBlogSite } = action.payload;
+  const { sectionId, blogId, isBlogSite, isBlogPost } = action.payload;
 
   const site: Site = {
     id: generateId(),
@@ -16,6 +16,7 @@ export default function AddSite(
     description: "",
     blogId,
     isBlogSite,
+    isBlogPost
   };
 
   state.sites = [...state.sites, site];

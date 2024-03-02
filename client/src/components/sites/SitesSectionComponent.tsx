@@ -12,12 +12,13 @@ import SiteItemComponent from "./SiteItemComponent";
 type Props = {
   title: string;
   id: string;
-  siteDescription: string,
+  siteDescription: string;
   isBlogSite?: boolean;
+  isBlogPost?: boolean;
 };
 
 const SitesSectionComponent = (props: Props) => {
-  const { title, id, siteDescription, isBlogSite = false } = props;
+  const { title, id, siteDescription, isBlogSite = false, isBlogPost = false } = props;
   const dispatch = useDispatch();
   const { sites, selectedSiteId } = useSelector(
     (state: RootState) => state.sites
@@ -29,6 +30,7 @@ const SitesSectionComponent = (props: Props) => {
         addSite({
           sectionId: id,
           isBlogSite,
+          isBlogPost,
           blogId: "",
         })
       );
@@ -44,7 +46,7 @@ const SitesSectionComponent = (props: Props) => {
     Sites() {
       const sites = Functions.GetSites();
 
-      if(!selectedSiteId) return undefined;
+      if (!selectedSiteId) return undefined;
 
       return sites.map((site: Site, key: number) => {
         return (

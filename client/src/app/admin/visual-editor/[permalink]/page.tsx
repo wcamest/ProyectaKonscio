@@ -18,6 +18,7 @@ import colabora from "./mock/colabora.json";
 import notikonscio from "./mock/notikonscio.json";
 import proyectos from "./mock/proyectos.json";
 import plataforma_digital_konsciohousing from "./mock/plataforma-digital-konsciohousing.json";
+import webrtc_y_espacios_3d from "./mock/webrtc-y-espacios-3d.json";
 
 type Props = {
   params: {
@@ -45,6 +46,7 @@ const mock: any = {
   notikonscio: notikonscio,
   proyectos: proyectos,
   "plataforma-digital-konsciohousing": plataforma_digital_konsciohousing,
+  "webrtc-y-espacios-3d" : webrtc_y_espacios_3d
 };
 
 const getData = async (permalink: string, isBlogPost: boolean) => {

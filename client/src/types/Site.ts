@@ -4,6 +4,7 @@ export default interface Site {
     name: string,
     permalink: string,
     isBlogSite: boolean,
+    isBlogPost: boolean,
     blogId: string,
     description: string
 }

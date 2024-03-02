@@ -18,6 +18,8 @@ import TextAreaElementComponent from "../textarea-element/TextAreaElementCompone
 import VideoPlaylistComponent from "../video-playlist-component/VideoPlaylistComponent";
 import EnneagramComponent from "../enneagram-component/EnneagramComponent";
 import CalendarComponent from "../calendar-component/CalendarComponent";
+import BlogPostGridViewerComponent from "../blog-post-grid-viewer/BlogPostGridViewerComponent";
+import Interactive3DSceneComponent from "../interactive-3d-scene-component/Interactive3DSceneComponent";
 
 const Components: any = {
   PageDocumentContainerElement: ContainerElementComponent,
@@ -38,7 +40,9 @@ const Components: any = {
   PageDocumentTextAreaElement: TextAreaElementComponent,
   PageDocumentVideoPlaylistComponent: VideoPlaylistComponent,
   PageDocumentEnneagramComponent: EnneagramComponent,
-  PageDocumentCalendarComponent: CalendarComponent
+  PageDocumentCalendarComponent: CalendarComponent,
+  PageDocumentBlogPostGridViewerComponent: BlogPostGridViewerComponent,
+  PageDocumentInteractive3DSceneComponent: Interactive3DSceneComponent
 };
 
 const ElementRenderer = {

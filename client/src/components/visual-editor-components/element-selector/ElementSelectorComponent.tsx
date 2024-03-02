@@ -40,6 +40,11 @@ import PageDocumentVideoPlaylistGroupComponent from "@/types/page-document/PageD
 import PageDocumentVideoPlaylistItemComponent from "@/types/page-document/PageDocumentVideoPlaylistItemComponent";
 import PageDocumentEnneagramComponent from "@/types/page-document/PageDocumentEnneagramComponent";
 import PageDocumentCalendarComponent from "@/types/page-document/PageDocumentCalendarComponent";
+import PageDocumentBlogPostGridViewerComponent from "@/types/page-document/PageDocumentBlogPostGridViewerComponent";
+import PageDocumentInteractive3DSceneComponent from "@/types/page-document/PageDocumentInteractive3DSceneComponent";
+import PageDocument3DCameraComponent from "@/types/page-document/PageDocument3DCameraComponent";
+import PageDocument3DContainerComponent from "@/types/page-document/PageDocument3DContainerComponent";
+import PageDocument3DModelComponent, { PageDocument3DModelFormat } from "@/types/page-document/PageDocument3DModelComponent";
 
 type Props = {};
 
@@ -589,7 +594,7 @@ const ElementSelectorComponent = (props: Props) => {
       Functions.HideAddElementModal();
       dispatch(setCurrentEditNode(enneagramComponent.id));
     },
-    AddCalendar(){
+    AddCalendar() {
       if (!currentDocument) return undefined;
 
       const calendarComponent: PageDocumentCalendarComponent = {
@@ -607,6 +612,123 @@ const ElementSelectorComponent = (props: Props) => {
 
       Functions.HideAddElementModal();
       dispatch(setCurrentEditNode(calendarComponent.id));
+    },
+    AddBlogPostGridViewer() {
+      if (!currentDocument) return undefined;
+
+      const blogPostGridViewerComponent: PageDocumentBlogPostGridViewerComponent =
+        {
+          id: generateId(),
+          nodes: [],
+          type: "PageDocumentBlogPostGridViewerComponent",
+          name: "Artículos de blog",
+          canEdit: false,
+          canAddChild: false,
+          canDelete: true,
+          styles: Styles.CreateClassListCollection(),
+        };
+
+      dispatch(addNode([blogPostGridViewerComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(blogPostGridViewerComponent.id));
+    },
+    AddInteractive3DScene() {
+      if (!currentDocument) return undefined;
+
+      const _3dCameraComponentId: string = generateId();
+
+      const interactive3DSceneComponent: PageDocumentInteractive3DSceneComponent =
+        {
+          id: generateId(),
+          nodes: [_3dCameraComponentId],
+          type: "PageDocumentInteractive3DSceneComponent",
+          name: "Escena 3D Interactiva",
+          canEdit: true,
+          canAddChild: true,
+          canDelete: true,
+          styles: Styles.CreateClassListCollection(),
+        };
+
+      const _3dCameraComponent: PageDocument3DCameraComponent = {
+        id: _3dCameraComponentId,
+        nodes: [],
+        type: "PageDocument3DCameraComponent",
+        name: "Cámara 3D",
+        canEdit: true,
+        canAddChild: false,
+        canDelete: false,
+        styles: Styles.CreateClassListCollection(),
+        parent: interactive3DSceneComponent.id,
+        fov: 25,
+        near: 0.01,
+        far: 1000,
+        position: {
+          x: 0,
+          y: 0,
+          z: 0
+        },
+        rotation: {
+          x: 0,
+          y: 90,
+          z: 0
+        }
+      };
+
+      dispatch(addNode([interactive3DSceneComponent, _3dCameraComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(interactive3DSceneComponent.id));
+    },
+    Add3DContainer() {
+      if (!currentDocument) return undefined;
+
+      const _3dContainerComponent: PageDocument3DContainerComponent = {
+        id: generateId(),
+        nodes: [],
+        type: "PageDocument3DContainerComponent",
+        name: "Contenedor 3D",
+        canEdit: true,
+        canAddChild: true,
+        canDelete: true,
+        styles: Styles.CreateClassListCollection(),
+      };
+
+      dispatch(addNode([_3dContainerComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(_3dContainerComponent.id));
+    },
+    Add3DModel() {
+      if (!currentDocument) return undefined;
+
+      const _3DModelComponent: PageDocument3DModelComponent = {
+        id: generateId(),
+        nodes: [],
+        type: "PageDocument3DModelComponent",
+        name: "Modelo 3D",
+        canEdit: false,
+        canAddChild: false,
+        canDelete: true,
+        styles: Styles.CreateClassListCollection(),
+        format: PageDocument3DModelFormat.fbx,
+        url: "",
+        position: {
+          x: 0,
+          y: 0,
+          z: 0
+        },
+        rotation: {
+          x: 0,
+          y: 0,
+          z: 0
+        }
+      };
+
+      dispatch(addNode([_3DModelComponent]));
+
+      Functions.HideAddElementModal();
+      dispatch(setCurrentEditNode(_3DModelComponent.id));
     },
     GetFlipBoxSideContainer(type: string) {
       if (!currentDocument) return [];
@@ -864,6 +986,8 @@ const ElementSelectorComponent = (props: Props) => {
           "PageDocumentUserModalComponent",
           "PageDocumentVideoPlaylistComponent",
           "PageDocumentVideoPlaylistGroupComponent",
+          "PageDocumentInteractive3DSceneComponent",
+          "PageDocument3DContainerComponent",
         ]}
         selectedNodeType={Functions.GetSelectedNodeType()}
       >
@@ -987,6 +1111,52 @@ const ElementSelectorComponent = (props: Props) => {
           selectedNodeType={Functions.GetSelectedNodeType()}
           onClick={() => {
             Functions.AddCalendar();
+          }}
+        />
+        <ElementSelectorItemComponent
+          text="Artículos de blog"
+          containers={[
+            "PageDocumentContainerElement",
+            "PageDocumentCarouselPageComponent",
+            "PageDocumentUserModalComponent",
+          ]}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddBlogPostGridViewer();
+          }}
+        />
+        <ElementSelectorItemComponent
+          text="Escena 3D Interactiva"
+          containers={[
+            "PageDocumentContainerElement",
+            "PageDocumentCarouselPageComponent",
+            "PageDocumentUserModalComponent",
+          ]}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.AddInteractive3DScene();
+          }}
+        />
+        <ElementSelectorItemComponent
+          text="Contenedor 3D"
+          containers={[
+            "PageDocumentInteractive3DSceneComponent",
+            "PageDocument3DContainerComponent",
+          ]}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.Add3DContainer();
+          }}
+        />
+        <ElementSelectorItemComponent
+          text="Modelo 3D"
+          containers={[
+            "PageDocumentInteractive3DSceneComponent",
+            "PageDocument3DContainerComponent",
+          ]}
+          selectedNodeType={Functions.GetSelectedNodeType()}
+          onClick={() => {
+            Functions.Add3DModel();
           }}
         />
       </ElementSelectorSectionComponent>

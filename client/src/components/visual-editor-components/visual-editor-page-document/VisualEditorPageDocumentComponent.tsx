@@ -31,6 +31,8 @@ import ButtonElementEditor from "../button-element-editor/ButtonElementEditor";
 import UserModalComponentEditor from "../user-modal-component-editor/UserModalComponentEditor";
 import VideoPlaylistGroupEditor from "../video-playlist-group-editor/VideoPlaylistGroupEditor";
 import VideoPlaylistItemEditor from "../video-playlist-item-editor/VideoPlaylistItemEditor";
+import Camera3DEditor from "../camera-3d-editor/Camera3DEditor";
+import Model3DEditor from "../model-3d-editor/Model3DEditor";
 
 type Props = {
   data: PageDocument;
@@ -432,7 +434,7 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
             Aceptar
           </ButtonComponent>,
         ]}
-        title="Lista de Reproducción - Item"
+        title="Lista de Reproducción - Grupo de videos"
         onHideModal={Functions.HideElementEditor}
       >
         <VideoPlaylistGroupEditor />
@@ -455,6 +457,44 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
         onHideModal={Functions.HideElementEditor}
       >
         <VideoPlaylistItemEditor />
+      </ModalComponent>
+      <ModalComponent
+        id="3d-camera-editor-modal"
+        fitHeight={true}
+        fitWidth={true}
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("3d-camera-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
+        title="Cámara 3D"
+        onHideModal={Functions.HideElementEditor}
+      >
+        <Camera3DEditor />
+      </ModalComponent>
+      <ModalComponent
+        id="3d-model-editor-modal"
+        fitHeight={true}
+        fitWidth={true}
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("3d-model-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
+        title="Modelo 3D"
+        onHideModal={Functions.HideElementEditor}
+      >
+        <Model3DEditor />
       </ModalComponent>
     </div>
   );
