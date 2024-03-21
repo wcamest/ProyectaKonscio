@@ -48,6 +48,7 @@ const elementEditorModalIds: any = {
   PageDocumentVideoPlaylistItemComponent: "video-playlist-item-editor-modal",
   PageDocument3DCameraComponent: "3d-camera-editor-modal",
   PageDocument3DModelComponent: "3d-model-editor-modal",
+  PageDocument3DPointLightComponent: "point-light-editor-modal",
 };
 
 const NodeTreeEditor = (props: Props) => {
@@ -125,7 +126,8 @@ const NodeTreeEditor = (props: Props) => {
         "PageDocumentVideoPlaylistGroupComponent",
         "PageDocumentVideoPlaylistItemComponent",
         "PageDocument3DCameraComponent",
-        "PageDocument3DModelComponent"
+        "PageDocument3DModelComponent",
+        "PageDocument3DPointLightComponent",
       ];
 
       return nodeTypesWithEditableProperties.includes(node.type);
