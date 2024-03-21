@@ -33,6 +33,7 @@ import VideoPlaylistGroupEditor from "../video-playlist-group-editor/VideoPlayli
 import VideoPlaylistItemEditor from "../video-playlist-item-editor/VideoPlaylistItemEditor";
 import Camera3DEditor from "../camera-3d-editor/Camera3DEditor";
 import Model3DEditor from "../model-3d-editor/Model3DEditor";
+import PointLight3DEditor from "../point-light-3d-editor/PointLight3DEditor";
 
 type Props = {
   data: PageDocument;
@@ -495,6 +496,25 @@ const VisualEditorPageDocumentComponent = (props: Props) => {
         onHideModal={Functions.HideElementEditor}
       >
         <Model3DEditor />
+      </ModalComponent>
+      <ModalComponent
+        id="point-light-editor-modal"
+        fitHeight={true}
+        fitWidth={true}
+        buttons={[
+          <ButtonComponent
+            key={0}
+            onClick={() => {
+              dispatch(hideModal("point-light-editor-modal"));
+            }}
+          >
+            Aceptar
+          </ButtonComponent>,
+        ]}
+        title="Punto de luz"
+        onHideModal={Functions.HideElementEditor}
+      >
+        <PointLight3DEditor />
       </ModalComponent>
     </div>
   );

@@ -20,6 +20,11 @@ import EnneagramComponent from "../enneagram-component/EnneagramComponent";
 import CalendarComponent from "../calendar-component/CalendarComponent";
 import BlogPostGridViewerComponent from "../blog-post-grid-viewer/BlogPostGridViewerComponent";
 import Interactive3DSceneComponent from "../interactive-3d-scene-component/Interactive3DSceneComponent";
+import Interactive3DAmbientLightComponent from "../interactive-3d-ambient-light/Interactive3DAmbientLightComponent";
+import Interactive3DContainerComponent from "../interactive-3d-container-component/Interactive3DContainerComponent";
+import Interactive3DModelComponent from "../interactive-3d-model-component/Interactive3DModelComponent";
+import Interactive3DCameraComponent from "../interactive-3d-camera-component/Interactive3DCameraComponent";
+import Interactive3DPointLightComponent from "../interactive-3d-point-light-component/Interactive3DPointLightComponent";
 
 const Components: any = {
   PageDocumentContainerElement: ContainerElementComponent,
@@ -42,15 +47,19 @@ const Components: any = {
   PageDocumentEnneagramComponent: EnneagramComponent,
   PageDocumentCalendarComponent: CalendarComponent,
   PageDocumentBlogPostGridViewerComponent: BlogPostGridViewerComponent,
-  PageDocumentInteractive3DSceneComponent: Interactive3DSceneComponent
+  PageDocumentInteractive3DSceneComponent: Interactive3DSceneComponent,
+  PageDocument3DAmbientLightComponent: Interactive3DAmbientLightComponent,
+  PageDocument3DContainerComponent: Interactive3DContainerComponent,
+  PageDocument3DModelComponent: Interactive3DModelComponent,
+  PageDocument3DCameraComponent: Interactive3DCameraComponent,
+  PageDocument3DPointLightComponent: Interactive3DPointLightComponent
 };
 
 const ElementRenderer = {
   Render(node: PageDocumentNode, document: PageDocument, key: number = 0) {
-
-    if(node.type === "PageDocumentButtonElement")
-
-    if (!Components[node.type]) return undefined;
+    if (!Components[node.type]) {
+      return undefined;
+    }
 
     const Component = Components[node.type];
 
