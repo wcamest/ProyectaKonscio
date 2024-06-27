@@ -1,0 +1,1065 @@
+{
+  "id": "123451234512345",
+  "rootNodeId": "AS5G8DH5FV95FFE",
+  "metadata": {
+    "title": "Proyecta Konscio",
+    "description": "Proyecta Konscio"
+  },
+  "nodes": {
+    "AS5G8DH5FV95FFE": {
+      "id": "AS5G8DH5FV95FFE",
+      "name": "Main",
+      "type": "MainElement",
+      "children": [
+        "VWZM6Q4PY6WYM6L",
+        "FNEN5ZM4MU50PD7",
+        "LQCCUPFVEQATNOA",
+        "AE5WJ8RA6W3JTYF",
+        "IJJGVM56JM7EMWW",
+        "BIXFZ5YJ0KA2SX3"
+      ],
+      "classList": ["A234DD3FD2F1EDD", "R58TA58S3EDF5E3"],
+      "properties": {}
+    },
+    "VWZM6Q4PY6WYM6L": {
+      "id": "VWZM6Q4PY6WYM6L",
+      "name": "Sección - Video Banner",
+      "type": "SectionElement",
+      "children": ["U98MNRF1BRP9BQ1"],
+      "classList": ["A234DD3FD2F1EDD", "MS0WYFTPDQBC27D"],
+      "properties": {},
+      "parentId": "AS5G8DH5FV95FFE"
+    },
+    "U98MNRF1BRP9BQ1": {
+      "id": "U98MNRF1BRP9BQ1",
+      "type": "VideoElement",
+      "name": "video",
+      "children": ["PEPURDQRFXRM7EO"],
+      "classList": ["A234DD3FD2F1EDD", "R58TA58S3EDF5E3"],
+      "properties": {
+        "controls": true
+      },
+      "parentId": "VWZM6Q4PY6WYM6L"
+    },
+    "PEPURDQRFXRM7EO": {
+      "id": "PEPURDQRFXRM7EO",
+      "type": "SourceElement",
+      "name": "source",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/video/37 - Earth.mp4",
+        "type": "video/mp4"
+      },
+      "parentId": "U98MNRF1BRP9BQ1"
+    },
+    "FNEN5ZM4MU50PD7": {
+      "id": "FNEN5ZM4MU50PD7",
+      "type": "SectionElement",
+      "name": "Sección - Red Social Konscio 3D",
+      "children": ["YWSH2M9AWGSRHIT", "EPD2894H987Z5M9"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MB52VU9KGEZ5NBX",
+        "KHSWW3YUOWWAQV7",
+        "GHK5FR1JD4TLOON",
+        "HC8K9H5TQX77WIB",
+        "sm:J1FOYQ2V6QE1BX9",
+        "sm:EI3E35LT5HU3FK4",
+        "xl:KCR4J95GKTJGWOM"
+      ],
+      "properties": {},
+      "parentId": "AS5G8DH5FV95FFE"
+    },
+    "YWSH2M9AWGSRHIT": {
+      "id": "YWSH2M9AWGSRHIT",
+      "type": "DivElement",
+      "name": "div",
+      "children": ["N8LFVS3PJ3L8WUN"],
+      "classList": [],
+      "properties": {},
+      "parentId": "FNEN5ZM4MU50PD7"
+    },
+    "EPD2894H987Z5M9": {
+      "id": "EPD2894H987Z5M9",
+      "type": "DivElement",
+      "name": "div",
+      "children": ["V4TQQ2PPJL5KLSV", "GTIY5MMRPF1E95N"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "D9M3EFYZU857UJM",
+        "MB52VU9KGEZ5NBX",
+        "CGIQY2Q1SLGT1QU",
+        "G46JZQXO5NXPFC7",
+        "sm:XU9A7F6U9APKCTI"
+      ],
+      "properties": {},
+      "parentId": "FNEN5ZM4MU50PD7"
+    },
+    "N8LFVS3PJ3L8WUN": {
+      "type": "DivElement",
+      "id": "N8LFVS3PJ3L8WUN",
+      "name": "DivElement",
+      "children": ["UGP53TXG6B581XD"],
+      "classList": [
+        "QRXCA93BD1585Y6",
+        "KT3K582B0K3Q8UU",
+        "MB52VU9KGEZ5NBX",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "NZ4F7TG9GD27AW6",
+        "OTM3NSH8PZZFCLK"
+      ],
+      "properties": {},
+      "parentId": "YWSH2M9AWGSRHIT"
+    },
+    "UGP53TXG6B581XD": {
+      "type": "ImgElement",
+      "id": "UGP53TXG6B581XD",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/eneagrama-konscio.svg",
+        "width": 60,
+        "height": 60
+      },
+      "parentId": "N8LFVS3PJ3L8WUN"
+    },
+    "V4TQQ2PPJL5KLSV": {
+      "type": "H1Element",
+      "id": "V4TQQ2PPJL5KLSV",
+      "name": "H1Element",
+      "children": ["D61BR7KTUQIENAI"],
+      "classList": [
+        "UQSX6IWC9LD74IR",
+        "TPLFXDIXEC98JJE",
+        "M6MN4AVH4EQP131",
+        "sm:TLL9QJGV6FTFPBA",
+        "lg:ESFV4JMA7UIEVR8",
+        "xl:AV33087VO530AI5",
+        "xl:GKTMVW8FIP21J5W"
+      ],
+      "properties": {},
+      "parentId": "EPD2894H987Z5M9"
+    },
+    "D61BR7KTUQIENAI": {
+      "type": "TextElement",
+      "id": "D61BR7KTUQIENAI",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Red social Konscio 3D - Fundación Proyecta"
+      },
+      "parentId": "V4TQQ2PPJL5KLSV"
+    },
+    "GTIY5MMRPF1E95N": {
+      "type": "SpanElement",
+      "id": "GTIY5MMRPF1E95N",
+      "name": "SpanElement",
+      "children": ["O2M2GJP94EM2WWU"],
+      "classList": [
+        "TPLFXDIXEC98JJE",
+        "EU540VA5R18YG7T",
+        "sm:I6S3J3HE3Z8GHID",
+        "xl:GKTMVW8FIP21J5W",
+        "xl:SGD55NQKU3X7RR0"
+      ],
+      "properties": {},
+      "parentId": "EPD2894H987Z5M9"
+    },
+    "O2M2GJP94EM2WWU": {
+      "type": "TextElement",
+      "id": "O2M2GJP94EM2WWU",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Cooperación de organizaciones sociales para la conciencia de los pueblos. Construyendo comunidad en el metaverso"
+      },
+      "parentId": "GTIY5MMRPF1E95N"
+    },
+    "LQCCUPFVEQATNOA": {
+      "type": "SectionElement",
+      "id": "LQCCUPFVEQATNOA",
+      "name": "Sección - Misión y Visión",
+      "children": ["G3UDMEV658UHS7I"],
+      "classList": ["YFRF4E2GE9UGYKK", "MB52VU9KGEZ5NBX", "DD63CJGK3NEQ7YT"],
+      "properties": {},
+      "parentId": "AS5G8DH5FV95FFE"
+    },
+    "AE5WJ8RA6W3JTYF": {
+      "type": "SectionElement",
+      "id": "AE5WJ8RA6W3JTYF",
+      "name": "Sección - Necesidad de ser conscientes",
+      "children": ["Z07XN52C5Y4XTA2", "GMZ8UHKWWH137LY"],
+      "classList": ["MB52VU9KGEZ5NBX", "CGIQY2Q1SLGT1QU"],
+      "properties": {},
+      "parentId": "AS5G8DH5FV95FFE"
+    },
+    "IJJGVM56JM7EMWW": {
+      "type": "SectionElement",
+      "id": "IJJGVM56JM7EMWW",
+      "name": "Sección - Nuestras propuestas",
+      "children": ["ZH5N7TZ7VENIC4J", "JX4INAI0P1OA7DH"],
+      "classList": ["MB52VU9KGEZ5NBX", "CGIQY2Q1SLGT1QU", "EIMQYOVPG32HXID"],
+      "properties": {},
+      "parentId": "AS5G8DH5FV95FFE"
+    },
+    "BIXFZ5YJ0KA2SX3": {
+      "type": "SectionElement",
+      "id": "BIXFZ5YJ0KA2SX3",
+      "name": "Sección - Eneagrama Konscio",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "AS5G8DH5FV95FFE"
+    },
+    "ZH5N7TZ7VENIC4J": {
+      "type": "H1Element",
+      "id": "ZH5N7TZ7VENIC4J",
+      "name": "Titulo - Nuestras propuestas",
+      "children": ["AYTOCU951F5322G"],
+      "classList": [
+        "UQSX6IWC9LD74IR",
+        "JL9HAK621KF0MZU",
+        "CS09JOAUH53LZXC",
+        "TPLFXDIXEC98JJE",
+        "GHK5FR1JD4TLOON",
+        "EOXGGDAZXKLJOW1",
+        "D9M3EFYZU857UJM",
+        "sm:TLL9QJGV6FTFPBA",
+        "A234DD3FD2F1EDD",
+        "xl:AV33087VO530AI5",
+        "lg:ESFV4JMA7UIEVR8"
+      ],
+      "properties": {},
+      "parentId": "IJJGVM56JM7EMWW"
+    },
+    "AYTOCU951F5322G": {
+      "type": "TextElement",
+      "id": "AYTOCU951F5322G",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Nuestras propuestas transforman la realidad desde lo digital"
+      },
+      "parentId": "ZH5N7TZ7VENIC4J"
+    },
+    "JX4INAI0P1OA7DH": {
+      "type": "DivElement",
+      "id": "JX4INAI0P1OA7DH",
+      "name": "Propuestas",
+      "children": ["O5DT4LFOAYH4QEQ", "G9USVHVC1BUDH5R", "KGACUVZG8XFT1JU"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MB52VU9KGEZ5NBX",
+        "CGIQY2Q1SLGT1QU",
+        "YFRF4E2GE9UGYKK",
+        "HC8K9H5TQX77WIB",
+        "CS1DA748FA9G5CX"
+      ],
+      "properties": {},
+      "parentId": "IJJGVM56JM7EMWW"
+    },
+    "O5DT4LFOAYH4QEQ": {
+      "type": "DivElement",
+      "id": "O5DT4LFOAYH4QEQ",
+      "name": "Propuesta - Eventos digitales",
+      "children": ["UEL3NW5B18HDSG5", "Q0E5UJL4VZCUN64"],
+      "classList": ["MB52VU9KGEZ5NBX", "HC8K9H5TQX77WIB"],
+      "properties": {},
+      "parentId": "JX4INAI0P1OA7DH"
+    },
+    "UEL3NW5B18HDSG5": {
+      "type": "DivElement",
+      "id": "UEL3NW5B18HDSG5",
+      "name": "DivElement",
+      "children": ["T0T5MG8JY25MCY1"],
+      "classList": [],
+      "properties": {},
+      "parentId": "O5DT4LFOAYH4QEQ"
+    },
+    "Q0E5UJL4VZCUN64": {
+      "type": "DivElement",
+      "id": "Q0E5UJL4VZCUN64",
+      "name": "DivElement",
+      "children": ["AYP6A2324D4J2TS", "NWPV1HTXT4OSMIJ"],
+      "classList": [],
+      "properties": {},
+      "parentId": "O5DT4LFOAYH4QEQ"
+    },
+    "AYP6A2324D4J2TS": {
+      "type": "H2Element",
+      "id": "AYP6A2324D4J2TS",
+      "name": "H2Element",
+      "children": ["B5WHSNCLTMVFT5N"],
+      "classList": ["JL9HAK621KF0MZU", "T7B2G5WHBQQZYWP"],
+      "properties": {},
+      "parentId": "Q0E5UJL4VZCUN64"
+    },
+    "B5WHSNCLTMVFT5N": {
+      "type": "TextElement",
+      "id": "B5WHSNCLTMVFT5N",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Eventos y actividades digitales promoviendo ideas disruptivas"
+      },
+      "parentId": "AYP6A2324D4J2TS"
+    },
+    "NWPV1HTXT4OSMIJ": {
+      "type": "PElement",
+      "id": "NWPV1HTXT4OSMIJ",
+      "name": "PElement",
+      "children": ["ZABGLQFRNADNV5D"],
+      "classList": [],
+      "properties": {},
+      "parentId": "Q0E5UJL4VZCUN64"
+    },
+    "ZABGLQFRNADNV5D": {
+      "type": "TextElement",
+      "id": "ZABGLQFRNADNV5D",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Exposición de nuestras Propuestas de valor digitales en entornos interactivos, bien realizando inmersión en metaversos o retransmitiendo a traves de salas y canales basados en tecnología webRTC. Hacemos una llamada a cooperar con organizaciones sociales con un contenido transformador, incitamos a involucrarte en diferentes proyectos dentro de las áreas de Educación alternativa, economías colaborativas reales, cultura inclusiva, etc. Inter-acción real entre la audiencia y contenidos para una conciencia."
+      },
+      "parentId": "NWPV1HTXT4OSMIJ"
+    },
+    "G9USVHVC1BUDH5R": {
+      "type": "DivElement",
+      "id": "G9USVHVC1BUDH5R",
+      "name": "Digitalizamos interacción",
+      "children": ["Y2M2642X8EG3XIR", "MHSP6IAB4FR5WNU"],
+      "classList": ["MB52VU9KGEZ5NBX", "HC8K9H5TQX77WIB"],
+      "properties": {},
+      "parentId": "JX4INAI0P1OA7DH"
+    },
+    "Y2M2642X8EG3XIR": {
+      "type": "DivElement",
+      "id": "Y2M2642X8EG3XIR",
+      "name": "DivElement",
+      "children": ["G0FGHTJN26EYFNX", "RBYIH4KZNVTRDKQ", "SMGLKQSNTUGG5M8"],
+      "classList": [],
+      "properties": {},
+      "parentId": "G9USVHVC1BUDH5R"
+    },
+    "MHSP6IAB4FR5WNU": {
+      "type": "DivElement",
+      "id": "MHSP6IAB4FR5WNU",
+      "name": "DivElement",
+      "children": ["OQ5X6DF3P13U83O", "FGOLWH0LQIWUI4V"],
+      "classList": [],
+      "properties": {},
+      "parentId": "G9USVHVC1BUDH5R"
+    },
+    "OQ5X6DF3P13U83O": {
+      "type": "H2Element",
+      "id": "OQ5X6DF3P13U83O",
+      "name": "H2Element",
+      "children": ["T3BSYIAQK8H790F"],
+      "classList": ["JL9HAK621KF0MZU", "T7B2G5WHBQQZYWP"],
+      "properties": {},
+      "parentId": "MHSP6IAB4FR5WNU"
+    },
+    "T3BSYIAQK8H790F": {
+      "type": "TextElement",
+      "id": "T3BSYIAQK8H790F",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Digitalizamos la interacción en proyectos para el bien común"
+      },
+      "parentId": "OQ5X6DF3P13U83O"
+    },
+    "FGOLWH0LQIWUI4V": {
+      "type": "PElement",
+      "id": "FGOLWH0LQIWUI4V",
+      "name": "PElement",
+      "children": ["KSWJWUAWTT5KSC6"],
+      "classList": [],
+      "properties": {},
+      "parentId": "MHSP6IAB4FR5WNU"
+    },
+    "KSWJWUAWTT5KSC6": {
+      "type": "TextElement",
+      "id": "KSWJWUAWTT5KSC6",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Nuestra estrategia es utilizar las herramientas de una tecnología innovadora para difundir aquellas propuestas que haga crecer una comunidad concienciada. Plataformas para escenificar nuestros proyectos de manera digital y también para difundir aquellas ideas que promueven valores de cooperación y desarrollo humano. Reunirse en nuestros entornos de colaboración digital y co-crear proyectos que trascienden."
+      },
+      "parentId": "FGOLWH0LQIWUI4V"
+    },
+    "KGACUVZG8XFT1JU": {
+      "type": "DivElement",
+      "id": "KGACUVZG8XFT1JU",
+      "name": "Servicios, productos y contenidos",
+      "children": ["YVA9X6JINWARGTQ", "B3UJXFCC8ZXQ2X1"],
+      "classList": ["MB52VU9KGEZ5NBX", "HC8K9H5TQX77WIB"],
+      "properties": {},
+      "parentId": "JX4INAI0P1OA7DH"
+    },
+    "YVA9X6JINWARGTQ": {
+      "type": "DivElement",
+      "id": "YVA9X6JINWARGTQ",
+      "name": "DivElement",
+      "children": ["K7KE1WDKYX4NBC8"],
+      "classList": [],
+      "properties": {},
+      "parentId": "KGACUVZG8XFT1JU"
+    },
+    "B3UJXFCC8ZXQ2X1": {
+      "type": "DivElement",
+      "id": "B3UJXFCC8ZXQ2X1",
+      "name": "DivElement",
+      "children": ["T8NU26D2URK8OND", "VV0HQ54YBITIO63"],
+      "classList": [],
+      "properties": {},
+      "parentId": "KGACUVZG8XFT1JU"
+    },
+    "T8NU26D2URK8OND": {
+      "type": "H2Element",
+      "id": "T8NU26D2URK8OND",
+      "name": "H2Element",
+      "children": ["EV09MVSN35L0XXQ"],
+      "classList": ["JL9HAK621KF0MZU", "T7B2G5WHBQQZYWP"],
+      "properties": {},
+      "parentId": "B3UJXFCC8ZXQ2X1"
+    },
+    "EV09MVSN35L0XXQ": {
+      "type": "TextElement",
+      "id": "EV09MVSN35L0XXQ",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Servicios, Productos y Contenidos digitales con visión social"
+      },
+      "parentId": "T8NU26D2URK8OND"
+    },
+    "VV0HQ54YBITIO63": {
+      "type": "PElement",
+      "id": "VV0HQ54YBITIO63",
+      "name": "PElement",
+      "children": ["HSJF6JSGQXB6HQK"],
+      "classList": [],
+      "properties": {},
+      "parentId": "B3UJXFCC8ZXQ2X1"
+    },
+    "HSJF6JSGQXB6HQK": {
+      "type": "TextElement",
+      "id": "HSJF6JSGQXB6HQK",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "En un mundo en el que las economías especulativas ponen en peligro los Derechos Humanos y del Medio Ambiente, es vital ser conscientes de nuestras elecciones como consumidores. En nuestra empresa, nos esforzamos por ofrecer servicios, productos y contenidos digitales con una visión social, promoviendo un cambio hacia una economía más justa y sostenible. Únete a nosotros en nuestra lucha por un mundo más equitativo y responsable. ¡Juntos podemos marcar la diferencia!"
+      },
+      "parentId": "VV0HQ54YBITIO63"
+    },
+    "T0T5MG8JY25MCY1": {
+      "type": "DivElement",
+      "id": "T0T5MG8JY25MCY1",
+      "name": "DivElement",
+      "children": ["XF0HSPSHAU06YR8"],
+      "classList": [
+        "EOXGGDAZXKLJOW1",
+        "GHK5FR1JD4TLOON",
+        "NZ4F7TG9GD27AW6",
+        "AY9JFM7FB7GDFWE",
+        "PUWSI6XQC6AP1ZA",
+        "MB52VU9KGEZ5NBX"
+      ],
+      "properties": {},
+      "parentId": "UEL3NW5B18HDSG5"
+    },
+    "XF0HSPSHAU06YR8": {
+      "type": "ImgElement",
+      "id": "XF0HSPSHAU06YR8",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/chalkboard-teacher-icon.svg",
+        "width": 70,
+        "height": 70
+      },
+      "parentId": "T0T5MG8JY25MCY1"
+    },
+    "SMGLKQSNTUGG5M8": {
+      "type": "DivElement",
+      "id": "SMGLKQSNTUGG5M8",
+      "name": "DivElement",
+      "children": ["AQUIYAIS9AG5CAU"],
+      "classList": [
+        "EOXGGDAZXKLJOW1",
+        "GHK5FR1JD4TLOON",
+        "NZ4F7TG9GD27AW6",
+        "AY9JFM7FB7GDFWE",
+        "PUWSI6XQC6AP1ZA",
+        "MB52VU9KGEZ5NBX"
+      ],
+      "properties": {},
+      "parentId": "G9USVHVC1BUDH5R"
+    },
+    "AQUIYAIS9AG5CAU": {
+      "type": "ImgElement",
+      "id": "AQUIYAIS9AG5CAU",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/laptop-icon.svg",
+        "width": 70,
+        "height": 70
+      },
+      "parentId": "SMGLKQSNTUGG5M8"
+    },
+    "K7KE1WDKYX4NBC8": {
+      "type": "DivElement",
+      "id": "K7KE1WDKYX4NBC8",
+      "name": "DivElement",
+      "children": ["TYGK2K4M7LRQJ9Z"],
+      "classList": [
+        "EOXGGDAZXKLJOW1",
+        "GHK5FR1JD4TLOON",
+        "NZ4F7TG9GD27AW6",
+        "AY9JFM7FB7GDFWE",
+        "PUWSI6XQC6AP1ZA",
+        "MB52VU9KGEZ5NBX"
+      ],
+      "properties": {},
+      "parentId": "KGACUVZG8XFT1JU"
+    },
+    "TYGK2K4M7LRQJ9Z": {
+      "type": "ImgElement",
+      "id": "TYGK2K4M7LRQJ9Z",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/shopping-cart.svg",
+        "width": 70,
+        "height": 70
+      },
+      "parentId": "K7KE1WDKYX4NBC8"
+    },
+    "Z07XN52C5Y4XTA2": {
+      "type": "H1Element",
+      "id": "Z07XN52C5Y4XTA2",
+      "name": "H1Element",
+      "children": ["WUY7ALN161OW6UM", "NQNL3P7JJRMFF0X", "P3YYL2RU3C3AONX"],
+      "classList": [
+        "CPY390KK8ODEB4V",
+        "UQSX6IWC9LD74IR",
+        "CS09JOAUH53LZXC",
+        "KHSWW3YUOWWAQV7",
+        "D9M3EFYZU857UJM",
+        "sm:TLL9QJGV6FTFPBA",
+        "xl:AV33087VO530AI5",
+        "lg:ESFV4JMA7UIEVR8"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "WUY7ALN161OW6UM": {
+      "type": "TextElement",
+      "id": "WUY7ALN161OW6UM",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La necesidad de ser "
+      },
+      "parentId": "Z07XN52C5Y4XTA2"
+    },
+    "NQNL3P7JJRMFF0X": {
+      "type": "SpanElement",
+      "id": "NQNL3P7JJRMFF0X",
+      "name": "SpanElement",
+      "children": ["N5YRI08JJ9R04UT"],
+      "classList": ["T0NV012HYNDQ5SY", "JL9HAK621KF0MZU"],
+      "properties": {},
+      "parentId": "Z07XN52C5Y4XTA2"
+    },
+    "N5YRI08JJ9R04UT": {
+      "type": "TextElement",
+      "id": "N5YRI08JJ9R04UT",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "conscientes"
+      },
+      "parentId": "NQNL3P7JJRMFF0X"
+    },
+    "P3YYL2RU3C3AONX": {
+      "type": "TextElement",
+      "id": "P3YYL2RU3C3AONX",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": " de la realidad que nos circunda"
+      },
+      "parentId": "Z07XN52C5Y4XTA2"
+    },
+    "G3UDMEV658UHS7I": {
+      "type": "AccordionComponent",
+      "id": "G3UDMEV658UHS7I",
+      "name": "AccordionComponent",
+      "children": ["X2L756LHFXL63OE", "BSA1MJW60KSY6L2", "G0M1VPV7N1PUHKE"],
+      "classList": [
+        "MB52VU9KGEZ5NBX",
+        "CGIQY2Q1SLGT1QU",
+        "WP6DJN01Q1G16SX",
+        "EOO4X4YG3JQXDYR",
+        "A234DD3FD2F1EDD"
+      ],
+      "properties": {},
+      "parentId": "LQCCUPFVEQATNOA"
+    },
+    "X2L756LHFXL63OE": {
+      "type": "AccordionItemComponent",
+      "id": "X2L756LHFXL63OE",
+      "name": "Misión",
+      "children": ["H9N6471U6J200XZ"],
+      "classList": ["MB52VU9KGEZ5NBX", "CGIQY2Q1SLGT1QU", "WP6DJN01Q1G16SX"],
+      "properties": {
+        "title": "Misión",
+        "headerBackground": "#f63",
+        "headerColor": "white"
+      },
+      "parentId": "G3UDMEV658UHS7I"
+    },
+    "BSA1MJW60KSY6L2": {
+      "type": "AccordionItemComponent",
+      "id": "BSA1MJW60KSY6L2",
+      "name": "Visión",
+      "children": ["U9D7AQFT6MTICAM"],
+      "classList": ["MB52VU9KGEZ5NBX", "CGIQY2Q1SLGT1QU", "WP6DJN01Q1G16SX"],
+      "properties": {
+        "title": "Visión",
+        "headerBackground": "#f63",
+        "headerColor": "white"
+      },
+      "parentId": "G3UDMEV658UHS7I"
+    },
+    "G0M1VPV7N1PUHKE": {
+      "type": "AccordionItemComponent",
+      "id": "G0M1VPV7N1PUHKE",
+      "name": "Así lo hacemos",
+      "children": ["JQO11U312MWT2IW"],
+      "classList": ["MB52VU9KGEZ5NBX", "CGIQY2Q1SLGT1QU", "WP6DJN01Q1G16SX"],
+      "properties": {
+        "title": "Así lo hacemos",
+        "headerBackground": "#f63",
+        "headerColor": "white"
+      },
+      "parentId": "G3UDMEV658UHS7I"
+    },
+    "H9N6471U6J200XZ": {
+      "type": "PElement",
+      "id": "H9N6471U6J200XZ",
+      "name": "PElement",
+      "children": ["I8DYB0ZJWA0YPYL"],
+      "classList": [],
+      "properties": {},
+      "parentId": "X2L756LHFXL63OE"
+    },
+    "I8DYB0ZJWA0YPYL": {
+      "type": "TextElement",
+      "id": "I8DYB0ZJWA0YPYL",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Dar voz a Propuestas desarrolladas por organizaciones que cooperan estrechamente con la Fundación, y que pensamos deben ser conocidas por las multitudes, para que cada vez más individuos puedan desarrollar una conciencia global en todos los ámbitos de la existencia humana. Al ser más conscientes, accediendo facilmente a información veraz, una formación global, con propuestas educacionales alternativas y promoviendo actividades y valores que tienen como bandera los derechos humanos y de la tierra, tendrán la oportunidad de crecer más plenamente y con recursos suficientes hasta convertirse en CONCIENCIA PARA EL CAMBIO SOCIAL..."
+      },
+      "parentId": "H9N6471U6J200XZ"
+    },
+    "U9D7AQFT6MTICAM": {
+      "type": "PElement",
+      "id": "U9D7AQFT6MTICAM",
+      "name": "PElement",
+      "children": ["FJOW1XV0M3Q9FD6"],
+      "classList": [],
+      "properties": {},
+      "parentId": "G3UDMEV658UHS7I"
+    },
+    "FJOW1XV0M3Q9FD6": {
+      "type": "TextElement",
+      "id": "FJOW1XV0M3Q9FD6",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Todas Juntos podemos ser conciencia para el cambio. Un mundo donde cada individuo tenga la libertad, la confianza y el apoyo de la sociedad en su conjunto. La convicción plena de pertenencia a un pueblo que conoce a los demás pueblos de la tierra, y que tiene muy altos los valores de respeto y paz con sus semejantes. De esta manera crecer en conocimientos para adquirir las herramientas necesarias que los ayudaran a solventar los graves problemas del mundo, y después trascender en sabiduría hasta escalar a otras dimensiones..."
+      },
+      "parentId": "U9D7AQFT6MTICAM"
+    },
+    "JQO11U312MWT2IW": {
+      "type": "PElement",
+      "id": "JQO11U312MWT2IW",
+      "name": "PElement",
+      "children": ["WX9OB7RN6JXTH35"],
+      "classList": [],
+      "properties": {},
+      "parentId": "G3UDMEV658UHS7I"
+    },
+    "WX9OB7RN6JXTH35": {
+      "type": "TextElement",
+      "id": "WX9OB7RN6JXTH35",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Fundación Proyecta Konscio presenta y difunde sus propuestas colaborativas apoyándose en tecnologías digitales muy intuitivas, innovadoras y disruptivas donde pasamos de las interfaces transaccionales a plataformas conversacionales, y que están cambiando la manera de interrelación en el mundo. La estrategia se basa en la construcción de entornos digitales en las que reunir un contenido muy vivo, necesario, de conciencia, y hacer que la audiencia se acerque a dichos entornos y se quede para hacer crecer una comunidad permanente. Transportándote al metaverso de konscio3d te encuentras, de manera inmersiva, con la confluencia de una multitud de Propuestas digitales con las que vas a colaborar, es la reunión de Organizaciones que están desarrollando proyectos con los que fomentar comunidades en torno a actividades que promueven sociedades más desarrolladas en Justicia, tolerancia, educación y paz. Konscio3d, una ciudad virtual, propuestas de valor digitales con fórmulas y estrategias que se basan en la cooperación, Organizaciones con actividades y eventos referidos a cada categoría de conocimiento que estrechamente se vincula y afecta a las sociedades humanas en su devenir histórico y de evolución de pensamiento.Nos dirigimos a una audiencia que necesita encontrar propuestas de organizaciones con las que sumar, colaborar y trascender. Nos adentramos en ellas con las tecnologías digitales 3D y webRTC con alcance en la Realidad Virtual, Inteligencia Artificial, IoT, donde podrá acceder a una exposición interactiva de contenido en eventos y actividades como confluencia de organizaciones sociales y de nuestro proyecto como Fundación, llegando a participar en múltiples propuestas que pueden proporcionar herramientas para trascendencia personal vivencial.Universalizar y compartir el conocimiento humano constituye una de las grandes ventajas de Internet y los procesos digitales. Las Tecnologías de la Información y la Comunicación han generado nuevas herramientas para editar, estructurar, difundir y acceder a la cultura."
+      },
+      "parentId": "JQO11U312MWT2IW"
+    },
+    "GMZ8UHKWWH137LY": {
+      "type": "DivElement",
+      "id": "GMZ8UHKWWH137LY",
+      "name": "DivElement",
+      "children": [
+        "FYZWYX0A3KIRJRE",
+        "KU0S581OOQ9MA0U",
+        "VSAVMCHHMSU9UX2",
+        "LBD7WDJG0DP7QF6",
+        "HWD4XROAKRS11KL",
+        "QJ2P4VASSXVH7I7",
+        "M2BBSQR3GQCYNFW",
+        "UCS45GDQNHBV36J",
+        "NL3ES6NRFID81DA"
+      ],
+      "classList": ["ED6C3E9RJ9ODT2U", "V4CCQ2U1PU5U4JM", "XYCA6824BSF315G"],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "FYZWYX0A3KIRJRE": {
+      "type": "FlipBoxComponent",
+      "id": "FYZWYX0A3KIRJRE",
+      "name": "FlipBoxComponent",
+      "children": ["DBT8VUNIL7AVYNT", "CUD865QP1Q9GJCY"],
+      "classList": ["VDN8UCPNKVPMO4G", "X5W3N6GCPH7AY5N"],
+      "properties": {},
+      "parentId": "GMZ8UHKWWH137LY"
+    },
+    "KU0S581OOQ9MA0U": {
+      "type": "FlipBoxComponent",
+      "id": "KU0S581OOQ9MA0U",
+      "name": "FlipBoxComponent",
+      "children": [],
+      "classList": ["VDN8UCPNKVPMO4G"],
+      "properties": {
+        "flipDirection": "vertical"
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "VSAVMCHHMSU9UX2": {
+      "type": "FlipBoxComponent",
+      "id": "VSAVMCHHMSU9UX2",
+      "name": "FlipBoxComponent",
+      "children": [],
+      "classList": ["VDN8UCPNKVPMO4G"],
+      "properties": {
+        "flipDirection": "horizontal",
+        "invert": true
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "LBD7WDJG0DP7QF6": {
+      "type": "FlipBoxComponent",
+      "id": "LBD7WDJG0DP7QF6",
+      "name": "FlipBoxComponent",
+      "children": [],
+      "classList": ["VDN8UCPNKVPMO4G"],
+      "properties": {
+        "flipDirection": "vertical"
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "HWD4XROAKRS11KL": {
+      "type": "FlipBoxComponent",
+      "id": "HWD4XROAKRS11KL",
+      "name": "FlipBoxComponent",
+      "children": [],
+      "classList": ["VDN8UCPNKVPMO4G"],
+      "properties": {
+        "flipDirection": "horizontal",
+        "invert": true
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "QJ2P4VASSXVH7I7": {
+      "type": "FlipBoxComponent",
+      "id": "QJ2P4VASSXVH7I7",
+      "name": "FlipBoxComponent",
+      "children": [],
+      "classList": ["VDN8UCPNKVPMO4G"],
+      "properties": {
+        "flipDirection": "vertical"
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "M2BBSQR3GQCYNFW": {
+      "type": "FlipBoxComponent",
+      "id": "M2BBSQR3GQCYNFW",
+      "name": "FlipBoxComponent",
+      "children": [],
+      "classList": ["VDN8UCPNKVPMO4G"],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "UCS45GDQNHBV36J": {
+      "type": "FlipBoxComponent",
+      "id": "UCS45GDQNHBV36J",
+      "name": "FlipBoxComponent",
+      "children": [],
+      "classList": ["VDN8UCPNKVPMO4G"],
+      "properties": {
+        "flipDirection": "vertical"
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "NL3ES6NRFID81DA": {
+      "type": "FlipBoxComponent",
+      "id": "NL3ES6NRFID81DA",
+      "name": "FlipBoxComponent",
+      "children": [],
+      "classList": ["VDN8UCPNKVPMO4G"],
+      "properties": {
+        "flipDirection": "horizontal",
+        "invert": true
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "DBT8VUNIL7AVYNT": {
+      "type": "DivElement",
+      "id": "DBT8VUNIL7AVYNT",
+      "name": "DivElement",
+      "children": ["RW3OLC0UA3ZSTEA"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "KFLMZECL1Q0BYQ1",
+        "H11UX8S43DGL63N",
+        "YGZAFGABFVKV4VE",
+        "GOIQ4RPSZ2POFE3"
+      ],
+      "properties": {},
+      "parentId": "FYZWYX0A3KIRJRE"
+    },
+    "RW3OLC0UA3ZSTEA": {
+      "type": "DivElement",
+      "id": "RW3OLC0UA3ZSTEA",
+      "name": "DivElement",
+      "children": [],
+      "classList": [
+        "WI7NA1MXC63W4NS",
+        "RDUIST2V1DLUQTK",
+        "FNQFQXDUJYLU1ZF",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "H2PCF8578ILXFYX"
+      ],
+      "properties": {},
+      "parentId": "DBT8VUNIL7AVYNT"
+    },
+    "CUD865QP1Q9GJCY": {
+      "type": "DivElement",
+      "id": "CUD865QP1Q9GJCY",
+      "name": "DivElement",
+      "children": [],
+      "classList": ["A234DD3FD2F1EDD", "MS0WYFTPDQBC27D", "X5W3N6GCPH7AY5N"],
+      "properties": {},
+      "parentId": "FYZWYX0A3KIRJRE"
+    }
+  },
+  "styles": {
+    "base": {
+      "A234DD3FD2F1EDD": {
+        "width": "100%"
+      },
+      "MS0WYFTPDQBC27D": {
+        "height": "100%"
+      },
+      "R58TA58S3EDF5E3": {
+        "aspect-ratio": "16 / 9"
+      },
+      "MB52VU9KGEZ5NBX": {
+        "display": "flex"
+      },
+      "QRXCA93BD1585Y6": {
+        "aspect-ratio": "1"
+      },
+      "KT3K582B0K3Q8UU": {
+        "width": "130px"
+      },
+      "DD63CJGK3NEQ7YT": {
+        "justify-content": "center"
+      },
+      "EIMQYOVPG32HXID": {
+        "align-items": "center"
+      },
+      "NZ4F7TG9GD27AW6": {
+        "border-radius": "50%"
+      },
+      "OTM3NSH8PZZFCLK": {
+        "background-color": "white"
+      },
+      "KHSWW3YUOWWAQV7": {
+        "background-color": "#06689a"
+      },
+      "UQSX6IWC9LD74IR": {
+        "font-size": "3em"
+      },
+      "D9M3EFYZU857UJM": {
+        "color": "white"
+      },
+      "TPLFXDIXEC98JJE": {
+        "text-transform": "uppercase"
+      },
+      "G46JZQXO5NXPFC7": {
+        "gap": "10px"
+      },
+      "CGIQY2Q1SLGT1QU": {
+        "flex-direction": "column"
+      },
+      "GHK5FR1JD4TLOON": {
+        "padding": "20px"
+      },
+      "HC8K9H5TQX77WIB": {
+        "gap": "20px"
+      },
+      "YFRF4E2GE9UGYKK": {
+        "padding": "30px"
+      },
+      "JL9HAK621KF0MZU": {
+        "font-weight": "700"
+      },
+      "CS09JOAUH53LZXC": {
+        "text-align": "center"
+      },
+      "EOXGGDAZXKLJOW1": {
+        "background-color": "#f63"
+      },
+      "M6MN4AVH4EQP131": {
+        "font-weight": "600"
+      },
+      "EU540VA5R18YG7T": {
+        "font-size": "1.3em"
+      },
+      "T7B2G5WHBQQZYWP": {
+        "font-size": "1.5em"
+      },
+      "CS1DA748FA9G5CX": {
+        "max-width": "1024px"
+      },
+      "AY9JFM7FB7GDFWE": {
+        "width": "70px"
+      },
+      "PUWSI6XQC6AP1ZA": {
+        "height": "70px"
+      },
+      "T0NV012HYNDQ5SY": {
+        "text-decoration": "underline"
+      },
+      "CPY390KK8ODEB4V": {
+        "gap": "6px"
+      },
+      "WP6DJN01Q1G16SX": {
+        "gap": "5px"
+      },
+      "EOO4X4YG3JQXDYR": {
+        "max-width": "1040px"
+      },
+      "VDN8UCPNKVPMO4G": {
+        "aspect-ratio": "1/1"
+      },
+      "ED6C3E9RJ9ODT2U": {
+        "display": "grid"
+      },
+      "V4CCQ2U1PU5U4JM": {
+        "grid-template-rows": "1fr 1fr 1fr"
+      },
+      "XYCA6824BSF315G": {
+        "grid-template-columns": "1fr 1fr 1fr"
+      },
+      "KFLMZECL1Q0BYQ1": {
+        "background-repeat": "no-repeat"
+      },
+      "H11UX8S43DGL63N": {
+        "background-position": "center center"
+      },
+      "YGZAFGABFVKV4VE": {
+        "background-size": "cover"
+      },
+      "WI7NA1MXC63W4NS": {
+        "position": "absolute"
+      },
+      "RDUIST2V1DLUQTK": {
+        "left": "0px"
+      },
+      "FNQFQXDUJYLU1ZF": {
+        "top": "0px"
+      },
+      "H2PCF8578ILXFYX": {
+        "background-color": "rgba(24, 92, 145, 0.6)"
+      },
+      "X5W3N6GCPH7AY5N": {
+        "background-color": "rgb(24, 92, 145)"
+      },
+      "GOIQ4RPSZ2POFE3": {
+        "background-image": "url(\"/api/image/fb1.jpg\")"
+      }
+    },
+    "sm": {
+      "TLL9QJGV6FTFPBA": {
+        "font-size": "1.5em"
+      },
+      "J1FOYQ2V6QE1BX9": {
+        "flex-direction": "column"
+      },
+      "EI3E35LT5HU3FK4": {
+        "align-items": "center"
+      },
+      "I6S3J3HE3Z8GHID": {
+        "font-size": "1em"
+      },
+      "XU9A7F6U9APKCTI": {
+        "text-align": "center"
+      }
+    },
+    "md": {},
+    "lg": {
+      "ESFV4JMA7UIEVR8": {
+        "font-size": "2em"
+      }
+    },
+    "xl": {
+      "AV33087VO530AI5": {
+        "font-size": "3em"
+      },
+      "KCR4J95GKTJGWOM": {
+        "flex-direction": "row"
+      },
+      "GKTMVW8FIP21J5W": {
+        "text-align": "left"
+      },
+      "SGD55NQKU3X7RR0": {
+        "font-size": "1.5em"
+      }
+    },
+    "2xl": {}
+  }
+}

@@ -1,0 +1,63 @@
+/*.hFlipBox,
+.vFlipBox,
+.inv_hFlipBox,
+.inv_vFlipBox {
+  perspective: 1000px;
+}*/
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.hFlipBox:hover .inner {
+  transform: rotateY(180deg);
+}
+
+.vFlipBox:hover .inner {
+  transform: rotateX(180deg);
+}
+
+.inv_hFlipBox:hover .inner {
+  transform: rotateY(-180deg);
+}
+
+.inv_vFlipBox:hover .inner {
+  transform: rotateX(-180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-color: gray;
+}
+
+.back {
+  background-color: silver;
+}
+
+.hFlipBox .inner .back {
+  transform: rotateY(180deg);
+}
+
+.vFlipBox .inner .back {
+  transform: rotateX(180deg);
+}
+
+.inv_hFlipBox .inner .back {
+  transform: rotateY(-180deg);
+}
+
+.inv_vFlipBox .inner .back {
+  transform: rotateX(-180deg);
+}

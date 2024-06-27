@@ -1,0 +1,233 @@
+{
+  "AElement": {
+    "href": "string",
+    "target": ["_blank", "_self", "_parent", "_top"],
+    "download": "boolean",
+    "rel": "string",
+    "type": "string",
+    "hreflang": "string"
+  },
+  "AreaElement": {
+    "alt": "string",
+    "coords": "string",
+    "href": "string",
+    "shape": ["rect", "circle", "poly"],
+    "target": ["_blank", "_self", "_parent", "_top"]
+  },
+  "AudioElement": {
+    "src": "string",
+    "controls": "boolean",
+    "autoplay": "boolean",
+    "loop": "boolean",
+    "muted": "boolean",
+    "preload": ["none", "metadata", "auto"]
+  },
+  "BaseElement": {
+    "href": "string",
+    "target": ["_blank", "_self", "_parent", "_top"]
+  },
+  "BlockquoteElement": {
+    "cite": "string"
+  },
+  "ButtonElement": {
+    "type": ["button", "submit", "reset"],
+    "form": "string"
+  },
+  "CanvasElement": {
+    "width": "number",
+    "height": "number"
+  },
+  "ColElement": {
+    "span": "number"
+  },
+  "ColgroupElement": {
+    "span": "number"
+  },
+  "DataElement": {
+    "value": "string"
+  },
+  "DelElement": {
+    "cite": "string",
+    "datetime": "string"
+  },
+  "DetailsElement": {
+    "open": "boolean"
+  },
+  "EmbedElement": {
+    "src": "string",
+    "type": "string",
+    "width": "number",
+    "height": "number"
+  },
+  "FieldsetElement": {
+    "disabled": "boolean",
+    "form": "string",
+    "name": "string"
+  },
+  "IframeElement": {
+    "src": "string",
+    "srcdoc": "string",
+    "width": "number",
+    "height": "number",
+    "name": "string",
+    "sandbox": "string",
+    "allow": "string"
+  },
+  "ImgElement": {
+    "src": "string",
+    "alt": "string",
+    "width": "number",
+    "height": "number",
+    "fill": "boolean"
+  },
+  "InputElement": {
+    "type": [
+      "text",
+      "password",
+      "checkbox",
+      "radio",
+      "file",
+      "hidden",
+      "image",
+      "button",
+      "reset",
+      "submit",
+      "date",
+      "datetime-local",
+      "email",
+      "month",
+      "number",
+      "range",
+      "search",
+      "tel",
+      "time",
+      "url",
+      "week"
+    ],
+    "value": "string",
+    "placeholder": "string",
+    "checked": "boolean",
+    "disabled": "boolean",
+    "maxlength": "number",
+    "min": "number",
+    "max": "number",
+    "step": "number",
+    "readonly": "boolean",
+    "required": "boolean",
+    "multiple": "boolean",
+    "accept": "string"
+  },
+  "LabelElement": {
+    "for": "string"
+  },
+  "LiElement": {
+    "value": "number"
+  },
+  "LinkElement": {
+    "href": "string",
+    "rel": "string",
+    "type": "string",
+    "media": "string"
+  },
+  "MapElement": {
+    "name": "string"
+  },
+  "MetaElement": {
+    "name": "string",
+    "content": "string",
+    "charset": "string",
+    "http-equiv": "string"
+  },
+  "ObjectElement": {
+    "data": "string",
+    "type": "string",
+    "width": "number",
+    "height": "number",
+    "usemap": "string"
+  },
+  "OlElement": {
+    "reversed": "boolean",
+    "start": "number",
+    "type": ["1", "A", "a", "I", "i"]
+  },
+  "OptgroupElement": {
+    "label": "string",
+    "disabled": "boolean"
+  },
+  "OptionElement": {
+    "value": "string",
+    "label": "string",
+    "selected": "boolean",
+    "disabled": "boolean"
+  },
+  "ProgressElement": {
+    "value": "number",
+    "max": "number"
+  },
+  "QElement": {
+    "cite": "string"
+  },
+  "SelectElement": {
+    "multiple": "boolean",
+    "size": "number",
+    "required": "boolean"
+  },
+  "SourceElement": {
+    "src": "string",
+    "type": "string",
+    "media": "string"
+  },
+  "TableElement": {
+    "border": "string"
+  },
+  "TextareaElement": {
+    "rows": "number",
+    "cols": "number",
+    "placeholder": "string",
+    "maxlength": "number",
+    "readonly": "boolean",
+    "required": "boolean",
+    "wrap": ["soft", "hard"]
+  },
+  "TimeElement": {
+    "datetime": "string"
+  },
+  "TrackElement": {
+    "src": "string",
+    "kind": ["subtitles", "captions", "descriptions", "chapters", "metadata"],
+    "srclang": "string",
+    "label": "string",
+    "default": "boolean"
+  },
+  "VideoElement": {
+    "src": "string",
+    "controls": "boolean",
+    "autoplay": "boolean",
+    "loop": "boolean",
+    "muted": "boolean",
+    "poster": "string",
+    "preload": ["none", "metadata", "auto"]
+  },
+  "MeterElement": {
+    "value": "number",
+    "min": "number",
+    "max": "number",
+    "low": "number",
+    "high": "number",
+    "optimum": "number"
+  },
+  "TextElement": {
+    "text": "string"
+  },
+  "AccordionItemComponent": {
+    "title": "string",
+    "iconSrc": "string",
+    "iconAlt": "string",
+    "headerColor": "string",
+    "headerBackground": "string"
+  },
+  "FlipBoxComponent": {
+    "flipDirection": ["vertical", "horizontal"],
+    "invert": "boolean"
+  }
+}

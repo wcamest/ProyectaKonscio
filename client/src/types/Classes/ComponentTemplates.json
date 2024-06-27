@@ -1,0 +1,16 @@
+{
+  "AccordionComponent": {
+    "CSSProperties": {
+      "display": "flex",
+      "flex-direction": "column",
+      "gap": "5px"
+    }
+  },
+  "AccordionItemComponent": {
+    "CSSProperties": {
+      "display": "flex",
+      "flex-direction": "column",
+      "gap": "5px"
+    }
+  }
+}
