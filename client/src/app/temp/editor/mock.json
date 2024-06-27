@@ -342,7 +342,12 @@
       "type": "DivElement",
       "id": "Y2M2642X8EG3XIR",
       "name": "DivElement",
-      "children": ["G0FGHTJN26EYFNX", "RBYIH4KZNVTRDKQ", "SMGLKQSNTUGG5M8"],
+      "children": [
+        "G0FGHTJN26EYFNX",
+        "RBYIH4KZNVTRDKQ",
+        "SMGLKQSNTUGG5M8",
+        "WSM63K604702TES"
+      ],
       "classList": [],
       "properties": {},
       "parentId": "G9USVHVC1BUDH5R"
@@ -409,7 +414,7 @@
       "type": "DivElement",
       "id": "YVA9X6JINWARGTQ",
       "name": "DivElement",
-      "children": ["K7KE1WDKYX4NBC8"],
+      "children": ["K7KE1WDKYX4NBC8", "QMBA3HWCU2V1GKX"],
       "classList": [],
       "properties": {},
       "parentId": "KGACUVZG8XFT1JU"
@@ -467,88 +472,23 @@
       "type": "DivElement",
       "id": "T0T5MG8JY25MCY1",
       "name": "DivElement",
-      "children": ["XF0HSPSHAU06YR8"],
+      "children": ["SJ3A3PWEGX1Y0SQ"],
       "classList": [
         "EOXGGDAZXKLJOW1",
-        "GHK5FR1JD4TLOON",
         "NZ4F7TG9GD27AW6",
-        "AY9JFM7FB7GDFWE",
-        "PUWSI6XQC6AP1ZA",
-        "MB52VU9KGEZ5NBX"
+        "MB52VU9KGEZ5NBX",
+        "SAAKWMEWOU9WJVK",
+        "ECMSQ6KM2924V52",
+        "I14PELOODEZUGMW",
+        "md:O31KII6381UCUA9",
+        "md:KQPENNRN8YZXYFV",
+        "lg:Q9C5P1FQMDT8879",
+        "lg:XCQ99D8C3IY5O6A",
+        "md:A37BU4SYCHH8L77",
+        "lg:EMWI57HG88CMSGK"
       ],
       "properties": {},
       "parentId": "UEL3NW5B18HDSG5"
-    },
-    "XF0HSPSHAU06YR8": {
-      "type": "ImgElement",
-      "id": "XF0HSPSHAU06YR8",
-      "name": "ImgElement",
-      "children": [],
-      "classList": [],
-      "properties": {
-        "src": "/api/image/chalkboard-teacher-icon.svg",
-        "width": 70,
-        "height": 70
-      },
-      "parentId": "T0T5MG8JY25MCY1"
-    },
-    "SMGLKQSNTUGG5M8": {
-      "type": "DivElement",
-      "id": "SMGLKQSNTUGG5M8",
-      "name": "DivElement",
-      "children": ["AQUIYAIS9AG5CAU"],
-      "classList": [
-        "EOXGGDAZXKLJOW1",
-        "GHK5FR1JD4TLOON",
-        "NZ4F7TG9GD27AW6",
-        "AY9JFM7FB7GDFWE",
-        "PUWSI6XQC6AP1ZA",
-        "MB52VU9KGEZ5NBX"
-      ],
-      "properties": {},
-      "parentId": "G9USVHVC1BUDH5R"
-    },
-    "AQUIYAIS9AG5CAU": {
-      "type": "ImgElement",
-      "id": "AQUIYAIS9AG5CAU",
-      "name": "ImgElement",
-      "children": [],
-      "classList": [],
-      "properties": {
-        "src": "/api/image/laptop-icon.svg",
-        "width": 70,
-        "height": 70
-      },
-      "parentId": "SMGLKQSNTUGG5M8"
-    },
-    "K7KE1WDKYX4NBC8": {
-      "type": "DivElement",
-      "id": "K7KE1WDKYX4NBC8",
-      "name": "DivElement",
-      "children": ["TYGK2K4M7LRQJ9Z"],
-      "classList": [
-        "EOXGGDAZXKLJOW1",
-        "GHK5FR1JD4TLOON",
-        "NZ4F7TG9GD27AW6",
-        "AY9JFM7FB7GDFWE",
-        "PUWSI6XQC6AP1ZA",
-        "MB52VU9KGEZ5NBX"
-      ],
-      "properties": {},
-      "parentId": "KGACUVZG8XFT1JU"
-    },
-    "TYGK2K4M7LRQJ9Z": {
-      "type": "ImgElement",
-      "id": "TYGK2K4M7LRQJ9Z",
-      "name": "ImgElement",
-      "children": [],
-      "classList": [],
-      "properties": {
-        "src": "/api/image/shopping-cart.svg",
-        "width": 70,
-        "height": 70
-      },
-      "parentId": "K7KE1WDKYX4NBC8"
     },
     "Z07XN52C5Y4XTA2": {
       "type": "H1Element",
@@ -886,6 +826,128 @@
       "classList": ["A234DD3FD2F1EDD", "MS0WYFTPDQBC27D", "X5W3N6GCPH7AY5N"],
       "properties": {},
       "parentId": "FYZWYX0A3KIRJRE"
+    },
+    "SJ3A3PWEGX1Y0SQ": {
+      "type": "DivElement",
+      "id": "SJ3A3PWEGX1Y0SQ",
+      "name": "DivElement",
+      "children": ["PJ4498A2L16JWXS"],
+      "classList": [
+        "XISKNS78RFWITIV",
+        "OW4TUQ3X72GLAB2",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D"
+      ],
+      "properties": {},
+      "parentId": "T0T5MG8JY25MCY1"
+    },
+    "PJ4498A2L16JWXS": {
+      "type": "ImgElement",
+      "id": "PJ4498A2L16JWXS",
+      "name": "ImgElement",
+      "children": [null],
+      "classList": ["JR4FKTHXWBQC6RB"],
+      "properties": {
+        "src": "/api/image/chalkboard-teacher-icon.svg",
+        "fill": true
+      },
+      "parentId": "T0T5MG8JY25MCY1"
+    },
+    "WSM63K604702TES": {
+      "type": "DivElement",
+      "id": "WSM63K604702TES",
+      "name": "DivElement",
+      "children": ["BMVQZ7P5U4AB6T5"],
+      "classList": [
+        "EOXGGDAZXKLJOW1",
+        "NZ4F7TG9GD27AW6",
+        "MB52VU9KGEZ5NBX",
+        "SAAKWMEWOU9WJVK",
+        "ECMSQ6KM2924V52",
+        "I14PELOODEZUGMW",
+        "lg:Q9C5P1FQMDT8879",
+        "lg:XCQ99D8C3IY5O6A",
+        "lg:EMWI57HG88CMSGK",
+        "md:O31KII6381UCUA9",
+        "md:KQPENNRN8YZXYFV",
+        "md:A37BU4SYCHH8L77"
+      ],
+      "properties": {},
+      "parentId": "G9USVHVC1BUDH5R"
+    },
+    "BMVQZ7P5U4AB6T5": {
+      "type": "DivElement",
+      "id": "BMVQZ7P5U4AB6T5",
+      "name": "DivElement",
+      "children": ["JOWK4NQZK5N2CD8"],
+      "classList": [
+        "XISKNS78RFWITIV",
+        "OW4TUQ3X72GLAB2",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D"
+      ],
+      "properties": {},
+      "parentId": "WSM63K604702TES"
+    },
+    "JOWK4NQZK5N2CD8": {
+      "type": "ImgElement",
+      "id": "JOWK4NQZK5N2CD8",
+      "name": "ImgElement",
+      "children": [null],
+      "classList": ["JR4FKTHXWBQC6RB"],
+      "properties": {
+        "src": "/api/image/laptop-icon.svg",
+        "fill": true
+      },
+      "parentId": "WSM63K604702TES"
+    },
+    "QMBA3HWCU2V1GKX": {
+      "type": "DivElement",
+      "id": "QMBA3HWCU2V1GKX",
+      "name": "DivElement",
+      "children": ["VB09WWQC08UVYS5"],
+      "classList": [
+        "EOXGGDAZXKLJOW1",
+        "NZ4F7TG9GD27AW6",
+        "MB52VU9KGEZ5NBX",
+        "SAAKWMEWOU9WJVK",
+        "ECMSQ6KM2924V52",
+        "I14PELOODEZUGMW",
+        "md:O31KII6381UCUA9",
+        "md:KQPENNRN8YZXYFV",
+        "md:A37BU4SYCHH8L77",
+        "lg:Q9C5P1FQMDT8879",
+        "lg:XCQ99D8C3IY5O6A",
+        "lg:EMWI57HG88CMSGK"
+      ],
+      "properties": {},
+      "parentId": "KGACUVZG8XFT1JU"
+    },
+    "VB09WWQC08UVYS5": {
+      "type": "DivElement",
+      "id": "VB09WWQC08UVYS5",
+      "name": "DivElement",
+      "children": ["JWGBKEQCE06AWJZ"],
+      "classList": [
+        "XISKNS78RFWITIV",
+        "OW4TUQ3X72GLAB2",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D"
+      ],
+      "properties": {},
+      "parentId": "QMBA3HWCU2V1GKX"
+    },
+    "JWGBKEQCE06AWJZ": {
+      "type": "ImgElement",
+      "id": "JWGBKEQCE06AWJZ",
+      "name": "ImgElement",
+      "children": [null],
+      "classList": ["JR4FKTHXWBQC6RB"],
+      "properties": {
+        "src": "/api/image/shopping-cart.svg",
+        "fill": true
+      },
+      "parentId": "QMBA3HWCU2V1GKX"
     }
   },
   "styles": {
@@ -962,12 +1024,6 @@
       "CS1DA748FA9G5CX": {
         "max-width": "1024px"
       },
-      "AY9JFM7FB7GDFWE": {
-        "width": "70px"
-      },
-      "PUWSI6XQC6AP1ZA": {
-        "height": "70px"
-      },
       "T0NV012HYNDQ5SY": {
         "text-decoration": "underline"
       },
@@ -1021,6 +1077,24 @@
       },
       "ZHNRUCPK3RMOLHG": {
         "grid-template-rows": "repeat(9, 1fr)"
+      },
+      "XISKNS78RFWITIV": {
+        "position": "relative"
+      },
+      "OW4TUQ3X72GLAB2": {
+        "overflow": "hidden"
+      },
+      "JR4FKTHXWBQC6RB": {
+        "object-fit": "contain"
+      },
+      "SAAKWMEWOU9WJVK": {
+        "width": "40px"
+      },
+      "ECMSQ6KM2924V52": {
+        "height": "40px"
+      },
+      "I14PELOODEZUGMW": {
+        "padding": "10px"
       }
     },
     "sm": {
@@ -1028,7 +1102,17 @@
         "text-align": "center"
       }
     },
-    "md": {},
+    "md": {
+      "O31KII6381UCUA9": {
+        "width": "50px"
+      },
+      "KQPENNRN8YZXYFV": {
+        "height": "50px"
+      },
+      "A37BU4SYCHH8L77": {
+        "padding": "12px"
+      }
+    },
     "lg": {
       "ESFV4JMA7UIEVR8": {
         "font-size": "2em"
@@ -1041,6 +1125,15 @@
       },
       "Y6LXINF7MFD3HO3": {
         "grid-template-columns": "repeat(3, 1fr)"
+      },
+      "Q9C5P1FQMDT8879": {
+        "width": "70px"
+      },
+      "XCQ99D8C3IY5O6A": {
+        "height": "70px"
+      },
+      "EMWI57HG88CMSGK": {
+        "padding": "20px"
       }
     },
     "xl": {

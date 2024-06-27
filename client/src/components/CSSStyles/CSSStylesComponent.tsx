@@ -1,5 +1,6 @@
 "use client";
 
+import PageDataObject from "@/types/DataObjects/PageDataObject";
 import PageStylesDataObject from "@/types/DataObjects/PageStylesDataObject";
 import React, { useEffect, useState } from "react";
 
@@ -142,7 +143,7 @@ const CSSStylesComponent = (props: Props) => {
     setState({
       css: Functions.GetStyles(true),
     });
-  }, [targetBreakpoint]);
+  }, [targetBreakpoint, styles]);
 
   return <style>{Functions.GetCSS()}</style>;
 };
