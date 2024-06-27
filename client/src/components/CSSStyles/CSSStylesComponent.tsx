@@ -142,7 +142,7 @@ const CSSStylesComponent = (props: Props) => {
     setState({
       css: Functions.GetStyles(true),
     });
-  }, []);
+  }, [targetBreakpoint]);
 
   return <style>{Functions.GetCSS()}</style>;
 };
