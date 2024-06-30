@@ -12,5 +12,11 @@
       "flex-direction": "column",
       "gap": "5px"
     }
+  },
+  "MobileNavigationComponent": {
+    "CSSProperties": {
+      "display": "flex",
+      "flex-direction": "column"
+    }
   }
 }

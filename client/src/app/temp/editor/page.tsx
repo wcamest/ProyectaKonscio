@@ -1,13 +1,23 @@
-import React from 'react'
+import React from "react";
 import Editor from "./Editor";
-import mockPage from "./mock.json";
 
-type Props = {}
+type Props = {};
 
-const page = (props: Props) => {
-  return (
-    <Editor pageData={mockPage} />
-  )
-}
+const GetContent = async () => {
+  const response = await fetch(
+    `http://localhost:3000/api/content/permalink/home`,
+    {
+      cache: "no-store",
+    }
+  ).then((response: Response) => response.json());
 
-export default page
+  return response;
+};
+
+const Page = async (props: Props) => {
+  const data: any = await GetContent();
+
+  return <Editor pageData={data} />;
+};
+
+export default Page;

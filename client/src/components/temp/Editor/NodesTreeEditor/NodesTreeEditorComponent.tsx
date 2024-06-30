@@ -68,13 +68,14 @@ const NodesTreeEditorComponent = (props: Props) => {
             if (onSelect) onSelect(id);
           }}
         >
-          {pageNode
-            .Children()
-            .map((childNode: PageNode | undefined, key: number) => {
-              if (!childNode) return undefined;
+          {pageNode.Type() !== "LayoutComponent" &&
+            pageNode
+              .Children()
+              .map((childNode: PageNode | undefined, key: number) => {
+                if (!childNode) return undefined;
 
-              return Renderer.TreeItem(childNode, key);
-            })}
+                return Renderer.TreeItem(childNode, key);
+              })}
         </TreeViewItemComponent>
       );
     },

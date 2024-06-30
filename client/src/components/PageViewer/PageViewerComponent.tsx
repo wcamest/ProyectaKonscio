@@ -12,6 +12,8 @@ const PageViewerComponent = (props: Props) => {
   const { page } = props;
   const pageClass = new Page(page);
 
+  console.log(page);
+
   const Renderer = {
     Root() {
       const rootNode = pageClass.Root();
@@ -22,7 +24,7 @@ const PageViewerComponent = (props: Props) => {
     },
   };
 
-  return Renderer.Root();
+  return <div className="flex flex-col w-full">{Renderer.Root()}</div>;
 };
 
 export default PageViewerComponent;

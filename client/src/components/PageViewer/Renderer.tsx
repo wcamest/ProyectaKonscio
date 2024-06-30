@@ -17,9 +17,17 @@ import H5ElementComponent from "./Nodes/H5Element/H5ElementComponent";
 import H6ElementComponent from "./Nodes/H6Element/H6ElementComponent";
 import ImgElementComponent from "./Nodes/ImgElement/ImgElementComponent";
 import PElementComponent from "./Nodes/PElement/PElementComponent";
+import RootComponent from "./Nodes/RootComponent/RootComponent";
 import AccordionComponent from "./Nodes/AccordionComponent/AccordionComponent";
 import AccordionItemComponent from "./Nodes/AccordionItemComponent/AccordionItemComponent";
 import FlipBoxComponent from "./Nodes/FlipBoxComponent/FlipBoxComponent";
+import NavElementComponent from "./Nodes/NavElement/NavElementComponent";
+import MobileMenuButtonComponent from "./Nodes/MobileMenuButtonComponent/MobileMenuButtonComponent";
+import MobileNavigationComponent from "./Nodes/MobileNavigationComponent/MobileNavigationComponent";
+import MobileNavigationHeaderComponent from "./Nodes/MobileNaviationHeaderComponent/MobileNavigationHeaderComponent";
+import LayoutComponent from "./Nodes/LayoutComponent/LayoutComponent";
+import MobileNavigationBodyComponent from "./Nodes/MobileNavigationBodyComponent/MobileNavigationBodyComponent";
+import MenuItemComponent from "./Nodes/MenuItemComponent/MenuItemComponent";
 
 const NodeComponents: any = {
   MainElement: MainElementComponent,
@@ -37,6 +45,14 @@ const NodeComponents: any = {
   H4Element: H4ElementComponent,
   H5Element: H5ElementComponent,
   H6Element: H6ElementComponent,
+  NavElement: NavElementComponent,
+  MobileNavigationComponent,
+  MobileNavigationHeaderComponent,
+  MobileNavigationBodyComponent,
+  MobileMenuButtonComponent,
+  MenuItemComponent,
+  LayoutComponent,
+  RootComponent,
   AccordionComponent,
   AccordionItemComponent,
   FlipBoxComponent

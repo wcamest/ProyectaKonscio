@@ -8,4 +8,5 @@ export default interface PageDataObject {
   metadata: PageMetaDataObject;
   styles: PageStylesDataObject;
   nodes: any;
+  layoutComponents: string[]
 }

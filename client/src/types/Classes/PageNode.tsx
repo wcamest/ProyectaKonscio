@@ -112,6 +112,24 @@ export default class PageNode {
     if (index < children.length) return children[index];
   }
 
+  GetChildByType(type: string) {
+    let children = this.Children();
+
+    children = children.filter((node: PageNode) => node.Type() === type);
+
+    if (!children.length) return undefined;
+
+    return children[0];
+  }
+
+  GetChildrenByType(type: string) {
+    let children = this.Children();
+
+    children = children.filter((node: PageNode) => node.Type() === type);
+
+    return children;
+  }
+
   ClassName(targetBreakpoint?: string) {
     if (!targetBreakpoint) return this.data.classList.join(" ");
 

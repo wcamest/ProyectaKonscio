@@ -61,7 +61,7 @@ const EditorViewerComponent = (props: Props) => {
             style={{
               width: breakpointSizes[breakpoint],
             }}
-            className="bg-white border-gray-800 shadow-md"
+            className="relative flex flex-col bg-white border-gray-800 shadow-md"
           >
             {Renderer.Root()}
           </div>

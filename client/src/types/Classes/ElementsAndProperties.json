@@ -229,5 +229,9 @@
   "FlipBoxComponent": {
     "flipDirection": ["vertical", "horizontal"],
     "invert": "boolean"
+  },
+  "MenuItemComponent": {
+    "text": "string",
+    "href": "string"
   }
 }

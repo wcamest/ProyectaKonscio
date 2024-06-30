@@ -1,4 +1,5 @@
 export default interface PageMetaDataObject {
     title: string,
-    description: string
+    description: string,
+    permalink: string
 }

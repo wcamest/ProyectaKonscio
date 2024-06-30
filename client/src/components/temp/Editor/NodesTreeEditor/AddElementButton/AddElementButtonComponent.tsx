@@ -138,6 +138,13 @@ const AddElementButtonComponent = (props: Props) => {
         <option value="AccordionItemComponent">Accordion item</option>
         <option value="FlipBoxComponent">Flip Box</option>
       </optgroup>
+      <optgroup label="Layout">
+        <option value="MobileNavigationComponent">Mobile Navigation</option>
+        <option value="MobileNavigationHeaderComponent">Mobile Navigation Header</option>
+        <option value="MobileNavigationBodyComponent">Mobile Navigation Body</option>
+        <option value="MenuItemComponent">Menú Item</option>
+        <option value="MobileMenuButtonComponent">Mobile Menu Button</option>
+      </optgroup>
     </select>
   );
 };

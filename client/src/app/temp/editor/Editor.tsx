@@ -133,12 +133,9 @@ const Editor = (props: Props) => {
 
       const updatedPageData = pageNode.Paste(state.copiedNodeId);
 
-      console.log(updatedPageData);
-
       setState({
         ...state,
         pageData: updatedPageData,
-        copiedNodeId: undefined,
       });
     },
   };
