@@ -1,0 +1,27 @@
+{
+  "id": "TDJWQ2FLUM4VO2C",
+  "rootNodeId": "CJ1HGSHWT84DBPV",
+  "metadata": {
+    "title": "Untitled",
+    "description": "No Description"
+  },
+  "nodes": {
+    "CJ1HGSHWT84DBPV": {
+      "id": "CJ1HGSHWT84DBPV",
+      "name": "Root",
+      "type": "RootComponent",
+      "children": [],
+      "classList": [],
+      "properties": {}
+    }
+  },
+  "styles": {
+    "base": {},
+    "sm": {},
+    "md": {},
+    "lg": {},
+    "xl": {},
+    "2xl": {}
+  },
+  "layoutComponents": []
+}

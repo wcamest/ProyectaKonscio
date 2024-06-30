@@ -1,0 +1,319 @@
+{
+  "id": "QHRZSBZUEIHSM4A",
+  "rootNodeId": "YFADAF4MVP9XTHL",
+  "metadata": {
+    "title": "Untitled",
+    "description": "No Description"
+  },
+  "nodes": {
+    "YFADAF4MVP9XTHL": {
+      "id": "YFADAF4MVP9XTHL",
+      "name": "Menú",
+      "type": "RootComponent",
+      "children": ["AAOHRIX10JC9B3J", "FCFN1SUAMFMTLW5"],
+      "classList": [],
+      "properties": {}
+    },
+    "AAOHRIX10JC9B3J": {
+      "type": "MobileNavigationComponent",
+      "id": "AAOHRIX10JC9B3J",
+      "name": "Mobile Navigation",
+      "children": ["TGG7IDPOFY1LMOR", "VJ7Z6TZYAXCDEIA"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "NZOTYGD6FN3VB9Y",
+        "lg:U257CDL12TEWH14",
+        "XSFIG6YV70LVBQT",
+        "RW2FHOPYWZIFALE",
+        "RYP3QOT0ZY228LZ",
+        "WSUNEKNLOCLW4TO",
+        "BENMSFHWW958GJP"
+      ],
+      "properties": {},
+      "parentId": "YFADAF4MVP9XTHL"
+    },
+    "TGG7IDPOFY1LMOR": {
+      "type": "MobileNavigationHeaderComponent",
+      "id": "TGG7IDPOFY1LMOR",
+      "name": "MobileNavigationHeaderComponent",
+      "children": ["P4TDZT3IXF95MUU", "Q2SYEO8WQSTOJTJ"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "UWFIQ5IJ7YWT4LW",
+        "TBEA9LLI3PI6ERY",
+        "Q06YR22LKO0CKOH"
+      ],
+      "properties": {},
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "P4TDZT3IXF95MUU": {
+      "type": "ImgElement",
+      "id": "P4TDZT3IXF95MUU",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/logo_with_text.svg",
+        "width": 250,
+        "height": 85
+      },
+      "parentId": "TGG7IDPOFY1LMOR"
+    },
+    "Q2SYEO8WQSTOJTJ": {
+      "type": "MobileMenuButtonComponent",
+      "id": "Q2SYEO8WQSTOJTJ",
+      "name": "MobileMenuButtonComponent",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "TGG7IDPOFY1LMOR"
+    },
+    "FCFN1SUAMFMTLW5": {
+      "type": "NavElement",
+      "id": "FCFN1SUAMFMTLW5",
+      "name": "Desktop Navigation",
+      "children": ["N0WW5BSQ2XWKFWX", "HXNUKDZXH1E2PU5", "WDYXX8INXVRPSXT"],
+      "classList": [
+        "lg:AR0RMNKP0PCDYGP",
+        "R1IGYTEDV787JEB",
+        "lg:ZRP1KXIY24933QY",
+        "lg:UAWRB3CIXWE4L58",
+        "lg:UK85IF7IR50QD5U",
+        "lg:NTWQAJ91303BKZY",
+        "lg:M163Z7O7CN1UEI5",
+        "lg:E26287V7PQGVC8W",
+        "lg:X96LVD68Y2JLBF1",
+        "lg:RA5LBV2OFSX9OPF"
+      ],
+      "properties": {},
+      "parentId": "YFADAF4MVP9XTHL"
+    },
+    "N0WW5BSQ2XWKFWX": {
+      "type": "DivElement",
+      "id": "N0WW5BSQ2XWKFWX",
+      "name": "DivElement",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "HXNUKDZXH1E2PU5": {
+      "type": "ImgElement",
+      "id": "HXNUKDZXH1E2PU5",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/logo_with_text.svg",
+        "width": 250,
+        "height": 85
+      },
+      "parentId": "YFADAF4MVP9XTHL"
+    },
+    "WDYXX8INXVRPSXT": {
+      "type": "DivElement",
+      "id": "WDYXX8INXVRPSXT",
+      "name": "DivElement",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "VJ7Z6TZYAXCDEIA": {
+      "type": "MobileNavigationBodyComponent",
+      "id": "VJ7Z6TZYAXCDEIA",
+      "name": "MobileNavigationBodyComponent",
+      "children": [
+        "UWZ0ZLWOKFR7VC2",
+        "FS9N1TER6RMQKF2",
+        "SFLKCW04915L37V",
+        "UEOCVB5P01Z9Q0B",
+        "FD5YQC8881LXZZP",
+        "RI0GYJ5L59HQ8GP"
+      ],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "FPL0ZBRQQNCIDUE",
+        "HNVPAMK7ZTDXD11",
+        "VN4IBZ7OC3U27HC",
+        "XKRMB23T4CVZF1V",
+        "T136HF17MAAE4F9",
+        "WSUNEKNLOCLW4TO",
+        "MKTR6XWHQV7G8CY"
+      ],
+      "properties": {},
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "UWZ0ZLWOKFR7VC2": {
+      "type": "MenuItemComponent",
+      "id": "UWZ0ZLWOKFR7VC2",
+      "name": "MenuItemComponent",
+      "children": [],
+      "classList": ["VVDL381NOS1CFBV"],
+      "properties": {
+        "text": "Inicio",
+        "href": "/"
+      },
+      "parentId": "VJ7Z6TZYAXCDEIA"
+    },
+    "FS9N1TER6RMQKF2": {
+      "type": "MenuItemComponent",
+      "id": "FS9N1TER6RMQKF2",
+      "name": "MenuItemComponent",
+      "children": [],
+      "classList": ["VVDL381NOS1CFBV"],
+      "properties": {
+        "text": "La Realidad Virtual"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "SFLKCW04915L37V": {
+      "type": "MenuItemComponent",
+      "id": "SFLKCW04915L37V",
+      "name": "MenuItemComponent",
+      "children": [],
+      "classList": ["VVDL381NOS1CFBV"],
+      "properties": {
+        "text": "NotiKonscio",
+        "href": "/blog/notikonscio"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "UEOCVB5P01Z9Q0B": {
+      "type": "MenuItemComponent",
+      "id": "UEOCVB5P01Z9Q0B",
+      "name": "MenuItemComponent",
+      "children": [],
+      "classList": ["VVDL381NOS1CFBV"],
+      "properties": {
+        "text": "Colabora",
+        "href": "/colabora"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "FD5YQC8881LXZZP": {
+      "type": "MenuItemComponent",
+      "id": "FD5YQC8881LXZZP",
+      "name": "MenuItemComponent",
+      "children": [],
+      "classList": ["VVDL381NOS1CFBV"],
+      "properties": {
+        "text": "WebRTC y Espacios 3D",
+        "href": "/web-rtc-espacios-3d"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "RI0GYJ5L59HQ8GP": {
+      "type": "MenuItemComponent",
+      "id": "RI0GYJ5L59HQ8GP",
+      "name": "MenuItemComponent",
+      "children": [],
+      "classList": ["VVDL381NOS1CFBV"],
+      "properties": {
+        "text": "Proyectos",
+        "href": "/blog/proyectos"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    }
+  },
+  "styles": {
+    "base": {
+      "JFX70LIAAY0PEIF": {
+        "display": "flex"
+      },
+      "GXASHO9TDHR1UM3": {
+        "flex-direction": "column"
+      },
+      "UWFIQ5IJ7YWT4LW": {
+        "justify-content": "space-between"
+      },
+      "TBEA9LLI3PI6ERY": {
+        "padding": "20px"
+      },
+      "Q06YR22LKO0CKOH": {
+        "align-items": "center"
+      },
+      "NZOTYGD6FN3VB9Y": {
+        "order": "-1"
+      },
+      "R1IGYTEDV787JEB": {
+        "display": "none"
+      },
+      "XSFIG6YV70LVBQT": {
+        "position": "sticky"
+      },
+      "RW2FHOPYWZIFALE": {
+        "top": "0px"
+      },
+      "RYP3QOT0ZY228LZ": {
+        "z-index": "9999"
+      },
+      "WSUNEKNLOCLW4TO": {
+        "background-color": "white"
+      },
+      "BENMSFHWW958GJP": {
+        "max-height": "100vh"
+      },
+      "FPL0ZBRQQNCIDUE": {
+        "font-size": "1.3em"
+      },
+      "HNVPAMK7ZTDXD11": {
+        "color": "#3f3f3f"
+      },
+      "VN4IBZ7OC3U27HC": {
+        "font-weight": "500"
+      },
+      "VVDL381NOS1CFBV": {
+        "padding": "5px 20px"
+      },
+      "XKRMB23T4CVZF1V": {
+        "position": "absolute"
+      },
+      "T136HF17MAAE4F9": {
+        "top": "100%"
+      },
+      "MKTR6XWHQV7G8CY": {
+        "width": "100%"
+      }
+    },
+    "sm": {},
+    "md": {},
+    "lg": {
+      "U257CDL12TEWH14": {
+        "display": "none"
+      },
+      "AR0RMNKP0PCDYGP": {
+        "display": "flex"
+      },
+      "ZRP1KXIY24933QY": {
+        "justify-content": "center"
+      },
+      "UAWRB3CIXWE4L58": {
+        "padding": "20px"
+      },
+      "UK85IF7IR50QD5U": {
+        "position": "fixed"
+      },
+      "NTWQAJ91303BKZY": {
+        "top": "0px"
+      },
+      "M163Z7O7CN1UEI5": {
+        "left": "0px"
+      },
+      "E26287V7PQGVC8W": {
+        "width": "100%"
+      },
+      "X96LVD68Y2JLBF1": {
+        "background": "linear-gradient(0deg, rgba(0,0,0,0) 0%, #000C 25%)"
+      },
+      "RA5LBV2OFSX9OPF": {
+        "padding-bottom": "60px"
+      }
+    },
+    "xl": {},
+    "2xl": {}
+  },
+  "layoutComponents": []
+}
