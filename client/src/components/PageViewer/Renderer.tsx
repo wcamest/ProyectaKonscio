@@ -28,6 +28,7 @@ import MobileNavigationHeaderComponent from "./Nodes/MobileNaviationHeaderCompon
 import LayoutComponent from "./Nodes/LayoutComponent/LayoutComponent";
 import MobileNavigationBodyComponent from "./Nodes/MobileNavigationBodyComponent/MobileNavigationBodyComponent";
 import MenuItemComponent from "./Nodes/MenuItemComponent/MenuItemComponent";
+import DesktopNavigationComponent from "./Nodes/DesktopNavigationComponent/DesktopNavigationComponent";
 
 const NodeComponents: any = {
   MainElement: MainElementComponent,
@@ -50,6 +51,7 @@ const NodeComponents: any = {
   MobileNavigationHeaderComponent,
   MobileNavigationBodyComponent,
   MobileMenuButtonComponent,
+  DesktopNavigationComponent,
   MenuItemComponent,
   LayoutComponent,
   RootComponent,

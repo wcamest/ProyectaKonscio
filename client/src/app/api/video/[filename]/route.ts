@@ -4,7 +4,7 @@ export async function GET(request: Request, context: any) {
   const { params } = context;
   const { filename } = params;
 
-  const response = await fetch(`http://localhost:3001/video/${filename}`, {
+  const response = await fetch(`http://localhost:${process.env.BACKEND_PORT}/video/${filename}`, {
     cache: "no-store",
   });
 

@@ -4,9 +4,15 @@ import React from "react";
 
 type Props = {};
 
+export async function generateMetadata() {
+  return {
+    title: 'Inicio - Proyecta Konscio',
+  }
+}
+
 const GetContent = async () => {
   const response = await fetch(
-    `http://localhost:3000/api/content/permalink/home`,
+    `http://localhost:${process.env.PORT}/api/content/permalink/home`,
     {
       cache: "no-store",
     }

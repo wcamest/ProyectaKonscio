@@ -1,6 +1,9 @@
 import PageNode from "@/types/Classes/PageNode";
 import PageDataObject from "@/types/DataObjects/PageDataObject";
 import React, { useEffect, useRef, useState } from "react";
+import CaretUpFillIcon from "../../icons/CaretUpFillIcon";
+import CaretDownFillIcon from "../../icons/CaretDownFillIcon";
+import Image from "next/image";
 
 type Props = {
   node: PageNode;
@@ -40,6 +43,36 @@ const AccordionItemComponent = (props: Props) => {
     },
   };
 
+  const Renderer = {
+    Header() {
+      const iconSrc = node.PropertyValue("iconSrc");
+      let iconAlt = node.PropertyValue("iconAlt");
+
+      let icon: React.JSX.Element | undefined = undefined;
+      iconAlt = iconAlt ? iconAlt : "accordion item icon";
+
+      if (iconSrc)
+        icon = <Image src={iconSrc} alt={iconAlt} width={25} height={23} />;
+
+      return (
+        <div
+          style={{
+            backgroundColor: node.PropertyValue("headerBackground"),
+            color: node.PropertyValue("headerColor"),
+          }}
+          className="p-4 flex justify-between items-center gap-5 text-2xl select-none cursor-pointer"
+          onClick={() => Functions.ExpandOrCollapse()}
+        >
+          <div className="flex gap-5 items-center">
+            {icon}
+            <span>{node.PropertyValue("title")}</span>
+          </div>
+          {Functions.Expanded() ? <CaretUpFillIcon /> : <CaretDownFillIcon />}
+        </div>
+      );
+    },
+  };
+
   useEffect(() => {
     if (contentRef.current)
       setState({
@@ -52,33 +85,14 @@ const AccordionItemComponent = (props: Props) => {
     if (selectedNodeId) {
       const selectedNodeIsDescendant = node.IsDescendant(selectedNodeId);
 
-      if (
-        selectedNodeIsDescendant &&
-        outputPayload &&
-        outputPayload.expand
-      )
+      if (selectedNodeIsDescendant && outputPayload && outputPayload.expand)
         outputPayload.expand(node.Id());
     }
   }, [selectedNodeId]);
 
   return (
     <div className={node.ClassName(breakpoint)}>
-      <div
-        style={{
-          backgroundColor: node.PropertyValue("headerBackground"),
-          color: node.PropertyValue("headerColor"),
-        }}
-        className="p-2 flex justify-between gap-5 text-2xl"
-      >
-        <span>{node.PropertyValue("title")}</span>
-        <button
-          onClick={() => {
-            Functions.ExpandOrCollapse();
-          }}
-        >
-          {Functions.Expanded() ? "collapse" : "expand"}
-        </button>
-      </div>
+      {Renderer.Header()}
       <div
         ref={contentRef}
         style={{

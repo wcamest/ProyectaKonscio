@@ -8,7 +8,7 @@ type Props = {
 };
 
 const GetContent = async (id: string) => {
-  const response = await fetch(`http://localhost:3000/api/content/${id}`, {
+  const response = await fetch(`http://localhost:${process.env.PORT}/api/content/${id}`, {
     cache: "no-store",
   }).then((response: Response) => response.json());
 

@@ -12,8 +12,6 @@ const PageViewerComponent = (props: Props) => {
   const { page } = props;
   const pageClass = new Page(page);
 
-  console.log(page);
-
   const Renderer = {
     Root() {
       const rootNode = pageClass.Root();

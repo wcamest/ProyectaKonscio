@@ -6,15 +6,29 @@ type Props = {
   node: PageNode;
   page: PageDataObject;
   breakpoint?: string;
+  inputPayload?: any;
+  outputPayload?: any;
   selectedNodeId?: string;
 };
 
 const MobileNavigationHeaderComponent = (props: Props) => {
-  const { node, page, breakpoint, selectedNodeId } = props;
+  const {
+    node,
+    page,
+    breakpoint,
+    inputPayload,
+    outputPayload,
+    selectedNodeId,
+  } = props;
 
   return (
     <div className={node.ClassName(breakpoint)}>
-      {node.RenderChildren(breakpoint, undefined, undefined, selectedNodeId)}
+      {node.RenderChildren(
+        breakpoint,
+        inputPayload,
+        outputPayload,
+        selectedNodeId
+      )}
     </div>
   );
 };

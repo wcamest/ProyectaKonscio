@@ -67,7 +67,6 @@ const ElementPropertyGridComponent = (props: Props) => {
             value={numericValue}
             disabled={!pageNode.ActiveProperty(propertyName)}
             onChange={(e: ChangeEvent<HTMLInputElement>) => {
-              console.log(e.target.value);
               if (onChange) onChange(propertyName, parseFloat(e.target.value));
             }}
           />

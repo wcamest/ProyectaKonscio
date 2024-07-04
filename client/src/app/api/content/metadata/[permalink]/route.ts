@@ -5,7 +5,7 @@ export async function GET(request: Request, context: any) {
   const { permalink } = params;
 
   const response = await fetch(
-    `http://localhost:${process.env.BACKEND_PORT}/content/permalink/${permalink}`,
+    `http://localhost:${process.env.BACKEND_PORT}/content/metadata/${permalink}`,
     {
       cache: "no-store",
     }

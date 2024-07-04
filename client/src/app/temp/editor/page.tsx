@@ -5,7 +5,7 @@ type Props = {};
 
 const GetContent = async () => {
   const response = await fetch(
-    `http://localhost:3000/api/content/permalink/home`,
+    `http://localhost:${process.env.PORT}/api/content/permalink/home`,
     {
       cache: "no-store",
     }
