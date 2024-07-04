@@ -1,0 +1,770 @@
+{
+  "id": "RI3P80G4EU8S4YV",
+  "rootNodeId": "HBW43KPGB6CR2YJ",
+  "metadata": {
+    "title": "Historia no Manipulada - ProyectaKonscio",
+    "description": "No Description",
+    "permalink": "historia-no-manipulada"
+  },
+  "nodes": {
+    "HBW43KPGB6CR2YJ": {
+      "id": "HBW43KPGB6CR2YJ",
+      "name": "Root",
+      "type": "RootComponent",
+      "children": ["XM8URZRZ0JGHNS6"],
+      "classList": [],
+      "properties": {}
+    },
+    "XM8URZRZ0JGHNS6": {
+      "type": "MainElement",
+      "id": "XM8URZRZ0JGHNS6",
+      "name": "MainElement",
+      "children": [
+        "XH73XBOIG730LRJ",
+        "DV0EBUCFGEWC1M0",
+        "GOUH8P8ARP0KNX7",
+        "CVYMDXV9PZVMTWS",
+        "TIBTRJLWZ5EBC4Q"
+      ],
+      "classList": ["JFX70LIAAY0PEIF", "GXASHO9TDHR1UM3"],
+      "properties": {},
+      "parentId": "CB54775TUHMJ7O2"
+    },
+    "XH73XBOIG730LRJ": {
+      "type": "SectionElement",
+      "id": "XH73XBOIG730LRJ",
+      "name": "Sección - Video Banner",
+      "children": ["WJ5GPJHJQJBCJZ6", "UUI0JGTOBVGQGZV"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "JFX70LIAAY0PEIF",
+        "PHK1ND7583QU6L7",
+        "Q06YR22LKO0CKOH",
+        "JY9U6B8HKZ219M9"
+      ],
+      "properties": {},
+      "parentId": "XM8URZRZ0JGHNS6"
+    },
+    "WJ5GPJHJQJBCJZ6": {
+      "type": "VideoElement",
+      "id": "WJ5GPJHJQJBCJZ6",
+      "name": "VideoElement",
+      "children": ["RAXYU2TF59ZP6LH"],
+      "classList": [
+        "M1CJBDGDI58Q4G4",
+        "FSFYKXEHGTMBYFS",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS"
+      ],
+      "properties": {
+        "controls": true
+      },
+      "parentId": "XH73XBOIG730LRJ"
+    },
+    "RAXYU2TF59ZP6LH": {
+      "type": "SourceElement",
+      "id": "RAXYU2TF59ZP6LH",
+      "name": "SourceElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/video/0.mp4",
+        "type": "video/mp4"
+      },
+      "parentId": "WJ5GPJHJQJBCJZ6"
+    },
+    "UUI0JGTOBVGQGZV": {
+      "type": "DivElement",
+      "id": "UUI0JGTOBVGQGZV",
+      "name": "DivElement",
+      "children": ["AYZYBY9YDAL1G38", "OY5HA1PEU3YD5XA"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "FSFYKXEHGTMBYFS",
+        "S15F7A9F3ERLX4U",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "Q06YR22LKO0CKOH",
+        "MKTR6XWHQV7G8CY",
+        "KTU8HUYQJYOID0A",
+        "TUR24BXEW4XUGXA",
+        "lg:JU0EGES56YVO9HW",
+        "lg:OXTH7JB40ZHWNAY",
+        "WP4XSMRHQJAFSZN"
+      ],
+      "properties": {},
+      "parentId": "XH73XBOIG730LRJ"
+    },
+    "AYZYBY9YDAL1G38": {
+      "type": "H1Element",
+      "id": "AYZYBY9YDAL1G38",
+      "name": "H1Element",
+      "children": ["YRDUS9L9JHIDC8Y"],
+      "classList": [
+        "RREOPEJ3M5F7MPG",
+        "H3DY2EFA1PLKEVA",
+        "P1VGHVIJNWKFQG7",
+        "lg:YJUVTKQ9ADVOHFB",
+        "xl:XFAWVX9HCRQJBS7"
+      ],
+      "properties": {},
+      "parentId": "UUI0JGTOBVGQGZV"
+    },
+    "YRDUS9L9JHIDC8Y": {
+      "type": "TextElement",
+      "id": "YRDUS9L9JHIDC8Y",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Historia No manipulada"
+      },
+      "parentId": "AYZYBY9YDAL1G38"
+    },
+    "OY5HA1PEU3YD5XA": {
+      "type": "H3Element",
+      "id": "OY5HA1PEU3YD5XA",
+      "name": "H3Element",
+      "children": ["AUDMC30ABFWD9YJ"],
+      "classList": ["lg:T875VT4RM3C52A8"],
+      "properties": {},
+      "parentId": "UUI0JGTOBVGQGZV"
+    },
+    "AUDMC30ABFWD9YJ": {
+      "type": "TextElement",
+      "id": "AUDMC30ABFWD9YJ",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Rio de la Historia No Manipulada"
+      },
+      "parentId": "OY5HA1PEU3YD5XA"
+    },
+    "DV0EBUCFGEWC1M0": {
+      "type": "SectionElement",
+      "id": "DV0EBUCFGEWC1M0",
+      "name": "Sección - Economias Alternativas",
+      "children": ["BS8UA2M0N5THC8X", "LZ2DPOHCXOS6H0Q", "AOANDNWSNNVJ5MV"],
+      "classList": [],
+      "properties": {},
+      "parentId": "XM8URZRZ0JGHNS6"
+    },
+    "BS8UA2M0N5THC8X": {
+      "type": "H1Element",
+      "id": "BS8UA2M0N5THC8X",
+      "name": "H1Element",
+      "children": ["NOIJ5M8Q7B9RFM0"],
+      "classList": [
+        "P1VGHVIJNWKFQG7",
+        "SQPI65MZZETUVMF",
+        "ZY0AO20O57L7S3C",
+        "S15F7A9F3ERLX4U",
+        "ZBZY4MF4RT22Y88",
+        "lg:T875VT4RM3C52A8",
+        "VQXSXK8VYR289ZL"
+      ],
+      "properties": {},
+      "parentId": "DV0EBUCFGEWC1M0"
+    },
+    "NOIJ5M8Q7B9RFM0": {
+      "type": "TextElement",
+      "id": "NOIJ5M8Q7B9RFM0",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Rio de la Historia No manipulada"
+      },
+      "parentId": "BS8UA2M0N5THC8X"
+    },
+    "LZ2DPOHCXOS6H0Q": {
+      "type": "DivElement",
+      "id": "LZ2DPOHCXOS6H0Q",
+      "name": "DivElement",
+      "children": [
+        "WS50XDOI3TT91LN",
+        "IK0SBURDTXQ8R52",
+        "B0R4HYFO1LE30J3",
+        "ULAUZC2S81YE6Q3"
+      ],
+      "classList": [
+        "Z1N9H0DYGRNS2ZO",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "F8BCG2EFMMEX0KF",
+        "lg:MU6ZWZQYKY5TM0F"
+      ],
+      "properties": {},
+      "parentId": "DV0EBUCFGEWC1M0"
+    },
+    "WS50XDOI3TT91LN": {
+      "type": "DivElement",
+      "id": "WS50XDOI3TT91LN",
+      "name": "DivElement",
+      "children": ["OVS495JZBOHYXPP", "EXCLORBLUFN9COL"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "F8BCG2EFMMEX0KF",
+        "lg:P3EY2VL9HM3DZY2",
+        "lg:MU6ZWZQYKY5TM0F"
+      ],
+      "properties": {},
+      "parentId": "LZ2DPOHCXOS6H0Q"
+    },
+    "AOANDNWSNNVJ5MV": {
+      "type": "H1Element",
+      "id": "AOANDNWSNNVJ5MV",
+      "name": "H1Element",
+      "children": ["G9T8CITAA8CH4GH"],
+      "classList": [
+        "P1VGHVIJNWKFQG7",
+        "SQPI65MZZETUVMF",
+        "ZY0AO20O57L7S3C",
+        "S15F7A9F3ERLX4U",
+        "ZBZY4MF4RT22Y88",
+        "lg:T875VT4RM3C52A8",
+        "VQXSXK8VYR289ZL"
+      ],
+      "properties": {},
+      "parentId": "XM8URZRZ0JGHNS6"
+    },
+    "G9T8CITAA8CH4GH": {
+      "type": "TextElement",
+      "id": "G9T8CITAA8CH4GH",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Rio de la Historia No manipulada"
+      },
+      "parentId": "AOANDNWSNNVJ5MV"
+    },
+    "OVS495JZBOHYXPP": {
+      "type": "ImgElement",
+      "id": "OVS495JZBOHYXPP",
+      "name": "ImgElement",
+      "children": [],
+      "classList": ["MKTR6XWHQV7G8CY", "lg:XJSYA12D1Y0WQCM"],
+      "properties": {
+        "src": "/api/image/historia-no-manipulada.jpg",
+        "width": 635,
+        "height": 350
+      },
+      "parentId": "WS50XDOI3TT91LN"
+    },
+    "EXCLORBLUFN9COL": {
+      "type": "PElement",
+      "id": "EXCLORBLUFN9COL",
+      "name": "PElement",
+      "children": ["E49SOSFE5EKS24F"],
+      "classList": ["lg:XJSYA12D1Y0WQCM"],
+      "properties": {},
+      "parentId": "WS50XDOI3TT91LN"
+    },
+    "E49SOSFE5EKS24F": {
+      "type": "TextElement",
+      "id": "E49SOSFE5EKS24F",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Durante décadas los poderes hegemónicos lograron transmitir a las mayorías el cuento de hadas de una «transición democrática» ejemplar … Ahora, es claro para sectores mucho más amplios de población que si algo tuvo de ejemplar la transición fue la absoluta impunidad de los agentes de la dictadura franquista y la garantía de continuidad de una estructura social que se remonta a 500 años atrás. Esta trampa ha ido acompañada de la brutal ofensiva de valores que avanza el capitalismo a través de los medios de creación de opinión, con la que logró convencer a grandes capas de clase trabajadora que había llegado el momento de convertirse en «clases propietarias» y de ponerse a competir entre todas."
+      },
+      "parentId": "EXCLORBLUFN9COL"
+    },
+    "GOUH8P8ARP0KNX7": {
+      "type": "SectionElement",
+      "id": "GOUH8P8ARP0KNX7",
+      "name": "Sección - Documental TROM",
+      "children": ["SQY2QIYQVVHCYJ1"],
+      "classList": ["Z1N9H0DYGRNS2ZO"],
+      "properties": {},
+      "parentId": "XM8URZRZ0JGHNS6"
+    },
+    "SQY2QIYQVVHCYJ1": {
+      "type": "DivElement",
+      "id": "SQY2QIYQVVHCYJ1",
+      "name": "DivElement",
+      "children": ["JZTTNIF6UCAOM6L", "M90HTT9STF9FFJ0"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "lg:P3EY2VL9HM3DZY2",
+        "G0Q1LTZXE30YF2F"
+      ],
+      "properties": {},
+      "parentId": "GOUH8P8ARP0KNX7"
+    },
+    "JZTTNIF6UCAOM6L": {
+      "type": "PElement",
+      "id": "JZTTNIF6UCAOM6L",
+      "name": "PElement",
+      "children": ["H3YLC27JUCINNB1"],
+      "classList": ["TBEA9LLI3PI6ERY"],
+      "properties": {},
+      "parentId": "SQY2QIYQVVHCYJ1"
+    },
+    "H3YLC27JUCINNB1": {
+      "type": "TextElement",
+      "id": "H3YLC27JUCINNB1",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "El documental TROM intenta presentar, de forma simplista, el mundo en el que vivimos los seres humanos. Tratamos de presentar el mundo que se ha descubierto hasta ahora a través de los lentes de la ciencia: desde la evolución de todo (incluidos nosotros) hasta el sistema monetario (el juego que jugamos actualmente), hasta un tipo diferente de mundo que podríamos construir para el beneficio de todos nosotros, luego de regreso a la Tierra. Estamos tratando de presentar alternativas de solución a los problemas actuales y tener en cuenta el futuro, que promete ser más que interesante. Un documental informativo, quizás impactante y perturbador para muchos, dependiendo de cómo digieras la información. El documental está dividido en capítulos y subcapítulos debido a la extensa duración del documental (14 horas) y todas las partes están conectadas por lo que recomendamos verlas en orden"
+      },
+      "parentId": "JZTTNIF6UCAOM6L"
+    },
+    "M90HTT9STF9FFJ0": {
+      "type": "DivElement",
+      "id": "M90HTT9STF9FFJ0",
+      "name": "DivElement",
+      "children": ["LLUJ81ZYIOT14A5"],
+      "classList": [
+        "Z1N9H0DYGRNS2ZO",
+        "CCNFFOXJBJTPLU8",
+        "F4CQIHKGJ0N48T6",
+        "XU1U9GE1VM2AKTJ",
+        "W528IR6D31QEC61",
+        "GD2OWMD6GZTSYSI",
+        "BGQBTEB1IVOFAI1",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "PHK1ND7583QU6L7",
+        "Q06YR22LKO0CKOH",
+        "F8BCG2EFMMEX0KF"
+      ],
+      "properties": {},
+      "parentId": "SQY2QIYQVVHCYJ1"
+    },
+    "LLUJ81ZYIOT14A5": {
+      "type": "DivElement",
+      "id": "LLUJ81ZYIOT14A5",
+      "name": "DivElement",
+      "children": ["FTJ9FK55QZY6PCJ", "DK0PGDF7A6O72OA"],
+      "classList": ["JFX70LIAAY0PEIF", "F8BCG2EFMMEX0KF"],
+      "properties": {},
+      "parentId": "M90HTT9STF9FFJ0"
+    },
+    "FTJ9FK55QZY6PCJ": {
+      "type": "ImgElement",
+      "id": "FTJ9FK55QZY6PCJ",
+      "name": "ImgElement",
+      "children": [],
+      "classList": ["MZUZT9TYS2JXBI4"],
+      "properties": {
+        "src": "/api/image/logo_with_text.svg",
+        "width": 100,
+        "height": 34
+      },
+      "parentId": "LLUJ81ZYIOT14A5"
+    },
+    "DK0PGDF7A6O72OA": {
+      "type": "ImgElement",
+      "id": "DK0PGDF7A6O72OA",
+      "name": "ImgElement",
+      "children": [],
+      "classList": ["MZUZT9TYS2JXBI4"],
+      "properties": {
+        "src": "/api/image/trom-logo.png",
+        "width": 100,
+        "height": 34
+      },
+      "parentId": "M90HTT9STF9FFJ0"
+    },
+    "CVYMDXV9PZVMTWS": {
+      "type": "SectionElement",
+      "id": "CVYMDXV9PZVMTWS",
+      "name": "Sección - Carrusel",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "XM8URZRZ0JGHNS6"
+    },
+    "TIBTRJLWZ5EBC4Q": {
+      "type": "SectionElement",
+      "id": "TIBTRJLWZ5EBC4Q",
+      "name": "Propuestas",
+      "children": ["Y9E4PD46N90YB4M", "CIJD5EW2WRM733M", "NPN36VC21QGMVO2"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "F8BCG2EFMMEX0KF",
+        "Z1N9H0DYGRNS2ZO",
+        "lg:P3EY2VL9HM3DZY2"
+      ],
+      "properties": {},
+      "parentId": "XM8URZRZ0JGHNS6"
+    },
+    "Y9E4PD46N90YB4M": {
+      "type": "DivElement",
+      "id": "Y9E4PD46N90YB4M",
+      "name": "Reunamonos",
+      "children": ["Y7EPRXQ8ENROAWE", "ENB0N8ZZLZL3MMF", "FLXLWBRSY5QQ2S5"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "PHK1ND7583QU6L7",
+        "F8BCG2EFMMEX0KF",
+        "Q06YR22LKO0CKOH",
+        "RO3JY9BN23PL8WG",
+        "TBEA9LLI3PI6ERY"
+      ],
+      "properties": {},
+      "parentId": "TIBTRJLWZ5EBC4Q"
+    },
+    "Y7EPRXQ8ENROAWE": {
+      "type": "ImgElement",
+      "id": "Y7EPRXQ8ENROAWE",
+      "name": "ImgElement",
+      "children": [],
+      "classList": ["MKTR6XWHQV7G8CY"],
+      "properties": {
+        "width": 635,
+        "height": 350,
+        "src": "/api/image/reunamonos-img.jpg"
+      },
+      "parentId": "Y9E4PD46N90YB4M"
+    },
+    "ENB0N8ZZLZL3MMF": {
+      "type": "H2Element",
+      "id": "ENB0N8ZZLZL3MMF",
+      "name": "H2Element",
+      "children": ["FRLZKCMWYPZS47Z"],
+      "classList": ["RREOPEJ3M5F7MPG", "H3DY2EFA1PLKEVA", "K5YNQAIJ9LSUV7E"],
+      "properties": {},
+      "parentId": "Y9E4PD46N90YB4M"
+    },
+    "FRLZKCMWYPZS47Z": {
+      "type": "TextElement",
+      "id": "FRLZKCMWYPZS47Z",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Reunámonos"
+      },
+      "parentId": "ENB0N8ZZLZL3MMF"
+    },
+    "FLXLWBRSY5QQ2S5": {
+      "type": "SpanElement",
+      "id": "FLXLWBRSY5QQ2S5",
+      "name": "SpanElement",
+      "children": ["RHCESKQT8OXYTXN"],
+      "classList": [],
+      "properties": {},
+      "parentId": "Y9E4PD46N90YB4M"
+    },
+    "RHCESKQT8OXYTXN": {
+      "type": "TextElement",
+      "id": "RHCESKQT8OXYTXN",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "en el metaverso, espacio inmersivo para contactar con las propuestas"
+      },
+      "parentId": "FLXLWBRSY5QQ2S5"
+    },
+    "CIJD5EW2WRM733M": {
+      "type": "DivElement",
+      "id": "CIJD5EW2WRM733M",
+      "name": "Concertemos Cita",
+      "children": ["NKKD4O2UST8SJ64", "X9FC1FJB8BD2MP3", "YGOK2XRN016UY8C"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "PHK1ND7583QU6L7",
+        "F8BCG2EFMMEX0KF",
+        "Q06YR22LKO0CKOH",
+        "RO3JY9BN23PL8WG",
+        "TBEA9LLI3PI6ERY"
+      ],
+      "properties": {},
+      "parentId": "XM8URZRZ0JGHNS6"
+    },
+    "NKKD4O2UST8SJ64": {
+      "type": "ImgElement",
+      "id": "NKKD4O2UST8SJ64",
+      "name": "ImgElement",
+      "children": [],
+      "classList": ["MKTR6XWHQV7G8CY"],
+      "properties": {
+        "width": 635,
+        "height": 350,
+        "src": "/api/image/concertemos-cita-img.jpg"
+      },
+      "parentId": "CIJD5EW2WRM733M"
+    },
+    "X9FC1FJB8BD2MP3": {
+      "type": "H2Element",
+      "id": "X9FC1FJB8BD2MP3",
+      "name": "H2Element",
+      "children": ["WON06LEQQVNGDL1"],
+      "classList": ["RREOPEJ3M5F7MPG", "H3DY2EFA1PLKEVA", "K5YNQAIJ9LSUV7E"],
+      "properties": {},
+      "parentId": "CIJD5EW2WRM733M"
+    },
+    "WON06LEQQVNGDL1": {
+      "type": "TextElement",
+      "id": "WON06LEQQVNGDL1",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Concertemos Cita"
+      },
+      "parentId": "X9FC1FJB8BD2MP3"
+    },
+    "YGOK2XRN016UY8C": {
+      "type": "SpanElement",
+      "id": "YGOK2XRN016UY8C",
+      "name": "SpanElement",
+      "children": ["UE3Q69IGPKN3KGZ"],
+      "classList": [],
+      "properties": {},
+      "parentId": "CIJD5EW2WRM733M"
+    },
+    "UE3Q69IGPKN3KGZ": {
+      "type": "TextElement",
+      "id": "UE3Q69IGPKN3KGZ",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Agendala para vernos en Konscio3D"
+      },
+      "parentId": "YGOK2XRN016UY8C"
+    },
+    "NPN36VC21QGMVO2": {
+      "type": "DivElement",
+      "id": "NPN36VC21QGMVO2",
+      "name": "WebRTC",
+      "children": ["UICABHWFQSD4ZPV", "YFVGAPRBKI7LWT3", "GU34BFTCQF5C3KS"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "PHK1ND7583QU6L7",
+        "F8BCG2EFMMEX0KF",
+        "Q06YR22LKO0CKOH",
+        "RO3JY9BN23PL8WG",
+        "TBEA9LLI3PI6ERY"
+      ],
+      "properties": {},
+      "parentId": "XM8URZRZ0JGHNS6"
+    },
+    "UICABHWFQSD4ZPV": {
+      "type": "ImgElement",
+      "id": "UICABHWFQSD4ZPV",
+      "name": "ImgElement",
+      "children": [],
+      "classList": ["MKTR6XWHQV7G8CY"],
+      "properties": {
+        "width": 635,
+        "height": 350,
+        "src": "/api/image/webRTC-img.jpg"
+      },
+      "parentId": "NPN36VC21QGMVO2"
+    },
+    "YFVGAPRBKI7LWT3": {
+      "type": "H2Element",
+      "id": "YFVGAPRBKI7LWT3",
+      "name": "H2Element",
+      "children": ["SHG6NKWJ71EK8C2"],
+      "classList": ["RREOPEJ3M5F7MPG", "H3DY2EFA1PLKEVA", "K5YNQAIJ9LSUV7E"],
+      "properties": {},
+      "parentId": "NPN36VC21QGMVO2"
+    },
+    "SHG6NKWJ71EK8C2": {
+      "type": "TextElement",
+      "id": "SHG6NKWJ71EK8C2",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "WebRTC"
+      },
+      "parentId": "YFVGAPRBKI7LWT3"
+    },
+    "GU34BFTCQF5C3KS": {
+      "type": "SpanElement",
+      "id": "GU34BFTCQF5C3KS",
+      "name": "SpanElement",
+      "children": ["HVHGS94JZE826L1"],
+      "classList": [],
+      "properties": {},
+      "parentId": "NPN36VC21QGMVO2"
+    },
+    "HVHGS94JZE826L1": {
+      "type": "TextElement",
+      "id": "HVHGS94JZE826L1",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Salas interactivas para conversar sobre las propuestas"
+      },
+      "parentId": "GU34BFTCQF5C3KS"
+    },
+    "ULAUZC2S81YE6Q3": {
+      "type": "PElement",
+      "id": "ULAUZC2S81YE6Q3",
+      "name": "PElement",
+      "children": ["TP56ZKYOSURO5G4"],
+      "classList": [],
+      "properties": {},
+      "parentId": "LZ2DPOHCXOS6H0Q"
+    },
+    "TP56ZKYOSURO5G4": {
+      "type": "TextElement",
+      "id": "TP56ZKYOSURO5G4",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "A ello se suma la práctica de una clase política que si bien en un primer momento apostó por el estado de bienestar, luego ha abrazado sin pudor el proyecto neoliberal para administrar el desmantelamiento de los servicios públicos. Desde entonces, se les ha permitido que se enriquecieran ilegalmente mientras administrarán el poder público para la continuidad de la estructura social heredada y para beneficio de los intereses privados de acumulación, que son los que propiciaron la estafa del crédito inmobiliario."
+      },
+      "parentId": "ULAUZC2S81YE6Q3"
+    }
+  },
+  "styles": {
+    "base": {
+      "JFX70LIAAY0PEIF": {
+        "display": "flex"
+      },
+      "GXASHO9TDHR1UM3": {
+        "flex-direction": "column"
+      },
+      "Q06YR22LKO0CKOH": {
+        "align-items": "center"
+      },
+      "MKTR6XWHQV7G8CY": {
+        "width": "100%"
+      },
+      "M1CJBDGDI58Q4G4": {
+        "position": "absolute"
+      },
+      "GZH2RVWS66B6T2B": {
+        "position": "relative"
+      },
+      "PHK1ND7583QU6L7": {
+        "justify-content": "center"
+      },
+      "JY9U6B8HKZ219M9": {
+        "aspect-ratio": "16 / 9"
+      },
+      "L2YI8TYHHPZVYTS": {
+        "height": "100%"
+      },
+      "FSFYKXEHGTMBYFS": {
+        "z-index": "1"
+      },
+      "RREOPEJ3M5F7MPG": {
+        "font-size": "2em"
+      },
+      "H3DY2EFA1PLKEVA": {
+        "font-weight": "700"
+      },
+      "S15F7A9F3ERLX4U": {
+        "color": "white"
+      },
+      "KTU8HUYQJYOID0A": {
+        "padding": "10px"
+      },
+      "TUR24BXEW4XUGXA": {
+        "margin": "10px 30px"
+      },
+      "P1VGHVIJNWKFQG7": {
+        "text-align": "center"
+      },
+      "SQPI65MZZETUVMF": {
+        "padding": "5px"
+      },
+      "ZY0AO20O57L7S3C": {
+        "text-transform": "uppercase"
+      },
+      "ZBZY4MF4RT22Y88": {
+        "font-weight": "bold"
+      },
+      "TBEA9LLI3PI6ERY": {
+        "padding": "20px"
+      },
+      "Z1N9H0DYGRNS2ZO": {
+        "padding": "30px"
+      },
+      "F8BCG2EFMMEX0KF": {
+        "gap": "10px"
+      },
+      "CCNFFOXJBJTPLU8": {
+        "background-image": "url(\"/api/image/trom_banner.jpg\")"
+      },
+      "F4CQIHKGJ0N48T6": {
+        "background-color": "#fff9"
+      },
+      "XU1U9GE1VM2AKTJ": {
+        "background-blend-mode": "color"
+      },
+      "W528IR6D31QEC61": {
+        "backgroud-position": "center center"
+      },
+      "GD2OWMD6GZTSYSI": {
+        "background-size": "cover"
+      },
+      "BGQBTEB1IVOFAI1": {
+        "background-repeat": "no-repeat"
+      },
+      "K5YNQAIJ9LSUV7E": {
+        "color": "#0055a5"
+      },
+      "RO3JY9BN23PL8WG": {
+        "border": "1px solid rgba(0,0,0,.3)"
+      },
+      "MZUZT9TYS2JXBI4": {
+        "min-width": "150px"
+      },
+      "WP4XSMRHQJAFSZN": {
+        "background-color": "rgba(255, 114, 44, 0.5)"
+      },
+      "VQXSXK8VYR289ZL": {
+        "background-color": "rgb(255, 114, 44)"
+      },
+      "G0Q1LTZXE30YF2F": {
+        "border": "1px solid rgb(255, 114, 44)"
+      }
+    },
+    "sm": {},
+    "md": {},
+    "lg": {
+      "JU0EGES56YVO9HW": {
+        "width": "fit-content"
+      },
+      "OXTH7JB40ZHWNAY": {
+        "padding": "50px 100px"
+      },
+      "T875VT4RM3C52A8": {
+        "font-size": "2em"
+      },
+      "P3EY2VL9HM3DZY2": {
+        "flex-direction": "row"
+      },
+      "XJSYA12D1Y0WQCM": {
+        "width": "50%"
+      },
+      "MU6ZWZQYKY5TM0F": {
+        "gap": "20px"
+      },
+      "YJUVTKQ9ADVOHFB": {
+        "font-size": "3em"
+      }
+    },
+    "xl": {
+      "XFAWVX9HCRQJBS7": {
+        "font-size": "5em"
+      }
+    },
+    "2xl": {}
+  },
+  "layoutComponents": ["QHRZSBZUEIHSM4A"]
+}

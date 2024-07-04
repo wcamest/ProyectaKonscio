@@ -22,7 +22,7 @@ const Functions = {
           [componentRootId]: {
             ...component.nodes[componentRootId],
             type: "LayoutComponent",
-            parentId: rootNodeId
+            parentId: rootNodeId,
           },
         };
 
@@ -114,6 +114,23 @@ const ContentController = {
       const updatedContent = Functions.JoinLayoutComponents(content);
 
       return res.json(updatedContent);
+    }
+
+    res.json(mockData["empty"]);
+  },
+  GetMetadata(req, res) {
+    const { permalink } = req.params;
+
+    const kvp = Object.entries(mockData).filter((kvp) => {
+      const contentPermalink = kvp[1].metadata.permalink;
+
+      return permalink === contentPermalink;
+    });
+
+    if (kvp.length) {
+      const content = kvp[0][1];
+
+      return res.json(content.metadata);
     }
 
     res.json(mockData["empty"]);

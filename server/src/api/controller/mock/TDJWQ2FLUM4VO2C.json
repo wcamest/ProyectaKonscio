@@ -512,7 +512,8 @@
         "D9M3EFYZU857UJM",
         "xl:AV33087VO530AI5",
         "lg:ESFV4JMA7UIEVR8",
-        "T7B2G5WHBQQZYWP"
+        "T7B2G5WHBQQZYWP",
+        "I14PELOODEZUGMW"
       ],
       "properties": {},
       "parentId": "AE5WJ8RA6W3JTYF"
@@ -583,7 +584,9 @@
       "properties": {
         "title": "Misión",
         "headerBackground": "#f63",
-        "headerColor": "white"
+        "headerColor": "white",
+        "iconSrc": "/api/image/mision-icon.svg",
+        "iconAlt": "Icono de un megafono"
       },
       "parentId": "G3UDMEV658UHS7I"
     },
@@ -596,7 +599,9 @@
       "properties": {
         "title": "Visión",
         "headerBackground": "#f63",
-        "headerColor": "white"
+        "headerColor": "white",
+        "iconSrc": "/api/image/vision-icon.svg",
+        "iconAlt": "icono de un ojo"
       },
       "parentId": "G3UDMEV658UHS7I"
     },
@@ -609,7 +614,9 @@
       "properties": {
         "title": "Así lo hacemos",
         "headerBackground": "#f63",
-        "headerColor": "white"
+        "headerColor": "white",
+        "iconSrc": "/api/image/asi-lo-hacemos-icon.svg",
+        "iconAlt": "Icono de una estrella"
       },
       "parentId": "G3UDMEV658UHS7I"
     },
@@ -676,7 +683,7 @@
     "GMZ8UHKWWH137LY": {
       "type": "DivElement",
       "id": "GMZ8UHKWWH137LY",
-      "name": "DivElement",
+      "name": "FlipBoxes",
       "children": [
         "FYZWYX0A3KIRJRE",
         "KU0S581OOQ9MA0U",
@@ -686,7 +693,13 @@
         "QJ2P4VASSXVH7I7",
         "M2BBSQR3GQCYNFW",
         "UCS45GDQNHBV36J",
-        "NL3ES6NRFID81DA"
+        "NL3ES6NRFID81DA",
+        "HPT9L6HC4W3OD03",
+        "K7IKQKC7OOD1C32",
+        "RE0KSKSO2UADLNZ",
+        "ZJ819VYHMIQJYCU",
+        "WTVIJFF55INQTI6",
+        "NQKF6A7GB79UCSZ"
       ],
       "classList": [
         "ED6C3E9RJ9ODT2U",
@@ -701,7 +714,7 @@
     "FYZWYX0A3KIRJRE": {
       "type": "FlipBoxComponent",
       "id": "FYZWYX0A3KIRJRE",
-      "name": "FlipBoxComponent",
+      "name": "Puerto del Comercio Justo - FlipBox",
       "children": ["DBT8VUNIL7AVYNT", "CUD865QP1Q9GJCY"],
       "classList": ["VDN8UCPNKVPMO4G", "X5W3N6GCPH7AY5N"],
       "properties": {},
@@ -710,9 +723,9 @@
     "KU0S581OOQ9MA0U": {
       "type": "FlipBoxComponent",
       "id": "KU0S581OOQ9MA0U",
-      "name": "FlipBoxComponent",
-      "children": [],
-      "classList": ["VDN8UCPNKVPMO4G"],
+      "name": "Avenida de la Educación Trascendente - FlipBox",
+      "children": ["NPFRRN1C2DF0XML", "MLDIXNZFL6FMVXU"],
+      "classList": ["VDN8UCPNKVPMO4G", "RL06FFZRJJN8Y7B"],
       "properties": {
         "flipDirection": "vertical"
       },
@@ -721,75 +734,9 @@
     "VSAVMCHHMSU9UX2": {
       "type": "FlipBoxComponent",
       "id": "VSAVMCHHMSU9UX2",
-      "name": "FlipBoxComponent",
-      "children": [],
-      "classList": ["VDN8UCPNKVPMO4G"],
-      "properties": {
-        "flipDirection": "horizontal",
-        "invert": true
-      },
-      "parentId": "AE5WJ8RA6W3JTYF"
-    },
-    "LBD7WDJG0DP7QF6": {
-      "type": "FlipBoxComponent",
-      "id": "LBD7WDJG0DP7QF6",
-      "name": "FlipBoxComponent",
-      "children": [],
-      "classList": ["VDN8UCPNKVPMO4G"],
-      "properties": {
-        "flipDirection": "vertical"
-      },
-      "parentId": "AE5WJ8RA6W3JTYF"
-    },
-    "HWD4XROAKRS11KL": {
-      "type": "FlipBoxComponent",
-      "id": "HWD4XROAKRS11KL",
-      "name": "FlipBoxComponent",
-      "children": [],
-      "classList": ["VDN8UCPNKVPMO4G"],
-      "properties": {
-        "flipDirection": "horizontal",
-        "invert": true
-      },
-      "parentId": "AE5WJ8RA6W3JTYF"
-    },
-    "QJ2P4VASSXVH7I7": {
-      "type": "FlipBoxComponent",
-      "id": "QJ2P4VASSXVH7I7",
-      "name": "FlipBoxComponent",
-      "children": [],
-      "classList": ["VDN8UCPNKVPMO4G"],
-      "properties": {
-        "flipDirection": "vertical"
-      },
-      "parentId": "AE5WJ8RA6W3JTYF"
-    },
-    "M2BBSQR3GQCYNFW": {
-      "type": "FlipBoxComponent",
-      "id": "M2BBSQR3GQCYNFW",
-      "name": "FlipBoxComponent",
-      "children": [],
-      "classList": ["VDN8UCPNKVPMO4G"],
-      "properties": {},
-      "parentId": "AE5WJ8RA6W3JTYF"
-    },
-    "UCS45GDQNHBV36J": {
-      "type": "FlipBoxComponent",
-      "id": "UCS45GDQNHBV36J",
-      "name": "FlipBoxComponent",
-      "children": [],
-      "classList": ["VDN8UCPNKVPMO4G"],
-      "properties": {
-        "flipDirection": "vertical"
-      },
-      "parentId": "AE5WJ8RA6W3JTYF"
-    },
-    "NL3ES6NRFID81DA": {
-      "type": "FlipBoxComponent",
-      "id": "NL3ES6NRFID81DA",
-      "name": "FlipBoxComponent",
-      "children": [],
-      "classList": ["VDN8UCPNKVPMO4G"],
+      "name": "Plaza de la Cultura Inclusiva - FlipBox",
+      "children": ["MBHXMHL0VOBK09I", "ZEP0E5VLCJDNUVO"],
+      "classList": ["VDN8UCPNKVPMO4G", "AA4NJ3GQX0QLHB7"],
       "properties": {
         "flipDirection": "horizontal",
         "invert": true
@@ -816,7 +763,7 @@
       "type": "DivElement",
       "id": "RW3OLC0UA3ZSTEA",
       "name": "DivElement",
-      "children": [],
+      "children": ["P4A01XBADTAL728"],
       "classList": [
         "WI7NA1MXC63W4NS",
         "RDUIST2V1DLUQTK",
@@ -832,7 +779,7 @@
       "type": "DivElement",
       "id": "CUD865QP1Q9GJCY",
       "name": "DivElement",
-      "children": [],
+      "children": ["N1DTLPMDTMM7ZUB"],
       "classList": ["A234DD3FD2F1EDD", "MS0WYFTPDQBC27D", "X5W3N6GCPH7AY5N"],
       "properties": {},
       "parentId": "FYZWYX0A3KIRJRE"
@@ -958,6 +905,1531 @@
         "fill": true
       },
       "parentId": "QMBA3HWCU2V1GKX"
+    },
+    "NPFRRN1C2DF0XML": {
+      "type": "DivElement",
+      "id": "NPFRRN1C2DF0XML",
+      "name": "DivElement",
+      "children": ["XKZS4GMGC54GH9Y"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "KFLMZECL1Q0BYQ1",
+        "H11UX8S43DGL63N",
+        "YGZAFGABFVKV4VE",
+        "NL218A6RI4WQS11"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "XKZS4GMGC54GH9Y": {
+      "type": "DivElement",
+      "id": "XKZS4GMGC54GH9Y",
+      "name": "DivElement",
+      "children": ["SXVKCHQ9XOREXE5"],
+      "classList": [
+        "WI7NA1MXC63W4NS",
+        "RDUIST2V1DLUQTK",
+        "FNQFQXDUJYLU1ZF",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "IEASXMTXU2QQ0WV"
+      ],
+      "properties": {},
+      "parentId": "NPFRRN1C2DF0XML"
+    },
+    "MLDIXNZFL6FMVXU": {
+      "type": "DivElement",
+      "id": "MLDIXNZFL6FMVXU",
+      "name": "DivElement",
+      "children": ["HCKNBDDVMI3VXBH"],
+      "classList": ["A234DD3FD2F1EDD", "MS0WYFTPDQBC27D", "RL06FFZRJJN8Y7B"],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "MBHXMHL0VOBK09I": {
+      "type": "DivElement",
+      "id": "MBHXMHL0VOBK09I",
+      "name": "DivElement",
+      "children": ["Z40RTQKODC0Z6TW"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "KFLMZECL1Q0BYQ1",
+        "H11UX8S43DGL63N",
+        "YGZAFGABFVKV4VE",
+        "H02SEDTILQC1BEE"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "Z40RTQKODC0Z6TW": {
+      "type": "DivElement",
+      "id": "Z40RTQKODC0Z6TW",
+      "name": "DivElement",
+      "children": ["ACQVI6ITXAA6ZT6"],
+      "classList": [
+        "WI7NA1MXC63W4NS",
+        "RDUIST2V1DLUQTK",
+        "FNQFQXDUJYLU1ZF",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "P6CDC6QENP4BTYC"
+      ],
+      "properties": {},
+      "parentId": "MBHXMHL0VOBK09I"
+    },
+    "ZEP0E5VLCJDNUVO": {
+      "type": "DivElement",
+      "id": "ZEP0E5VLCJDNUVO",
+      "name": "DivElement",
+      "children": ["IQHHKUE15KDTBDH"],
+      "classList": ["A234DD3FD2F1EDD", "MS0WYFTPDQBC27D", "AA4NJ3GQX0QLHB7"],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "HPT9L6HC4W3OD03": {
+      "type": "FlipBoxComponent",
+      "id": "HPT9L6HC4W3OD03",
+      "name": "Costa Ecologia - FlipBox",
+      "children": ["P1F2Q8CN9AQ33F8", "X4AN8LYT84IM07S"],
+      "classList": ["VDN8UCPNKVPMO4G", "A6C0WMJEQZG2AHG"],
+      "properties": {
+        "flipDirection": "horizontal",
+        "invert": true
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "P1F2Q8CN9AQ33F8": {
+      "type": "DivElement",
+      "id": "P1F2Q8CN9AQ33F8",
+      "name": "DivElement",
+      "children": ["IAZWC1GUO1ODGGW"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "KFLMZECL1Q0BYQ1",
+        "H11UX8S43DGL63N",
+        "YGZAFGABFVKV4VE",
+        "GURZ5UADHSJQKQV"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "IAZWC1GUO1ODGGW": {
+      "type": "DivElement",
+      "id": "IAZWC1GUO1ODGGW",
+      "name": "DivElement",
+      "children": ["K8W30HAJZSKPQ5P"],
+      "classList": [
+        "WI7NA1MXC63W4NS",
+        "RDUIST2V1DLUQTK",
+        "FNQFQXDUJYLU1ZF",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "JLMQNTRHE98MQSD"
+      ],
+      "properties": {},
+      "parentId": "P1F2Q8CN9AQ33F8"
+    },
+    "X4AN8LYT84IM07S": {
+      "type": "DivElement",
+      "id": "X4AN8LYT84IM07S",
+      "name": "DivElement",
+      "children": ["L9MA6MGHZVYGUAO"],
+      "classList": ["A234DD3FD2F1EDD", "MS0WYFTPDQBC27D", "A6C0WMJEQZG2AHG"],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "K7IKQKC7OOD1C32": {
+      "type": "FlipBoxComponent",
+      "id": "K7IKQKC7OOD1C32",
+      "name": "Parque de las Innovaciones Tecnologicas - FlipBox",
+      "children": ["O3P13B18FJRATYI", "EEJQQ4T04TRH96N"],
+      "classList": ["VDN8UCPNKVPMO4G", "OUTDJI07R4JXKF3"],
+      "properties": {
+        "flipDirection": "horizontal",
+        "invert": true
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "O3P13B18FJRATYI": {
+      "type": "DivElement",
+      "id": "O3P13B18FJRATYI",
+      "name": "DivElement",
+      "children": ["QNGZ9AAOLJTBY9W"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "KFLMZECL1Q0BYQ1",
+        "H11UX8S43DGL63N",
+        "YGZAFGABFVKV4VE",
+        "I36X31VKS0PATR3"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "QNGZ9AAOLJTBY9W": {
+      "type": "DivElement",
+      "id": "QNGZ9AAOLJTBY9W",
+      "name": "DivElement",
+      "children": ["VSWLBG62U4RWC39"],
+      "classList": [
+        "WI7NA1MXC63W4NS",
+        "RDUIST2V1DLUQTK",
+        "FNQFQXDUJYLU1ZF",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "K3CLTCVYSSGXCDY"
+      ],
+      "properties": {},
+      "parentId": "O3P13B18FJRATYI"
+    },
+    "EEJQQ4T04TRH96N": {
+      "type": "DivElement",
+      "id": "EEJQQ4T04TRH96N",
+      "name": "DivElement",
+      "children": ["NJNMJ5G265RQIP1"],
+      "classList": ["A234DD3FD2F1EDD", "MS0WYFTPDQBC27D", "OUTDJI07R4JXKF3"],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "RE0KSKSO2UADLNZ": {
+      "type": "FlipBoxComponent",
+      "id": "RE0KSKSO2UADLNZ",
+      "name": "Café Redacción - Periodismo Digno Ciudadano - FlipBOx",
+      "children": ["BH6ID0ZB7MD9FJ9", "O31BRWM90306H29"],
+      "classList": ["VDN8UCPNKVPMO4G", "SOKHNDEJ7U08859"],
+      "properties": {
+        "flipDirection": "horizontal",
+        "invert": true
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "BH6ID0ZB7MD9FJ9": {
+      "type": "DivElement",
+      "id": "BH6ID0ZB7MD9FJ9",
+      "name": "DivElement",
+      "children": ["R89SEITPCR2QWAU"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "KFLMZECL1Q0BYQ1",
+        "H11UX8S43DGL63N",
+        "YGZAFGABFVKV4VE",
+        "K0HTPWTVWQ0YQNK"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "R89SEITPCR2QWAU": {
+      "type": "DivElement",
+      "id": "R89SEITPCR2QWAU",
+      "name": "DivElement",
+      "children": ["J8RBERY7VATRXBS"],
+      "classList": [
+        "WI7NA1MXC63W4NS",
+        "RDUIST2V1DLUQTK",
+        "FNQFQXDUJYLU1ZF",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "IK5TBWMQ53IOMLY"
+      ],
+      "properties": {},
+      "parentId": "BH6ID0ZB7MD9FJ9"
+    },
+    "O31BRWM90306H29": {
+      "type": "DivElement",
+      "id": "O31BRWM90306H29",
+      "name": "DivElement",
+      "children": ["S2YVWZPUW2V9W0Z"],
+      "classList": ["A234DD3FD2F1EDD", "MS0WYFTPDQBC27D", "SOKHNDEJ7U08859"],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "ZJ819VYHMIQJYCU": {
+      "type": "FlipBoxComponent",
+      "id": "ZJ819VYHMIQJYCU",
+      "name": "Gran Via Politica para la Gente Decente - FlipBox",
+      "children": ["MSSS765FX40WG8Z", "FJU5UCJPM8P71BP"],
+      "classList": ["VDN8UCPNKVPMO4G", "AN46884EP9B4MW3"],
+      "properties": {
+        "flipDirection": "horizontal",
+        "invert": true
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "MSSS765FX40WG8Z": {
+      "type": "DivElement",
+      "id": "MSSS765FX40WG8Z",
+      "name": "DivElement",
+      "children": ["UFP7TQ1GWX0S6P3"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "KFLMZECL1Q0BYQ1",
+        "H11UX8S43DGL63N",
+        "YGZAFGABFVKV4VE",
+        "Z2KLBF4FJVXA3VP"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "UFP7TQ1GWX0S6P3": {
+      "type": "DivElement",
+      "id": "UFP7TQ1GWX0S6P3",
+      "name": "DivElement",
+      "children": ["VEWCJBFQ4U5YOPD"],
+      "classList": [
+        "WI7NA1MXC63W4NS",
+        "RDUIST2V1DLUQTK",
+        "FNQFQXDUJYLU1ZF",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "MHIVJGEOYCF0PVV"
+      ],
+      "properties": {},
+      "parentId": "MSSS765FX40WG8Z"
+    },
+    "FJU5UCJPM8P71BP": {
+      "type": "DivElement",
+      "id": "FJU5UCJPM8P71BP",
+      "name": "DivElement",
+      "children": ["KMEW0EZ9O1URAXA"],
+      "classList": ["A234DD3FD2F1EDD", "MS0WYFTPDQBC27D", "AN46884EP9B4MW3"],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "WTVIJFF55INQTI6": {
+      "type": "FlipBoxComponent",
+      "id": "WTVIJFF55INQTI6",
+      "name": "Rio de la Historia no Manipulada",
+      "children": ["PZACUB5JLFAOPAA", "ANU277OCMT0IZSO"],
+      "classList": ["VDN8UCPNKVPMO4G", "OUJTIPXY41I1GNE"],
+      "properties": {
+        "flipDirection": "horizontal",
+        "invert": true
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "PZACUB5JLFAOPAA": {
+      "type": "DivElement",
+      "id": "PZACUB5JLFAOPAA",
+      "name": "DivElement",
+      "children": ["ICJR26PV78TZVCD"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "KFLMZECL1Q0BYQ1",
+        "H11UX8S43DGL63N",
+        "YGZAFGABFVKV4VE",
+        "DBHU8QEC9DTW9D3"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "ICJR26PV78TZVCD": {
+      "type": "DivElement",
+      "id": "ICJR26PV78TZVCD",
+      "name": "DivElement",
+      "children": ["U739ENRLTN6R2EL"],
+      "classList": [
+        "WI7NA1MXC63W4NS",
+        "RDUIST2V1DLUQTK",
+        "FNQFQXDUJYLU1ZF",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "QBGYSS30B4YB45I"
+      ],
+      "properties": {},
+      "parentId": "PZACUB5JLFAOPAA"
+    },
+    "ANU277OCMT0IZSO": {
+      "type": "DivElement",
+      "id": "ANU277OCMT0IZSO",
+      "name": "DivElement",
+      "children": ["BMZ5LHB903WGGJN"],
+      "classList": ["A234DD3FD2F1EDD", "MS0WYFTPDQBC27D", "OUJTIPXY41I1GNE"],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "NQKF6A7GB79UCSZ": {
+      "type": "FlipBoxComponent",
+      "id": "NQKF6A7GB79UCSZ",
+      "name": "Bosque de la Salud y la Nutrición",
+      "children": ["HVXWIS7C91ZPFOX", "E9C0E3OHC5JPCJO"],
+      "classList": ["VDN8UCPNKVPMO4G", "XDS270PCLHY9X25"],
+      "properties": {
+        "flipDirection": "horizontal",
+        "invert": true
+      },
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "HVXWIS7C91ZPFOX": {
+      "type": "DivElement",
+      "id": "HVXWIS7C91ZPFOX",
+      "name": "DivElement",
+      "children": ["OA22NSUUV3BAYMZ"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "KFLMZECL1Q0BYQ1",
+        "H11UX8S43DGL63N",
+        "YGZAFGABFVKV4VE",
+        "JZSHB7B155H6E9H"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "OA22NSUUV3BAYMZ": {
+      "type": "DivElement",
+      "id": "OA22NSUUV3BAYMZ",
+      "name": "DivElement",
+      "children": ["JFT82NEFCWRZLCP"],
+      "classList": [
+        "WI7NA1MXC63W4NS",
+        "RDUIST2V1DLUQTK",
+        "FNQFQXDUJYLU1ZF",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "Q8SXBWDMJEWGR0K"
+      ],
+      "properties": {},
+      "parentId": "HVXWIS7C91ZPFOX"
+    },
+    "E9C0E3OHC5JPCJO": {
+      "type": "DivElement",
+      "id": "E9C0E3OHC5JPCJO",
+      "name": "DivElement",
+      "children": ["ICBANRCVRRVFUYS"],
+      "classList": ["A234DD3FD2F1EDD", "MS0WYFTPDQBC27D", "XDS270PCLHY9X25"],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "P4A01XBADTAL728": {
+      "type": "DivElement",
+      "id": "P4A01XBADTAL728",
+      "name": "DivElement",
+      "children": ["BVZHQ3EYDQD2UEI", "MVVBQI11TD3QXO5", "WTGOJYAN7TZDSJE"],
+      "classList": [
+        "MB52VU9KGEZ5NBX",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "CGIQY2Q1SLGT1QU",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "GOKOMF7E1BEOGH4",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "RW3OLC0UA3ZSTEA"
+    },
+    "BVZHQ3EYDQD2UEI": {
+      "type": "ImgElement",
+      "id": "BVZHQ3EYDQD2UEI",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/ship-icon.svg",
+        "width": 45,
+        "height": 40,
+        "alt": "Icono de un barco"
+      },
+      "parentId": "P4A01XBADTAL728"
+    },
+    "MVVBQI11TD3QXO5": {
+      "type": "H1Element",
+      "id": "MVVBQI11TD3QXO5",
+      "name": "H1Element",
+      "children": ["YK31Z9U0763V24A"],
+      "classList": [
+        "D9M3EFYZU857UJM",
+        "JL9HAK621KF0MZU",
+        "CS09JOAUH53LZXC",
+        "xl:SGD55NQKU3X7RR0"
+      ],
+      "properties": {},
+      "parentId": "P4A01XBADTAL728"
+    },
+    "YK31Z9U0763V24A": {
+      "type": "TextElement",
+      "id": "YK31Z9U0763V24A",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Puerto del Comercio Justo"
+      },
+      "parentId": "MVVBQI11TD3QXO5"
+    },
+    "WTGOJYAN7TZDSJE": {
+      "type": "PElement",
+      "id": "WTGOJYAN7TZDSJE",
+      "name": "PElement",
+      "children": ["YFG34N3CZL9HFPP"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "P4A01XBADTAL728"
+    },
+    "YFG34N3CZL9HFPP": {
+      "type": "TextElement",
+      "id": "YFG34N3CZL9HFPP",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Nuestras propuestas se enfocan en promover una economía real colaborativa y en fomentar el comercio justo, que respeta los derechos humanos y del medio ambiente. De esta manera, nos alejamos de las prácticas especulativas que amenazan estos derechos fundamentales."
+      },
+      "parentId": "WTGOJYAN7TZDSJE"
+    },
+    "SXVKCHQ9XOREXE5": {
+      "type": "DivElement",
+      "id": "SXVKCHQ9XOREXE5",
+      "name": "DivElement",
+      "children": ["FECT10BNVM9S7OS", "SA3YMIGIWYS5DUS", "BQBEYQ3H96LRP8V"],
+      "classList": [
+        "MB52VU9KGEZ5NBX",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "CGIQY2Q1SLGT1QU",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "GOKOMF7E1BEOGH4",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "NPFRRN1C2DF0XML"
+    },
+    "FECT10BNVM9S7OS": {
+      "type": "ImgElement",
+      "id": "FECT10BNVM9S7OS",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/road-icon.svg",
+        "width": 45,
+        "height": 40,
+        "alt": "Icono de un barco"
+      },
+      "parentId": "SXVKCHQ9XOREXE5"
+    },
+    "SA3YMIGIWYS5DUS": {
+      "type": "H1Element",
+      "id": "SA3YMIGIWYS5DUS",
+      "name": "H1Element",
+      "children": ["YQAZWCMSILSNF3J"],
+      "classList": [
+        "D9M3EFYZU857UJM",
+        "JL9HAK621KF0MZU",
+        "CS09JOAUH53LZXC",
+        "xl:SGD55NQKU3X7RR0"
+      ],
+      "properties": {},
+      "parentId": "SXVKCHQ9XOREXE5"
+    },
+    "YQAZWCMSILSNF3J": {
+      "type": "TextElement",
+      "id": "YQAZWCMSILSNF3J",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Avenida de la Educación Trascendente"
+      },
+      "parentId": "SA3YMIGIWYS5DUS"
+    },
+    "BQBEYQ3H96LRP8V": {
+      "type": "PElement",
+      "id": "BQBEYQ3H96LRP8V",
+      "name": "PElement",
+      "children": ["YH6UWXFD77VLH5T"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "SXVKCHQ9XOREXE5"
+    },
+    "YH6UWXFD77VLH5T": {
+      "type": "TextElement",
+      "id": "YH6UWXFD77VLH5T",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Es hora de una transformación educativa radical y las propuestas alternativas son la clave. Fundación Proyecta Konscio se dedica a fomentar estas alternativas innovadoras, que desafían la educación obsoleta y buscan crear un futuro educativo más prometedor."
+      },
+      "parentId": "BQBEYQ3H96LRP8V"
+    },
+    "ACQVI6ITXAA6ZT6": {
+      "type": "DivElement",
+      "id": "ACQVI6ITXAA6ZT6",
+      "name": "DivElement",
+      "children": ["PK6O3L1SK7RWVRK", "C2OYRR0D7DB8AT7", "B3IQH56HE44VNOD"],
+      "classList": [
+        "MB52VU9KGEZ5NBX",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "CGIQY2Q1SLGT1QU",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "GOKOMF7E1BEOGH4",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "MBHXMHL0VOBK09I"
+    },
+    "PK6O3L1SK7RWVRK": {
+      "type": "ImgElement",
+      "id": "PK6O3L1SK7RWVRK",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/rainbow-icon.svg",
+        "width": 45,
+        "height": 40,
+        "alt": "Icono de un barco"
+      },
+      "parentId": "ACQVI6ITXAA6ZT6"
+    },
+    "C2OYRR0D7DB8AT7": {
+      "type": "H1Element",
+      "id": "C2OYRR0D7DB8AT7",
+      "name": "H1Element",
+      "children": ["QY24YOI0N324VIN"],
+      "classList": [
+        "D9M3EFYZU857UJM",
+        "JL9HAK621KF0MZU",
+        "CS09JOAUH53LZXC",
+        "xl:SGD55NQKU3X7RR0"
+      ],
+      "properties": {},
+      "parentId": "ACQVI6ITXAA6ZT6"
+    },
+    "QY24YOI0N324VIN": {
+      "type": "TextElement",
+      "id": "QY24YOI0N324VIN",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Plaza de la Cultura Inclusiva"
+      },
+      "parentId": "C2OYRR0D7DB8AT7"
+    },
+    "B3IQH56HE44VNOD": {
+      "type": "PElement",
+      "id": "B3IQH56HE44VNOD",
+      "name": "PElement",
+      "children": ["A5DL1PQ4LD86J0A"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "ACQVI6ITXAA6ZT6"
+    },
+    "A5DL1PQ4LD86J0A": {
+      "type": "TextElement",
+      "id": "A5DL1PQ4LD86J0A",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "El desarrollo de la creatividad, la recreación de todas las facetas del arte, es imprescindible para que la humanidad evolucione en equilibrio y en paz entre los pueblos. "
+      },
+      "parentId": "B3IQH56HE44VNOD"
+    },
+    "K8W30HAJZSKPQ5P": {
+      "type": "DivElement",
+      "id": "K8W30HAJZSKPQ5P",
+      "name": "DivElement",
+      "children": ["YDRWLEU75R96F0L", "SWIKF7QZUJL5R2N", "B776I1SGSOV3EKV"],
+      "classList": [
+        "MB52VU9KGEZ5NBX",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "CGIQY2Q1SLGT1QU",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "GOKOMF7E1BEOGH4",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "P1F2Q8CN9AQ33F8"
+    },
+    "YDRWLEU75R96F0L": {
+      "type": "ImgElement",
+      "id": "YDRWLEU75R96F0L",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/umbrella-beach-icon.svg",
+        "width": 45,
+        "height": 40,
+        "alt": "Icono de un barco"
+      },
+      "parentId": "K8W30HAJZSKPQ5P"
+    },
+    "SWIKF7QZUJL5R2N": {
+      "type": "H1Element",
+      "id": "SWIKF7QZUJL5R2N",
+      "name": "H1Element",
+      "children": ["W39VKGD5PTIDCVW"],
+      "classList": [
+        "D9M3EFYZU857UJM",
+        "JL9HAK621KF0MZU",
+        "CS09JOAUH53LZXC",
+        "xl:SGD55NQKU3X7RR0"
+      ],
+      "properties": {},
+      "parentId": "K8W30HAJZSKPQ5P"
+    },
+    "W39VKGD5PTIDCVW": {
+      "type": "TextElement",
+      "id": "W39VKGD5PTIDCVW",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Costa Ecologia"
+      },
+      "parentId": "SWIKF7QZUJL5R2N"
+    },
+    "B776I1SGSOV3EKV": {
+      "type": "PElement",
+      "id": "B776I1SGSOV3EKV",
+      "name": "PElement",
+      "children": ["H03JCAFZ14HYINH"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "K8W30HAJZSKPQ5P"
+    },
+    "H03JCAFZ14HYINH": {
+      "type": "TextElement",
+      "id": "H03JCAFZ14HYINH",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La construcción de sociedades sustentables es un deber fundamental de la política global y un Derecho inalienable de cada ser humano y animal. ¡Imagina un mundo en el que cada uno de nosotros pueda vivir en armonía con nuestro entorno natural, disfrutando de una calidad de vida óptima sin sacrificar nuestro planeta!"
+      },
+      "parentId": "B776I1SGSOV3EKV"
+    },
+    "VSWLBG62U4RWC39": {
+      "type": "DivElement",
+      "id": "VSWLBG62U4RWC39",
+      "name": "DivElement",
+      "children": ["DPRAB0WN1OHQG3Z", "BZXV52TKGGTB3LD", "ZWAKM0UPPRW9DH4"],
+      "classList": [
+        "MB52VU9KGEZ5NBX",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "CGIQY2Q1SLGT1QU",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "GOKOMF7E1BEOGH4",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "O3P13B18FJRATYI"
+    },
+    "DPRAB0WN1OHQG3Z": {
+      "type": "ImgElement",
+      "id": "DPRAB0WN1OHQG3Z",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/lightbulb-icon.svg",
+        "width": 35,
+        "height": 40,
+        "alt": "Icono de un barco"
+      },
+      "parentId": "VSWLBG62U4RWC39"
+    },
+    "BZXV52TKGGTB3LD": {
+      "type": "H1Element",
+      "id": "BZXV52TKGGTB3LD",
+      "name": "H1Element",
+      "children": ["N5SOUZ7H135PT1J"],
+      "classList": [
+        "D9M3EFYZU857UJM",
+        "JL9HAK621KF0MZU",
+        "CS09JOAUH53LZXC",
+        "xl:SGD55NQKU3X7RR0"
+      ],
+      "properties": {},
+      "parentId": "VSWLBG62U4RWC39"
+    },
+    "N5SOUZ7H135PT1J": {
+      "type": "TextElement",
+      "id": "N5SOUZ7H135PT1J",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Parque de las Innovaciones Tecnologicas"
+      },
+      "parentId": "BZXV52TKGGTB3LD"
+    },
+    "ZWAKM0UPPRW9DH4": {
+      "type": "PElement",
+      "id": "ZWAKM0UPPRW9DH4",
+      "name": "PElement",
+      "children": ["EIXYRA53O6MVBHZ"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "VSWLBG62U4RWC39"
+    },
+    "EIXYRA53O6MVBHZ": {
+      "type": "TextElement",
+      "id": "EIXYRA53O6MVBHZ",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Fundación Proyecta Konscio presentará aquellas innovaciones tecnológicas que signifiquen desarrollo económico y social de manera sostenible para el planeta."
+      },
+      "parentId": "ZWAKM0UPPRW9DH4"
+    },
+    "J8RBERY7VATRXBS": {
+      "type": "DivElement",
+      "id": "J8RBERY7VATRXBS",
+      "name": "DivElement",
+      "children": ["K35O7CZV6DP7D0K", "W3SND0VBXFBX6NG", "Q5GPVWWIAQ4929A"],
+      "classList": [
+        "MB52VU9KGEZ5NBX",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "CGIQY2Q1SLGT1QU",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "GOKOMF7E1BEOGH4",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "BH6ID0ZB7MD9FJ9"
+    },
+    "K35O7CZV6DP7D0K": {
+      "type": "ImgElement",
+      "id": "K35O7CZV6DP7D0K",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/store-icon.svg",
+        "width": 45,
+        "height": 40,
+        "alt": "Icono de un barco"
+      },
+      "parentId": "J8RBERY7VATRXBS"
+    },
+    "W3SND0VBXFBX6NG": {
+      "type": "H1Element",
+      "id": "W3SND0VBXFBX6NG",
+      "name": "H1Element",
+      "children": ["YHFIE6HZN0TFA44"],
+      "classList": [
+        "D9M3EFYZU857UJM",
+        "JL9HAK621KF0MZU",
+        "CS09JOAUH53LZXC",
+        "xl:SGD55NQKU3X7RR0"
+      ],
+      "properties": {},
+      "parentId": "J8RBERY7VATRXBS"
+    },
+    "YHFIE6HZN0TFA44": {
+      "type": "TextElement",
+      "id": "YHFIE6HZN0TFA44",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Café Redacción - Periodismo Digno Ciudadano"
+      },
+      "parentId": "W3SND0VBXFBX6NG"
+    },
+    "Q5GPVWWIAQ4929A": {
+      "type": "PElement",
+      "id": "Q5GPVWWIAQ4929A",
+      "name": "PElement",
+      "children": ["F40TQPZ791QSP24"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "J8RBERY7VATRXBS"
+    },
+    "F40TQPZ791QSP24": {
+      "type": "TextElement",
+      "id": "F40TQPZ791QSP24",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Fundación Proyecta Konscio se erige como una matriz alternativa para dar voz al periodismo auténtico y alternativo, aquel que se produce con consciencia, calidad argumental y sin manipulaciones. ¡Luchamos por una prensa libre y veraz, que informe con responsabilidad y rigor! Únete a nosotros y apoya el periodismo honesto y comprometido con la verdad."
+      },
+      "parentId": "Q5GPVWWIAQ4929A"
+    },
+    "VEWCJBFQ4U5YOPD": {
+      "type": "DivElement",
+      "id": "VEWCJBFQ4U5YOPD",
+      "name": "DivElement",
+      "children": ["D3MFY11JM1WG60X", "Q6LBL7XIQMT9SC8", "X6CQ2JVJRIN8N5A"],
+      "classList": [
+        "MB52VU9KGEZ5NBX",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "CGIQY2Q1SLGT1QU",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "GOKOMF7E1BEOGH4",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "MSSS765FX40WG8Z"
+    },
+    "D3MFY11JM1WG60X": {
+      "type": "ImgElement",
+      "id": "D3MFY11JM1WG60X",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/archway-icon.svg",
+        "width": 45,
+        "height": 40,
+        "alt": "Icono de un barco"
+      },
+      "parentId": "VEWCJBFQ4U5YOPD"
+    },
+    "Q6LBL7XIQMT9SC8": {
+      "type": "H1Element",
+      "id": "Q6LBL7XIQMT9SC8",
+      "name": "H1Element",
+      "children": ["GM4UTZB9I1UE1HI"],
+      "classList": [
+        "D9M3EFYZU857UJM",
+        "JL9HAK621KF0MZU",
+        "CS09JOAUH53LZXC",
+        "xl:SGD55NQKU3X7RR0"
+      ],
+      "properties": {},
+      "parentId": "VEWCJBFQ4U5YOPD"
+    },
+    "GM4UTZB9I1UE1HI": {
+      "type": "TextElement",
+      "id": "GM4UTZB9I1UE1HI",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Gran Via Politica para la Gente Decente"
+      },
+      "parentId": "Q6LBL7XIQMT9SC8"
+    },
+    "X6CQ2JVJRIN8N5A": {
+      "type": "PElement",
+      "id": "X6CQ2JVJRIN8N5A",
+      "name": "PElement",
+      "children": ["VOZ5TDSQAQ3WHTE"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "VEWCJBFQ4U5YOPD"
+    },
+    "VOZ5TDSQAQ3WHTE": {
+      "type": "TextElement",
+      "id": "VOZ5TDSQAQ3WHTE",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "En esta gran vía circulan posturas ideológicas y tratados éticos lo suficientemente razonables desde una visión socialmente consistente, capaces de regular la interacción social."
+      },
+      "parentId": "X6CQ2JVJRIN8N5A"
+    },
+    "U739ENRLTN6R2EL": {
+      "type": "DivElement",
+      "id": "U739ENRLTN6R2EL",
+      "name": "DivElement",
+      "children": ["SF14HONFYI944CT", "VEBN9DTETKJLR39", "NJCFF0P8RJL7RUZ"],
+      "classList": [
+        "MB52VU9KGEZ5NBX",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "CGIQY2Q1SLGT1QU",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "GOKOMF7E1BEOGH4",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "PZACUB5JLFAOPAA"
+    },
+    "SF14HONFYI944CT": {
+      "type": "ImgElement",
+      "id": "SF14HONFYI944CT",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/mountain-icon.svg",
+        "width": 45,
+        "height": 40,
+        "alt": "Icono de un barco"
+      },
+      "parentId": "U739ENRLTN6R2EL"
+    },
+    "VEBN9DTETKJLR39": {
+      "type": "H1Element",
+      "id": "VEBN9DTETKJLR39",
+      "name": "H1Element",
+      "children": ["W1JHZZXFQ2S3JLY"],
+      "classList": [
+        "D9M3EFYZU857UJM",
+        "JL9HAK621KF0MZU",
+        "CS09JOAUH53LZXC",
+        "xl:SGD55NQKU3X7RR0"
+      ],
+      "properties": {},
+      "parentId": "U739ENRLTN6R2EL"
+    },
+    "W1JHZZXFQ2S3JLY": {
+      "type": "TextElement",
+      "id": "W1JHZZXFQ2S3JLY",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Rio de la Historia no Manipulada"
+      },
+      "parentId": "VEBN9DTETKJLR39"
+    },
+    "NJCFF0P8RJL7RUZ": {
+      "type": "PElement",
+      "id": "NJCFF0P8RJL7RUZ",
+      "name": "PElement",
+      "children": ["FSL8AEL618PDOEO"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "U739ENRLTN6R2EL"
+    },
+    "FSL8AEL618PDOEO": {
+      "type": "TextElement",
+      "id": "FSL8AEL618PDOEO",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Exponemos el caudal histórico sin sesgos convencionales, sin matices oportunistas que apuntan a la exaltación de ciertos actores en la historia de la humanidad, buscamos contar las historias silenciadas a través del tiempo."
+      },
+      "parentId": "NJCFF0P8RJL7RUZ"
+    },
+    "JFT82NEFCWRZLCP": {
+      "type": "DivElement",
+      "id": "JFT82NEFCWRZLCP",
+      "name": "DivElement",
+      "children": ["VUOF3ZJPZ5IF277", "QMYROT0YGMDYKVL", "DEI18KVBA25LZXQ"],
+      "classList": [
+        "MB52VU9KGEZ5NBX",
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "CGIQY2Q1SLGT1QU",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "GOKOMF7E1BEOGH4",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "HVXWIS7C91ZPFOX"
+    },
+    "VUOF3ZJPZ5IF277": {
+      "type": "ImgElement",
+      "id": "VUOF3ZJPZ5IF277",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/tree-icon.svg",
+        "width": 35,
+        "height": 40,
+        "alt": "Icono de un barco"
+      },
+      "parentId": "JFT82NEFCWRZLCP"
+    },
+    "QMYROT0YGMDYKVL": {
+      "type": "H1Element",
+      "id": "QMYROT0YGMDYKVL",
+      "name": "H1Element",
+      "children": ["OFZ95J8CA1UWF80"],
+      "classList": [
+        "D9M3EFYZU857UJM",
+        "JL9HAK621KF0MZU",
+        "CS09JOAUH53LZXC",
+        "xl:SGD55NQKU3X7RR0"
+      ],
+      "properties": {},
+      "parentId": "JFT82NEFCWRZLCP"
+    },
+    "OFZ95J8CA1UWF80": {
+      "type": "TextElement",
+      "id": "OFZ95J8CA1UWF80",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Bosque de la Salud y la Nutrición"
+      },
+      "parentId": "QMYROT0YGMDYKVL"
+    },
+    "DEI18KVBA25LZXQ": {
+      "type": "PElement",
+      "id": "DEI18KVBA25LZXQ",
+      "name": "PElement",
+      "children": ["WA0RG89QLUIMBDP"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "JFT82NEFCWRZLCP"
+    },
+    "WA0RG89QLUIMBDP": {
+      "type": "TextElement",
+      "id": "WA0RG89QLUIMBDP",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La medicina es un derecho humano básico. Debemos defenderlo de las empresas farmacéuticas y alimentarias que buscan maximizar sus ganancias a expensas de nuestra salud. Necesitamos un sistema médico que priorice el bienestar de las personas en lugar del lucro corporativo."
+      },
+      "parentId": "DEI18KVBA25LZXQ"
+    },
+    "N1DTLPMDTMM7ZUB": {
+      "type": "DivElement",
+      "id": "N1DTLPMDTMM7ZUB",
+      "name": "DivElement",
+      "children": ["HFIYZE5GNIS14O9"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "MB52VU9KGEZ5NBX",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "CUD865QP1Q9GJCY"
+    },
+    "HFIYZE5GNIS14O9": {
+      "type": "PElement",
+      "id": "HFIYZE5GNIS14O9",
+      "name": "PElement",
+      "children": ["LGLZ82Z7L456KKZ"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "N1DTLPMDTMM7ZUB"
+    },
+    "LGLZ82Z7L456KKZ": {
+      "type": "TextElement",
+      "id": "LGLZ82Z7L456KKZ",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Es crucial tener conciencia de cómo se manejan los hilos de la economía mundial y reconocer que existen políticas que generan un sufrimiento extremo en los pueblos en nombre del lucro desmedido, el egoísmo y una competitividad que daña irreversiblemente el medio ambiente. Debemos luchar contra estas prácticas y trabajar por un sistema económico que promueva el bienestar de todos los ciudadanos y del planeta en su conjunto."
+      },
+      "parentId": "HFIYZE5GNIS14O9"
+    },
+    "HCKNBDDVMI3VXBH": {
+      "type": "DivElement",
+      "id": "HCKNBDDVMI3VXBH",
+      "name": "DivElement",
+      "children": ["KAFHAI79B4UGE2O"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "MB52VU9KGEZ5NBX",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "KAFHAI79B4UGE2O": {
+      "type": "PElement",
+      "id": "KAFHAI79B4UGE2O",
+      "name": "PElement",
+      "children": ["TU23FOTRE98F3MW"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "HCKNBDDVMI3VXBH"
+    },
+    "TU23FOTRE98F3MW": {
+      "type": "TextElement",
+      "id": "TU23FOTRE98F3MW",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Queremos ser vehículo de investigación, divulgación de aquellas propuestas educativas innovadoras que se alejan de los sistemas educativos actuales que solo buscan conformar  para el status quo, vamos a cooperar con acciones concretas, todo ello con miras a denunciar la involución clara y general heredada de una educación manipulada por dogmatismos e influenciados por las religiones en el mundo."
+      },
+      "parentId": "KAFHAI79B4UGE2O"
+    },
+    "IQHHKUE15KDTBDH": {
+      "type": "DivElement",
+      "id": "IQHHKUE15KDTBDH",
+      "name": "DivElement",
+      "children": ["V0W1JM5VZRSLIH9"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "MB52VU9KGEZ5NBX",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "V0W1JM5VZRSLIH9": {
+      "type": "PElement",
+      "id": "V0W1JM5VZRSLIH9",
+      "name": "PElement",
+      "children": ["GNHBWWER94VETIK"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "IQHHKUE15KDTBDH"
+    },
+    "GNHBWWER94VETIK": {
+      "type": "TextElement",
+      "id": "GNHBWWER94VETIK",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "El metaverso Konscio3D tendrá en su espacio virtual inmersivo, aquellas representaciones para fomentar una cultura libre que ilumine las mentes. Y denunciaremos aquellas maniobras políticas para apagar la creación artística y apoyaremos aquella cultura transformadora para una sociedad civil participativa, democrática, colaborativa y progresiva."
+      },
+      "parentId": "V0W1JM5VZRSLIH9"
+    },
+    "L9MA6MGHZVYGUAO": {
+      "type": "DivElement",
+      "id": "L9MA6MGHZVYGUAO",
+      "name": "DivElement",
+      "children": ["K4TW36CJJGES7LJ"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "MB52VU9KGEZ5NBX",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "K4TW36CJJGES7LJ": {
+      "type": "PElement",
+      "id": "K4TW36CJJGES7LJ",
+      "name": "PElement",
+      "children": ["DOWGXOQC91W0H86"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "L9MA6MGHZVYGUAO"
+    },
+    "DOWGXOQC91W0H86": {
+      "type": "TextElement",
+      "id": "DOWGXOQC91W0H86",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Somos la plataforma en la que se concentra la información respecto a prácticas, conciencia, esencia y cultura de los pueblos conscientes con el medio ambiente, desde una perspectiva consistente compartimos su filosofía y servimos de enlace para conocer su esencia y modo de vida. Apostamos a las formas de sociedad basadas en el cuidado de la naturaleza, principios de no violencia y vivencias que apuntan a habitar en armonía con el resto de seres vivos."
+      },
+      "parentId": "K4TW36CJJGES7LJ"
+    },
+    "NJNMJ5G265RQIP1": {
+      "type": "DivElement",
+      "id": "NJNMJ5G265RQIP1",
+      "name": "DivElement",
+      "children": ["ZWOQVGJDSVRZ7H8"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "MB52VU9KGEZ5NBX",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "ZWOQVGJDSVRZ7H8": {
+      "type": "PElement",
+      "id": "ZWOQVGJDSVRZ7H8",
+      "name": "PElement",
+      "children": ["GJVAC8ZPZGZYFAM"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "NJNMJ5G265RQIP1"
+    },
+    "GJVAC8ZPZGZYFAM": {
+      "type": "TextElement",
+      "id": "GJVAC8ZPZGZYFAM",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "No lograremos el cambio si nosotros no somos el cambio, bajo esta premisa buscamos detener el agotamiento de los recursos y el cambio climático mediante la transformación de nuestras mentes, nos elevamos a ideas más responsables donde la sostenibilidad, el cuidado del planeta y las posturas activas en la sociedad nos lleven a una evolución en equilibrio."
+      },
+      "parentId": "ZWOQVGJDSVRZ7H8"
+    },
+    "S2YVWZPUW2V9W0Z": {
+      "type": "DivElement",
+      "id": "S2YVWZPUW2V9W0Z",
+      "name": "DivElement",
+      "children": ["IGQ2AXKJZ0BYX9P"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "MB52VU9KGEZ5NBX",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "IGQ2AXKJZ0BYX9P": {
+      "type": "PElement",
+      "id": "IGQ2AXKJZ0BYX9P",
+      "name": "PElement",
+      "children": ["TOSXQ7VWH5A5ZW8"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "S2YVWZPUW2V9W0Z"
+    },
+    "TOSXQ7VWH5A5ZW8": {
+      "type": "TextElement",
+      "id": "TOSXQ7VWH5A5ZW8",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Seremos la tribuna de opinión e información para todos los que han sido silenciados. Nuestro entorno 3D servirá de soporte para la información veraz y oportuna desarrollada en caliente por comunidades interactivas operativas en el núcleo de la noticia, impulsamos la participación de los lectores y el cirberactivismo en la red, diseñamos el entorno propicio para el debate en el que todos los que deseen participar puedan compartir su contenido sin imposiciones ideológicas."
+      },
+      "parentId": "IGQ2AXKJZ0BYX9P"
+    },
+    "KMEW0EZ9O1URAXA": {
+      "type": "DivElement",
+      "id": "KMEW0EZ9O1URAXA",
+      "name": "DivElement",
+      "children": ["V4U6ZOUKONBKOQP"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "MB52VU9KGEZ5NBX",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "V4U6ZOUKONBKOQP": {
+      "type": "PElement",
+      "id": "V4U6ZOUKONBKOQP",
+      "name": "PElement",
+      "children": ["N9H3H1E9UJUXJTI"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "KMEW0EZ9O1URAXA"
+    },
+    "N9H3H1E9UJUXJTI": {
+      "type": "TextElement",
+      "id": "N9H3H1E9UJUXJTI",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Promovemos las bases para el desarrollo comunitario mediante la apelación a los valores de paz y justicia,  mediante la aplicación de las normas de la Declaración de Derechos Humanos, la abolición de la esclavitud patente en nuestro tiempo, la denuncia de la guerra y los basamentos verdaderamente sanos sobre los que reposan los conceptos de familia, amor, sociedad y ética."
+      },
+      "parentId": "V4U6ZOUKONBKOQP"
+    },
+    "BMZ5LHB903WGGJN": {
+      "type": "DivElement",
+      "id": "BMZ5LHB903WGGJN",
+      "name": "DivElement",
+      "children": ["X5UCU7BPBMCOR2M"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "MB52VU9KGEZ5NBX",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "X5UCU7BPBMCOR2M": {
+      "type": "PElement",
+      "id": "X5UCU7BPBMCOR2M",
+      "name": "PElement",
+      "children": ["LX4P684PV8JRDR9"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "PPNNLI2X3JBD4ZY",
+        "xl:JGWSTPP4CWQ0H1Z"
+      ],
+      "properties": {},
+      "parentId": "BMZ5LHB903WGGJN"
+    },
+    "LX4P684PV8JRDR9": {
+      "type": "TextElement",
+      "id": "LX4P684PV8JRDR9",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Nuestro objetivo es iluminar la historia de los pueblos, tanto la que se ha documentado como la que ha sido borrada o ignorada. Nos esforzamos por ser una plataforma de referencia que defiende la democracia de los pueblos y se opone a su bloqueo. Cada día, ofrecemos un paseo histórico para destacar un evento relevante del pasado en todo el mundo, y proporcionamos análisis históricos que explican la influencia y repercusión de estos hechos en el presente."
+      },
+      "parentId": "X5UCU7BPBMCOR2M"
+    },
+    "ICBANRCVRRVFUYS": {
+      "type": "DivElement",
+      "id": "ICBANRCVRRVFUYS",
+      "name": "DivElement",
+      "children": ["AVL8T7LS93NLST9"],
+      "classList": [
+        "A234DD3FD2F1EDD",
+        "MS0WYFTPDQBC27D",
+        "MB52VU9KGEZ5NBX",
+        "DD63CJGK3NEQ7YT",
+        "EIMQYOVPG32HXID",
+        "IZD96VLEK1RVD0N"
+      ],
+      "properties": {},
+      "parentId": "AE5WJ8RA6W3JTYF"
+    },
+    "AVL8T7LS93NLST9": {
+      "type": "PElement",
+      "id": "AVL8T7LS93NLST9",
+      "name": "PElement",
+      "children": ["FNPUC9GEYY5BJSP"],
+      "classList": [
+        "CS09JOAUH53LZXC",
+        "JL9HAK621KF0MZU",
+        "D9M3EFYZU857UJM",
+        "DCLRCK9UDN4N55M",
+        "xl:WXKWWTTPGF8YBZ2"
+      ],
+      "properties": {},
+      "parentId": "ICBANRCVRRVFUYS"
+    },
+    "FNPUC9GEYY5BJSP": {
+      "type": "TextElement",
+      "id": "FNPUC9GEYY5BJSP",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Fundación Proyecta Konscio tiene como objetivo crear conciencia sobre la importancia de una alimentación saludable y la influencia de la industria alimentaria en nuestra salud. Creemos que la producción de alimentos con químicos tóxicos es una práctica criminal para nuestro cuerpo y nuestro planeta. Como respuesta a esta problemática, nuestra organización difundirá contenido informativo y de debate sobre la industria alimentaria tóxica. Además, ofreceremos recomendaciones prácticas para transformar nuestra dieta y mejorar nuestra salud. Creemos que es importante que todas las personas tengan acceso a alimentos y medicamentos seguros y saludables, y que la industria debe ser responsable y respetar los derechos humanos y el medio ambiente."
+      },
+      "parentId": "AVL8T7LS93NLST9"
     }
   },
   "styles": {
@@ -1105,6 +2577,90 @@
       },
       "I14PELOODEZUGMW": {
         "padding": "10px"
+      },
+      "RL06FFZRJJN8Y7B": {
+        "background-color": "rgb(244, 111, 53)"
+      },
+      "AA4NJ3GQX0QLHB7": {
+        "background-color": "rgb(3, 133, 55)"
+      },
+      "IEASXMTXU2QQ0WV": {
+        "background-color": "rgba(244, 111, 53, 0.6)"
+      },
+      "P6CDC6QENP4BTYC": {
+        "background-color": "rgba(3, 133, 55, 0.6)"
+      },
+      "A6C0WMJEQZG2AHG": {
+        "background-color": "rgb(102, 54, 2)"
+      },
+      "JLMQNTRHE98MQSD": {
+        "background-color": "rgba(102, 54, 2, 0.6)"
+      },
+      "K3CLTCVYSSGXCDY": {
+        "background-color": "rgba(2, 141, 209, 0.6)"
+      },
+      "OUTDJI07R4JXKF3": {
+        "background-color": "rgb(2, 141, 209)"
+      },
+      "IK5TBWMQ53IOMLY": {
+        "background-color": "rgba(172, 140, 0, 0.6)"
+      },
+      "SOKHNDEJ7U08859": {
+        "background-color": "rgb(172, 140, 0)"
+      },
+      "MHIVJGEOYCF0PVV": {
+        "background-color": "rgba(106, 60, 157, 0.6)"
+      },
+      "AN46884EP9B4MW3": {
+        "background-color": "rgb(106, 60, 157)"
+      },
+      "QBGYSS30B4YB45I": {
+        "background-color": "rgba(255, 114, 44, 0.6)"
+      },
+      "OUJTIPXY41I1GNE": {
+        "background-color": "rgb(255, 114, 44)"
+      },
+      "Q8SXBWDMJEWGR0K": {
+        "background-color": "rgba(254, 36, 154, 0.6)"
+      },
+      "XDS270PCLHY9X25": {
+        "background-color": "rgb(254, 36, 154)"
+      },
+      "NL218A6RI4WQS11": {
+        "background-image": "url(\"/api/image/fb2.jpg\")"
+      },
+      "H02SEDTILQC1BEE": {
+        "background-image": "url(\"/api/image/fb3.jpg\")"
+      },
+      "GURZ5UADHSJQKQV": {
+        "background-image": "url(\"/api/image/fb4.jpg\")"
+      },
+      "I36X31VKS0PATR3": {
+        "background-image": "url(\"/api/image/fb5.jpg\")"
+      },
+      "K0HTPWTVWQ0YQNK": {
+        "background-image": "url(\"/api/image/fb6.jpg\")"
+      },
+      "Z2KLBF4FJVXA3VP": {
+        "background-image": "url(\"/api/image/fb7.jpg\")"
+      },
+      "DBHU8QEC9DTW9D3": {
+        "background-image": "url(\"/api/image/fb8.jpg\")"
+      },
+      "JZSHB7B155H6E9H": {
+        "background-image": "url(\"/api/image/fb9.jpg\")"
+      },
+      "GOKOMF7E1BEOGH4": {
+        "gap": "15px"
+      },
+      "IZD96VLEK1RVD0N": {
+        "padding": "50px"
+      },
+      "PPNNLI2X3JBD4ZY": {
+        "font-size": "0.8em"
+      },
+      "DCLRCK9UDN4N55M": {
+        "font-size": "0.6em"
       }
     },
     "sm": {
@@ -1155,6 +2711,12 @@
       },
       "SGD55NQKU3X7RR0": {
         "font-size": "1.5em"
+      },
+      "WXKWWTTPGF8YBZ2": {
+        "font-size": "0.8em"
+      },
+      "JGWSTPP4CWQ0H1Z": {
+        "font-size": "1em"
       }
     },
     "2xl": {}

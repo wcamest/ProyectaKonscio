@@ -26,9 +26,7 @@
         "lg:U257CDL12TEWH14",
         "XSFIG6YV70LVBQT",
         "RW2FHOPYWZIFALE",
-        "RYP3QOT0ZY228LZ",
-        "WSUNEKNLOCLW4TO",
-        "BENMSFHWW958GJP"
+        "RYP3QOT0ZY228LZ"
       ],
       "properties": {},
       "parentId": "YFADAF4MVP9XTHL"
@@ -42,7 +40,8 @@
         "JFX70LIAAY0PEIF",
         "UWFIQ5IJ7YWT4LW",
         "TBEA9LLI3PI6ERY",
-        "Q06YR22LKO0CKOH"
+        "Q06YR22LKO0CKOH",
+        "WSUNEKNLOCLW4TO"
       ],
       "properties": {},
       "parentId": "AAOHRIX10JC9B3J"
@@ -55,8 +54,8 @@
       "classList": [],
       "properties": {
         "src": "/api/image/logo_with_text.svg",
-        "width": 250,
-        "height": 85
+        "width": 150,
+        "height": 51
       },
       "parentId": "TGG7IDPOFY1LMOR"
     },
@@ -70,7 +69,7 @@
       "parentId": "TGG7IDPOFY1LMOR"
     },
     "FCFN1SUAMFMTLW5": {
-      "type": "NavElement",
+      "type": "DesktopNavigationComponent",
       "id": "FCFN1SUAMFMTLW5",
       "name": "Desktop Navigation",
       "children": ["N0WW5BSQ2XWKFWX", "HXNUKDZXH1E2PU5", "WDYXX8INXVRPSXT"],
@@ -84,7 +83,12 @@
         "lg:M163Z7O7CN1UEI5",
         "lg:E26287V7PQGVC8W",
         "lg:X96LVD68Y2JLBF1",
-        "lg:RA5LBV2OFSX9OPF"
+        "lg:RA5LBV2OFSX9OPF",
+        "lg:BXSB6AJEKAVKABL",
+        "lg:D3D1XEJ7Y6VNDO3",
+        "lg:BPY5VJ67C2OUKJF",
+        "xl:FUUNN8DA1VCUG3S",
+        "lg:XJU2EE39768OSWF"
       ],
       "properties": {},
       "parentId": "YFADAF4MVP9XTHL"
@@ -93,8 +97,14 @@
       "type": "DivElement",
       "id": "N0WW5BSQ2XWKFWX",
       "name": "DivElement",
-      "children": [],
-      "classList": [],
+      "children": ["W8ERRE121DO63XD", "UMRYR10BJGSIO1P", "TMF9524J8F043QX"],
+      "classList": [
+        "lg:J6VLUAOUP26BI8R",
+        "lg:AR0RMNKP0PCDYGP",
+        "lg:OY8GPBESN5ROQ0U",
+        "lg:BPY5VJ67C2OUKJF",
+        "xl:FUUNN8DA1VCUG3S"
+      ],
       "properties": {},
       "parentId": "FCFN1SUAMFMTLW5"
     },
@@ -115,8 +125,14 @@
       "type": "DivElement",
       "id": "WDYXX8INXVRPSXT",
       "name": "DivElement",
-      "children": [],
-      "classList": [],
+      "children": ["OG94Q5508EFP645", "ISZWJ4HF1TXV5V1", "PPIOS03H39IUSYI"],
+      "classList": [
+        "lg:J6VLUAOUP26BI8R",
+        "lg:AR0RMNKP0PCDYGP",
+        "lg:OY8GPBESN5ROQ0U",
+        "lg:BPY5VJ67C2OUKJF",
+        "xl:FUUNN8DA1VCUG3S"
+      ],
       "properties": {},
       "parentId": "FCFN1SUAMFMTLW5"
     },
@@ -138,10 +154,11 @@
         "FPL0ZBRQQNCIDUE",
         "HNVPAMK7ZTDXD11",
         "VN4IBZ7OC3U27HC",
-        "XKRMB23T4CVZF1V",
-        "T136HF17MAAE4F9",
         "WSUNEKNLOCLW4TO",
-        "MKTR6XWHQV7G8CY"
+        "MKTR6XWHQV7G8CY",
+        "M1CJBDGDI58Q4G4",
+        "QWZ570OYIHH6JJW",
+        "J6BXNJJ0XWNIOUX"
       ],
       "properties": {},
       "parentId": "AAOHRIX10JC9B3J"
@@ -149,7 +166,7 @@
     "UWZ0ZLWOKFR7VC2": {
       "type": "MenuItemComponent",
       "id": "UWZ0ZLWOKFR7VC2",
-      "name": "MenuItemComponent",
+      "name": "Inicio",
       "children": [],
       "classList": ["VVDL381NOS1CFBV"],
       "properties": {
@@ -161,8 +178,18 @@
     "FS9N1TER6RMQKF2": {
       "type": "MenuItemComponent",
       "id": "FS9N1TER6RMQKF2",
-      "name": "MenuItemComponent",
-      "children": [],
+      "name": "La realidad virtual",
+      "children": [
+        "YSZXYQUT29UNZJ3",
+        "VST6ZNFVWA2JQYM",
+        "BVGHEJ7CE7TMK2T",
+        "KWTZFLHPGMRSJMJ",
+        "OCXY011Y7MBLXVE",
+        "O70O3DTABDHDKSD",
+        "U28JE39AC74M714",
+        "G3W4Z10BW712V0A",
+        "FOU6D5ZY3Q65AXR"
+      ],
       "classList": ["VVDL381NOS1CFBV"],
       "properties": {
         "text": "La Realidad Virtual"
@@ -172,7 +199,7 @@
     "SFLKCW04915L37V": {
       "type": "MenuItemComponent",
       "id": "SFLKCW04915L37V",
-      "name": "MenuItemComponent",
+      "name": "notikonscio",
       "children": [],
       "classList": ["VVDL381NOS1CFBV"],
       "properties": {
@@ -184,7 +211,7 @@
     "UEOCVB5P01Z9Q0B": {
       "type": "MenuItemComponent",
       "id": "UEOCVB5P01Z9Q0B",
-      "name": "MenuItemComponent",
+      "name": "colabora",
       "children": [],
       "classList": ["VVDL381NOS1CFBV"],
       "properties": {
@@ -196,7 +223,7 @@
     "FD5YQC8881LXZZP": {
       "type": "MenuItemComponent",
       "id": "FD5YQC8881LXZZP",
-      "name": "MenuItemComponent",
+      "name": "web rtc y espacios 3d",
       "children": [],
       "classList": ["VVDL381NOS1CFBV"],
       "properties": {
@@ -208,7 +235,7 @@
     "RI0GYJ5L59HQ8GP": {
       "type": "MenuItemComponent",
       "id": "RI0GYJ5L59HQ8GP",
-      "name": "MenuItemComponent",
+      "name": "proyectos",
       "children": [],
       "classList": ["VVDL381NOS1CFBV"],
       "properties": {
@@ -216,6 +243,348 @@
         "href": "/blog/proyectos"
       },
       "parentId": "AAOHRIX10JC9B3J"
+    },
+    "YSZXYQUT29UNZJ3": {
+      "type": "MenuItemComponent",
+      "id": "YSZXYQUT29UNZJ3",
+      "name": "Puerto de Comercio Justo",
+      "children": [],
+      "classList": ["Q24EXMTRQMUCN9A"],
+      "properties": {
+        "text": "Puerto de Comercio Justo",
+        "href": "/economia-real-colaborativa"
+      },
+      "parentId": "FS9N1TER6RMQKF2"
+    },
+    "VST6ZNFVWA2JQYM": {
+      "type": "MenuItemComponent",
+      "id": "VST6ZNFVWA2JQYM",
+      "name": "Valle Educación Trascendente",
+      "children": [],
+      "classList": ["Q24EXMTRQMUCN9A"],
+      "properties": {
+        "text": "Valle Educación Trascendente",
+        "href": "/educacion-alternativa"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "BVGHEJ7CE7TMK2T": {
+      "type": "MenuItemComponent",
+      "id": "BVGHEJ7CE7TMK2T",
+      "name": "Cultura Inclusiva",
+      "children": [],
+      "classList": ["Q24EXMTRQMUCN9A"],
+      "properties": {
+        "text": "Cultura Inclusiva",
+        "href": "/cultura-inclusiva"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "KWTZFLHPGMRSJMJ": {
+      "type": "MenuItemComponent",
+      "id": "KWTZFLHPGMRSJMJ",
+      "name": "Conciencia Ambiental",
+      "children": [],
+      "classList": ["Q24EXMTRQMUCN9A"],
+      "properties": {
+        "text": "Conciencia Ambiental",
+        "href": "/ecologia-conciencia-ambiental"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "OCXY011Y7MBLXVE": {
+      "type": "MenuItemComponent",
+      "id": "OCXY011Y7MBLXVE",
+      "name": "Innovaciones Tecnologicas",
+      "children": [],
+      "classList": ["Q24EXMTRQMUCN9A"],
+      "properties": {
+        "text": "Innovaciones Tecnologicas",
+        "href": "/innovaciones-tecnologicas"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "O70O3DTABDHDKSD": {
+      "type": "MenuItemComponent",
+      "id": "O70O3DTABDHDKSD",
+      "name": "Periodismo Digno",
+      "children": [],
+      "classList": ["Q24EXMTRQMUCN9A"],
+      "properties": {
+        "text": "Periodismo Digno",
+        "href": "/periodismo-digno"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "U28JE39AC74M714": {
+      "type": "MenuItemComponent",
+      "id": "U28JE39AC74M714",
+      "name": "Gran via a una Politica de Conciencia",
+      "children": [],
+      "classList": ["Q24EXMTRQMUCN9A"],
+      "properties": {
+        "text": "Gran Via a una Politica de Conciencia",
+        "href": "/politica-de-conciencia"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "G3W4Z10BW712V0A": {
+      "type": "MenuItemComponent",
+      "id": "G3W4Z10BW712V0A",
+      "name": "Historia no Manipulada",
+      "children": [],
+      "classList": ["Q24EXMTRQMUCN9A"],
+      "properties": {
+        "text": "Historia no Manipulada",
+        "href": "/historia-no-manipulada"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "FOU6D5ZY3Q65AXR": {
+      "type": "MenuItemComponent",
+      "id": "FOU6D5ZY3Q65AXR",
+      "name": "Salud y Bienestar",
+      "children": [],
+      "classList": ["Q24EXMTRQMUCN9A"],
+      "properties": {
+        "text": "Salud y Bienestar",
+        "href": "/salud-y-bienestar"
+      },
+      "parentId": "AAOHRIX10JC9B3J"
+    },
+    "W8ERRE121DO63XD": {
+      "type": "MenuItemComponent",
+      "id": "W8ERRE121DO63XD",
+      "name": "inicio",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Inicio",
+        "href": "/"
+      },
+      "parentId": "N0WW5BSQ2XWKFWX"
+    },
+    "UMRYR10BJGSIO1P": {
+      "type": "MenuItemComponent",
+      "id": "UMRYR10BJGSIO1P",
+      "name": "la realidad virtual",
+      "children": [
+        "KXFA7NJKRKRCCQN",
+        "ROXFLQVRL25DGSC",
+        "JTXC9NJ2CRKJZMN",
+        "S603IE4B5G6FXKT",
+        "EJU3SYBTCPYVAUC",
+        "M06ZGNLC7LUHGDC",
+        "CXI4XTCIYGW7OAS",
+        "SDCIEGCO4DKIBIG",
+        "HM58NQ6N9U9O5NH"
+      ],
+      "classList": ["lg:YD7FGPGABM0P65N", "lg:QPPOVCJXS0VMUNH"],
+      "properties": {
+        "text": "La Realidad Virtual"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "TMF9524J8F043QX": {
+      "type": "MenuItemComponent",
+      "id": "TMF9524J8F043QX",
+      "name": "notikonscio",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "NotiKonscio",
+        "href": "/blog/notikonscio"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "OG94Q5508EFP645": {
+      "type": "MenuItemComponent",
+      "id": "OG94Q5508EFP645",
+      "name": "colabora",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Colabora",
+        "href": "/colabora"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "ISZWJ4HF1TXV5V1": {
+      "type": "MenuItemComponent",
+      "id": "ISZWJ4HF1TXV5V1",
+      "name": "web rtc y espacios 3d",
+      "children": [],
+      "classList": ["lg:QPPOVCJXS0VMUNH"],
+      "properties": {
+        "text": "WebRTC y Espacios 3D",
+        "href": "/web-rtc-espacios-3d"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "PPIOS03H39IUSYI": {
+      "type": "MenuItemComponent",
+      "id": "PPIOS03H39IUSYI",
+      "name": "proyectos",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Proyectos",
+        "href": "/blog/proyectos"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "KXFA7NJKRKRCCQN": {
+      "type": "MenuItemComponent",
+      "id": "KXFA7NJKRKRCCQN",
+      "name": "Puerto de Comercio Justo",
+      "children": [],
+      "classList": [
+        "lg:KOP2IUGF7XN5F7X",
+        "lg:SXZFTW0L4RUHQ36",
+        "lg:DFK82IDCVMF2GJD",
+        "lg:E26287V7PQGVC8W"
+      ],
+      "properties": {
+        "text": "Puerto de Comercio Justo",
+        "href": "/economia-real-colaborativa"
+      },
+      "parentId": "UMRYR10BJGSIO1P"
+    },
+    "ROXFLQVRL25DGSC": {
+      "type": "MenuItemComponent",
+      "id": "ROXFLQVRL25DGSC",
+      "name": "Valle Educación Trascendente",
+      "children": [],
+      "classList": [
+        "lg:KOP2IUGF7XN5F7X",
+        "lg:SXZFTW0L4RUHQ36",
+        "lg:DFK82IDCVMF2GJD",
+        "lg:E26287V7PQGVC8W"
+      ],
+      "properties": {
+        "text": "Valle Educación Trascendente",
+        "href": "/educacion-alternativa"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "JTXC9NJ2CRKJZMN": {
+      "type": "MenuItemComponent",
+      "id": "JTXC9NJ2CRKJZMN",
+      "name": "Cultura Inclusiva",
+      "children": [],
+      "classList": [
+        "lg:KOP2IUGF7XN5F7X",
+        "lg:SXZFTW0L4RUHQ36",
+        "lg:DFK82IDCVMF2GJD",
+        "lg:E26287V7PQGVC8W"
+      ],
+      "properties": {
+        "text": "Cultura Inclusiva",
+        "href": "/cultura-inclusiva"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "S603IE4B5G6FXKT": {
+      "type": "MenuItemComponent",
+      "id": "S603IE4B5G6FXKT",
+      "name": "Ecologia - Conciencia Ambiental",
+      "children": [],
+      "classList": [
+        "lg:KOP2IUGF7XN5F7X",
+        "lg:SXZFTW0L4RUHQ36",
+        "lg:DFK82IDCVMF2GJD",
+        "lg:E26287V7PQGVC8W"
+      ],
+      "properties": {
+        "text": "Ecologia - Conciencia Ambiental",
+        "href": "/ecologia-conciencia-ambiental"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "EJU3SYBTCPYVAUC": {
+      "type": "MenuItemComponent",
+      "id": "EJU3SYBTCPYVAUC",
+      "name": "Innovaciones Tecnológicas",
+      "children": [],
+      "classList": [
+        "lg:KOP2IUGF7XN5F7X",
+        "lg:SXZFTW0L4RUHQ36",
+        "lg:DFK82IDCVMF2GJD",
+        "lg:E26287V7PQGVC8W"
+      ],
+      "properties": {
+        "text": "Innovaciones Tecnológicas",
+        "href": "/innovaciones-tecnologicas"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "M06ZGNLC7LUHGDC": {
+      "type": "MenuItemComponent",
+      "id": "M06ZGNLC7LUHGDC",
+      "name": "Periodismo digno",
+      "children": [],
+      "classList": [
+        "lg:KOP2IUGF7XN5F7X",
+        "lg:SXZFTW0L4RUHQ36",
+        "lg:DFK82IDCVMF2GJD",
+        "lg:E26287V7PQGVC8W"
+      ],
+      "properties": {
+        "text": "Periodismo digno",
+        "href": "/periodismo-digno"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "CXI4XTCIYGW7OAS": {
+      "type": "MenuItemComponent",
+      "id": "CXI4XTCIYGW7OAS",
+      "name": "Gran Vía a una Política de conciencia",
+      "children": [],
+      "classList": [
+        "lg:KOP2IUGF7XN5F7X",
+        "lg:SXZFTW0L4RUHQ36",
+        "lg:DFK82IDCVMF2GJD",
+        "lg:E26287V7PQGVC8W"
+      ],
+      "properties": {
+        "text": "Gran Vía a una Política de conciencia",
+        "href": "/politica-de-conciencia"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "SDCIEGCO4DKIBIG": {
+      "type": "MenuItemComponent",
+      "id": "SDCIEGCO4DKIBIG",
+      "name": "Historia no manipulada",
+      "children": [],
+      "classList": [
+        "lg:KOP2IUGF7XN5F7X",
+        "lg:SXZFTW0L4RUHQ36",
+        "lg:DFK82IDCVMF2GJD",
+        "lg:E26287V7PQGVC8W"
+      ],
+      "properties": {
+        "text": "Historia no manipulada",
+        "href": "/historia-no-manipulada"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
+    },
+    "HM58NQ6N9U9O5NH": {
+      "type": "MenuItemComponent",
+      "id": "HM58NQ6N9U9O5NH",
+      "name": "Salud y Bienestar",
+      "children": [],
+      "classList": [
+        "lg:KOP2IUGF7XN5F7X",
+        "lg:SXZFTW0L4RUHQ36",
+        "lg:DFK82IDCVMF2GJD",
+        "lg:E26287V7PQGVC8W"
+      ],
+      "properties": {
+        "text": "Salud y Bienestar",
+        "href": "/salud-y-bienestar"
+      },
+      "parentId": "FCFN1SUAMFMTLW5"
     }
   },
   "styles": {
@@ -253,9 +622,6 @@
       "WSUNEKNLOCLW4TO": {
         "background-color": "white"
       },
-      "BENMSFHWW958GJP": {
-        "max-height": "100vh"
-      },
       "FPL0ZBRQQNCIDUE": {
         "font-size": "1.3em"
       },
@@ -268,14 +634,20 @@
       "VVDL381NOS1CFBV": {
         "padding": "5px 20px"
       },
-      "XKRMB23T4CVZF1V": {
-        "position": "absolute"
-      },
-      "T136HF17MAAE4F9": {
-        "top": "100%"
-      },
       "MKTR6XWHQV7G8CY": {
         "width": "100%"
+      },
+      "M1CJBDGDI58Q4G4": {
+        "position": "absolute"
+      },
+      "QWZ570OYIHH6JJW": {
+        "top": "100%"
+      },
+      "J6BXNJJ0XWNIOUX": {
+        "overflow": "auto"
+      },
+      "Q24EXMTRQMUCN9A": {
+        "padding": "5px 0px"
       }
     },
     "sm": {},
@@ -310,9 +682,46 @@
       },
       "RA5LBV2OFSX9OPF": {
         "padding-bottom": "60px"
+      },
+      "BXSB6AJEKAVKABL": {
+        "align-items": "center"
+      },
+      "J6VLUAOUP26BI8R": {
+        "font-weight": "700"
+      },
+      "D3D1XEJ7Y6VNDO3": {
+        "color": "white"
+      },
+      "OY8GPBESN5ROQ0U": {
+        "text-align": "center"
+      },
+      "BPY5VJ67C2OUKJF": {
+        "gap": "30px"
+      },
+      "QPPOVCJXS0VMUNH": {
+        "max-width": "100px"
+      },
+      "YD7FGPGABM0P65N": {
+        "position": "relative"
+      },
+      "KOP2IUGF7XN5F7X": {
+        "max-width": "unset"
+      },
+      "SXZFTW0L4RUHQ36": {
+        "color": "black"
+      },
+      "DFK82IDCVMF2GJD": {
+        "padding": "5px 10px"
+      },
+      "XJU2EE39768OSWF": {
+        "z-index": "100"
       }
     },
-    "xl": {},
+    "xl": {
+      "FUUNN8DA1VCUG3S": {
+        "gap": "60px"
+      }
+    },
     "2xl": {}
   },
   "layoutComponents": []

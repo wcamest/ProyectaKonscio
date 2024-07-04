@@ -8,6 +8,7 @@ router.post("/", ContentController.Post);
 router.put("/:id", ContentController.Put);
 router.delete("/:id", ContentController.Delete);
 router.get("/:id", ContentController.GetById);
-router.get("/permalink/:permalink", ContentController.GetByPermalink)
+router.get("/permalink/:permalink", ContentController.GetByPermalink);
+router.get("/metadata/:permalink", ContentController.GetMetadata)
 
 export default router;
