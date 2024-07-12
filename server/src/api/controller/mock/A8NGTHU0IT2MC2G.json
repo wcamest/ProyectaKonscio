@@ -1,0 +1,28 @@
+{
+  "id": "A8NGTHU0IT2MC2G",
+  "rootNodeId": "Y5G0CGY0KNBH7VN",
+  "metadata": {
+    "title": "Colabora - ProyectaKonscio",
+    "description": "No Description",
+    "permalink": "colabora"
+  },
+  "nodes": {
+    "Y5G0CGY0KNBH7VN": {
+      "id": "Y5G0CGY0KNBH7VN",
+      "name": "Root",
+      "type": "RootComponent",
+      "children": [],
+      "classList": [],
+      "properties": {}
+    }
+  },
+  "styles": {
+    "base": {},
+    "sm": {},
+    "md": {},
+    "lg": {},
+    "xl": {},
+    "2xl": {}
+  },
+  "layoutComponents": ["QHRZSBZUEIHSM4A"]
+}

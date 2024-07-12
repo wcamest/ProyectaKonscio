@@ -1,0 +1,28 @@
+{
+  "id": "Y2WE1P5RP7V03WZ",
+  "rootNodeId": "C6NTVN9IJVNBHM6",
+  "metadata": {
+    "title": "WebRTC y Espacios 3D",
+    "description": "No Description",
+    "permalink": "web-rtc-espacios-3d"
+  },
+  "nodes": {
+    "C6NTVN9IJVNBHM6": {
+      "id": "C6NTVN9IJVNBHM6",
+      "name": "Root",
+      "type": "RootComponent",
+      "children": [],
+      "classList": [],
+      "properties": {}
+    }
+  },
+  "styles": {
+    "base": {},
+    "sm": {},
+    "md": {},
+    "lg": {},
+    "xl": {},
+    "2xl": {}
+  },
+  "layoutComponents": ["QHRZSBZUEIHSM4A"]
+}
