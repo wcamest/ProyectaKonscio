@@ -1,12 +1,12 @@
 "use client";
 
 import CSSStylesComponent from "@/components/CSSStyles/CSSStylesComponent";
-import CodeViewerComponent from "@/components/temp/Editor/CodeViewer/CodeViewerComponent";
-import EditorViewerComponent from "@/components/temp/Editor/EditorViewer/EditorViewerComponent";
-import ElementPropertyGridComponent from "@/components/temp/Editor/ElementPropertyGrid/ElementPropertyGridComponent";
-import NodesTreeEditorComponent from "@/components/temp/Editor/NodesTreeEditor/NodesTreeEditorComponent";
-import StylesGridComponent from "@/components/temp/Editor/StylesGrid/StylesGridComponent";
-import TabsContainerComponent from "@/components/temp/Editor/TabsContainer/TabsContainerComponent";
+import CodeViewerComponent from "@/components/admin/Editor/CodeViewer/CodeViewerComponent";
+import EditorViewerComponent from "@/components/admin/Editor/EditorViewer/EditorViewerComponent";
+import ElementPropertyGridComponent from "@/components/admin/Editor/ElementPropertyGrid/ElementPropertyGridComponent";
+import NodesTreeEditorComponent from "@/components/admin/Editor/NodesTreeEditor/NodesTreeEditorComponent";
+import StylesGridComponent from "@/components/admin/Editor/StylesGrid/StylesGridComponent";
+import TabsContainerComponent from "@/components/admin/Editor/TabsContainer/TabsContainerComponent";
 import Page from "@/types/Classes/Page";
 import PageNode from "@/types/Classes/PageNode";
 import PageDataObject from "@/types/DataObjects/PageDataObject";

@@ -1,5 +1,5 @@
-import CaretDownFillIcon from "@/components/temp/Editor/Icons/CaretDownFillIcon";
-import CaretRightFillIcon from "@/components/temp/Editor/Icons/CaretRightFillIcon";
+import CaretDownFillIcon from "@/components/admin/Editor/Icons/CaretDownFillIcon";
+import CaretRightFillIcon from "@/components/admin/Editor/Icons/CaretRightFillIcon";
 import React, { PropsWithChildren, useState } from "react";
 
 type Props = {
