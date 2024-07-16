@@ -11,17 +11,625 @@
       "id": "Y5G0CGY0KNBH7VN",
       "name": "Root",
       "type": "RootComponent",
-      "children": [],
+      "children": ["CW62AHSAR615DDO"],
       "classList": [],
       "properties": {}
+    },
+    "CW62AHSAR615DDO": {
+      "type": "MainElement",
+      "id": "CW62AHSAR615DDO",
+      "name": "MainElement",
+      "children": ["PDMKCLIEEVH8MWB", "OIAG7J4R4JNYB0Y"],
+      "classList": ["JFX70LIAAY0PEIF", "GXASHO9TDHR1UM3"],
+      "properties": {},
+      "parentId": "Y5G0CGY0KNBH7VN"
+    },
+    "PDMKCLIEEVH8MWB": {
+      "type": "SectionElement",
+      "id": "PDMKCLIEEVH8MWB",
+      "name": "Sección - Banner",
+      "children": ["ZN38X1B4E0UIH1E", "V5WUJLYZLUQ7X8M"],
+      "classList": [
+        "CQ63UZTLWUOHIUN",
+        "JFX70LIAAY0PEIF",
+        "VDS3NEXYJGJQ1GT",
+        "Q06YR22LKO0CKOH",
+        "YD4T4B0IU4ZGZEG"
+      ],
+      "properties": {},
+      "parentId": "CW62AHSAR615DDO"
+    },
+    "ZN38X1B4E0UIH1E": {
+      "type": "ImgElement",
+      "id": "ZN38X1B4E0UIH1E",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [
+        "M1CJBDGDI58Q4G4",
+        "MKTR6XWHQV7G8CY",
+        "PKH8CGLH8OE8NCK",
+        "FJDG96275PDUS6O"
+      ],
+      "properties": {
+        "fill": true,
+        "src": "/api/image/colabora_banner.jpg"
+      },
+      "parentId": "PDMKCLIEEVH8MWB"
+    },
+    "V5WUJLYZLUQ7X8M": {
+      "type": "DivElement",
+      "id": "V5WUJLYZLUQ7X8M",
+      "name": "DivElement",
+      "children": ["JWURNVHNR5SHJW1"],
+      "classList": [
+        "CQ63UZTLWUOHIUN",
+        "XM18VCY313UBSI8",
+        "QWGBBUEMKQ4XO55",
+        "MKTR6XWHQV7G8CY",
+        "F0KYYAMYRCNVO5O",
+        "HY3XNHHUPC6H1L8",
+        "GWX8Y9THZUHKEX7",
+        "lg:IOL0R86USBR1JM0",
+        "lg:DSBKC5VPFRAKOV1"
+      ],
+      "properties": {},
+      "parentId": "PDMKCLIEEVH8MWB"
+    },
+    "JWURNVHNR5SHJW1": {
+      "type": "H1Element",
+      "id": "JWURNVHNR5SHJW1",
+      "name": "H1Element",
+      "children": ["ER2R5QDXI6Z2I75"],
+      "classList": [
+        "DXFTMEIQ2ZGBYXW",
+        "L8EI4ZXWXOD0H3B",
+        "HKQBE4XELWWMQC3",
+        "lg:ASGSNOWN7JULB02",
+        "xl:N1L276R98KGJLYO"
+      ],
+      "properties": {},
+      "parentId": "V5WUJLYZLUQ7X8M"
+    },
+    "ER2R5QDXI6Z2I75": {
+      "type": "TextElement",
+      "id": "ER2R5QDXI6Z2I75",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Colabora"
+      },
+      "parentId": "JWURNVHNR5SHJW1"
+    },
+    "OIAG7J4R4JNYB0Y": {
+      "type": "SectionElement",
+      "id": "OIAG7J4R4JNYB0Y",
+      "name": "Sección - Tres Categorias",
+      "children": ["TMND3F5P1LL1CT1", "ASAVT8UKLLGISEX"],
+      "classList": [
+        "lg:AR0RMNKP0PCDYGP",
+        "lg:MVKSWJZERUOCMTB",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "lg:BXSB6AJEKAVKABL"
+      ],
+      "properties": {},
+      "parentId": "CW62AHSAR615DDO"
+    },
+    "TMND3F5P1LL1CT1": {
+      "type": "H1Element",
+      "id": "TMND3F5P1LL1CT1",
+      "name": "H1Element",
+      "children": ["CV96XTBEXZGJ0P1"],
+      "classList": [
+        "lg:PVTDGU8OQZKMG02",
+        "L8EI4ZXWXOD0H3B",
+        "HY3XNHHUPC6H1L8",
+        "LQ8CI4ZVUP7AFKU",
+        "MWV4HW3RG7ZO9PK",
+        "QWGBBUEMKQ4XO55",
+        "S5F4XHQRS3KW8SV",
+        "MKTR6XWHQV7G8CY"
+      ],
+      "properties": {},
+      "parentId": "OIAG7J4R4JNYB0Y"
+    },
+    "CV96XTBEXZGJ0P1": {
+      "type": "TextElement",
+      "id": "CV96XTBEXZGJ0P1",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Involúcrate con nuestras propuestas, todas juntos cooperamos."
+      },
+      "parentId": "TMND3F5P1LL1CT1"
+    },
+    "ASAVT8UKLLGISEX": {
+      "type": "DivElement",
+      "id": "ASAVT8UKLLGISEX",
+      "name": "DivElement",
+      "children": ["HM9KMCU89S3S25U", "ZBX1I6AQ72YFXTH", "GHCF0KVAEB17YD9"],
+      "classList": [
+        "KMPUYKLGA1CYE24",
+        "TBEA9LLI3PI6ERY",
+        "PFRUDRAKRJ70YZD",
+        "MKTR6XWHQV7G8CY",
+        "CQE0VUUD265JGIK",
+        "BKRL9U6D9DG1D0S",
+        "LKW21A5C1IBAGEZ",
+        "XJK48TEXKWPVS14",
+        "lg:Q7NIZT326OBFT39",
+        "lg:QE47FUKP4AWD45O",
+        "lg:RPI2LEDQNOISWJ3",
+        "lg:Z81XK7KM1JHXHYI"
+      ],
+      "properties": {},
+      "parentId": "OIAG7J4R4JNYB0Y"
+    },
+    "HM9KMCU89S3S25U": {
+      "type": "FlipBoxComponent",
+      "id": "HM9KMCU89S3S25U",
+      "name": "FlipBoxComponent",
+      "children": ["V75X5S6CJXDQD5O", "UZ6NOB4N6LCKDX9"],
+      "classList": ["QLY16GZHTD22VZ9", "L8EI4ZXWXOD0H3B", "QWGBBUEMKQ4XO55"],
+      "properties": {},
+      "parentId": "ASAVT8UKLLGISEX"
+    },
+    "ZBX1I6AQ72YFXTH": {
+      "type": "FlipBoxComponent",
+      "id": "ZBX1I6AQ72YFXTH",
+      "name": "FlipBoxComponent",
+      "children": ["AJC1RNHOH7PGHGI", "L3GDM6GJBHNMH6W"],
+      "classList": ["NO6UBLFAF3GW5XW", "L8EI4ZXWXOD0H3B", "QWGBBUEMKQ4XO55"],
+      "properties": {},
+      "parentId": "OIAG7J4R4JNYB0Y"
+    },
+    "GHCF0KVAEB17YD9": {
+      "type": "FlipBoxComponent",
+      "id": "GHCF0KVAEB17YD9",
+      "name": "FlipBoxComponent",
+      "children": ["L4SBR0MYMAAIEJQ", "BO7I0FOD9NR3PXH"],
+      "classList": ["RQNEF4NHJ9HSGHG", "QWGBBUEMKQ4XO55", "L8EI4ZXWXOD0H3B"],
+      "properties": {},
+      "parentId": "OIAG7J4R4JNYB0Y"
+    },
+    "V75X5S6CJXDQD5O": {
+      "type": "DivElement",
+      "id": "V75X5S6CJXDQD5O",
+      "name": "DivElement",
+      "children": ["VP4CD1Z98V5U055", "XHLR9S1NEIJRGOR"],
+      "classList": [
+        "L8EI4ZXWXOD0H3B",
+        "BQRAJQ006E6E7G5",
+        "PKH8CGLH8OE8NCK",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "VDS3NEXYJGJQ1GT",
+        "Q06YR22LKO0CKOH",
+        "XKPMU6D53EPZE1T"
+      ],
+      "properties": {},
+      "parentId": "HM9KMCU89S3S25U"
+    },
+    "VP4CD1Z98V5U055": {
+      "type": "H2Element",
+      "id": "VP4CD1Z98V5U055",
+      "name": "H2Element",
+      "children": ["VZRGMP30MMB4JWS"],
+      "classList": ["LQ8CI4ZVUP7AFKU", "HKQBE4XELWWMQC3"],
+      "properties": {},
+      "parentId": "V75X5S6CJXDQD5O"
+    },
+    "VZRGMP30MMB4JWS": {
+      "type": "TextElement",
+      "id": "VZRGMP30MMB4JWS",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Asesores, Conectores y Promotores Casuales"
+      },
+      "parentId": "VP4CD1Z98V5U055"
+    },
+    "XHLR9S1NEIJRGOR": {
+      "type": "SpanElement",
+      "id": "XHLR9S1NEIJRGOR",
+      "name": "SpanElement",
+      "children": ["R1N01E2IK30E4R2"],
+      "classList": [],
+      "properties": {},
+      "parentId": "V75X5S6CJXDQD5O"
+    },
+    "R1N01E2IK30E4R2": {
+      "type": "TextElement",
+      "id": "R1N01E2IK30E4R2",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "1 - 2 horas al maes"
+      },
+      "parentId": "XHLR9S1NEIJRGOR"
+    },
+    "UZ6NOB4N6LCKDX9": {
+      "type": "DivElement",
+      "id": "UZ6NOB4N6LCKDX9",
+      "name": "DivElement",
+      "children": ["OP31HT7UYWFGRG4"],
+      "classList": [
+        "BQRAJQ006E6E7G5",
+        "PKH8CGLH8OE8NCK",
+        "JFX70LIAAY0PEIF",
+        "VDS3NEXYJGJQ1GT",
+        "Q06YR22LKO0CKOH",
+        "BEIZZP2A4FY8MTO"
+      ],
+      "properties": {},
+      "parentId": "HM9KMCU89S3S25U"
+    },
+    "OP31HT7UYWFGRG4": {
+      "type": "PElement",
+      "id": "OP31HT7UYWFGRG4",
+      "name": "PElement",
+      "children": ["ERVIWI0Q6IJUYY2"],
+      "classList": [],
+      "properties": {},
+      "parentId": "UZ6NOB4N6LCKDX9"
+    },
+    "ERVIWI0Q6IJUYY2": {
+      "type": "TextElement",
+      "id": "ERVIWI0Q6IJUYY2",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Aunque estés ocupado, puedes tomar algún tipo de acción que beneficie al proyecto. Por ejemplo, publicar un enlace en tus medios de comunicación favoritos podría llevar a la persona adecuada a descubrir el proyecto. Ningún consejo o acción es demasiado pequeño. ¡Únete a nosotros con solo 1-2 horas al mes!"
+      },
+      "parentId": "OP31HT7UYWFGRG4"
+    },
+    "AJC1RNHOH7PGHGI": {
+      "type": "DivElement",
+      "id": "AJC1RNHOH7PGHGI",
+      "name": "DivElement",
+      "children": ["HE8RHOR0EW239JZ", "IRL1ITW6SGVNK8W"],
+      "classList": [
+        "L8EI4ZXWXOD0H3B",
+        "PKH8CGLH8OE8NCK",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "VDS3NEXYJGJQ1GT",
+        "Q06YR22LKO0CKOH",
+        "XKPMU6D53EPZE1T",
+        "ELCSO14TKGXW7PP"
+      ],
+      "properties": {},
+      "parentId": "OIAG7J4R4JNYB0Y"
+    },
+    "HE8RHOR0EW239JZ": {
+      "type": "H2Element",
+      "id": "HE8RHOR0EW239JZ",
+      "name": "H2Element",
+      "children": ["JL0VUITE9EXNPMH"],
+      "classList": ["LQ8CI4ZVUP7AFKU", "HKQBE4XELWWMQC3"],
+      "properties": {},
+      "parentId": "AJC1RNHOH7PGHGI"
+    },
+    "JL0VUITE9EXNPMH": {
+      "type": "TextElement",
+      "id": "JL0VUITE9EXNPMH",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Mentores, animadores y consultores"
+      },
+      "parentId": "HE8RHOR0EW239JZ"
+    },
+    "IRL1ITW6SGVNK8W": {
+      "type": "SpanElement",
+      "id": "IRL1ITW6SGVNK8W",
+      "name": "SpanElement",
+      "children": ["CUABZ9RTG97HA9P"],
+      "classList": [],
+      "properties": {},
+      "parentId": "AJC1RNHOH7PGHGI"
+    },
+    "CUABZ9RTG97HA9P": {
+      "type": "TextElement",
+      "id": "CUABZ9RTG97HA9P",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "5 - 10 horas al mes"
+      },
+      "parentId": "IRL1ITW6SGVNK8W"
+    },
+    "L3GDM6GJBHNMH6W": {
+      "type": "DivElement",
+      "id": "L3GDM6GJBHNMH6W",
+      "name": "DivElement",
+      "children": ["MJRZNPWJRXTKL12"],
+      "classList": [
+        "PKH8CGLH8OE8NCK",
+        "JFX70LIAAY0PEIF",
+        "VDS3NEXYJGJQ1GT",
+        "Q06YR22LKO0CKOH",
+        "BEIZZP2A4FY8MTO",
+        "ELCSO14TKGXW7PP"
+      ],
+      "properties": {},
+      "parentId": "OIAG7J4R4JNYB0Y"
+    },
+    "MJRZNPWJRXTKL12": {
+      "type": "PElement",
+      "id": "MJRZNPWJRXTKL12",
+      "name": "PElement",
+      "children": ["M5BN0BXXDVGUIUR"],
+      "classList": [],
+      "properties": {},
+      "parentId": "L3GDM6GJBHNMH6W"
+    },
+    "M5BN0BXXDVGUIUR": {
+      "type": "TextElement",
+      "id": "M5BN0BXXDVGUIUR",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Como mentor, puedes sentarte con nosotros o con uno de nuestros miembros para brindar información valiosa que impulse nuestro proyecto en la dirección correcta. Como animador, comparte nuestro contenido en tus canales sociales y ayuda a difundir nuestro mensaje. Y como consultor, comprométete a tareas específicas que contribuyan al éxito del proyecto."
+      },
+      "parentId": "MJRZNPWJRXTKL12"
+    },
+    "L4SBR0MYMAAIEJQ": {
+      "type": "DivElement",
+      "id": "L4SBR0MYMAAIEJQ",
+      "name": "DivElement",
+      "children": ["FYK0LBKB6JDUFXI", "PW7PI2Y25A1PTMB"],
+      "classList": [
+        "L8EI4ZXWXOD0H3B",
+        "PKH8CGLH8OE8NCK",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "VDS3NEXYJGJQ1GT",
+        "Q06YR22LKO0CKOH",
+        "XKPMU6D53EPZE1T",
+        "S7NQKS95JW2S9ZZ"
+      ],
+      "properties": {},
+      "parentId": "OIAG7J4R4JNYB0Y"
+    },
+    "FYK0LBKB6JDUFXI": {
+      "type": "H2Element",
+      "id": "FYK0LBKB6JDUFXI",
+      "name": "H2Element",
+      "children": ["J77A9MBFMH7O296"],
+      "classList": ["LQ8CI4ZVUP7AFKU", "HKQBE4XELWWMQC3"],
+      "properties": {},
+      "parentId": "L4SBR0MYMAAIEJQ"
+    },
+    "J77A9MBFMH7O296": {
+      "type": "TextElement",
+      "id": "J77A9MBFMH7O296",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Equipo future"
+      },
+      "parentId": "FYK0LBKB6JDUFXI"
+    },
+    "PW7PI2Y25A1PTMB": {
+      "type": "SpanElement",
+      "id": "PW7PI2Y25A1PTMB",
+      "name": "SpanElement",
+      "children": ["BUE74PO0LC0ML00"],
+      "classList": [],
+      "properties": {},
+      "parentId": "L4SBR0MYMAAIEJQ"
+    },
+    "BUE74PO0LC0ML00": {
+      "type": "TextElement",
+      "id": "BUE74PO0LC0ML00",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "5 - 10 horas por semana"
+      },
+      "parentId": "PW7PI2Y25A1PTMB"
+    },
+    "BO7I0FOD9NR3PXH": {
+      "type": "DivElement",
+      "id": "BO7I0FOD9NR3PXH",
+      "name": "DivElement",
+      "children": ["SE6B0Q7L1GWYWIN"],
+      "classList": [
+        "PKH8CGLH8OE8NCK",
+        "JFX70LIAAY0PEIF",
+        "VDS3NEXYJGJQ1GT",
+        "Q06YR22LKO0CKOH",
+        "BEIZZP2A4FY8MTO",
+        "S7NQKS95JW2S9ZZ"
+      ],
+      "properties": {},
+      "parentId": "OIAG7J4R4JNYB0Y"
+    },
+    "SE6B0Q7L1GWYWIN": {
+      "type": "PElement",
+      "id": "SE6B0Q7L1GWYWIN",
+      "name": "PElement",
+      "children": ["L607HZOCXRIRWZA"],
+      "classList": [],
+      "properties": {},
+      "parentId": "BO7I0FOD9NR3PXH"
+    },
+    "L607HZOCXRIRWZA": {
+      "type": "TextElement",
+      "id": "L607HZOCXRIRWZA",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Como miembro del equipo Future, intercambiarás correos electrónicos regulares, participarás en sesiones de grupo y planificación individual, y colaborarás en plataformas para coordinar nuestros esfuerzos. Cada tarea es importante y valoramos las perspectivas únicas de cada miembro."
+      },
+      "parentId": "SE6B0Q7L1GWYWIN"
     }
   },
   "styles": {
-    "base": {},
+    "base": {
+      "JFX70LIAAY0PEIF": {
+        "display": "flex"
+      },
+      "GXASHO9TDHR1UM3": {
+        "flex-direction": "column"
+      },
+      "Q06YR22LKO0CKOH": {
+        "align-items": "center"
+      },
+      "MKTR6XWHQV7G8CY": {
+        "width": "100%"
+      },
+      "M1CJBDGDI58Q4G4": {
+        "position": "absolute"
+      },
+      "CQ63UZTLWUOHIUN": {
+        "position": "relative"
+      },
+      "VDS3NEXYJGJQ1GT": {
+        "justify-content": "center"
+      },
+      "YD4T4B0IU4ZGZEG": {
+        "aspect-ratio": "16 / 9"
+      },
+      "PKH8CGLH8OE8NCK": {
+        "height": "100%"
+      },
+      "FJDG96275PDUS6O": {
+        "object-fit": "cover"
+      },
+      "XM18VCY313UBSI8": {
+        "z-index": "1"
+      },
+      "QWGBBUEMKQ4XO55": {
+        "color": "white"
+      },
+      "F0KYYAMYRCNVO5O": {
+        "margin": "10px 30px"
+      },
+      "HY3XNHHUPC6H1L8": {
+        "padding": "10px"
+      },
+      "GWX8Y9THZUHKEX7": {
+        "background-color": "rgba(255, 102, 51, 0.5)"
+      },
+      "DXFTMEIQ2ZGBYXW": {
+        "font-weight": "700"
+      },
+      "L8EI4ZXWXOD0H3B": {
+        "text-align": "center"
+      },
+      "HKQBE4XELWWMQC3": {
+        "font-size": "1.5em"
+      },
+      "LQ8CI4ZVUP7AFKU": {
+        "font-weight": "bold"
+      },
+      "MWV4HW3RG7ZO9PK": {
+        "text-transform": "uppercase"
+      },
+      "S5F4XHQRS3KW8SV": {
+        "background-color": "rgb(255, 102, 51)"
+      },
+      "TBEA9LLI3PI6ERY": {
+        "padding": "20px"
+      },
+      "KMPUYKLGA1CYE24": {
+        "display": "grid"
+      },
+      "QLY16GZHTD22VZ9": {
+        "grid-area": "a-area"
+      },
+      "NO6UBLFAF3GW5XW": {
+        "grid-area": "b-area"
+      },
+      "RQNEF4NHJ9HSGHG": {
+        "grid-area": "c-area"
+      },
+      "BQRAJQ006E6E7G5": {
+        "background-color": "rgb(248, 101, 255)"
+      },
+      "PFRUDRAKRJ70YZD": {
+        "gap": "20px"
+      },
+      "CQE0VUUD265JGIK": {
+        "grid-template-areas": "\"a-area\" \"b-area\" \"c-area\""
+      },
+      "BKRL9U6D9DG1D0S": {
+        "grid-template-columns": "1fr "
+      },
+      "LKW21A5C1IBAGEZ": {
+        "grid-template-rows": "1fr 1fr 1fr"
+      },
+      "XKPMU6D53EPZE1T": {
+        "gap": "10px"
+      },
+      "XJK48TEXKWPVS14": {
+        "height": "1200px"
+      },
+      "BEIZZP2A4FY8MTO": {
+        "padding": "30px"
+      },
+      "ELCSO14TKGXW7PP": {
+        "background-color": "rgb(80, 47, 198)"
+      },
+      "S7NQKS95JW2S9ZZ": {
+        "background-color": "rgb(0, 141, 71)"
+      }
+    },
     "sm": {},
     "md": {},
-    "lg": {},
-    "xl": {},
+    "lg": {
+      "AR0RMNKP0PCDYGP": {
+        "display": "flex"
+      },
+      "ASGSNOWN7JULB02": {
+        "font-size": "3em"
+      },
+      "IOL0R86USBR1JM0": {
+        "width": "fit-content"
+      },
+      "DSBKC5VPFRAKOV1": {
+        "padding": "50px 100px"
+      },
+      "MVKSWJZERUOCMTB": {
+        "flex-direction": "column"
+      },
+      "PVTDGU8OQZKMG02": {
+        "font-size": "2em"
+      },
+      "BXSB6AJEKAVKABL": {
+        "align-items": "center"
+      },
+      "Q7NIZT326OBFT39": {
+        "grid-template-rows": "1fr 1fr"
+      },
+      "QE47FUKP4AWD45O": {
+        "grid-template-columns": "1fr 1fr"
+      },
+      "RPI2LEDQNOISWJ3": {
+        "grid-template-areas": "\"a-area b-area\" \"c-area c-area\""
+      },
+      "Z81XK7KM1JHXHYI": {
+        "max-width": "1000px"
+      }
+    },
+    "xl": {
+      "N1L276R98KGJLYO": {
+        "font-size": "5em"
+      }
+    },
     "2xl": {}
   },
   "layoutComponents": ["QHRZSBZUEIHSM4A"]

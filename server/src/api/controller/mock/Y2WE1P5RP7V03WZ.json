@@ -2,7 +2,7 @@
   "id": "Y2WE1P5RP7V03WZ",
   "rootNodeId": "C6NTVN9IJVNBHM6",
   "metadata": {
-    "title": "WebRTC y Espacios 3D",
+    "title": "WebRTC y Espacios 3D - ProyectaKonscio",
     "description": "No Description",
     "permalink": "web-rtc-espacios-3d"
   },
@@ -11,16 +11,1212 @@
       "id": "C6NTVN9IJVNBHM6",
       "name": "Root",
       "type": "RootComponent",
-      "children": [],
+      "children": ["IYIBV2WNCRNIKDP"],
       "classList": [],
       "properties": {}
+    },
+    "IYIBV2WNCRNIKDP": {
+      "type": "MainElement",
+      "id": "IYIBV2WNCRNIKDP",
+      "name": "MainElement",
+      "children": ["QM3TB311B9S1E7P", "M1LXH5Z01E0NZXG"],
+      "classList": ["JFX70LIAAY0PEIF", "GXASHO9TDHR1UM3"],
+      "properties": {},
+      "parentId": "C6NTVN9IJVNBHM6"
+    },
+    "QM3TB311B9S1E7P": {
+      "type": "SectionElement",
+      "id": "QM3TB311B9S1E7P",
+      "name": "Sección - Habitación 3D Interactiva",
+      "children": ["MSR8097H9OKB69L"],
+      "classList": [
+        "TT3WSQN47ML6G16",
+        "JFX70LIAAY0PEIF",
+        "XFPLER9A9JNUOBC",
+        "Q06YR22LKO0CKOH",
+        "UROYUOTU1JUIT0Z",
+        "MKTR6XWHQV7G8CY",
+        "PCWO91AWA6ZVFJF"
+      ],
+      "properties": {},
+      "parentId": "IYIBV2WNCRNIKDP"
+    },
+    "MSR8097H9OKB69L": {
+      "type": "DivElement",
+      "id": "MSR8097H9OKB69L",
+      "name": "DivElement",
+      "children": ["URXJ8XZ1RN3NNQ7"],
+      "classList": [
+        "TT3WSQN47ML6G16",
+        "OAJDF6UWWLJ1DQ2",
+        "IGYW8E0LN68VJ9D",
+        "E0T9DJTDVKEFLCQ",
+        "UDAZ979WCT73Q3H",
+        "RR2EAYVQF80HD4W",
+        "BXRG6DPJPMO7KAN",
+        "MKTR6XWHQV7G8CY",
+        "lg:F84T66WS5RAB7KS",
+        "lg:DTAUZFWMAL4ZGMM"
+      ],
+      "properties": {},
+      "parentId": "QM3TB311B9S1E7P"
+    },
+    "URXJ8XZ1RN3NNQ7": {
+      "type": "H1Element",
+      "id": "URXJ8XZ1RN3NNQ7",
+      "name": "H1Element",
+      "children": ["SPQK2WFE7AOYY7E"],
+      "classList": ["X3E8YNS5J0VHO3F", "FX7BUUEGADSZ9K2", "lg:HBEOJV49AX4UII3"],
+      "properties": {},
+      "parentId": "MSR8097H9OKB69L"
+    },
+    "SPQK2WFE7AOYY7E": {
+      "type": "TextElement",
+      "id": "SPQK2WFE7AOYY7E",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Diseño WebRTC y Espacios 3D"
+      },
+      "parentId": "URXJ8XZ1RN3NNQ7"
+    },
+    "M1LXH5Z01E0NZXG": {
+      "type": "SectionElement",
+      "id": "M1LXH5Z01E0NZXG",
+      "name": "Sección - Tecnologia como herramienta de difusión",
+      "children": [
+        "T14BYJR1LHPDWEP",
+        "NQ40KRCDMFB4H7A",
+        "A7WOS0Y4FNNF930",
+        "YIURDNJD3YL4TSA"
+      ],
+      "classList": ["JFX70LIAAY0PEIF", "GXASHO9TDHR1UM3"],
+      "properties": {},
+      "parentId": "IYIBV2WNCRNIKDP"
+    },
+    "T14BYJR1LHPDWEP": {
+      "type": "H1Element",
+      "id": "T14BYJR1LHPDWEP",
+      "name": "H1Element",
+      "children": ["B3867D782O0JQMI"],
+      "classList": [
+        "TWODW7J0PKIWH0X",
+        "E0T9DJTDVKEFLCQ",
+        "IOMB50E7LGPRVC6",
+        "SB0Z58UP8X8EG4G",
+        "IGYW8E0LN68VJ9D",
+        "UL67MRXW5RWLSIT",
+        "lg:AJVEZH6SEMK50RK"
+      ],
+      "properties": {},
+      "parentId": "M1LXH5Z01E0NZXG"
+    },
+    "B3867D782O0JQMI": {
+      "type": "TextElement",
+      "id": "B3867D782O0JQMI",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La tecnología digital como herramienta de difusión de propuestas de conciencia."
+      },
+      "parentId": "T14BYJR1LHPDWEP"
+    },
+    "NQ40KRCDMFB4H7A": {
+      "type": "DivElement",
+      "id": "NQ40KRCDMFB4H7A",
+      "name": "DivElement",
+      "children": ["WAWKPJ7IMHAKSRB"],
+      "classList": [
+        "XL3XJG2MOVIVYZG",
+        "H4ZX8OYZXGSZC4N",
+        "MKTR6XWHQV7G8CY",
+        "JFX70LIAAY0PEIF",
+        "XFPLER9A9JNUOBC"
+      ],
+      "properties": {},
+      "parentId": "M1LXH5Z01E0NZXG"
+    },
+    "WAWKPJ7IMHAKSRB": {
+      "type": "FlipBoxComponent",
+      "id": "WAWKPJ7IMHAKSRB",
+      "name": "FlipBoxComponent",
+      "children": ["G8E597B3XOC9XBP", "BQ7MAJ1AGOUA1KE"],
+      "classList": [
+        "MRZDKANF2V81C82",
+        "CRZA3KJO0MYU634",
+        "LCFAJFEGK6L1WV3",
+        "MKTR6XWHQV7G8CY"
+      ],
+      "properties": {},
+      "parentId": "NQ40KRCDMFB4H7A"
+    },
+    "G8E597B3XOC9XBP": {
+      "type": "DivElement",
+      "id": "G8E597B3XOC9XBP",
+      "name": "DivElement",
+      "children": ["P0GNX8ITB0OR27A", "ZGPATEF0EU8BYO0"],
+      "classList": [
+        "CRZA3KJO0MYU634",
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "XFPLER9A9JNUOBC",
+        "Q06YR22LKO0CKOH",
+        "F5FMKFBCE7SLNGG",
+        "DQTDOW2SDLJ3YPX"
+      ],
+      "properties": {},
+      "parentId": "WAWKPJ7IMHAKSRB"
+    },
+    "BQ7MAJ1AGOUA1KE": {
+      "type": "DivElement",
+      "id": "BQ7MAJ1AGOUA1KE",
+      "name": "DivElement",
+      "children": [],
+      "classList": ["CRZA3KJO0MYU634", "MKTR6XWHQV7G8CY", "MRZDKANF2V81C82"],
+      "properties": {},
+      "parentId": "WAWKPJ7IMHAKSRB"
+    },
+    "P0GNX8ITB0OR27A": {
+      "type": "ImgElement",
+      "id": "P0GNX8ITB0OR27A",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/logo_with_text.svg",
+        "width": 100,
+        "height": 34
+      },
+      "parentId": "G8E597B3XOC9XBP"
+    },
+    "ZGPATEF0EU8BYO0": {
+      "type": "PElement",
+      "id": "ZGPATEF0EU8BYO0",
+      "name": "PElement",
+      "children": ["LEBSAYP0Y7MR01E"],
+      "classList": ["E0T9DJTDVKEFLCQ"],
+      "properties": {},
+      "parentId": "G8E597B3XOC9XBP"
+    },
+    "LEBSAYP0Y7MR01E": {
+      "type": "TextElement",
+      "id": "LEBSAYP0Y7MR01E",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Somos expertos en entornos 3D y salas webRTC para proyectos de conciencia en educación, cultura, y comercio justo."
+      },
+      "parentId": "ZGPATEF0EU8BYO0"
+    },
+    "A7WOS0Y4FNNF930": {
+      "type": "DivElement",
+      "id": "A7WOS0Y4FNNF930",
+      "name": "DivElement",
+      "children": ["CNWS2YS1PTM0W6X", "CGIOOBIS0A3PZ41", "LFGV2847O5ZO4B8"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "F5FMKFBCE7SLNGG",
+        "GXASHO9TDHR1UM3",
+        "lg:D72M9CI3YEO3UYA",
+        "TBEA9LLI3PI6ERY"
+      ],
+      "properties": {},
+      "parentId": "M1LXH5Z01E0NZXG"
+    },
+    "CNWS2YS1PTM0W6X": {
+      "type": "DivElement",
+      "id": "CNWS2YS1PTM0W6X",
+      "name": "DivElement",
+      "children": ["CCB6BBRLN97P6W1"],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "SM09IXSTRA1QGJR",
+        "Q2XGME59EKLJAZX",
+        "FX7BUUEGADSZ9K2"
+      ],
+      "properties": {},
+      "parentId": "A7WOS0Y4FNNF930"
+    },
+    "CCB6BBRLN97P6W1": {
+      "type": "DivElement",
+      "id": "CCB6BBRLN97P6W1",
+      "name": "DivElement",
+      "children": ["JO5Z84GV6DB8WHA", "T9QNXJHMMVA9C1R"],
+      "classList": [
+        "RR2EAYVQF80HD4W",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "Q06YR22LKO0CKOH",
+        "SM09IXSTRA1QGJR"
+      ],
+      "properties": {},
+      "parentId": "CNWS2YS1PTM0W6X"
+    },
+    "JO5Z84GV6DB8WHA": {
+      "type": "ImgElement",
+      "id": "JO5Z84GV6DB8WHA",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/users.svg",
+        "height": 50,
+        "width": 50
+      },
+      "parentId": "CNWS2YS1PTM0W6X"
+    },
+    "T9QNXJHMMVA9C1R": {
+      "type": "SpanElement",
+      "id": "T9QNXJHMMVA9C1R",
+      "name": "SpanElement",
+      "children": ["GHTWGMLEGPBTM49"],
+      "classList": ["E0T9DJTDVKEFLCQ", "FPL0ZBRQQNCIDUE"],
+      "properties": {},
+      "parentId": "CNWS2YS1PTM0W6X"
+    },
+    "GHTWGMLEGPBTM49": {
+      "type": "TextElement",
+      "id": "GHTWGMLEGPBTM49",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Las comunidades que se construyen formadas en conciencia..."
+      },
+      "parentId": "T9QNXJHMMVA9C1R"
+    },
+    "CGIOOBIS0A3PZ41": {
+      "type": "DivElement",
+      "id": "CGIOOBIS0A3PZ41",
+      "name": "DivElement",
+      "children": ["SVJ0O4JCB6Q864V"],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "SM09IXSTRA1QGJR",
+        "HTEMZVUNB3LHV2X",
+        "FX7BUUEGADSZ9K2"
+      ],
+      "properties": {},
+      "parentId": "M1LXH5Z01E0NZXG"
+    },
+    "SVJ0O4JCB6Q864V": {
+      "type": "DivElement",
+      "id": "SVJ0O4JCB6Q864V",
+      "name": "DivElement",
+      "children": ["NHIXC1LVIYN0I8J", "O73H8EWYDFT0OK7"],
+      "classList": [
+        "RR2EAYVQF80HD4W",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "SM09IXSTRA1QGJR",
+        "Q06YR22LKO0CKOH"
+      ],
+      "properties": {},
+      "parentId": "CGIOOBIS0A3PZ41"
+    },
+    "NHIXC1LVIYN0I8J": {
+      "type": "ImgElement",
+      "id": "NHIXC1LVIYN0I8J",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/star-fill.svg",
+        "height": 50,
+        "width": 50
+      },
+      "parentId": "CGIOOBIS0A3PZ41"
+    },
+    "O73H8EWYDFT0OK7": {
+      "type": "SpanElement",
+      "id": "O73H8EWYDFT0OK7",
+      "name": "SpanElement",
+      "children": ["NMSOUF42TYUUER7"],
+      "classList": ["E0T9DJTDVKEFLCQ", "FPL0ZBRQQNCIDUE"],
+      "properties": {},
+      "parentId": "CGIOOBIS0A3PZ41"
+    },
+    "NMSOUF42TYUUER7": {
+      "type": "TextElement",
+      "id": "NMSOUF42TYUUER7",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "...realizan proyectos extraordinarios..."
+      },
+      "parentId": "O73H8EWYDFT0OK7"
+    },
+    "LFGV2847O5ZO4B8": {
+      "type": "DivElement",
+      "id": "LFGV2847O5ZO4B8",
+      "name": "DivElement",
+      "children": ["JBX12P69LJF08F8"],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "Q06YR22LKO0CKOH",
+        "SM09IXSTRA1QGJR",
+        "Q2XGME59EKLJAZX",
+        "FX7BUUEGADSZ9K2"
+      ],
+      "properties": {},
+      "parentId": "M1LXH5Z01E0NZXG"
+    },
+    "JBX12P69LJF08F8": {
+      "type": "DivElement",
+      "id": "JBX12P69LJF08F8",
+      "name": "DivElement",
+      "children": ["OY0R7TEDSSW2674", "O4FQSTQQ182W20M"],
+      "classList": [
+        "RR2EAYVQF80HD4W",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "Q06YR22LKO0CKOH",
+        "SM09IXSTRA1QGJR"
+      ],
+      "properties": {},
+      "parentId": "LFGV2847O5ZO4B8"
+    },
+    "OY0R7TEDSSW2674": {
+      "type": "ImgElement",
+      "id": "OY0R7TEDSSW2674",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "src": "/api/image/check-lg.svg",
+        "height": 50,
+        "width": 50
+      },
+      "parentId": "LFGV2847O5ZO4B8"
+    },
+    "O4FQSTQQ182W20M": {
+      "type": "SpanElement",
+      "id": "O4FQSTQQ182W20M",
+      "name": "SpanElement",
+      "children": ["QZMYCWSVVWIZCSD"],
+      "classList": ["E0T9DJTDVKEFLCQ", "FPL0ZBRQQNCIDUE"],
+      "properties": {},
+      "parentId": "LFGV2847O5ZO4B8"
+    },
+    "QZMYCWSVVWIZCSD": {
+      "type": "TextElement",
+      "id": "QZMYCWSVVWIZCSD",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La interacción y la difusión con tecnologías digitales promueven sociedades más justas y evolutivas."
+      },
+      "parentId": "O4FQSTQQ182W20M"
+    },
+    "YIURDNJD3YL4TSA": {
+      "type": "DivElement",
+      "id": "YIURDNJD3YL4TSA",
+      "name": "DivElement",
+      "children": [
+        "CJ600OC3G2UIV9P",
+        "QANOXP79SL5G7PP",
+        "H2I1DNVVFPNGG9J",
+        "YVL6LP7EU7O76LW"
+      ],
+      "classList": [
+        "F5FMKFBCE7SLNGG",
+        "DWQY4ADDG6SR2B0",
+        "YN66XU0APF6A6DZ",
+        "AM9Q13M337U8PI5",
+        "lg:HOFZA4Z96LCF7H8",
+        "lg:XQOQBC5RL6FJVRS"
+      ],
+      "properties": {},
+      "parentId": "M1LXH5Z01E0NZXG"
+    },
+    "CJ600OC3G2UIV9P": {
+      "type": "FlipBoxComponent",
+      "id": "CJ600OC3G2UIV9P",
+      "name": "FlipBoxComponent",
+      "children": ["BZOBYT91VH7CPND", "WPW5A18RJ440FZQ"],
+      "classList": ["MKTR6XWHQV7G8CY", "IGYW8E0LN68VJ9D", "JMGWAXZCH9M9NB5"],
+      "properties": {},
+      "parentId": "YIURDNJD3YL4TSA"
+    },
+    "QANOXP79SL5G7PP": {
+      "type": "FlipBoxComponent",
+      "id": "QANOXP79SL5G7PP",
+      "name": "FlipBoxComponent",
+      "children": ["WNW24VDOMJ42Z0H", "O71KRTWGF5B8E11"],
+      "classList": ["MKTR6XWHQV7G8CY", "IGYW8E0LN68VJ9D", "JMGWAXZCH9M9NB5"],
+      "properties": {},
+      "parentId": "M1LXH5Z01E0NZXG"
+    },
+    "WNW24VDOMJ42Z0H": {
+      "type": "DivElement",
+      "id": "WNW24VDOMJ42Z0H",
+      "name": "DivElement",
+      "children": ["B6PA0RSYDCXNR4V", "L0WMB7JWWVLFJDR", "DKH6MWAOICQRI1M"],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "JFX70LIAAY0PEIF",
+        "XFPLER9A9JNUOBC",
+        "Q06YR22LKO0CKOH",
+        "GXASHO9TDHR1UM3",
+        "F5FMKFBCE7SLNGG",
+        "JMGWAXZCH9M9NB5",
+        "TT3WSQN47ML6G16"
+      ],
+      "properties": {},
+      "parentId": "QANOXP79SL5G7PP"
+    },
+    "O71KRTWGF5B8E11": {
+      "type": "DivElement",
+      "id": "O71KRTWGF5B8E11",
+      "name": "DivElement",
+      "children": [
+        "UO07VCT6S71RUOF",
+        "JGL9F9HDUA0PIR0",
+        "UF18374A48I4AAU",
+        "QFXBVZV7G09G1GW"
+      ],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "XFPLER9A9JNUOBC",
+        "Q06YR22LKO0CKOH",
+        "E0T9DJTDVKEFLCQ",
+        "F5FMKFBCE7SLNGG",
+        "DQTDOW2SDLJ3YPX",
+        "POCS912IV1R7C73",
+        "JMGWAXZCH9M9NB5"
+      ],
+      "properties": {},
+      "parentId": "QANOXP79SL5G7PP"
+    },
+    "UO07VCT6S71RUOF": {
+      "type": "PElement",
+      "id": "UO07VCT6S71RUOF",
+      "name": "PElement",
+      "children": ["MW53CHZRAIYOF86"],
+      "classList": [],
+      "properties": {},
+      "parentId": "O71KRTWGF5B8E11"
+    },
+    "MW53CHZRAIYOF86": {
+      "type": "TextElement",
+      "id": "MW53CHZRAIYOF86",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La comunicación dentro de los entornos promueve el diálogo, el intercambio de ideas, el análisis, la participación, la solución de problemas, la negociación, la co-creación."
+      },
+      "parentId": "UO07VCT6S71RUOF"
+    },
+    "JGL9F9HDUA0PIR0": {
+      "type": "PElement",
+      "id": "JGL9F9HDUA0PIR0",
+      "name": "PElement",
+      "children": ["CGY4PEL44ANAEUB"],
+      "classList": [],
+      "properties": {},
+      "parentId": "QANOXP79SL5G7PP"
+    },
+    "CGY4PEL44ANAEUB": {
+      "type": "TextElement",
+      "id": "CGY4PEL44ANAEUB",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Si a esa necesidad imperativa de comunicación añadimos el reto de tener data, analítica, contenido y video disponible en tiempo real, en cualquier momento y lugar. Cuales son nuestras opciones? El Chat? la videoconferencia tradicional?"
+      },
+      "parentId": "JGL9F9HDUA0PIR0"
+    },
+    "UF18374A48I4AAU": {
+      "type": "PElement",
+      "id": "UF18374A48I4AAU",
+      "name": "PElement",
+      "children": ["H3RTAQ1VOKHG2F6"],
+      "classList": [],
+      "properties": {},
+      "parentId": "QANOXP79SL5G7PP"
+    },
+    "H3RTAQ1VOKHG2F6": {
+      "type": "TextElement",
+      "id": "H3RTAQ1VOKHG2F6",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La Solución que va a estar presente en el mundo digital del futuro y por los próximos 20 años es la nueva generación de Tecnologías de WebRTC que incluyen propuestas de «todo incluido» de videoconferencia, chat, data y analítica, contenidos, transmisiones en vivo.. conectados a redes sociales."
+      },
+      "parentId": "UF18374A48I4AAU"
+    },
+    "QFXBVZV7G09G1GW": {
+      "type": "PElement",
+      "id": "QFXBVZV7G09G1GW",
+      "name": "PElement",
+      "children": ["PN6KUH99CB8PRER"],
+      "classList": [],
+      "properties": {},
+      "parentId": "QANOXP79SL5G7PP"
+    },
+    "PN6KUH99CB8PRER": {
+      "type": "TextElement",
+      "id": "PN6KUH99CB8PRER",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "El medio son Salas Interactivas que sirven de «corredor digital» conectando personas en un «cara a cara» en ambientes seguros, privados y que permiten escalabilidad para alcanzar a toda la organización y por que no?.. a proveedores y distribuidores, adquirentes de servicios y productos, fans y usuarios finales."
+      },
+      "parentId": "QFXBVZV7G09G1GW"
+    },
+    "BZOBYT91VH7CPND": {
+      "type": "DivElement",
+      "id": "BZOBYT91VH7CPND",
+      "name": "DivElement",
+      "children": ["XZ5WZX2BPE8RJ1V", "RACYGNC1E1B6NI4", "S4G6RI897IZ3MB3"],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "JFX70LIAAY0PEIF",
+        "XFPLER9A9JNUOBC",
+        "Q06YR22LKO0CKOH",
+        "GXASHO9TDHR1UM3",
+        "F5FMKFBCE7SLNGG",
+        "JMGWAXZCH9M9NB5",
+        "TT3WSQN47ML6G16"
+      ],
+      "properties": {},
+      "parentId": "CJ600OC3G2UIV9P"
+    },
+    "WPW5A18RJ440FZQ": {
+      "type": "DivElement",
+      "id": "WPW5A18RJ440FZQ",
+      "name": "DivElement",
+      "children": ["W4XSBY7S5PTEANX"],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "JFX70LIAAY0PEIF",
+        "XFPLER9A9JNUOBC",
+        "Q06YR22LKO0CKOH",
+        "GXASHO9TDHR1UM3",
+        "F5FMKFBCE7SLNGG",
+        "E0T9DJTDVKEFLCQ",
+        "DQTDOW2SDLJ3YPX",
+        "JMGWAXZCH9M9NB5"
+      ],
+      "properties": {},
+      "parentId": "YIURDNJD3YL4TSA"
+    },
+    "W4XSBY7S5PTEANX": {
+      "type": "PElement",
+      "id": "W4XSBY7S5PTEANX",
+      "name": "PElement",
+      "children": ["FBUML2E2362MKQS"],
+      "classList": [],
+      "properties": {},
+      "parentId": "WPW5A18RJ440FZQ"
+    },
+    "FBUML2E2362MKQS": {
+      "type": "TextElement",
+      "id": "FBUML2E2362MKQS",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La Humanización de la Tecnología. «En los siguientes cinco años, a las propuestas digitalizadas no les puede faltar la innovación, la velocidad o cambio de capacidad de reinvención en el camino hacia el desafío digital». “El cambio fundamental está en pasar de las interfaces transaccionales a plataformas conversacionales. Esto es, colocar a la persona en el centro de la propuesta, crear una relación de verdadera empatía y entender sus verdaderas necesidades”"
+      },
+      "parentId": "W4XSBY7S5PTEANX"
+    },
+    "H2I1DNVVFPNGG9J": {
+      "type": "FlipBoxComponent",
+      "id": "H2I1DNVVFPNGG9J",
+      "name": "FlipBoxComponent",
+      "children": ["AE0YD67S7CVX2Y7", "JFFXRSDP05P5HXI"],
+      "classList": ["MKTR6XWHQV7G8CY", "IGYW8E0LN68VJ9D", "JMGWAXZCH9M9NB5"],
+      "properties": {},
+      "parentId": "M1LXH5Z01E0NZXG"
+    },
+    "AE0YD67S7CVX2Y7": {
+      "type": "DivElement",
+      "id": "AE0YD67S7CVX2Y7",
+      "name": "DivElement",
+      "children": ["FBXDXQ2WKEUX8VD", "O2NCNMLVK3SG3YA", "DTKGQQQ9Z2JREJH"],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "JFX70LIAAY0PEIF",
+        "XFPLER9A9JNUOBC",
+        "Q06YR22LKO0CKOH",
+        "GXASHO9TDHR1UM3",
+        "F5FMKFBCE7SLNGG",
+        "E0T9DJTDVKEFLCQ",
+        "DQTDOW2SDLJ3YPX",
+        "JMGWAXZCH9M9NB5",
+        "TT3WSQN47ML6G16"
+      ],
+      "properties": {},
+      "parentId": "H2I1DNVVFPNGG9J"
+    },
+    "JFFXRSDP05P5HXI": {
+      "type": "DivElement",
+      "id": "JFFXRSDP05P5HXI",
+      "name": "DivElement",
+      "children": [
+        "BK4B20Z3C3HQIQ0",
+        "IIZGMPP99SWB76W",
+        "F3N5O1C4HFKVXQD",
+        "DPTHTRI0AIIBK39"
+      ],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "XFPLER9A9JNUOBC",
+        "Q06YR22LKO0CKOH",
+        "E0T9DJTDVKEFLCQ",
+        "F5FMKFBCE7SLNGG",
+        "DQTDOW2SDLJ3YPX",
+        "ZGZMYW6E16VUNTK",
+        "JMGWAXZCH9M9NB5",
+        "lg:K14703DBK1KV0KH"
+      ],
+      "properties": {},
+      "parentId": "H2I1DNVVFPNGG9J"
+    },
+    "BK4B20Z3C3HQIQ0": {
+      "type": "PElement",
+      "id": "BK4B20Z3C3HQIQ0",
+      "name": "PElement",
+      "children": ["K86SYQYA8ZVPLUN"],
+      "classList": [],
+      "properties": {},
+      "parentId": "JFFXRSDP05P5HXI"
+    },
+    "K86SYQYA8ZVPLUN": {
+      "type": "TextElement",
+      "id": "K86SYQYA8ZVPLUN",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Creamos entornos interactivos 3D en línea masivos y persistentes, desarrollados y construidos por los usuarios. Nuestra economía colaborativa está alojada en servidores en la nube. Buscamos difundir, conectar, compartir, fomentar el prosumismo, conciencia global, respeto, transparencia, reciprocidad, apertura y nuevas tendencias en economía real colaborativa y educación alternativa. Nuestros servicios incluyen la construcción de la entrada al entorno 3D, estrategia de conexión al Metaverso, personalización de espacios y contenido, formación en interacción y organización de eventos inmersivos."
+      },
+      "parentId": "BK4B20Z3C3HQIQ0"
+    },
+    "YVL6LP7EU7O76LW": {
+      "type": "FlipBoxComponent",
+      "id": "YVL6LP7EU7O76LW",
+      "name": "FlipBoxComponent",
+      "children": ["K5ONGRHP6O24RZ2", "YI8YFGYJBCMD5L8"],
+      "classList": ["MKTR6XWHQV7G8CY", "IGYW8E0LN68VJ9D", "JMGWAXZCH9M9NB5"],
+      "properties": {},
+      "parentId": "M1LXH5Z01E0NZXG"
+    },
+    "K5ONGRHP6O24RZ2": {
+      "type": "DivElement",
+      "id": "K5ONGRHP6O24RZ2",
+      "name": "DivElement",
+      "children": ["MEHX5IR1TM9MAI6", "BWIX95P4G32RWF6", "WWQSLUGTKKW1UDR"],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "JFX70LIAAY0PEIF",
+        "XFPLER9A9JNUOBC",
+        "Q06YR22LKO0CKOH",
+        "GXASHO9TDHR1UM3",
+        "F5FMKFBCE7SLNGG",
+        "E0T9DJTDVKEFLCQ",
+        "DQTDOW2SDLJ3YPX",
+        "JMGWAXZCH9M9NB5",
+        "TT3WSQN47ML6G16"
+      ],
+      "properties": {},
+      "parentId": "YVL6LP7EU7O76LW"
+    },
+    "YI8YFGYJBCMD5L8": {
+      "type": "DivElement",
+      "id": "YI8YFGYJBCMD5L8",
+      "name": "DivElement",
+      "children": [
+        "PZKICTPKB0ZPPI7",
+        "G22X3PGXRC41RPE",
+        "C8D0U07I7IT2LMG",
+        "OEH7THPUTYS29X8"
+      ],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "XFPLER9A9JNUOBC",
+        "Q06YR22LKO0CKOH",
+        "E0T9DJTDVKEFLCQ",
+        "F5FMKFBCE7SLNGG",
+        "DQTDOW2SDLJ3YPX",
+        "ZGZMYW6E16VUNTK",
+        "JMGWAXZCH9M9NB5",
+        "lg:K14703DBK1KV0KH"
+      ],
+      "properties": {},
+      "parentId": "YVL6LP7EU7O76LW"
+    },
+    "PZKICTPKB0ZPPI7": {
+      "type": "PElement",
+      "id": "PZKICTPKB0ZPPI7",
+      "name": "PElement",
+      "children": ["EYGZVWC4HZFL8SU"],
+      "classList": [],
+      "properties": {},
+      "parentId": "YI8YFGYJBCMD5L8"
+    },
+    "EYGZVWC4HZFL8SU": {
+      "type": "TextElement",
+      "id": "EYGZVWC4HZFL8SU",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "En canales educativos, mostrando clases y cursos interactivos, eventos culturales, conexión cara a cara con todo tipo de profesionales (medicina, educadores, psicología…), reuniones para organizar programas y actividades. Canales totalmente privados y seguros."
+      },
+      "parentId": "PZKICTPKB0ZPPI7"
+    },
+    "XZ5WZX2BPE8RJ1V": {
+      "type": "DivElement",
+      "id": "XZ5WZX2BPE8RJ1V",
+      "name": "DivElement",
+      "children": [],
+      "classList": [
+        "M1CJBDGDI58Q4G4",
+        "RW2FHOPYWZIFALE",
+        "PK8H11LFBTGJ708",
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "S4GTUEHUV9XT2E7",
+        "S1S32V3YDOW4E7X",
+        "DEY89VO30EHMY03",
+        "PA5UP8GX4F4IFE4",
+        "KSDOAFIC02CSEYA"
+      ],
+      "properties": {},
+      "parentId": "BZOBYT91VH7CPND"
+    },
+    "RACYGNC1E1B6NI4": {
+      "type": "H2Element",
+      "id": "RACYGNC1E1B6NI4",
+      "name": "H2Element",
+      "children": ["VMOY20TBEU7KYTD"],
+      "classList": ["X3E8YNS5J0VHO3F", "FX7BUUEGADSZ9K2", "TT3WSQN47ML6G16"],
+      "properties": {},
+      "parentId": "CJ600OC3G2UIV9P"
+    },
+    "VMOY20TBEU7KYTD": {
+      "type": "TextElement",
+      "id": "VMOY20TBEU7KYTD",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "El Equipo"
+      },
+      "parentId": "RACYGNC1E1B6NI4"
+    },
+    "S4G6RI897IZ3MB3": {
+      "type": "SpanElement",
+      "id": "S4G6RI897IZ3MB3",
+      "name": "SpanElement",
+      "children": ["RDLN26HAVNSOTZR"],
+      "classList": ["TT3WSQN47ML6G16"],
+      "properties": {},
+      "parentId": "CJ600OC3G2UIV9P"
+    },
+    "RDLN26HAVNSOTZR": {
+      "type": "TextElement",
+      "id": "RDLN26HAVNSOTZR",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La humanizacion de la tecnologia ..."
+      },
+      "parentId": "S4G6RI897IZ3MB3"
+    },
+    "B6PA0RSYDCXNR4V": {
+      "type": "DivElement",
+      "id": "B6PA0RSYDCXNR4V",
+      "name": "DivElement",
+      "children": [],
+      "classList": [
+        "M1CJBDGDI58Q4G4",
+        "RW2FHOPYWZIFALE",
+        "PK8H11LFBTGJ708",
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "S1S32V3YDOW4E7X",
+        "DEY89VO30EHMY03",
+        "PA5UP8GX4F4IFE4",
+        "KSDOAFIC02CSEYA",
+        "L71WDT1BG47ATVZ"
+      ],
+      "properties": {},
+      "parentId": "QANOXP79SL5G7PP"
+    },
+    "L0WMB7JWWVLFJDR": {
+      "type": "H2Element",
+      "id": "L0WMB7JWWVLFJDR",
+      "name": "H2Element",
+      "children": ["E01Z11RD0OCYJZZ"],
+      "classList": ["X3E8YNS5J0VHO3F", "FX7BUUEGADSZ9K2", "TT3WSQN47ML6G16"],
+      "properties": {},
+      "parentId": "QANOXP79SL5G7PP"
+    },
+    "E01Z11RD0OCYJZZ": {
+      "type": "TextElement",
+      "id": "E01Z11RD0OCYJZZ",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La Inter-Acción"
+      },
+      "parentId": "L0WMB7JWWVLFJDR"
+    },
+    "DKH6MWAOICQRI1M": {
+      "type": "SpanElement",
+      "id": "DKH6MWAOICQRI1M",
+      "name": "SpanElement",
+      "children": ["S521YQ47V3SB44L"],
+      "classList": ["TT3WSQN47ML6G16"],
+      "properties": {},
+      "parentId": "QANOXP79SL5G7PP"
+    },
+    "S521YQ47V3SB44L": {
+      "type": "TextElement",
+      "id": "S521YQ47V3SB44L",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La comunicación dentro de los entornos ..."
+      },
+      "parentId": "DKH6MWAOICQRI1M"
+    },
+    "FBXDXQ2WKEUX8VD": {
+      "type": "DivElement",
+      "id": "FBXDXQ2WKEUX8VD",
+      "name": "DivElement",
+      "children": [],
+      "classList": [
+        "M1CJBDGDI58Q4G4",
+        "RW2FHOPYWZIFALE",
+        "PK8H11LFBTGJ708",
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "S1S32V3YDOW4E7X",
+        "DEY89VO30EHMY03",
+        "PA5UP8GX4F4IFE4",
+        "KSDOAFIC02CSEYA",
+        "SSB11K8M4D0YZIP"
+      ],
+      "properties": {},
+      "parentId": "H2I1DNVVFPNGG9J"
+    },
+    "O2NCNMLVK3SG3YA": {
+      "type": "H2Element",
+      "id": "O2NCNMLVK3SG3YA",
+      "name": "H2Element",
+      "children": ["XVROOFU8YZ7EPNM"],
+      "classList": ["X3E8YNS5J0VHO3F", "FX7BUUEGADSZ9K2", "TT3WSQN47ML6G16"],
+      "properties": {},
+      "parentId": "H2I1DNVVFPNGG9J"
+    },
+    "XVROOFU8YZ7EPNM": {
+      "type": "TextElement",
+      "id": "XVROOFU8YZ7EPNM",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "METAVERSO: 3D Inmersivo"
+      },
+      "parentId": "O2NCNMLVK3SG3YA"
+    },
+    "DTKGQQQ9Z2JREJH": {
+      "type": "SpanElement",
+      "id": "DTKGQQQ9Z2JREJH",
+      "name": "SpanElement",
+      "children": ["LBUVSKXVK5B82AX"],
+      "classList": ["TT3WSQN47ML6G16"],
+      "properties": {},
+      "parentId": "H2I1DNVVFPNGG9J"
+    },
+    "LBUVSKXVK5B82AX": {
+      "type": "TextElement",
+      "id": "LBUVSKXVK5B82AX",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Comunidad digital organizandose en proyectos de conciencia"
+      },
+      "parentId": "DTKGQQQ9Z2JREJH"
+    },
+    "MEHX5IR1TM9MAI6": {
+      "type": "DivElement",
+      "id": "MEHX5IR1TM9MAI6",
+      "name": "DivElement",
+      "children": [],
+      "classList": [
+        "M1CJBDGDI58Q4G4",
+        "RW2FHOPYWZIFALE",
+        "PK8H11LFBTGJ708",
+        "MKTR6XWHQV7G8CY",
+        "MRZDKANF2V81C82",
+        "S1S32V3YDOW4E7X",
+        "DEY89VO30EHMY03",
+        "PA5UP8GX4F4IFE4",
+        "KSDOAFIC02CSEYA",
+        "QR3J7YP6D6X43ZC"
+      ],
+      "properties": {},
+      "parentId": "YVL6LP7EU7O76LW"
+    },
+    "BWIX95P4G32RWF6": {
+      "type": "H2Element",
+      "id": "BWIX95P4G32RWF6",
+      "name": "H2Element",
+      "children": ["CCWSO3OXQQCCYFO"],
+      "classList": ["X3E8YNS5J0VHO3F", "FX7BUUEGADSZ9K2", "TT3WSQN47ML6G16"],
+      "properties": {},
+      "parentId": "YVL6LP7EU7O76LW"
+    },
+    "CCWSO3OXQQCCYFO": {
+      "type": "TextElement",
+      "id": "CCWSO3OXQQCCYFO",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Canales Interactivos. WebRTC"
+      },
+      "parentId": "BWIX95P4G32RWF6"
+    },
+    "WWQSLUGTKKW1UDR": {
+      "type": "SpanElement",
+      "id": "WWQSLUGTKKW1UDR",
+      "name": "SpanElement",
+      "children": ["OMVB4QP4EAI73LC"],
+      "classList": ["TT3WSQN47ML6G16"],
+      "properties": {},
+      "parentId": "YVL6LP7EU7O76LW"
+    },
+    "OMVB4QP4EAI73LC": {
+      "type": "TextElement",
+      "id": "OMVB4QP4EAI73LC",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Conexión digital en tiempo real"
+      },
+      "parentId": "WWQSLUGTKKW1UDR"
     }
   },
   "styles": {
-    "base": {},
+    "base": {
+      "JFX70LIAAY0PEIF": {
+        "display": "flex"
+      },
+      "GXASHO9TDHR1UM3": {
+        "flex-direction": "column"
+      },
+      "TBEA9LLI3PI6ERY": {
+        "padding": "20px"
+      },
+      "Q06YR22LKO0CKOH": {
+        "align-items": "center"
+      },
+      "FPL0ZBRQQNCIDUE": {
+        "font-size": "1.3em"
+      },
+      "MKTR6XWHQV7G8CY": {
+        "width": "100%"
+      },
+      "TT3WSQN47ML6G16": {
+        "position": "relative"
+      },
+      "XFPLER9A9JNUOBC": {
+        "justify-content": "center"
+      },
+      "UROYUOTU1JUIT0Z": {
+        "aspect-ratio": "16 / 9"
+      },
+      "PCWO91AWA6ZVFJF": {
+        "background-color": "silver"
+      },
+      "OAJDF6UWWLJ1DQ2": {
+        "z-index": "1"
+      },
+      "IGYW8E0LN68VJ9D": {
+        "color": "white"
+      },
+      "E0T9DJTDVKEFLCQ": {
+        "text-align": "center"
+      },
+      "UDAZ979WCT73Q3H": {
+        "background-color": "rgba(6, 104, 154, 0.5)"
+      },
+      "RR2EAYVQF80HD4W": {
+        "padding": "10px"
+      },
+      "BXRG6DPJPMO7KAN": {
+        "margin": "10px 30px"
+      },
+      "X3E8YNS5J0VHO3F": {
+        "font-size": "2em"
+      },
+      "FX7BUUEGADSZ9K2": {
+        "font-weight": "700"
+      },
+      "TWODW7J0PKIWH0X": {
+        "background-color": "rgb(6, 104, 154)"
+      },
+      "IOMB50E7LGPRVC6": {
+        "padding": "5px"
+      },
+      "SB0Z58UP8X8EG4G": {
+        "text-transform": "uppercase"
+      },
+      "UL67MRXW5RWLSIT": {
+        "font-weight": "bold"
+      },
+      "XL3XJG2MOVIVYZG": {
+        "height": "200px"
+      },
+      "MRZDKANF2V81C82": {
+        "height": "100%"
+      },
+      "H4ZX8OYZXGSZC4N": {
+        "margin": "20px 0px"
+      },
+      "CRZA3KJO0MYU634": {
+        "background-color": "whitesmoke"
+      },
+      "F5FMKFBCE7SLNGG": {
+        "gap": "20px"
+      },
+      "LCFAJFEGK6L1WV3": {
+        "max-width": "800px"
+      },
+      "DQTDOW2SDLJ3YPX": {
+        "padding": "30px"
+      },
+      "SM09IXSTRA1QGJR": {
+        "gap": "30px"
+      },
+      "Q2XGME59EKLJAZX": {
+        "color": "rgb(24, 92, 145)"
+      },
+      "HTEMZVUNB3LHV2X": {
+        "color": "rgb(255, 102, 51)"
+      },
+      "POCS912IV1R7C73": {
+        "font-size": "0.7em"
+      },
+      "RW2FHOPYWZIFALE": {
+        "top": "0px"
+      },
+      "M1CJBDGDI58Q4G4": {
+        "position": "absolute"
+      },
+      "ZGZMYW6E16VUNTK": {
+        "font-size": "0.8em"
+      },
+      "JMGWAXZCH9M9NB5": {
+        "background-color": "rgb(24, 92, 145)"
+      },
+      "PK8H11LFBTGJ708": {
+        "left": "0px"
+      },
+      "S4GTUEHUV9XT2E7": {
+        "background-image": "url(\"/api/image/webRTC_FlipBox1.jpg\");"
+      },
+      "S1S32V3YDOW4E7X": {
+        "opacity": "0.3"
+      },
+      "DEY89VO30EHMY03": {
+        "background-position": "center center"
+      },
+      "PA5UP8GX4F4IFE4": {
+        "background-size": "cover"
+      },
+      "KSDOAFIC02CSEYA": {
+        "background-repeat": "no-repeat"
+      },
+      "L71WDT1BG47ATVZ": {
+        "background-image": "url(\"/api/image/webRTC_FlipBox2.jpg\");"
+      },
+      "SSB11K8M4D0YZIP": {
+        "background-image": "url(\"/api/image/webRTC_FlipBox3.jpg\");"
+      },
+      "QR3J7YP6D6X43ZC": {
+        "background-image": "url(\"/api/image/webRTC_FlipBox4.jpg\");"
+      },
+      "DWQY4ADDG6SR2B0": {
+        "display": "grid"
+      },
+      "YN66XU0APF6A6DZ": {
+        "grid-template-columns": "1fr"
+      },
+      "AM9Q13M337U8PI5": {
+        "grid-template-rows": "400px 600px 500px 400px"
+      }
+    },
     "sm": {},
     "md": {},
-    "lg": {},
+    "lg": {
+      "F84T66WS5RAB7KS": {
+        "width": "fit-content"
+      },
+      "DTAUZFWMAL4ZGMM": {
+        "padding": "50px 100px"
+      },
+      "HBEOJV49AX4UII3": {
+        "font-size": "5em"
+      },
+      "AJVEZH6SEMK50RK": {
+        "font-size": "2em"
+      },
+      "D72M9CI3YEO3UYA": {
+        "flex-direction": "row"
+      },
+      "HOFZA4Z96LCF7H8": {
+        "grid-template-columns": "1fr 1fr"
+      },
+      "XQOQBC5RL6FJVRS": {
+        "grid-template-rows": "600px 600px"
+      },
+      "K14703DBK1KV0KH": {
+        "font-size": "1em"
+      }
+    },
     "xl": {},
     "2xl": {}
   },
