@@ -447,8 +447,8 @@
       "type": "SectionElement",
       "id": "CVYMDXV9PZVMTWS",
       "name": "Sección - Carrusel",
-      "children": [],
-      "classList": [],
+      "children": ["DJJU71GP95NRKHO"],
+      "classList": ["Y91GMJ29K3XO1WA"],
       "properties": {},
       "parentId": "XM8URZRZ0JGHNS6"
     },
@@ -746,6 +746,1357 @@
         "text": "Creemos que la cooperación económica puede ser un medio para alcanzar una economía más equitativa y justa, en la que todas las personas tengan acceso a los recursos y oportunidades necesarias para vivir dignamente."
       },
       "parentId": "URKGZ3PLKKGCP5H"
+    },
+    "DJJU71GP95NRKHO": {
+      "type": "CarouselComponent",
+      "id": "DJJU71GP95NRKHO",
+      "name": "CarouselComponent",
+      "children": [
+        "KQ51EBFLY0I855T",
+        "MXGLG9L53LWGIMA",
+        "YJQYYX6S19G0V8B",
+        "OC0DLAVH063V9F8",
+        "ORD1E6N8DZTLILW",
+        "SH215O43BMR3MOO",
+        "FKWVXZO3NQKF8Q8"
+      ],
+      "classList": ["MKTR6XWHQV7G8CY", "QWRRS2MNHIABJ5P"],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "KQ51EBFLY0I855T": {
+      "type": "DivElement",
+      "id": "KQ51EBFLY0I855T",
+      "name": "DivElement",
+      "children": ["H2RTGBLEMOBSKTV", "CITJ38NOSSE52G3"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "BWCGH1INHBW2D2L"
+      ],
+      "properties": {},
+      "parentId": "DJJU71GP95NRKHO"
+    },
+    "YJQYYX6S19G0V8B": {
+      "type": "DivElement",
+      "id": "YJQYYX6S19G0V8B",
+      "name": "DivElement",
+      "children": ["FL2UDJILR3T5FS9", "CT78QU54EHPI3OF"],
+      "classList": ["BWCGH1INHBW2D2L", "MKTR6XWHQV7G8CY", "L2YI8TYHHPZVYTS"],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "H2RTGBLEMOBSKTV": {
+      "type": "DivElement",
+      "id": "H2RTGBLEMOBSKTV",
+      "name": "Background",
+      "children": [],
+      "classList": [
+        "M1CJBDGDI58Q4G4",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "R2Q3KJFT1PKNZT8",
+        "BGQBTEB1IVOFAI1",
+        "UT91ZTQCBBBAIDU",
+        "GD2OWMD6GZTSYSI",
+        "SAHADV84WWAZNWK",
+        "NLFMYPEC18MV2OD",
+        "RW2FHOPYWZIFALE"
+      ],
+      "properties": {},
+      "parentId": "KQ51EBFLY0I855T"
+    },
+    "CITJ38NOSSE52G3": {
+      "type": "DivElement",
+      "id": "CITJ38NOSSE52G3",
+      "name": "Content",
+      "children": ["BFFIW8XFBDJTE4O", "VTVPBKGT75QMOJP"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "RW2FHOPYWZIFALE",
+        "NLFMYPEC18MV2OD",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3"
+      ],
+      "properties": {},
+      "parentId": "KQ51EBFLY0I855T"
+    },
+    "BFFIW8XFBDJTE4O": {
+      "type": "DivElement",
+      "id": "BFFIW8XFBDJTE4O",
+      "name": "DivElement",
+      "children": ["DYY6VD704A6TR3B"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "PHK1ND7583QU6L7",
+        "Q06YR22LKO0CKOH",
+        "GXASHO9TDHR1UM3",
+        "Z1N9H0DYGRNS2ZO"
+      ],
+      "properties": {},
+      "parentId": "CITJ38NOSSE52G3"
+    },
+    "VTVPBKGT75QMOJP": {
+      "type": "DivElement",
+      "id": "VTVPBKGT75QMOJP",
+      "name": "DivElement",
+      "children": ["HCGOMEKDGKVN4NE", "WWOJUILZF2QRZ2C"],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "JFX70LIAAY0PEIF",
+        "PHK1ND7583QU6L7",
+        "Q06YR22LKO0CKOH",
+        "GXASHO9TDHR1UM3",
+        "RREOPEJ3M5F7MPG",
+        "ZBZY4MF4RT22Y88",
+        "XJYFX9RTCZPNPNN",
+        "P1VGHVIJNWKFQG7",
+        "lg:J0FMINPKYVN6Q5Q",
+        "Z1N9H0DYGRNS2ZO",
+        "lg:XTIV9JPNKSGKCU2"
+      ],
+      "properties": {},
+      "parentId": "CITJ38NOSSE52G3"
+    },
+    "HCGOMEKDGKVN4NE": {
+      "type": "SpanElement",
+      "id": "HCGOMEKDGKVN4NE",
+      "name": "SpanElement",
+      "children": ["L7IM171EUOOTVOU"],
+      "classList": ["S15F7A9F3ERLX4U"],
+      "properties": {},
+      "parentId": "VTVPBKGT75QMOJP"
+    },
+    "L7IM171EUOOTVOU": {
+      "type": "TextElement",
+      "id": "L7IM171EUOOTVOU",
+      "name": "TextElement",
+      "children": [],
+      "classList": ["P1VGHVIJNWKFQG7"],
+      "properties": {
+        "text": "Colabora, involúcrate, co-crea con nuestras propuestas de"
+      },
+      "parentId": "HCGOMEKDGKVN4NE"
+    },
+    "WWOJUILZF2QRZ2C": {
+      "type": "SpanElement",
+      "id": "WWOJUILZF2QRZ2C",
+      "name": "SpanElement",
+      "children": ["RHBYH0IGTBAV91X"],
+      "classList": ["T1P6TOG659DUTDF"],
+      "properties": {},
+      "parentId": "CITJ38NOSSE52G3"
+    },
+    "RHBYH0IGTBAV91X": {
+      "type": "TextElement",
+      "id": "RHBYH0IGTBAV91X",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "economía real colaborativa."
+      },
+      "parentId": "WWOJUILZF2QRZ2C"
+    },
+    "DYY6VD704A6TR3B": {
+      "type": "H2Element",
+      "id": "DYY6VD704A6TR3B",
+      "name": "H2Element",
+      "children": ["RYX3LOISIGY2R4F"],
+      "classList": [
+        "FI3CT2Y011K883S",
+        "ZBZY4MF4RT22Y88",
+        "V8TOZ5X8HBIP77R",
+        "P1VGHVIJNWKFQG7",
+        "lg:J0FMINPKYVN6Q5Q"
+      ],
+      "properties": {},
+      "parentId": "BFFIW8XFBDJTE4O"
+    },
+    "RYX3LOISIGY2R4F": {
+      "type": "TextElement",
+      "id": "RYX3LOISIGY2R4F",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Fundación Proyecta Konscio"
+      },
+      "parentId": "DYY6VD704A6TR3B"
+    },
+    "ORD1E6N8DZTLILW": {
+      "type": "DivElement",
+      "id": "ORD1E6N8DZTLILW",
+      "name": "DivElement",
+      "children": ["PGLF0UJM8VO6OI4", null, "WTDJRHKW1CFA8Z1"],
+      "classList": [
+        "BWCGH1INHBW2D2L",
+        "GZH2RVWS66B6T2B",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS"
+      ],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "PGLF0UJM8VO6OI4": {
+      "type": "DivElement",
+      "id": "PGLF0UJM8VO6OI4",
+      "name": "Background",
+      "children": [],
+      "classList": [
+        "M1CJBDGDI58Q4G4",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "R2Q3KJFT1PKNZT8",
+        "BGQBTEB1IVOFAI1",
+        "UT91ZTQCBBBAIDU",
+        "GD2OWMD6GZTSYSI",
+        "SAHADV84WWAZNWK",
+        "NLFMYPEC18MV2OD",
+        "RW2FHOPYWZIFALE"
+      ],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "WTDJRHKW1CFA8Z1": {
+      "type": "DivElement",
+      "id": "WTDJRHKW1CFA8Z1",
+      "name": "Content",
+      "children": ["KGPIZW970HEV960"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "RW2FHOPYWZIFALE",
+        "NLFMYPEC18MV2OD",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "JJS8A6KHCMF5BKC"
+      ],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "KGPIZW970HEV960": {
+      "type": "DivElement",
+      "id": "KGPIZW970HEV960",
+      "name": "DivElement",
+      "children": ["U814T3X1PFBBLAA", "XQFAJ7PC5A78LZE"],
+      "classList": [
+        "J6BXNJJ0XWNIOUX",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "Z1N9H0DYGRNS2ZO",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "TFHJ9JHND1NGCU7",
+        "lg:BPY5VJ67C2OUKJF"
+      ],
+      "properties": {},
+      "parentId": "WTDJRHKW1CFA8Z1"
+    },
+    "U814T3X1PFBBLAA": {
+      "type": "DivElement",
+      "id": "U814T3X1PFBBLAA",
+      "name": "DivElement",
+      "children": ["CBNOKQ5OHK2X46S"],
+      "classList": ["JFX70LIAAY0PEIF", "PHK1ND7583QU6L7", "Q06YR22LKO0CKOH"],
+      "properties": {},
+      "parentId": "WTDJRHKW1CFA8Z1"
+    },
+    "CBNOKQ5OHK2X46S": {
+      "type": "H2Element",
+      "id": "CBNOKQ5OHK2X46S",
+      "name": "H2Element",
+      "children": ["D7G8P5NAH2CLY3R"],
+      "classList": [
+        "ZBZY4MF4RT22Y88",
+        "V8TOZ5X8HBIP77R",
+        "P1VGHVIJNWKFQG7",
+        "FPL0ZBRQQNCIDUE",
+        "lg:J0FMINPKYVN6Q5Q"
+      ],
+      "properties": {},
+      "parentId": "U814T3X1PFBBLAA"
+    },
+    "D7G8P5NAH2CLY3R": {
+      "type": "TextElement",
+      "id": "D7G8P5NAH2CLY3R",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Por que Fairbnb.coop"
+      },
+      "parentId": "CBNOKQ5OHK2X46S"
+    },
+    "XQFAJ7PC5A78LZE": {
+      "type": "DivElement",
+      "id": "XQFAJ7PC5A78LZE",
+      "name": "DivElement",
+      "children": [null, "G5G37JIYUD74ZRL", "YWTSNQDF8FNKWPO"],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "JFX70LIAAY0PEIF",
+        "PHK1ND7583QU6L7",
+        "Q06YR22LKO0CKOH",
+        "GXASHO9TDHR1UM3",
+        "TFHJ9JHND1NGCU7",
+        "lg:P3EY2VL9HM3DZY2",
+        "lg:DUVOE466757S34O"
+      ],
+      "properties": {},
+      "parentId": "WTDJRHKW1CFA8Z1"
+    },
+    "G5G37JIYUD74ZRL": {
+      "type": "DivElement",
+      "id": "G5G37JIYUD74ZRL",
+      "name": "Cards",
+      "children": ["YLYLMUEY1NGN7YE", "L7G9NEYCCTMAUUQ", "ELTXKO9F87WPJFT"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "MKTR6XWHQV7G8CY",
+        "TFHJ9JHND1NGCU7"
+      ],
+      "properties": {},
+      "parentId": "XQFAJ7PC5A78LZE"
+    },
+    "YLYLMUEY1NGN7YE": {
+      "type": "DivElement",
+      "id": "YLYLMUEY1NGN7YE",
+      "name": "DivElement",
+      "children": ["M1LUWX00BOUYIB7", "URIA7PEF9JW4K7Q"],
+      "classList": [
+        "TBEA9LLI3PI6ERY",
+        "NJMMRVPFXIM83Q5",
+        "C3B8THQ025KPW19",
+        "QBGZHCWVM47TEJG",
+        "JFX70LIAAY0PEIF",
+        "TFHJ9JHND1NGCU7",
+        "GXASHO9TDHR1UM3",
+        "lg:P3EY2VL9HM3DZY2"
+      ],
+      "properties": {},
+      "parentId": "G5G37JIYUD74ZRL"
+    },
+    "M1LUWX00BOUYIB7": {
+      "type": "DivElement",
+      "id": "M1LUWX00BOUYIB7",
+      "name": "Contenedor de Imagen",
+      "children": ["TH29GV0SZELJRDB"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "JJS8A6KHCMF5BKC",
+        "CBJD44LRVE2M4J9",
+        "NCTHU4WHDZ4WDDN"
+      ],
+      "properties": {},
+      "parentId": "YLYLMUEY1NGN7YE"
+    },
+    "TH29GV0SZELJRDB": {
+      "type": "ImgElement",
+      "id": "TH29GV0SZELJRDB",
+      "name": "ImgElement",
+      "children": [],
+      "classList": ["GO28FQU1XNGW98T"],
+      "properties": {
+        "fill": true,
+        "height": 359,
+        "width": 359,
+        "src": "/api/image/slide_3_1.jpg"
+      },
+      "parentId": "M1LUWX00BOUYIB7"
+    },
+    "URIA7PEF9JW4K7Q": {
+      "type": "SpanElement",
+      "id": "URIA7PEF9JW4K7Q",
+      "name": "SpanElement",
+      "children": ["SOYTGX7I1IXU726"],
+      "classList": ["F42IRYXZGIDELOL", "lg:WB6QSH0VU0JFLPU"],
+      "properties": {},
+      "parentId": "YLYLMUEY1NGN7YE"
+    },
+    "SOYTGX7I1IXU726": {
+      "type": "TextElement",
+      "id": "SOYTGX7I1IXU726",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Porque ofrece una solución sostenible y gestionada por las comunidades locales para reducir el impacto negativo del turismo en las ciudades, aprovechando su potencial positivo."
+      },
+      "parentId": "URIA7PEF9JW4K7Q"
+    },
+    "L7G9NEYCCTMAUUQ": {
+      "type": "DivElement",
+      "id": "L7G9NEYCCTMAUUQ",
+      "name": "DivElement",
+      "children": ["G57K2B84BXWUBF2", "ZX3NZMT7EOM42MB"],
+      "classList": [
+        "TBEA9LLI3PI6ERY",
+        "NJMMRVPFXIM83Q5",
+        "C3B8THQ025KPW19",
+        "QBGZHCWVM47TEJG",
+        "JFX70LIAAY0PEIF",
+        "TFHJ9JHND1NGCU7",
+        "GXASHO9TDHR1UM3",
+        "lg:P3EY2VL9HM3DZY2"
+      ],
+      "properties": {},
+      "parentId": "XQFAJ7PC5A78LZE"
+    },
+    "G57K2B84BXWUBF2": {
+      "type": "DivElement",
+      "id": "G57K2B84BXWUBF2",
+      "name": "Contenedor de Imagen",
+      "children": ["OVUDBEZFGT2J3HN"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "JJS8A6KHCMF5BKC",
+        "CBJD44LRVE2M4J9",
+        "NCTHU4WHDZ4WDDN"
+      ],
+      "properties": {},
+      "parentId": "L7G9NEYCCTMAUUQ"
+    },
+    "OVUDBEZFGT2J3HN": {
+      "type": "ImgElement",
+      "id": "OVUDBEZFGT2J3HN",
+      "name": "ImgElement",
+      "children": [],
+      "classList": ["GO28FQU1XNGW98T"],
+      "properties": {
+        "fill": true,
+        "height": 359,
+        "width": 359,
+        "src": "/api/image/slide_3_2.jpg"
+      },
+      "parentId": "G57K2B84BXWUBF2"
+    },
+    "ZX3NZMT7EOM42MB": {
+      "type": "SpanElement",
+      "id": "ZX3NZMT7EOM42MB",
+      "name": "SpanElement",
+      "children": ["PEN7DXHV1IIZSQA"],
+      "classList": ["F42IRYXZGIDELOL", "lg:WB6QSH0VU0JFLPU"],
+      "properties": {},
+      "parentId": "L7G9NEYCCTMAUUQ"
+    },
+    "PEN7DXHV1IIZSQA": {
+      "type": "TextElement",
+      "id": "PEN7DXHV1IIZSQA",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Porque ofrece una oportunidad para reactivar la España vaciada con un turismo regenerativo que pone en valor las comunidades y economías locales."
+      },
+      "parentId": "ZX3NZMT7EOM42MB"
+    },
+    "ELTXKO9F87WPJFT": {
+      "type": "DivElement",
+      "id": "ELTXKO9F87WPJFT",
+      "name": "DivElement",
+      "children": ["YAJJOMM1XPTK0Z0", "B03MBVIH8QNTMFM"],
+      "classList": [
+        "TBEA9LLI3PI6ERY",
+        "NJMMRVPFXIM83Q5",
+        "C3B8THQ025KPW19",
+        "QBGZHCWVM47TEJG",
+        "JFX70LIAAY0PEIF",
+        "TFHJ9JHND1NGCU7",
+        "GXASHO9TDHR1UM3",
+        "lg:P3EY2VL9HM3DZY2"
+      ],
+      "properties": {},
+      "parentId": "XQFAJ7PC5A78LZE"
+    },
+    "YAJJOMM1XPTK0Z0": {
+      "type": "DivElement",
+      "id": "YAJJOMM1XPTK0Z0",
+      "name": "Contenedor de Imagen",
+      "children": ["Z8V1SPM2FH9QAU1"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "JJS8A6KHCMF5BKC",
+        "CBJD44LRVE2M4J9",
+        "NCTHU4WHDZ4WDDN"
+      ],
+      "properties": {},
+      "parentId": "ELTXKO9F87WPJFT"
+    },
+    "Z8V1SPM2FH9QAU1": {
+      "type": "ImgElement",
+      "id": "Z8V1SPM2FH9QAU1",
+      "name": "ImgElement",
+      "children": [],
+      "classList": ["GO28FQU1XNGW98T"],
+      "properties": {
+        "fill": true,
+        "height": 359,
+        "width": 359,
+        "src": "/api/image/slide_3_2.jpg"
+      },
+      "parentId": "YAJJOMM1XPTK0Z0"
+    },
+    "B03MBVIH8QNTMFM": {
+      "type": "SpanElement",
+      "id": "B03MBVIH8QNTMFM",
+      "name": "SpanElement",
+      "children": ["UVOYYH3HU3ACMVN"],
+      "classList": ["F42IRYXZGIDELOL", "lg:WB6QSH0VU0JFLPU"],
+      "properties": {},
+      "parentId": "ELTXKO9F87WPJFT"
+    },
+    "UVOYYH3HU3ACMVN": {
+      "type": "TextElement",
+      "id": "UVOYYH3HU3ACMVN",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Su esquema cooperativo multiescala favorece la creación de empleo local y un modelo distributivo donde la mayor parte de beneﬁcios permancece a nivel local."
+      },
+      "parentId": "B03MBVIH8QNTMFM"
+    },
+    "YWTSNQDF8FNKWPO": {
+      "type": "DivElement",
+      "id": "YWTSNQDF8FNKWPO",
+      "name": "Video Container",
+      "children": ["ISBEFLJ668ZTOBZ"],
+      "classList": ["JY9U6B8HKZ219M9", "MKTR6XWHQV7G8CY"],
+      "properties": {},
+      "parentId": "XQFAJ7PC5A78LZE"
+    },
+    "ISBEFLJ668ZTOBZ": {
+      "type": "VideoElement",
+      "id": "ISBEFLJ668ZTOBZ",
+      "name": "VideoElement",
+      "children": ["Q4WK7FM14V3P3PY"],
+      "classList": ["MKTR6XWHQV7G8CY", "L2YI8TYHHPZVYTS"],
+      "properties": {
+        "controls": true
+      },
+      "parentId": "YWTSNQDF8FNKWPO"
+    },
+    "Q4WK7FM14V3P3PY": {
+      "type": "SourceElement",
+      "id": "Q4WK7FM14V3P3PY",
+      "name": "SourceElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "type": "video/mp4",
+        "src": "/api/video/fairbnb.mp4#t=5"
+      },
+      "parentId": "ISBEFLJ668ZTOBZ"
+    },
+    "FL2UDJILR3T5FS9": {
+      "type": "DivElement",
+      "id": "FL2UDJILR3T5FS9",
+      "name": "Background",
+      "children": [],
+      "classList": [
+        "M1CJBDGDI58Q4G4",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "R2Q3KJFT1PKNZT8",
+        "BGQBTEB1IVOFAI1",
+        "UT91ZTQCBBBAIDU",
+        "GD2OWMD6GZTSYSI",
+        "SAHADV84WWAZNWK",
+        "NLFMYPEC18MV2OD",
+        "RW2FHOPYWZIFALE"
+      ],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "CT78QU54EHPI3OF": {
+      "type": "DivElement",
+      "id": "CT78QU54EHPI3OF",
+      "name": "Content",
+      "children": ["PCYQ085BMOGMI6T"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "RW2FHOPYWZIFALE",
+        "NLFMYPEC18MV2OD",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "JJS8A6KHCMF5BKC"
+      ],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "PCYQ085BMOGMI6T": {
+      "type": "DivElement",
+      "id": "PCYQ085BMOGMI6T",
+      "name": "DivElement",
+      "children": [
+        "CM8UNSDEWMQ1773",
+        "GX4W3AVBUH07GQU",
+        "IK3YXZI62WHMG8T",
+        "E1RFW9EVLFIU74C"
+      ],
+      "classList": [
+        "J6BXNJJ0XWNIOUX",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "Z1N9H0DYGRNS2ZO",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "TFHJ9JHND1NGCU7"
+      ],
+      "properties": {},
+      "parentId": "CT78QU54EHPI3OF"
+    },
+    "IK3YXZI62WHMG8T": {
+      "type": "DivElement",
+      "id": "IK3YXZI62WHMG8T",
+      "name": "DivElement",
+      "children": ["XLMBQM3XDKV0P48"],
+      "classList": [
+        "WSUNEKNLOCLW4TO",
+        "DL9IOX4Z46G9XTX",
+        "EPNETY6EMVZBV6N",
+        "IPO3U8AU9T2R9BE",
+        "C3B8THQ025KPW19",
+        "Z1N9H0DYGRNS2ZO"
+      ],
+      "properties": {},
+      "parentId": "PCYQ085BMOGMI6T"
+    },
+    "XLMBQM3XDKV0P48": {
+      "type": "ImgElement",
+      "id": "XLMBQM3XDKV0P48",
+      "name": "ImgElement",
+      "children": [],
+      "classList": ["MKTR6XWHQV7G8CY", "Q8N7CPYRFFB5OD8"],
+      "properties": {
+        "src": "/api/image/fairbnb.svg",
+        "width": 151,
+        "height": 24
+      },
+      "parentId": "IK3YXZI62WHMG8T"
+    },
+    "E1RFW9EVLFIU74C": {
+      "type": "SpanElement",
+      "id": "E1RFW9EVLFIU74C",
+      "name": "SpanElement",
+      "children": [
+        "F0O5MKBZWVUWX3U",
+        "G9JI3TZIAS4PDSU",
+        "ZMIG2D5K64SAGYT",
+        "E6E0Z80YGVZU71V",
+        "IFS9KLKGCUQEIV6",
+        "DYCASBS9QWBD5ZT"
+      ],
+      "classList": ["P1VGHVIJNWKFQG7", "QG8NJ5R86EF1C3M", "lg:D3BW3G96BHP1S8J"],
+      "properties": {},
+      "parentId": "PCYQ085BMOGMI6T"
+    },
+    "F0O5MKBZWVUWX3U": {
+      "type": "StrongElement",
+      "id": "F0O5MKBZWVUWX3U",
+      "name": "StrongElement",
+      "children": ["ZXWV8BCETOBD4FS"],
+      "classList": [],
+      "properties": {},
+      "parentId": "E1RFW9EVLFIU74C"
+    },
+    "ZXWV8BCETOBD4FS": {
+      "type": "TextElement",
+      "id": "ZXWV8BCETOBD4FS",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Sumate"
+      },
+      "parentId": "F0O5MKBZWVUWX3U"
+    },
+    "G9JI3TZIAS4PDSU": {
+      "type": "TextElement",
+      "id": "G9JI3TZIAS4PDSU",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": " a una comunidad creciente de "
+      },
+      "parentId": "E1RFW9EVLFIU74C"
+    },
+    "ZMIG2D5K64SAGYT": {
+      "type": "StrongElement",
+      "id": "ZMIG2D5K64SAGYT",
+      "name": "StrongElement",
+      "children": ["XFPBK4BASO2PYN2"],
+      "classList": [],
+      "properties": {},
+      "parentId": "PCYQ085BMOGMI6T"
+    },
+    "XFPBK4BASO2PYN2": {
+      "type": "TextElement",
+      "id": "XFPBK4BASO2PYN2",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "activistas y emprendedores"
+      },
+      "parentId": "ZMIG2D5K64SAGYT"
+    },
+    "E6E0Z80YGVZU71V": {
+      "type": "TextElement",
+      "id": "E6E0Z80YGVZU71V",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": " para liderar el "
+      },
+      "parentId": "PCYQ085BMOGMI6T"
+    },
+    "IFS9KLKGCUQEIV6": {
+      "type": "StrongElement",
+      "id": "IFS9KLKGCUQEIV6",
+      "name": "StrongElement",
+      "children": ["VLICY15RDXAPIFO"],
+      "classList": [],
+      "properties": {},
+      "parentId": "PCYQ085BMOGMI6T"
+    },
+    "VLICY15RDXAPIFO": {
+      "type": "TextElement",
+      "id": "VLICY15RDXAPIFO",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "turismo regenerativo #SeElCambio"
+      },
+      "parentId": "IFS9KLKGCUQEIV6"
+    },
+    "DYCASBS9QWBD5ZT": {
+      "type": "TextElement",
+      "id": "DYCASBS9QWBD5ZT",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": " que quieres ver donde vives y a donde viajas"
+      },
+      "parentId": "PCYQ085BMOGMI6T"
+    },
+    "SH215O43BMR3MOO": {
+      "type": "DivElement",
+      "id": "SH215O43BMR3MOO",
+      "name": "DivElement",
+      "children": ["RCCUE9YOTXUPXE6", null, "KEMEIP0NPNYBO2N"],
+      "classList": [
+        "BWCGH1INHBW2D2L",
+        "GZH2RVWS66B6T2B",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS"
+      ],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "RCCUE9YOTXUPXE6": {
+      "type": "DivElement",
+      "id": "RCCUE9YOTXUPXE6",
+      "name": "Background",
+      "children": [],
+      "classList": [
+        "M1CJBDGDI58Q4G4",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "R2Q3KJFT1PKNZT8",
+        "BGQBTEB1IVOFAI1",
+        "UT91ZTQCBBBAIDU",
+        "GD2OWMD6GZTSYSI",
+        "SAHADV84WWAZNWK",
+        "NLFMYPEC18MV2OD",
+        "RW2FHOPYWZIFALE"
+      ],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "KEMEIP0NPNYBO2N": {
+      "type": "DivElement",
+      "id": "KEMEIP0NPNYBO2N",
+      "name": "Content",
+      "children": ["P4XLPVR3UQSIEZC"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "RW2FHOPYWZIFALE",
+        "NLFMYPEC18MV2OD",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "JJS8A6KHCMF5BKC"
+      ],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "P4XLPVR3UQSIEZC": {
+      "type": "DivElement",
+      "id": "P4XLPVR3UQSIEZC",
+      "name": "DivElement",
+      "children": ["P4NOBR0RWED0VVT", "MX2XB86RAK0L6QP"],
+      "classList": [
+        "J6BXNJJ0XWNIOUX",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "Z1N9H0DYGRNS2ZO",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "TFHJ9JHND1NGCU7",
+        "lg:BPY5VJ67C2OUKJF"
+      ],
+      "properties": {},
+      "parentId": "KEMEIP0NPNYBO2N"
+    },
+    "P4NOBR0RWED0VVT": {
+      "type": "DivElement",
+      "id": "P4NOBR0RWED0VVT",
+      "name": "DivElement",
+      "children": [
+        "H5NEDFGRIZZ33KI",
+        "SXMOUOHKUFUPNEO",
+        "XWFEWYUM36CUI9W",
+        "SM3CZDUNH65GLZA",
+        "C6VRUKPVF35Z7D4"
+      ],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "PHK1ND7583QU6L7",
+        "Q06YR22LKO0CKOH",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "GXASHO9TDHR1UM3",
+        "TFHJ9JHND1NGCU7"
+      ],
+      "properties": {},
+      "parentId": "KEMEIP0NPNYBO2N"
+    },
+    "H5NEDFGRIZZ33KI": {
+      "type": "H2Element",
+      "id": "H5NEDFGRIZZ33KI",
+      "name": "H2Element",
+      "children": ["JR7WYRGZLSRPIU4"],
+      "classList": [
+        "ZBZY4MF4RT22Y88",
+        "V8TOZ5X8HBIP77R",
+        "P1VGHVIJNWKFQG7",
+        "FPL0ZBRQQNCIDUE",
+        "lg:J0FMINPKYVN6Q5Q"
+      ],
+      "properties": {},
+      "parentId": "P4NOBR0RWED0VVT"
+    },
+    "JR7WYRGZLSRPIU4": {
+      "type": "TextElement",
+      "id": "JR7WYRGZLSRPIU4",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Financiando la Sostenibilidad"
+      },
+      "parentId": "H5NEDFGRIZZ33KI"
+    },
+    "SXMOUOHKUFUPNEO": {
+      "type": "PElement",
+      "id": "SXMOUOHKUFUPNEO",
+      "name": "PElement",
+      "children": ["Z4K9ODXPS80NPTH"],
+      "classList": ["P1VGHVIJNWKFQG7", "F42IRYXZGIDELOL", "lg:WB6QSH0VU0JFLPU"],
+      "properties": {},
+      "parentId": "P4NOBR0RWED0VVT"
+    },
+    "Z4K9ODXPS80NPTH": {
+      "type": "TextElement",
+      "id": "Z4K9ODXPS80NPTH",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La mitad de los beneﬁcios de Fairbnb.coop se destinan a ﬁnanciar proyectos regenerativos elegidos por las comunidades locales alineados con el cumplimiento de los Objetivos de Desarrollo Sostenible"
+      },
+      "parentId": "SXMOUOHKUFUPNEO"
+    },
+    "XWFEWYUM36CUI9W": {
+      "type": "H2Element",
+      "id": "XWFEWYUM36CUI9W",
+      "name": "H2Element",
+      "children": ["H8IO855BJQI82WH"],
+      "classList": [
+        "ZY0AO20O57L7S3C",
+        "FPL0ZBRQQNCIDUE",
+        "H3DY2EFA1PLKEVA",
+        "IGXR7B2SN3826HG",
+        "lg:T875VT4RM3C52A8"
+      ],
+      "properties": {},
+      "parentId": "P4NOBR0RWED0VVT"
+    },
+    "H8IO855BJQI82WH": {
+      "type": "TextElement",
+      "id": "H8IO855BJQI82WH",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Konsciohousing"
+      },
+      "parentId": "XWFEWYUM36CUI9W"
+    },
+    "SM3CZDUNH65GLZA": {
+      "type": "PElement",
+      "id": "SM3CZDUNH65GLZA",
+      "name": "PElement",
+      "children": ["F24QXHUHC86ZP3A"],
+      "classList": [
+        "P1VGHVIJNWKFQG7",
+        "H3DY2EFA1PLKEVA",
+        "ETULVN54UITMDDI",
+        "lg:SSC63TFU0YW56A0"
+      ],
+      "properties": {},
+      "parentId": "P4NOBR0RWED0VVT"
+    },
+    "F24QXHUHC86ZP3A": {
+      "type": "TextElement",
+      "id": "F24QXHUHC86ZP3A",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Construcción Cooperativa de Residencias Ecológicas y con Tecnología 3D"
+      },
+      "parentId": "SM3CZDUNH65GLZA"
+    },
+    "C6VRUKPVF35Z7D4": {
+      "type": "DivElement",
+      "id": "C6VRUKPVF35Z7D4",
+      "name": "DivElement",
+      "children": ["J2DTKV3LGPK53I3"],
+      "classList": [],
+      "properties": {},
+      "parentId": "P4NOBR0RWED0VVT"
+    },
+    "J2DTKV3LGPK53I3": {
+      "type": "DivElement",
+      "id": "J2DTKV3LGPK53I3",
+      "name": "DivElement",
+      "children": ["G06NVVC1J7VYVK0"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "JJS8A6KHCMF5BKC",
+        "MV5PLO1FUA86YQV",
+        "OJJXK7SH6AIT56H",
+        "lg:ULNHBT9RV9ZO24N",
+        "lg:ENPCJ9DIEXIH7LZ"
+      ],
+      "properties": {},
+      "parentId": "C6VRUKPVF35Z7D4"
+    },
+    "G06NVVC1J7VYVK0": {
+      "type": "ImgElement",
+      "id": "G06NVVC1J7VYVK0",
+      "name": "ImgElement",
+      "children": [],
+      "classList": ["GO28FQU1XNGW98T"],
+      "properties": {
+        "fill": true,
+        "width": 200,
+        "height": 176,
+        "src": "/api/image/konscio_housing_gif.gif"
+      },
+      "parentId": "J2DTKV3LGPK53I3"
+    },
+    "FKWVXZO3NQKF8Q8": {
+      "type": "DivElement",
+      "id": "FKWVXZO3NQKF8Q8",
+      "name": "DivElement",
+      "children": ["J5I2PNQRXPYVC79", null, "ORAGTUNWQ1XHURG"],
+      "classList": [
+        "BWCGH1INHBW2D2L",
+        "GZH2RVWS66B6T2B",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS"
+      ],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "J5I2PNQRXPYVC79": {
+      "type": "DivElement",
+      "id": "J5I2PNQRXPYVC79",
+      "name": "Background",
+      "children": [],
+      "classList": [
+        "M1CJBDGDI58Q4G4",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "R2Q3KJFT1PKNZT8",
+        "BGQBTEB1IVOFAI1",
+        "UT91ZTQCBBBAIDU",
+        "GD2OWMD6GZTSYSI",
+        "SAHADV84WWAZNWK",
+        "NLFMYPEC18MV2OD",
+        "RW2FHOPYWZIFALE"
+      ],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "ORAGTUNWQ1XHURG": {
+      "type": "DivElement",
+      "id": "ORAGTUNWQ1XHURG",
+      "name": "Content",
+      "children": ["VD5Q0Z1TDYJDBQY"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "RW2FHOPYWZIFALE",
+        "NLFMYPEC18MV2OD",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "JJS8A6KHCMF5BKC"
+      ],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "VD5Q0Z1TDYJDBQY": {
+      "type": "DivElement",
+      "id": "VD5Q0Z1TDYJDBQY",
+      "name": "DivElement",
+      "children": ["HTOISDEB94WCE6N", null],
+      "classList": [
+        "J6BXNJJ0XWNIOUX",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "Z1N9H0DYGRNS2ZO",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "TFHJ9JHND1NGCU7",
+        "lg:BPY5VJ67C2OUKJF"
+      ],
+      "properties": {},
+      "parentId": "ORAGTUNWQ1XHURG"
+    },
+    "HTOISDEB94WCE6N": {
+      "type": "DivElement",
+      "id": "HTOISDEB94WCE6N",
+      "name": "DivElement",
+      "children": ["O974HEIU6YOEKHC", "RWZ9Y5UZTGMOUT6", "BKF7PCDK354D5U9"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "PHK1ND7583QU6L7",
+        "Q06YR22LKO0CKOH",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "GXASHO9TDHR1UM3",
+        "YI9NPIHNXPK5UA8",
+        "lg:P3EY2VL9HM3DZY2",
+        "lg:OQUU5BDK49W5O2I",
+        "lg:BAM1X5MZHXK8SOC",
+        "lg:KNXLD2A0O3GSG33"
+      ],
+      "properties": {},
+      "parentId": "ORAGTUNWQ1XHURG"
+    },
+    "O974HEIU6YOEKHC": {
+      "type": "DivElement",
+      "id": "O974HEIU6YOEKHC",
+      "name": "Card - FairCoop",
+      "children": ["IQAIRI41UA549XG", "I1AXW2QKO8XD7TD", "S6BPP75POCBBY9G"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "P1VGHVIJNWKFQG7",
+        "Q06YR22LKO0CKOH",
+        "F8BCG2EFMMEX0KF",
+        "lg:E26287V7PQGVC8W"
+      ],
+      "properties": {},
+      "parentId": "HTOISDEB94WCE6N"
+    },
+    "IQAIRI41UA549XG": {
+      "type": "DivElement",
+      "id": "IQAIRI41UA549XG",
+      "name": "DivElement",
+      "children": ["VN8KYJHHAEXJIOL"],
+      "classList": [],
+      "properties": {},
+      "parentId": "O974HEIU6YOEKHC"
+    },
+    "VN8KYJHHAEXJIOL": {
+      "type": "DivElement",
+      "id": "VN8KYJHHAEXJIOL",
+      "name": "DivElement",
+      "children": ["LVG5VJCXW5FPAXE"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "JJS8A6KHCMF5BKC",
+        "PS9EPLBWNFL1PCH",
+        "QO5AAV44GRY9S1P",
+        "lg:U2DZTLYO9RAVRTN",
+        "lg:G5LT6BMGURWWB5Z"
+      ],
+      "properties": {},
+      "parentId": "IQAIRI41UA549XG"
+    },
+    "LVG5VJCXW5FPAXE": {
+      "type": "ImgElement",
+      "id": "LVG5VJCXW5FPAXE",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "fill": true,
+        "width": 810,
+        "height": 200,
+        "src": "/api/image/fair_coop.svg"
+      },
+      "parentId": "VN8KYJHHAEXJIOL"
+    },
+    "I1AXW2QKO8XD7TD": {
+      "type": "H2Element",
+      "id": "I1AXW2QKO8XD7TD",
+      "name": "H2Element",
+      "children": ["HHXUHC19OEP8F1U"],
+      "classList": ["H3DY2EFA1PLKEVA", "lg:SSC63TFU0YW56A0"],
+      "properties": {},
+      "parentId": "O974HEIU6YOEKHC"
+    },
+    "HHXUHC19OEP8F1U": {
+      "type": "TextElement",
+      "id": "HHXUHC19OEP8F1U",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "FairCoop"
+      },
+      "parentId": "I1AXW2QKO8XD7TD"
+    },
+    "S6BPP75POCBBY9G": {
+      "type": "SpanElement",
+      "id": "S6BPP75POCBBY9G",
+      "name": "SpanElement",
+      "children": ["PS91K42JTMTGR2H"],
+      "classList": ["F42IRYXZGIDELOL", "lg:WB6QSH0VU0JFLPU"],
+      "properties": {},
+      "parentId": "O974HEIU6YOEKHC"
+    },
+    "PS91K42JTMTGR2H": {
+      "type": "TextElement",
+      "id": "PS91K42JTMTGR2H",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La alternativa al sistema socioeconómico dominante"
+      },
+      "parentId": "S6BPP75POCBBY9G"
+    },
+    "RWZ9Y5UZTGMOUT6": {
+      "type": "DivElement",
+      "id": "RWZ9Y5UZTGMOUT6",
+      "name": "Card - FairCoin",
+      "children": ["E6AHZFXZUQQGIYG", "ZAXRX5CUHCJ1SKY", "Z9I4V40ISU0DEBO"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "P1VGHVIJNWKFQG7",
+        "Q06YR22LKO0CKOH",
+        "F8BCG2EFMMEX0KF",
+        "lg:XJSYA12D1Y0WQCM"
+      ],
+      "properties": {},
+      "parentId": "ORAGTUNWQ1XHURG"
+    },
+    "E6AHZFXZUQQGIYG": {
+      "type": "DivElement",
+      "id": "E6AHZFXZUQQGIYG",
+      "name": "DivElement",
+      "children": ["A5U1O06GKR25TNU"],
+      "classList": [],
+      "properties": {},
+      "parentId": "RWZ9Y5UZTGMOUT6"
+    },
+    "A5U1O06GKR25TNU": {
+      "type": "DivElement",
+      "id": "A5U1O06GKR25TNU",
+      "name": "DivElement",
+      "children": ["LOPQHGOTPIQ1O1W"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "JJS8A6KHCMF5BKC",
+        "PS9EPLBWNFL1PCH",
+        "QO5AAV44GRY9S1P",
+        "lg:U2DZTLYO9RAVRTN",
+        "lg:WQP4X5MM8WFBD3O"
+      ],
+      "properties": {},
+      "parentId": "E6AHZFXZUQQGIYG"
+    },
+    "LOPQHGOTPIQ1O1W": {
+      "type": "ImgElement",
+      "id": "LOPQHGOTPIQ1O1W",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "fill": true,
+        "width": 317,
+        "height": 91,
+        "src": "/api/image/fair_coin.svg"
+      },
+      "parentId": "A5U1O06GKR25TNU"
+    },
+    "ZAXRX5CUHCJ1SKY": {
+      "type": "H2Element",
+      "id": "ZAXRX5CUHCJ1SKY",
+      "name": "H2Element",
+      "children": ["SU4R5ZAMXZH3JYV"],
+      "classList": ["H3DY2EFA1PLKEVA", "lg:SSC63TFU0YW56A0"],
+      "properties": {},
+      "parentId": "RWZ9Y5UZTGMOUT6"
+    },
+    "SU4R5ZAMXZH3JYV": {
+      "type": "TextElement",
+      "id": "SU4R5ZAMXZH3JYV",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "FairCoin"
+      },
+      "parentId": "ZAXRX5CUHCJ1SKY"
+    },
+    "Z9I4V40ISU0DEBO": {
+      "type": "SpanElement",
+      "id": "Z9I4V40ISU0DEBO",
+      "name": "SpanElement",
+      "children": ["F4DYXXJXHLF3RWI"],
+      "classList": ["F42IRYXZGIDELOL", "lg:WB6QSH0VU0JFLPU"],
+      "properties": {},
+      "parentId": "RWZ9Y5UZTGMOUT6"
+    },
+    "F4DYXXJXHLF3RWI": {
+      "type": "TextElement",
+      "id": "F4DYXXJXHLF3RWI",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "La moneda social más justa del ecosistema blockchain"
+      },
+      "parentId": "Z9I4V40ISU0DEBO"
+    },
+    "BKF7PCDK354D5U9": {
+      "type": "DivElement",
+      "id": "BKF7PCDK354D5U9",
+      "name": "Card - FairPhone",
+      "children": ["FUT338AFX97YJOK", "XX4GQQSHR92LOS7", "GMG1VLMFRGGXSUY"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "P1VGHVIJNWKFQG7",
+        "Q06YR22LKO0CKOH",
+        "F8BCG2EFMMEX0KF",
+        "lg:XJSYA12D1Y0WQCM"
+      ],
+      "properties": {},
+      "parentId": "ORAGTUNWQ1XHURG"
+    },
+    "FUT338AFX97YJOK": {
+      "type": "DivElement",
+      "id": "FUT338AFX97YJOK",
+      "name": "DivElement",
+      "children": ["C8NKDVU9V9GLYD5"],
+      "classList": [],
+      "properties": {},
+      "parentId": "BKF7PCDK354D5U9"
+    },
+    "C8NKDVU9V9GLYD5": {
+      "type": "DivElement",
+      "id": "C8NKDVU9V9GLYD5",
+      "name": "DivElement",
+      "children": ["M9W1QYNRCHZGL2C"],
+      "classList": [
+        "GZH2RVWS66B6T2B",
+        "JJS8A6KHCMF5BKC",
+        "PS9EPLBWNFL1PCH",
+        "QO5AAV44GRY9S1P",
+        "lg:U2DZTLYO9RAVRTN",
+        "lg:SGVFE4SQNW2J2MI"
+      ],
+      "properties": {},
+      "parentId": "FUT338AFX97YJOK"
+    },
+    "M9W1QYNRCHZGL2C": {
+      "type": "ImgElement",
+      "id": "M9W1QYNRCHZGL2C",
+      "name": "ImgElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "fill": true,
+        "width": 512,
+        "height": 185,
+        "src": "/api/image/fair_phone.svg"
+      },
+      "parentId": "C8NKDVU9V9GLYD5"
+    },
+    "XX4GQQSHR92LOS7": {
+      "type": "H2Element",
+      "id": "XX4GQQSHR92LOS7",
+      "name": "H2Element",
+      "children": ["RBV6QOT8TDC2SD1"],
+      "classList": ["H3DY2EFA1PLKEVA", "lg:SSC63TFU0YW56A0"],
+      "properties": {},
+      "parentId": "BKF7PCDK354D5U9"
+    },
+    "RBV6QOT8TDC2SD1": {
+      "type": "TextElement",
+      "id": "RBV6QOT8TDC2SD1",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "FairPhone"
+      },
+      "parentId": "XX4GQQSHR92LOS7"
+    },
+    "GMG1VLMFRGGXSUY": {
+      "type": "SpanElement",
+      "id": "GMG1VLMFRGGXSUY",
+      "name": "SpanElement",
+      "children": ["FK57Z2O5JVR9MSU"],
+      "classList": ["F42IRYXZGIDELOL", "lg:WB6QSH0VU0JFLPU"],
+      "properties": {},
+      "parentId": "BKF7PCDK354D5U9"
+    },
+    "FK57Z2O5JVR9MSU": {
+      "type": "TextElement",
+      "id": "FK57Z2O5JVR9MSU",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Quiero que mi móvil esté fabricado sin violaciones ni explotación infantil"
+      },
+      "parentId": "GMG1VLMFRGGXSUY"
     }
   },
   "styles": {
@@ -857,6 +2208,114 @@
       },
       "GGWU2TX7YIK18A9": {
         "font-size": "1.5em"
+      },
+      "Y91GMJ29K3XO1WA": {
+        "padding": "0px 30px"
+      },
+      "RW2FHOPYWZIFALE": {
+        "top": "0px"
+      },
+      "R2Q3KJFT1PKNZT8": {
+        "background-image": "url(\"/api/image/economia_real_colaborativa_slide_background.png\")"
+      },
+      "UT91ZTQCBBBAIDU": {
+        "background-position": "center center"
+      },
+      "BWCGH1INHBW2D2L": {
+        "background-color": "rgb(205, 207, 192)"
+      },
+      "SAHADV84WWAZNWK": {
+        "opacity": "0.2"
+      },
+      "NLFMYPEC18MV2OD": {
+        "left": "0px"
+      },
+      "XJYFX9RTCZPNPNN": {
+        "text-shadow": "0 0 4px rgba(0,0,0,.6)"
+      },
+      "T1P6TOG659DUTDF": {
+        "color": "#f949b2"
+      },
+      "QWRRS2MNHIABJ5P": {
+        "height": "800px"
+      },
+      "FI3CT2Y011K883S": {
+        "font-size": "2.4em"
+      },
+      "V8TOZ5X8HBIP77R": {
+        "opacity": "0.6"
+      },
+      "NJMMRVPFXIM83Q5": {
+        "background-color": "rgba(255, 255, 255, 0.4)"
+      },
+      "C3B8THQ025KPW19": {
+        "border-radius": "10px"
+      },
+      "QBGZHCWVM47TEJG": {
+        "box-shadow": "2px 2px 10px 0px rgba(0,0,0,0.45)"
+      },
+      "JJS8A6KHCMF5BKC": {
+        "overflow": "hidden"
+      },
+      "GO28FQU1XNGW98T": {
+        "object-fit": "cover"
+      },
+      "TFHJ9JHND1NGCU7": {
+        "gap": "20px"
+      },
+      "CBJD44LRVE2M4J9": {
+        "min-width": "65px"
+      },
+      "FPL0ZBRQQNCIDUE": {
+        "font-size": "1.3em"
+      },
+      "J6BXNJJ0XWNIOUX": {
+        "overflow": "auto"
+      },
+      "NCTHU4WHDZ4WDDN": {
+        "height": "65px"
+      },
+      "F42IRYXZGIDELOL": {
+        "font-size": "0.8em"
+      },
+      "WSUNEKNLOCLW4TO": {
+        "background-color": "white"
+      },
+      "Q8N7CPYRFFB5OD8": {
+        "height": "auto"
+      },
+      "DL9IOX4Z46G9XTX": {
+        "box-sizing": "border-box"
+      },
+      "EPNETY6EMVZBV6N": {
+        "border": "15px solid gray"
+      },
+      "IPO3U8AU9T2R9BE": {
+        "box-shadow": "0 0 5px #0006"
+      },
+      "QG8NJ5R86EF1C3M": {
+        "font-size": "1.6em"
+      },
+      "IGXR7B2SN3826HG": {
+        "color": "#0772a4"
+      },
+      "ETULVN54UITMDDI": {
+        "color": "#db6402"
+      },
+      "MV5PLO1FUA86YQV": {
+        "width": "100px"
+      },
+      "OJJXK7SH6AIT56H": {
+        "height": "100px"
+      },
+      "PS9EPLBWNFL1PCH": {
+        "width": "150px"
+      },
+      "QO5AAV44GRY9S1P": {
+        "height": "37.04px"
+      },
+      "YI9NPIHNXPK5UA8": {
+        "gap": "30px"
       }
     },
     "sm": {},
@@ -888,6 +2347,57 @@
       },
       "MU6ZWZQYKY5TM0F": {
         "gap": "20px"
+      },
+      "BPY5VJ67C2OUKJF": {
+        "gap": "30px"
+      },
+      "J0FMINPKYVN6Q5Q": {
+        "font-size": "3em"
+      },
+      "XTIV9JPNKSGKCU2": {
+        "padding": "50px"
+      },
+      "D3BW3G96BHP1S8J": {
+        "font-size": "2.3em"
+      },
+      "DUVOE466757S34O": {
+        "height": "100%"
+      },
+      "WB6QSH0VU0JFLPU": {
+        "font-size": "1em"
+      },
+      "E26287V7PQGVC8W": {
+        "width": "100%"
+      },
+      "SSC63TFU0YW56A0": {
+        "font-size": "1.5em"
+      },
+      "ULNHBT9RV9ZO24N": {
+        "width": "150px"
+      },
+      "ENPCJ9DIEXIH7LZ": {
+        "height": "150px"
+      },
+      "OQUU5BDK49W5O2I": {
+        "flex-wrap": "wrap"
+      },
+      "BAM1X5MZHXK8SOC": {
+        "align-content": "center"
+      },
+      "U2DZTLYO9RAVRTN": {
+        "width": "300px"
+      },
+      "G5LT6BMGURWWB5Z": {
+        "height": "74.07px"
+      },
+      "WQP4X5MM8WFBD3O": {
+        "height": "86.12px"
+      },
+      "SGVFE4SQNW2J2MI": {
+        "height": "108.4px"
+      },
+      "KNXLD2A0O3GSG33": {
+        "gap": "50px 0px"
       }
     },
     "xl": {},
