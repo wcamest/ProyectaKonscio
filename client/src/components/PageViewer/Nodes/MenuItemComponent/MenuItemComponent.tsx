@@ -120,8 +120,6 @@ const MenuItemComponent = (props: Props) => {
       else if (href.startsWith("http")) header = <a href={href}>{text}</a>;
       else header = <span>{text}</span>;
 
-      console.log(level, text);
-
       return (
         <div className={`w-full ${level > 0 ? "hover:bg-gray-300 " : ""}flex`}>
           {header}

@@ -29,6 +29,8 @@ import LayoutComponent from "./Nodes/LayoutComponent/LayoutComponent";
 import MobileNavigationBodyComponent from "./Nodes/MobileNavigationBodyComponent/MobileNavigationBodyComponent";
 import MenuItemComponent from "./Nodes/MenuItemComponent/MenuItemComponent";
 import DesktopNavigationComponent from "./Nodes/DesktopNavigationComponent/DesktopNavigationComponent";
+import CarouselComponent from "./Nodes/CarouselComponent/CarouselComponent";
+import StrongElementComponent from "./Nodes/StrongElement/StrongElementComponent";
 
 const NodeComponents: any = {
   MainElement: MainElementComponent,
@@ -47,6 +49,7 @@ const NodeComponents: any = {
   H5Element: H5ElementComponent,
   H6Element: H6ElementComponent,
   NavElement: NavElementComponent,
+  StrongElement: StrongElementComponent,
   MobileNavigationComponent,
   MobileNavigationHeaderComponent,
   MobileNavigationBodyComponent,
@@ -57,7 +60,8 @@ const NodeComponents: any = {
   RootComponent,
   AccordionComponent,
   AccordionItemComponent,
-  FlipBoxComponent
+  FlipBoxComponent,
+  CarouselComponent
 };
 
 const NodesRenderer = {

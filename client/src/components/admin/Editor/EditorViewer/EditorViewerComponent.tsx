@@ -9,7 +9,7 @@ type Props = {
 };
 
 const breakpointSizes: any = {
-  base: "100vw",
+  base: "340px",
   sm: "640px",
   md: "768px",
   lg: "1024px",
@@ -38,7 +38,7 @@ const EditorViewerComponent = (props: Props) => {
 
   return (
     <div className="relative w-full h-full overflow-hidden bg-gray-300">
-      <div className="absolute p-2 right-0 top-0 z-50">
+      <div className="absolute p-2 right-0 top-0" style={{zIndex: "10000"}}>
         <select
           className="p-2 border border-solid border-blue-800 rounded-md shadow-md"
           value={breakpoint}
