@@ -425,8 +425,8 @@
       "type": "SectionElement",
       "id": "CVYMDXV9PZVMTWS",
       "name": "Sección - Carrusel",
-      "children": [],
-      "classList": [],
+      "children": ["OPEY2Q8CYVFUEDF"],
+      "classList": ["NRXSGCJT7554B9X"],
       "properties": {},
       "parentId": "XM8URZRZ0JGHNS6"
     },
@@ -670,6 +670,214 @@
         "text": "Salas interactivas para conversar sobre las propuestas"
       },
       "parentId": "GU34BFTCQF5C3KS"
+    },
+    "OPEY2Q8CYVFUEDF": {
+      "type": "CarouselComponent",
+      "id": "OPEY2Q8CYVFUEDF",
+      "name": "CarouselComponent",
+      "children": [
+        "PG56H0LUMG3EJS7",
+        "UDG7RDJLTWTJLXN",
+        "IVXI75VPHFRTGHM",
+        "VSXFHV681UBIZFL",
+        "HS3MKFKPCRTKV9M",
+        "OFAIC5U8K64T1M3",
+        "V66L4USB9T56UD7",
+        "PUJZ31Y25Z34JAP",
+        "TMSE7HAD5715BXE"
+      ],
+      "classList": ["MKTR6XWHQV7G8CY", "G2FI9J1SQ34T4YK"],
+      "properties": {},
+      "parentId": "CVYMDXV9PZVMTWS"
+    },
+    "PG56H0LUMG3EJS7": {
+      "type": "DivElement",
+      "id": "PG56H0LUMG3EJS7",
+      "name": "DivElement",
+      "children": ["SF8121CN6V72WOL", "SQZ6URNGQ4XIB6U"],
+      "classList": [
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS"
+      ],
+      "properties": {},
+      "parentId": "OPEY2Q8CYVFUEDF"
+    },
+    "UDG7RDJLTWTJLXN": {
+      "type": "DivElement",
+      "id": "UDG7RDJLTWTJLXN",
+      "name": "DivElement",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "OPEY2Q8CYVFUEDF"
+    },
+    "IVXI75VPHFRTGHM": {
+      "type": "DivElement",
+      "id": "IVXI75VPHFRTGHM",
+      "name": "DivElement",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "OPEY2Q8CYVFUEDF"
+    },
+    "VSXFHV681UBIZFL": {
+      "type": "DivElement",
+      "id": "VSXFHV681UBIZFL",
+      "name": "DivElement",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "OPEY2Q8CYVFUEDF"
+    },
+    "HS3MKFKPCRTKV9M": {
+      "type": "DivElement",
+      "id": "HS3MKFKPCRTKV9M",
+      "name": "DivElement",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "OPEY2Q8CYVFUEDF"
+    },
+    "OFAIC5U8K64T1M3": {
+      "type": "DivElement",
+      "id": "OFAIC5U8K64T1M3",
+      "name": "DivElement",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "OPEY2Q8CYVFUEDF"
+    },
+    "V66L4USB9T56UD7": {
+      "type": "DivElement",
+      "id": "V66L4USB9T56UD7",
+      "name": "DivElement",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "OPEY2Q8CYVFUEDF"
+    },
+    "PUJZ31Y25Z34JAP": {
+      "type": "DivElement",
+      "id": "PUJZ31Y25Z34JAP",
+      "name": "DivElement",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "OPEY2Q8CYVFUEDF"
+    },
+    "TMSE7HAD5715BXE": {
+      "type": "DivElement",
+      "id": "TMSE7HAD5715BXE",
+      "name": "DivElement",
+      "children": [],
+      "classList": [],
+      "properties": {},
+      "parentId": "OPEY2Q8CYVFUEDF"
+    },
+    "SF8121CN6V72WOL": {
+      "type": "DivElement",
+      "id": "SF8121CN6V72WOL",
+      "name": "DivElement",
+      "children": ["ILPZ8C52CIQC7AX"],
+      "classList": [
+        "G8LIASTT67RL5ZR",
+        "KTU8HUYQJYOID0A",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "JJOZF1J0RA5OGES"
+      ],
+      "properties": {},
+      "parentId": "PG56H0LUMG3EJS7"
+    },
+    "SQZ6URNGQ4XIB6U": {
+      "type": "DivElement",
+      "id": "SQZ6URNGQ4XIB6U",
+      "name": "DivElement",
+      "children": ["YO56NMZUGA71LFE", "B1581BSAOWUG0OB"],
+      "classList": [
+        "MKTR6XWHQV7G8CY",
+        "L2YI8TYHHPZVYTS",
+        "L7X3UDTLDA76TV5",
+        "BGQBTEB1IVOFAI1",
+        "IDCW1F8FFU6H294",
+        "GD2OWMD6GZTSYSI",
+        "JFX70LIAAY0PEIF",
+        "GXASHO9TDHR1UM3",
+        "PHK1ND7583QU6L7",
+        "Q06YR22LKO0CKOH",
+        "P1VGHVIJNWKFQG7",
+        "S8YWRMATKT5JSMK",
+        "H3DY2EFA1PLKEVA"
+      ],
+      "properties": {},
+      "parentId": "PG56H0LUMG3EJS7"
+    },
+    "ILPZ8C52CIQC7AX": {
+      "type": "H2Element",
+      "id": "ILPZ8C52CIQC7AX",
+      "name": "H2Element",
+      "children": ["LEQYOLXPGQ1VLHV"],
+      "classList": [
+        "P1VGHVIJNWKFQG7",
+        "EPGF4RXSSZKC0VA",
+        "H3DY2EFA1PLKEVA",
+        "FPL0ZBRQQNCIDUE"
+      ],
+      "properties": {},
+      "parentId": "SF8121CN6V72WOL"
+    },
+    "LEQYOLXPGQ1VLHV": {
+      "type": "TextElement",
+      "id": "LEQYOLXPGQ1VLHV",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Fundación Proyecta Konscio"
+      },
+      "parentId": "ILPZ8C52CIQC7AX"
+    },
+    "YO56NMZUGA71LFE": {
+      "type": "H3Element",
+      "id": "YO56NMZUGA71LFE",
+      "name": "H3Element",
+      "children": ["RC2X0WQGMLQ4IWR"],
+      "classList": ["S15F7A9F3ERLX4U", "ZL9ZPMWQQDYX0BX"],
+      "properties": {},
+      "parentId": "SQZ6URNGQ4XIB6U"
+    },
+    "RC2X0WQGMLQ4IWR": {
+      "type": "TextElement",
+      "id": "RC2X0WQGMLQ4IWR",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "Colabora, involúcrate, co-crea con nuestras propuestas de"
+      },
+      "parentId": "YO56NMZUGA71LFE"
+    },
+    "B1581BSAOWUG0OB": {
+      "type": "H3Element",
+      "id": "B1581BSAOWUG0OB",
+      "name": "H3Element",
+      "children": ["R2KO43WC3QG6M2F"],
+      "classList": ["PL2TA6DZ7QES5NU", "ZL9ZPMWQQDYX0BX"],
+      "properties": {},
+      "parentId": "SQZ6URNGQ4XIB6U"
+    },
+    "R2KO43WC3QG6M2F": {
+      "type": "TextElement",
+      "id": "R2KO43WC3QG6M2F",
+      "name": "TextElement",
+      "children": [],
+      "classList": [],
+      "properties": {
+        "text": "educación alternativa"
+      },
+      "parentId": "B1581BSAOWUG0OB"
     }
   },
   "styles": {
@@ -775,6 +983,39 @@
       },
       "WQVG4BBNU6ZRXP2": {
         "font-size": "1.5em"
+      },
+      "G2FI9J1SQ34T4YK": {
+        "height": "800px"
+      },
+      "NRXSGCJT7554B9X": {
+        "padding": "0px 30px"
+      },
+      "FPL0ZBRQQNCIDUE": {
+        "font-size": "1.3em"
+      },
+      "G8LIASTT67RL5ZR": {
+        "background-color": "#555555"
+      },
+      "EPGF4RXSSZKC0VA": {
+        "color": "#ddb340"
+      },
+      "JJOZF1J0RA5OGES": {
+        "gap": "20px"
+      },
+      "L7X3UDTLDA76TV5": {
+        "background-image": "url(\"/api/image/educacion-alternativa-slide-1-background.jpg\")"
+      },
+      "IDCW1F8FFU6H294": {
+        "background-position": "center center"
+      },
+      "S8YWRMATKT5JSMK": {
+        "font-size": "2em"
+      },
+      "ZL9ZPMWQQDYX0BX": {
+        "text-shadow": "0 0 6px rgba(0,0,0,.5)"
+      },
+      "PL2TA6DZ7QES5NU": {
+        "color": "#2d8ac9"
       }
     },
     "sm": {},
